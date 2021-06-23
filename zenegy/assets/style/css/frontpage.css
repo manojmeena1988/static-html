@@ -11284,6 +11284,9 @@ h6, .h6 {
 }
 .newsroom .news-items .card .card-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .newsroom .news-items p {
   color: #979797;
