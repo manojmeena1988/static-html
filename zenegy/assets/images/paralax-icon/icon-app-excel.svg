@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>76968487-7F43-4C56-A820-1B57712D4B69</title>
+    <g id="People" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="People---1920x1080" transform="translate(-995.000000, -13790.000000)">
+            <g id="Integrations" transform="translate(0.000000, 11949.000000)">
+                <g id="icon-app-excel" transform="translate(995.000000, 1841.000000)">
+                    <rect id="Rectangle" fill-opacity="0.7" fill="#1F2227" x="0" y="0" width="50" height="50" rx="12"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="24.27" y="16.462" width="10.694" height="15.221"></rect>
+                    <path d="M34.424,16.012 L26.955,16.012 L26.955,14.263 L14.677,16.145 L14.677,32.645 L26.955,34.745 L26.955,32.15 L34.424,32.15 C34.8927534,32.1756358 35.2945017,31.8185261 35.324,31.35 L35.324,16.814 C35.2955519,16.3446769 34.8934866,15.986392 34.424,16.012 L34.424,16.012 Z M34.542,31.482 L26.93,31.482 L26.917,30.1 L28.751,30.1 L28.751,28.487 L26.9,28.487 L26.891,27.535 L28.748,27.535 L28.748,25.924 L26.88,25.924 L26.871,24.971 L28.751,24.971 L28.751,23.36 L26.865,23.36 L26.865,22.408 L28.751,22.408 L28.751,20.8 L26.865,20.8 L26.865,19.847 L28.751,19.847 L28.751,18.233 L26.865,18.233 L26.865,16.77 L34.542,16.77 L34.542,31.482 Z" id="Shape" fill="#02723B"></path>
+                    <rect id="Rectangle" fill="#02723B" fill-rule="nonzero" x="29.783" y="18.233" width="3.187" height="1.611"></rect>
+                    <rect id="Rectangle" fill="#02723B" fill-rule="nonzero" x="29.783" y="20.797" width="3.187" height="1.611"></rect>
+                    <rect id="Rectangle" fill="#02723B" fill-rule="nonzero" x="29.783" y="23.36" width="3.187" height="1.611"></rect>
+                    <rect id="Rectangle" fill="#02723B" fill-rule="nonzero" x="29.783" y="25.924" width="3.187" height="1.611"></rect>
+                    <rect id="Rectangle" fill="#02723B" fill-rule="nonzero" x="29.783" y="28.487" width="3.187" height="1.611"></rect>
+                    <polygon id="Path" fill="#FFFFFF" points="17.883 20.601 19.465 20.511 20.46 23.227 21.635 20.399 23.217 20.309 21.296 24.165 23.217 28.031 21.544 27.919 20.414 24.972 19.284 27.806 17.747 27.672 19.533 24.257"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

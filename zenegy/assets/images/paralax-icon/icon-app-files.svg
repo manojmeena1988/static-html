@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>80356FBE-EDDB-4091-B5BA-1F9F8D85268A</title>
+    <g id="People" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="People---1920x1080" transform="translate(-690.000000, -13877.000000)">
+            <g id="Integrations" transform="translate(0.000000, 11949.000000)">
+                <g id="icon-app-files" transform="translate(690.000000, 1928.000000)">
+                    <rect id="Rectangle" fill-opacity="0.7" fill="#1F2227" x="0" y="0" width="50" height="50" rx="12"></rect>
+                    <path d="M32.232,35.3730003 L18.083,35.3730003 C17.6499935,35.3732653 17.2346309,35.2014401 16.9283552,34.895352 C16.6220795,34.5892638 16.45,34.1740066 16.45,33.741 L16.45,14.149 C16.45,13.7159015 16.6220477,13.3005415 16.9282946,12.9942946 C17.2345415,12.6880477 17.6499015,12.516 18.083,12.516 L28.423,12.516 L33.865,17.958 L33.865,33.741 C33.865,34.1740066 33.6929205,34.5892638 33.3866448,34.895352 C33.0803691,35.2014401 32.6650065,35.3732653 32.232,35.3730003" id="Path" fill="#00AAFF" fill-rule="nonzero"></path>
+                    <polyline id="Path" fill="#A5E1FF" fill-rule="nonzero" points="33.865 17.958 28.423 17.958 28.423 12.516"></polyline>
+                    <polyline id="Path" fill="#006EA5" fill-rule="nonzero" points="28.423 17.958 33.865 23.401 33.865 17.958"></polyline>
+                    <rect id="Rectangle" fill="#A5E1FF" fill-rule="nonzero" x="20.26" y="23.401" width="9.796" height="1.088"></rect>
+                    <rect id="Rectangle" fill="#A5E1FF" fill-rule="nonzero" x="20.26" y="25.578" width="9.796" height="1.088"></rect>
+                    <rect id="Rectangle" fill="#A5E1FF" fill-rule="nonzero" x="20.26" y="27.754" width="9.796" height="1.088"></rect>
+                    <rect id="Rectangle" fill="#A5E1FF" fill-rule="nonzero" x="20.26" y="29.931" width="5.442" height="1.088"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

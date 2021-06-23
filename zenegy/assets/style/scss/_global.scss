@@ -1,0 +1,391 @@
+html {
+  height: -webkit-fill-available;
+}
+body {
+  font-size: 1rem;
+  line-height: 20px;
+  background-color: #f6f7f9;
+  color: $gray-900;
+
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+.container {
+  max-width: 1440px;
+  padding: 0 40px;
+}
+a {
+  text-decoration: none;
+}
+.sub-text {
+  opacity: 0.5;
+}
+.text-people {
+  color: $pink;
+}
+.text-expense {
+  color: $purple;
+}
+.text-primary {
+  color: $blue !important;
+}
+.text-gray {
+  color: $gray-900;
+}
+.text-mute {
+  color: $gray-700;
+}
+.bg-white {
+  background-color: $white;
+}
+.bg-black {
+  background-color: $black;
+}
+
+.bg-people {
+  background-color: $pink;
+}
+.bg-expense {
+  background-color: $purple;
+}
+.bg-numbers {
+  background-color: $accent;
+}
+.bg-accounts {
+  background-color: $gray-700;
+}
+.grid-x {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+p{
+  &.is-large{
+    font-size:18px;
+    line-height:24px;
+    &.is-500{
+      font-weight:500;
+    }
+    &.is-700{
+      font-weight:700;
+    }
+  }
+  &.is-small{
+    font-size:14px;
+    line-height:20px;
+    &.is-500{
+      font-weight:500;
+    }
+  }
+}
+h1,
+.h1 {
+  font-size: 72px;
+  line-height: 78px;
+}
+h2 {
+  font-size: 56px;
+  line-height: 62px;
+}
+h3 {
+  font-size: 48px;
+  line-height: 54px;
+}
+h4 {
+  font-size: 40px;
+  line-height: 46px;
+}
+h5 {
+  font-size: 32px;
+  line-height: 38px;
+}
+h6 {
+  font-size: 24px;
+  line-height: 30px;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+.text-lg {
+  font-size: 18px;
+  line-height: 24px;
+}
+.f-900 {
+  font-weight: 900;
+}
+.f-700 {
+  font-weight: 700;
+}
+.f-500 {
+  font-weight: 500;
+}
+.f-400 {
+  font-weight: 400;
+}
+.btn {
+  font-weight: 500;
+  padding: 16px 44.75px;
+  border-radius: 30px;
+  border-width: 2px;
+  &:focus{
+    box-shadow:none;
+  }
+}
+.people {
+  .text-theme {
+    color: $pink;
+  }
+  .bg-theme {
+    background-color: $pink !important;
+    color: $white;
+  }
+  .btn {
+    &.btn-theme {
+      border-color: $pink;
+      color: $pink;
+      &:hover {
+        background-color: $pink;
+        color: $white;
+      }
+    }
+    &.btn-fill-theme {
+      background-color: $pink;
+      color: $white;
+      &:hover {
+        background-color: darken($pink, 5%);
+        color: $white;
+      }
+    }
+  }
+}
+.expense {
+  .text-theme {
+    color: $purple;
+  }
+  .bg-theme {
+    background-color: $purple !important;
+    color: $white;
+  }
+  .btn {
+    &.btn-theme {
+      border-color: $purple;
+      color: $purple;
+      &:hover {
+        background-color: $purple;
+        color: $white;
+      }
+    }
+    &.btn-fill-theme {
+      background-color: $purple;
+      color: $white;
+      &:hover {
+        background-color: darken($purple, 5%);
+        color: $white;
+      }
+    }
+  }
+}
+.numbers {
+  .text-theme {
+    color: $accent;
+  }
+  .bg-theme {
+    background-color: $accent !important;
+    color: $white;
+  }
+  .btn {
+    &.btn-theme {
+      border-color: $accent;
+      color: $accent;
+      &:hover {
+        background-color: $accent;
+        color: $white;
+      }
+    }
+    &.btn-fill-theme {
+      background-color: $accent;
+      color: $white;
+      &:hover {
+        background-color: darken($accent, 5%);
+        color: $white;
+      }
+    }
+  }
+}
+.accounts {
+  .text-theme {
+    color: $gray-700;
+  }
+  .bg-theme {
+    background-color: $gray-700 !important;
+    color: $white;
+  }
+  .btn {
+    &.btn-theme {
+      border-color: $gray-700;
+      color: $gray-700;
+      &:hover {
+        background-color: darken($gray-700, 5%);
+        color: $white;
+      }
+    }
+    &.btn-fill-theme {
+      background-color: $gray-700;
+      color: $white;
+      &:hover {
+        background-color: $gray-700;
+        color: $white;
+      }
+    }
+  }
+}
+.section-header {
+  .text-lg {
+    color: $gray-700;
+  }
+}
+.flex-center-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.justify-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.common-main-sec {
+  text-align: center;
+  padding: 24px 0;
+  max-width: 520px;
+  margin: 0 auto;
+  .p-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 16px;
+
+    img {
+      max-width: 30px;
+      margin: 0 12px 0 0;
+    }
+  }
+  .d-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+  h4 {
+    font-weight: 900;
+    margin-bottom: 16px;
+    
+  }
+  .btnBox {
+    .btn {
+      padding: 10px 25px;
+      margin: 0 16px 0 0;
+      font-size: 16px;
+      line-height: 20px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  .btm-img {
+    margin: 56px 0 0;
+    img {
+      width: 100%;
+    }
+  }
+}
+.row-x {
+  align-items: center;
+}
+.text-grey7 {
+  color: $gray-700;
+}
+
+// custom checkbox section
+.custome-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48.5px !important;
+  .check-c {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+    border-radius: 5px;
+    border: 1px solid $gray-700;
+    background-color: $gray-900;
+    cursor: pointer;
+    pointer-events:all;
+    &.number-b {
+      border: 1px solid $blue;
+      &:checked {
+        &::after {
+          color: $blue;
+        }
+      }
+    }
+    &.expense-b {
+      border: 1px solid $purple;
+      &:checked {
+        &::after {
+          color: $purple;
+        }
+      }
+    }
+    &:checked {
+      &::after {
+        content: "\f00c";
+        font-family: "Font Awesome 5 pro";
+        color: $gray-700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+      }
+    }
+  }
+  span{
+    margin: 0 0 0 8px;
+    a {
+      text-decoration: underline;
+      margin: 0 0 0 8px;
+      pointer-events:all;
+      &:hover{
+        color:darken($gray-700 , 5%);
+      }
+    }
+  }
+  &.accounts{
+    span{
+      a{
+        color:$gray-700;
+      }
+    }
+  }
+}
+.mh-720 {
+  max-height: 720px;
+}
+.min-h-720{
+  min-height:720px;
+}
+
+@media screen and (max-width: 1024px) {
+  h6 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 599px) {
+}
+@media screen and (max-width: 374px) {
+  .hero-section .hero-content .btn {
+    padding: 16px;
+  }
+}

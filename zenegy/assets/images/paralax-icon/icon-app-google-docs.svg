@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>8E2F72A1-A72A-474C-B14B-E48511DBA19E</title>
+    <g id="People" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="People---1920x1080" transform="translate(-700.000000, -13631.000000)">
+            <g id="Integrations" transform="translate(0.000000, 11949.000000)">
+                <g id="icon-app-google-docs" transform="translate(700.000000, 1682.000000)">
+                    <rect id="Rectangle" fill-opacity="0.7" fill="#1F2227" x="0" y="0" width="80" height="80" rx="16"></rect>
+                    <path d="M51.5712,58.1968005 L28.9328,58.1968005 C28.2399895,58.1972245 27.5754095,57.9223042 27.0853684,57.4325631 C26.5953273,56.9428221 26.32,56.2784106 26.32,55.5856 L26.32,24.2384 C26.32,23.5454424 26.5952764,22.8808665 27.0852714,22.3908714 C27.5752665,21.9008764 28.2398424,21.6256 28.9328,21.6256 L45.4768,21.6256 L54.184,30.3328 L54.184,55.5856 C54.184,56.2784106 53.9086727,56.9428221 53.4186316,57.4325631 C52.9285905,57.9223042 52.2640105,58.1972245 51.5712,58.1968005" id="Path" fill="#2196F3" fill-rule="nonzero"></path>
+                    <polyline id="Path" fill="#BBDEFB" fill-rule="nonzero" points="54.184 30.3328 45.4768 30.3328 45.4768 21.6256"></polyline>
+                    <polyline id="Path" fill="#1465C0" fill-rule="nonzero" points="45.4768 30.3328 54.184 39.0416 54.184 30.3328"></polyline>
+                    <rect id="Rectangle" fill="#E3F2FD" fill-rule="nonzero" x="32.416" y="39.0416" width="15.6736" height="1.7408"></rect>
+                    <rect id="Rectangle" fill="#E3F2FD" fill-rule="nonzero" x="32.416" y="42.5248" width="15.6736" height="1.7408"></rect>
+                    <rect id="Rectangle" fill="#E3F2FD" fill-rule="nonzero" x="32.416" y="46.0064" width="15.6736" height="1.7408"></rect>
+                    <rect id="Rectangle" fill="#E3F2FD" fill-rule="nonzero" x="32.416" y="49.4896" width="8.7072" height="1.7408"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

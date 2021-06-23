@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>64311328-8AB8-40A0-84BE-E4D2E5CF8E23</title>
+    <g id="People" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="People---1920x1080" transform="translate(-1564.000000, -12798.000000)">
+            <g id="Integrations" transform="translate(0.000000, 11949.000000)">
+                <g id="icon-app-google-contacts" transform="translate(1564.000000, 849.000000)">
+                    <rect id="Rectangle" fill-opacity="0.7" fill="#1F2227" x="0" y="0" width="80" height="80" rx="16"></rect>
+                    <circle id="Oval" fill="#448AFF" fill-rule="nonzero" cx="40" cy="40" r="18.2864"></circle>
+                    <path d="M40,38.616 C41.9846905,38.616 43.5936,37.0070905 43.5936,35.0224 C43.5936,33.0377095 41.9846905,31.4288 40,31.4288 C38.0153095,31.4288 36.4064,33.0377095 36.4064,35.0224 C36.4072829,37.0067247 38.0156753,38.6151171 40,38.616 L40,38.616 Z M40,40.904 C37.3216,40.904 31.9584,42.504 31.9584,45.704 L31.9584,48.104 L48.0416,48.104 L48.0416,45.704 C48.0416,42.504 42.6784,40.904 40,40.904 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
