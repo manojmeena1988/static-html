@@ -21,7 +21,7 @@ $(document).ready(function () {
         // adaptiveHeight: true,
         // autoplay: true,
         // autoplaySpeed: 2000,
-        vertical: true,
+        // vertical: true,
         asNavFor: '.right-slider-teamblue',
     });
 
@@ -63,5 +63,25 @@ $(document).ready(function () {
         controlColor: "#1f2227",
     }
     const viewer = new ImageCompare(element, options).mount();
+
+
+
+    // newslatter show hide js start
+
+    $("#sub-now").click(function(){
+        $(".newsletter-confirm-state").show();
+        $(".newsletter-content").hide();
+      });
+    
+      
+     // footer country list
+     var inputNum_ftr = document.querySelector("#ftr-list");
+
+     window.intlTelInput(inputNum_ftr , {
+         hiddenInput: "full",
+         separateDialCode: true,
+         initialCountry: 'dk',
+         utilsScript: "assets/lib/intl/js/utils.js",
+      });  
 
 });

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-newsletter-plane</title>
+    <g id="Frontpage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Newsletter---confirmation-state" transform="translate(-930.000000, -312.000000)" stroke="#FFFFFF" stroke-width="1.5">
+            <g id="icon-newsletter-plane" transform="translate(930.000000, 312.000000)">
+                <polygon id="Path" points="56.9520718 2.41797308 2.68036212 33.0611696 21.1711659 40.9613687 49.6277924 53.0510673"></polygon>
+                <polygon id="Path" points="21.4113062 57.3602668 21.4113062 40.9613687 32.6979007 45.7493681"></polygon>
+                <line x1="20.3306748" y1="40.6022687" x2="47.3464595" y2="14.3879717" id="Path"></line>
+            </g>
+        </g>
+    </g>
+</svg>

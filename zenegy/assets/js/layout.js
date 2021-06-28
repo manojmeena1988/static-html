@@ -113,15 +113,28 @@ $(document).ready(function() {
     });
 
 
-
-    // footer country list
-    var inputNum_ftr = document.querySelector("#ftr-list");
-
-    window.intlTelInput(inputNum_ftr , {
-        hiddenInput: "full",
-        separateDialCode: true,
-        initialCountry: 'dk',
-        utilsScript: "assets/lib/intl/js/utils.js",
-     });
+    // slide in mobile 
    
+    if (window.matchMedia("(max-width:599px)").matches) {
+        $('#mob-app , #doc-management , #comlete-over , #security-slide , #client-app').slick({
+          responsive: [
+            {
+              breakpoint:599,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll:1,
+                infinite: true,
+                speed:2000,
+                dots: true
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      }
+  
+      AOS.init({disable: 'mobile'});
+
 });

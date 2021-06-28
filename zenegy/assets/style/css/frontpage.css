@@ -10410,8 +10410,8 @@ h6, .h6 {
 
 .common-main-sec {
   text-align: center;
-  padding: 24px 0;
-  max-width: 520px;
+  padding: 24px 20px;
+  max-width: 600px;
   margin: 0 auto;
 }
 .common-main-sec .p-title {
@@ -10582,7 +10582,7 @@ h6, .h6 {
 .page-header .nav-header .nav li::before {
   content: "";
   position: absolute;
-  top: 10px;
+  top: 11px;
   height: 2px;
   width: 100%;
 }
@@ -10703,7 +10703,7 @@ h6, .h6 {
   font-weight: 900;
 }
 .hero-section .hero-content h3 span, .hero-section .hero-content .h3 span {
-  opacity: 0.5;
+  color: #979797;
 }
 .hero-section .hero-content .btn {
   color: #fff;
@@ -10715,6 +10715,9 @@ h6, .h6 {
 .hero-section .hero-content h2, .hero-section .hero-content .h2 {
   margin: 16px auto 24px;
   font-weight: 900;
+}
+.hero-section .hero-content.home-page a {
+  font-weight: 500;
 }
 .hero-section .hero-content.home-page a i {
   animation-name: bounce-i;
@@ -10786,6 +10789,9 @@ h6, .h6 {
   text-align: center;
   padding: 48px 0;
   position: relative;
+}
+.partner-section p {
+  color: #979797;
 }
 .partner-section h5, .partner-section .h5 {
   color: #979797;
@@ -10885,7 +10891,7 @@ h6, .h6 {
   color: #fff;
 }
 .product-section.expense .bg-dark {
-  background-color: #202328;
+  background-color: #181a1d;
 }
 .product-section.bg-black .section-header .product-icon p {
   color: #fff;
@@ -10896,16 +10902,12 @@ h6, .h6 {
 .product-section.bg-black .section-header p {
   color: #979797;
 }
-.product-section.bg-white .section-header h2, .product-section.bg-white .section-header .h2 {
-  max-width: 935px;
-}
 .product-section.bg-white .section-header .btn-box a {
-  border: 2px solid #cf4e95;
-  color: #cf4e95;
-}
-.product-section.bg-white .section-header .btn-box a:hover {
   background-color: #cf4e95;
   color: #fff;
+}
+.product-section.bg-white .section-header .btn-box a:hover {
+  background-color: #ca3a89;
 }
 .product-section.bg-white .card.bg-gray .card-body h5, .product-section.bg-white .card.bg-gray .card-body .h5 {
   font-weight: 900;
@@ -10914,28 +10916,25 @@ h6, .h6 {
   max-width: 1120px;
 }
 .product-section.accounts .section-header .btn-box a {
-  border: 2px solid #979797;
-  color: #979797;
-}
-.product-section.accounts .section-header .btn-box a:hover {
   background-color: #979797;
   color: #fff;
 }
-.product-section.numbers .section-header .btn-box a {
-  border: 2px solid #3ba0dd;
-  color: #3ba0dd;
+.product-section.accounts .section-header .btn-box a:hover {
+  background-color: #8a8a8a;
 }
-.product-section.numbers .section-header .btn-box a:hover {
+.product-section.numbers .section-header .btn-box a {
   background-color: #3ba0dd;
   color: #fff;
 }
-.product-section.expense .section-header .btn-box a {
-  border: 2px solid #a358d0;
-  color: #a358d0;
+.product-section.numbers .section-header .btn-box a:hover {
+  background-color: #2695d9;
 }
-.product-section.expense .section-header .btn-box a:hover {
+.product-section.expense .section-header .btn-box a {
   background-color: #a358d0;
   color: #fff;
+}
+.product-section.expense .section-header .btn-box a:hover {
+  background-color: #9844ca;
 }
 
 .card {
@@ -10943,6 +10942,7 @@ h6, .h6 {
   text-align: left;
   height: 100%;
   border: none;
+  overflow: hidden;
 }
 .card-title {
   font-size: 18px;
@@ -10968,11 +10968,14 @@ h6, .h6 {
 }
 .card-body .icon-wrapper .icon-item {
   text-align: center;
-  width: 25%;
+  width: 100%;
   padding: 20px;
 }
 .card-body .icon-wrapper .icon-item .icon .svg-icon {
   display: block;
+}
+.card-body .icon-wrapper .icon-item .icon .svg-icon svg {
+  width: 100%;
 }
 .card-body .icon-wrapper .icon-item .icon .svg-icon path {
   fill: #fff;
@@ -11185,6 +11188,19 @@ h6, .h6 {
   z-index: 9;
   transform: scale(1.01);
 }
+.why-us .card-section .card.bank-danske .danske-img {
+  height: 100%;
+  width: 100%;
+}
+.why-us .card-section .card.bank-danske .danske-img::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(31, 34, 39, 0.5);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .why-us .card-section.accounts .col h1, .why-us .card-section.accounts .col .h1 {
   font-weight: 900;
   margin-bottom: 30px;
@@ -11292,6 +11308,9 @@ h6, .h6 {
   color: #979797;
   margin-bottom: 0;
 }
+.newsroom .news-items p:first-child {
+  font-weight: 500;
+}
 .newsroom .news-items h6, .newsroom .news-items .h6 {
   font-weight: 900;
   margin-top: 16px;
@@ -11358,6 +11377,9 @@ h6, .h6 {
   margin: 0 0 64px 0;
   font-weight: 500;
 }
+.stories .team-blue-sec .right-slider-teamblue .slick-dots {
+  position: inherit;
+}
 
 .zenegy-product {
   background-color: #fff;
@@ -11389,6 +11411,7 @@ h6, .h6 {
   align-items: center;
   font-weight: 500;
   margin-bottom: 24px;
+  line-height: 22px;
 }
 .zenegy-product .card.payroll-sec .card-body .hr-sec .p-title img {
   max-width: 30px;
@@ -11431,6 +11454,10 @@ h6, .h6 {
 }
 .zenegy-product .we-make-sec .card .card-body .make-box {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .zenegy-product .we-make-sec .card .card-body .make-box p {
   color: #1f2227;
@@ -11501,6 +11528,18 @@ h6, .h6 {
   color: #fff;
 }
 .footer .btn:hover {
+  color: #fff;
+}
+.footer .newsletter-confirm-state {
+  text-align: center;
+  padding: 112px 0 371px;
+  display: none;
+}
+.footer .newsletter-confirm-state p {
+  margin: 30px 0 24px;
+}
+.footer .newsletter-confirm-state h2, .footer .newsletter-confirm-state .h2 {
+  font-weight: 900;
   color: #fff;
 }
 .footer .newsletter-content {
@@ -11601,6 +11640,9 @@ h6, .h6 {
 }
 .footer .newsletter-content .newslatter-form .col .form-group .countrylist-box .phone-num {
   border-bottom: 0px solid;
+}
+.footer .newsletter-content .newslatter-form .col .custome-checkbox {
+  justify-content: center;
 }
 .footer .newsletter-content .newslatter-form .col .custome-checkbox.numbers span a {
   color: #00aaff;
@@ -12014,6 +12056,7 @@ h6, .h6 {
   max-width: 520px;
   margin: 56px auto 24px;
   color: #1f2227;
+  line-height: 22px;
 }
 .just-payroll-section .learn-more a {
   font-weight: 500;
@@ -12055,7 +12098,7 @@ h6, .h6 {
 }
 .save-time .bg-dark .card-body .get-list {
   padding: 0;
-  margin: 0;
+  margin: 141px 0 0;
 }
 .save-time .bg-dark .card-body .get-list li {
   display: inline-block;
@@ -12113,6 +12156,8 @@ h6, .h6 {
 .payroll-banner-section .join-us-form {
   text-align: center;
   padding-top: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
   position: absolute;
   top: 0;
   left: 0;
@@ -12148,6 +12193,9 @@ h6, .h6 {
   margin-bottom: 10px;
   line-height: 20px;
   pointer-events: none;
+}
+.payroll-banner-section .join-us-form .company-form-section .col .form-group label.custome-checkbox {
+  justify-content: center;
 }
 .payroll-banner-section .join-us-form .company-form-section .col .form-group .form-control {
   background-color: transparent;
@@ -12292,7 +12340,7 @@ h6, .h6 {
 }
 .feature-section .payroll-feature-section .accordian-box .accordina-target p {
   margin-bottom: 0px;
-  font-weight: 900;
+  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
@@ -12548,6 +12596,14 @@ h6, .h6 {
 .save-time.expense-management .ex-m.every-o .card-body h5, .save-time.expense-management .ex-m.every-o .card-body .h5 {
   max-width: 600px;
 }
+.save-time.expense-management .exp-manage {
+  position: relative;
+}
+.save-time.expense-management .exp-manage .card-img-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 13%;
+}
 .save-time.expense-management .bg-dark h2, .save-time.expense-management .bg-dark .h2 {
   font-weight: 900;
   margin-bottom: 24px;
@@ -12594,8 +12650,14 @@ h6, .h6 {
   font-weight: 500;
   max-width: 600px;
 }
-.save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c h6, .save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .h6 {
+.save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .c-sm h6, .save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .c-sm .h6 {
   font-weight: 400;
+}
+.save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .c-sm:last-child {
+  margin-top: 48px;
+}
+.save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .c-sm:nth-last-child(2) {
+  margin-top: 40px;
 }
 .save-time.expense-management .card.bg-dark .card-body .top h2 span, .save-time.expense-management .card.bg-dark .card-body .top .h2 span {
   color: #a358d0;
@@ -12818,6 +12880,7 @@ h6, .h6 {
 }
 .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data h5, .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data .h5 {
   margin-bottom: 24px;
+  font-weight: 500;
 }
 .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data a {
   padding: 14px 70px;
@@ -12845,6 +12908,7 @@ h6, .h6 {
   font-weight: 500;
   list-style: none;
   margin-bottom: 16px;
+  display: flex;
 }
 .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .btm-list-feature .f-list li::before {
   content: "";
@@ -12891,6 +12955,7 @@ h6, .h6 {
 
 .iti--separate-dial-code .iti__selected-flag {
   background-color: transparent !important;
+  padding-left: 0px;
 }
 
 .automated-section {
@@ -13103,6 +13168,7 @@ h6, .h6 {
 .automated-section .integration-sec {
   text-align: center;
   color: #fff;
+  position: relative;
 }
 .automated-section .integration-sec h2, .automated-section .integration-sec .h2 {
   max-width: 776px;
@@ -13189,6 +13255,45 @@ h6, .h6 {
   color: #979797;
 }
 
+@media screen and (max-width: 1330px) {
+  h1, .h1 {
+    font-size: 46px;
+    line-height: 50px;
+  }
+
+  h2, .h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  h3, .h3 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  h4, .h4 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  h5, .h5 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  h6, .h6 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card-img-overlay {
+    padding: 22px;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .card-body {
     padding: 20px;
@@ -13212,11 +13317,70 @@ h6, .h6 {
     height: 40px;
     margin-left: 20px;
   }
-  .footer .newsletter-content {
-    display: none;
-  }
   .footer .footer-links {
     margin-bottom: 86px;
+  }
+
+  .card-img-overlay {
+    padding: 20px;
+  }
+
+  .section .section-header .h1, .section .section-header h2, .section .section-header .h2 {
+    max-width: 750px;
+  }
+
+  .suite-icons .item {
+    margin: 0 20px 30px;
+  }
+
+  .payroll-banner-section .join-us-form h1, .payroll-banner-section .join-us-form .h1 {
+    max-width: 800px;
+  }
+
+  .stories {
+    padding-top: 50px;
+  }
+
+  .newsroom {
+    padding: 100px 0 50px;
+  }
+  .newsroom .news-items {
+    margin-bottom: 40px;
+  }
+
+  .why-us .card-section .card .card-body .why-us-inner {
+    min-height: 450px;
+  }
+  .why-us .card-section .card .card-body .why-us-inner .video-bg {
+    height: 350px;
+  }
+
+  .save-time .bg-dark .card-body .get-list li .circle-g {
+    width: 35px;
+    height: 35px;
+  }
+  .save-time .bg-dark .card-body .get-list li .circle-g i {
+    font-size: 16px;
+  }
+
+  .save-time .union-agreement .card-body .bottom img {
+    max-width: 180px;
+  }
+
+  .automated-section .integration-sec h2, .automated-section .h2 {
+    max-width: 600px;
+  }
+
+  .feature-section {
+    padding: 100px 0;
+  }
+
+  .why-us {
+    padding: 100px 0;
+  }
+
+  .common-main-sec {
+    padding: 24px 0;
   }
 }
 @media screen and (max-width: 992px) {
@@ -13242,7 +13406,7 @@ h6, .h6 {
     margin-bottom: 40px;
   }
   .product-section .card {
-    min-height: 400px;
+    min-height: 620px;
   }
 
   .hero-section .hero-content .section-heading {
@@ -13257,6 +13421,9 @@ h6, .h6 {
     max-width: 100%;
   }
 
+  .newsroom {
+    padding-top: 100px;
+  }
   .newsroom .baseline {
     justify-content: start;
     align-items: start;
@@ -13265,8 +13432,8 @@ h6, .h6 {
   .newsroom .row > * {
     margin: 20px 0;
   }
-  .newsroom .row > *:first-child {
-    margin-top: 0;
+  .newsroom .news-items {
+    margin-bottom: 0px;
   }
 
   .suite-section {
@@ -13384,6 +13551,10 @@ h6, .h6 {
   .stories .team-blue-sec .right-slider-teamblue .slider-box img {
     margin: 0 0 15px 0;
   }
+  .stories .team-blue-sec .right-slider-teamblue .slider-box h6, .stories .team-blue-sec .right-slider-teamblue .slider-box .h6 {
+    font-size: 18px;
+    line-height: 22px;
+  }
   .stories .team-blue-sec .right-slider-teamblue .slider-box .d-team {
     margin: 0 0 20px 0;
   }
@@ -13398,9 +13569,16 @@ h6, .h6 {
 
   .zenegy-product .card.payroll-sec .card-body {
     padding: 20px;
+    text-align: center;
   }
   .zenegy-product .card.payroll-sec .hr-sec {
     margin-bottom: 20px;
+  }
+  .zenegy-product .card.payroll-sec .hr-sec .p-title {
+    justify-content: center;
+  }
+  .zenegy-product .card.payroll-sec .hr-sec .btnBox {
+    margin-bottom: 56px;
   }
   .zenegy-product .we-make-sec .col-lg-6:first-child {
     margin-bottom: 40px;
@@ -13415,6 +13593,14 @@ h6, .h6 {
 
   .why-us .card-section .card .video-bg video {
     top: 16px;
+  }
+
+  .card .content-center {
+    height: calc(100% - 47px);
+  }
+
+  .save-time .card {
+    min-height: 720px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -13443,6 +13629,14 @@ h6, .h6 {
   .why-us .card-section .card .video-bg video {
     top: 10px;
   }
+
+  .automated-section .paralex-icon-section .icon-list:nth-child(8) {
+    top: 480px;
+  }
+
+  .custome-checkbox {
+    justify-content: end;
+  }
 }
 @media screen and (max-width: 767px) {
   .stories .team-blue-sec .left-teamblue img {
@@ -13458,7 +13652,7 @@ h6, .h6 {
   }
 
   .zenegy-product .card.payroll-sec .card-body {
-    padding: 40px;
+    padding: 40px 20px;
   }
   .zenegy-product .card.payroll-sec .card-body .hr-sec {
     margin: 0 0 40px 0;
@@ -13478,12 +13672,29 @@ h6, .h6 {
   }
 
   .payroll-banner-section img {
-    min-height: 420px;
+    min-height: 460px;
     object-fit: cover;
   }
 
   .why-us .card-section .card .video-bg video {
     top: 15px;
+  }
+
+  .stories .team-blue-sec .left-teamblue img {
+    min-height: 100%;
+  }
+  .stories .team-blue-sec .right-slider-teamblue .slick-dots {
+    bottom: 0;
+    padding-top: 30px;
+  }
+
+  .payroll-banner-section .join-us-form .company-form-section .col .form-group {
+    padding: 0;
+  }
+
+  .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .box-m {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 600px) and (max-width: 730px) {
@@ -13519,6 +13730,7 @@ h6, .h6 {
 
   .product-section {
     padding: 50px 0;
+    overflow: hidden;
   }
   .product-section .btn-box .btn {
     padding: 10px 20px;
@@ -13661,7 +13873,7 @@ h6, .h6 {
   }
 
   .zenegy-product .card.payroll-sec .card-body .hr-sec .btnBox a {
-    display: block;
+    display: inline-block;
     text-align: center;
   }
 
@@ -13693,6 +13905,64 @@ h6, .h6 {
 
   .payroll-banner-section .card-img-overlay {
     padding-top: 20px;
+  }
+
+  .zenegy-product .weMake-account .make-account-l img {
+    min-height: 100%;
+  }
+
+  .footer .newsletter-content .newslatter-form .col {
+    padding: 0;
+  }
+
+  .custome-checkbox {
+    align-items: end;
+  }
+
+  .why-us {
+    overflow: hidden;
+  }
+  .why-us .card-section .card .card-img {
+    min-height: 500px;
+  }
+  .why-us .card-section .card .card-body .why-us-inner {
+    min-height: 100%;
+  }
+
+  .product-section.accounts .section-header .btn-box a {
+    padding: 16px;
+  }
+
+  .save-time .card.bank-danske .card-img {
+    min-height: 500px;
+  }
+
+  .easy-book-keep .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .save-time.expense-management .card.bg-theme.automate-m img {
+    min-height: 780px;
+  }
+  .save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .c-sm:last-child {
+    margin-top: 0px;
+  }
+  .save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .c-sm:nth-last-child(2) {
+    margin-top: 0px;
+  }
+
+  .min-h-720 {
+    min-height: 100%;
+  }
+
+  .zenegy-product {
+    padding: 50px 0 80px;
+  }
+
+  .px-15 {
+    padding: 0 15px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -13734,11 +14004,63 @@ h6, .h6 {
   }
 
   .btn {
-    padding: 16px 28px;
+    padding: 10px 28px;
   }
 
+  .why-us {
+    padding: 50px 0;
+  }
+  .why-us .card-section .card .video-bg {
+    height: 230px;
+  }
   .why-us .card-section .card .video-bg video {
-    top: 12px;
+    top: 9px;
+  }
+
+  .card .content-center {
+    height: calc(100% - 70px);
+  }
+
+  .payroll-banner-section .join-us-form {
+    padding-top: 50px;
+  }
+
+  .feature-section .payroll-feature-section .accordian-box .accordian-content .f-include .f-list li {
+    width: 100%;
+  }
+  .feature-section .payroll-feature-section .accordian-box .accordian-content .app-service-list {
+    justify-content: space-around;
+  }
+  .feature-section .payroll-feature-section .accordian-box .accordian-content .app-service-list li {
+    width: calc(25% - 10px);
+  }
+
+  .automated-section .paralex-icon-section .icon-list:nth-child(5) {
+    top: 211px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(8) {
+    top: 385px;
+    left: 78%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(9) {
+    left: 19%;
+    top: 489px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(14) {
+    top: 780px;
+    left: 50%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(15) {
+    left: 19%;
+    top: 617px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(16) {
+    left: 20%;
+    top: 802px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(17) {
+    left: 52%;
+    top: 1155px;
   }
 }
 @media screen and (max-width: 360px) {

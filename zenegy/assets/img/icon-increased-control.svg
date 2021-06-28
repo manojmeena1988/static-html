@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="289px" height="57px" viewBox="0 0 289 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-increased-control</title>
+    <g id="People" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="People---1920x1080" transform="translate(-1296.000000, -4416.000000)">
+            <g id="Why-People" transform="translate(0.000000, 1980.000000)">
+                <g id="card-small-icon" transform="translate(1212.000000, 1940.000000)">
+                    <g id="icon-increased-control" transform="translate(84.000000, 496.000000)">
+                        <text id="+" font-family="Roboto-Light, Roboto" font-size="26" font-weight="300" fill="#FFFFFF">
+                            <tspan x="195.162109" y="37">+</tspan>
+                        </text>
+                        <text id="/" font-family="Roboto-Light, Roboto" font-size="26" font-weight="300" fill="#FFFFFF">
+                            <tspan x="80.8393555" y="37">/</tspan>
+                        </text>
+                        <g id="icon_zenegy_Check" transform="translate(115.000000, 0.000000)">
+                            <path d="M28.5,1.71 C43.32,1.71 55.29,13.68 55.29,28.5 C55.29,43.32 43.32,55.29 28.5,55.29 C13.68,55.29 1.71,43.32 1.71,28.5 C1.71,13.68 13.68,1.71 28.5,1.71 M28.5,0 C12.768,0 0,12.768 0,28.5 C0,44.232 12.768,57 28.5,57 C44.232,57 57,44.232 57,28.5 C57,12.768 44.232,0 28.5,0 L28.5,0 Z" id="Shape" fill="#51B03B" fill-rule="nonzero"></path>
+                            <circle id="Oval" fill="#51B03B" cx="28.5" cy="28.5" r="27.36"></circle>
+                            <polyline id="Path" stroke="#FFFFFF" stroke-width="1.5" points="17.1 28.158 24.852 36.024 39.9 20.976"></polyline>
+                        </g>
+                        <g id="icon_zenegy_Check-Copy-2" transform="translate(232.000000, 0.000000)">
+                            <path d="M28.5,1.71 C43.32,1.71 55.29,13.68 55.29,28.5 C55.29,43.32 43.32,55.29 28.5,55.29 C13.68,55.29 1.71,43.32 1.71,28.5 C1.71,13.68 13.68,1.71 28.5,1.71 M28.5,0 C12.768,0 0,12.768 0,28.5 C0,44.232 12.768,57 28.5,57 C44.232,57 57,44.232 57,28.5 C57,12.768 44.232,0 28.5,0 L28.5,0 Z" id="Shape" fill="#51B03B" fill-rule="nonzero"></path>
+                            <circle id="Oval" fill="#51B03B" cx="28.5" cy="28.5" r="27.36"></circle>
+                            <polyline id="Path" stroke="#FFFFFF" stroke-width="1.5" points="17.1 28.158 24.852 36.024 39.9 20.976"></polyline>
+                        </g>
+                        <g id="icon_zenegy_Check-Copy">
+                            <path d="M28.5,1.71 C43.32,1.71 55.29,13.68 55.29,28.5 C55.29,43.32 43.32,55.29 28.5,55.29 C13.68,55.29 1.71,43.32 1.71,28.5 C1.71,13.68 13.68,1.71 28.5,1.71 M28.5,0 C12.768,0 0,12.768 0,28.5 C0,44.232 12.768,57 28.5,57 C44.232,57 57,44.232 57,28.5 C57,12.768 44.232,0 28.5,0 L28.5,0 Z" id="Shape" fill="#51B03B" fill-rule="nonzero"></path>
+                            <circle id="Oval" fill="#51B03B" cx="28.5" cy="28.5" r="27.36"></circle>
+                            <polyline id="Path" stroke="#FFFFFF" stroke-width="1.5" points="17.1 28.158 24.852 36.024 39.9 20.976"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

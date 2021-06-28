@@ -51,7 +51,7 @@
         &::before {
           content: "";
           position: absolute;
-          top: 10px;
+          top: 11px;
           height: 2px;
           width: 100%;
         }
@@ -218,7 +218,7 @@
       margin: 16px auto 24px;
       font-weight: 900;
       span {
-        opacity: 0.5;
+        color:$gray-700;
       }
     }
     .btn {
@@ -237,6 +237,7 @@
     }
     &.home-page {
       a {
+        font-weight:500;
         i {
           animation-name: bounce-i;
           animation-timing-function: ease;
@@ -318,7 +319,9 @@
   text-align: center;
   padding: 48px 0;
   position: relative;
-
+p{
+  color:$gray-700;
+}
   h5 {
     color: $gray-700;
   }
@@ -430,7 +433,7 @@
   &.expense {
     color: $white;
     .bg-dark {
-      background-color: lighten($gray-900, $amount: 0.3);
+      background-color: rgba(24,26 ,29 ,1);
     }
   }
   &.bg-black {
@@ -450,16 +453,15 @@
   }
   &.bg-white {
     .section-header {
-      h2 {
-        max-width: 935px;
-      }
+      // h2 {
+      //   max-width: 935px;
+      // }
       .btn-box {
         a {
-          border: 2px solid $pink;
-          color: $pink;
+          background-color: $pink;
+          color: $white;
           &:hover {
-            background-color: $pink;
-            color: $white;
+            background-color:darken($pink , 5%);
           }
         }
       }
@@ -485,11 +487,10 @@
     .section-header {
       .btn-box {
         a {
-          border: 2px solid $gray-700;
-          color: $gray-700;
+          background-color: $gray-700;
+          color: $white;
           &:hover {
-            background-color: $gray-700;
-            color: $white;
+            background-color:darken($gray-700 , 5%);
           }
         }
       }
@@ -499,11 +500,10 @@
     .section-header {
       .btn-box {
         a {
-          border: 2px solid $accent;
-          color: $accent;
+          background-color: $accent;
+          color: $white;
           &:hover {
-            background-color: $accent;
-            color: $white;
+            background-color:darken($accent , 5%);
           }
         }
       }
@@ -513,11 +513,10 @@
     .section-header {
       .btn-box {
         a {
-          border: 2px solid $purple;
-          color: $purple;
+          background-color: $purple;
+          color: $white;
           &:hover {
-            background-color: $purple;
-            color: $white;
+            background-color:darken($purple , 5%);
           }
         }
       }
@@ -530,6 +529,7 @@
 
   height: 100%;
   border: none;
+  overflow: hidden;
   &-title {
     font-size: 18px;
     line-height: 24px;
@@ -552,7 +552,7 @@
       margin: 40px 20px 0;
       .icon-item {
         text-align: center;
-        width: 25%;
+        width:100%;
         padding: 20px;
         .icon {
           // padding: 20px ;
@@ -564,6 +564,7 @@
             svg {
               // width:104px;
               // height:104px
+              width:100%;
             }
 
             path {
@@ -798,6 +799,21 @@
           transform: scale(1.01);
         }
       }
+      &.bank-danske{
+        .danske-img{
+          height:100%;
+          width:100%;
+          &::after{
+            position: absolute;
+            content: "";
+            background-color: rgba(31, 34, 39, 0.5);
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
     }
     &.accounts {
       .col {
@@ -930,6 +946,9 @@
     p {
       color: $gray-700;
       margin-bottom: 0;
+      &:first-child{
+        font-weight:500;
+      }
     }
     h6 {
       font-weight: 900;
@@ -1008,6 +1027,10 @@
           margin: 0 0 64px 0;
           font-weight: 500;
         }
+        
+      }
+      .slick-dots{
+        position:inherit;
       }
     }
   }
@@ -1041,6 +1064,7 @@
             align-items: center;
             font-weight: 500;
             margin-bottom: 24px;
+            line-height:22px;
             img {
               max-width: 30px;
               margin: 0 12px 0 0;
@@ -1102,6 +1126,10 @@
       .card-body {
         .make-box {
           text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;      
           p {
             color: $gray-900;
           }
@@ -1200,6 +1228,18 @@
     color: $white;
     &:hover {
       color: $white;
+    }
+  }
+  .newsletter-confirm-state{
+    text-align: center;
+    padding:112px 0 371px;
+    display:none;
+    p{
+      margin:30px 0 24px;
+    }
+    h2{
+      font-weight:900;
+      color:$white;
     }
   }
   .newsletter-content {
@@ -1301,6 +1341,7 @@
           }
         }
         .custome-checkbox {
+          justify-content:center;
           &.numbers {
             span {
               a {
@@ -1783,6 +1824,7 @@
       max-width: 520px;
       margin: 56px auto 24px;
       color: $gray-900;
+      line-height:22px;
     }
     a {
       font-weight: 500;
@@ -1839,7 +1881,7 @@
     .card-body {
       .get-list {
         padding: 0;
-        margin: 0;
+        margin:141px 0 0;
         li {
           display: inline-block;
           margin: 0 23px 0 0;
@@ -1919,6 +1961,8 @@
   .join-us-form {
     text-align: center;
     padding-top: 100px;
+    padding-left:15px;
+    padding-right:15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -1955,6 +1999,9 @@
             margin-bottom: 10px;
             line-height: 20px;
             pointer-events: none;
+            &.custome-checkbox{
+              justify-content:center;
+            }
           }
           .form-control {
             background-color: transparent;
@@ -2158,7 +2205,7 @@
         cursor: pointer;
         p {
           margin-bottom: 0px;
-          font-weight: 900;
+          font-weight: bold;
           font-size: 18px;
           line-height: 24px;
         }
@@ -2459,6 +2506,14 @@
         }
       }
     }
+    .exp-manage{
+      position: relative;
+        .card-img-bottom{
+          position:absolute;
+          bottom:0;
+          left:13%;
+        }
+    }
     .bg-dark {
       h2 {
         font-weight: 900;
@@ -2526,8 +2581,16 @@
               }
             }
             .conolly-c {
-              h6 {
-                font-weight: 400;
+              .c-sm{
+                h6 {
+                  font-weight: 400;
+                }
+                &:last-child{
+                  margin-top:48px;
+                }
+                &:nth-last-child(2){
+                  margin-top:40px;
+                }
               }
             }
           }
@@ -2894,6 +2957,7 @@
                   }
                   h5 {
                     margin-bottom: 24px;
+                    font-weight:500;
                   }
                   a {
                     padding: 14px 70px;
@@ -2920,6 +2984,7 @@
                       font-weight: 500;
                       list-style: none;
                       margin-bottom: 16px;
+                      display:flex;
                       &::before {
                         content: "\f00c";
                         font-family: "Font Awesome 5 pro";
@@ -2973,6 +3038,7 @@
 }
 .iti--separate-dial-code .iti__selected-flag {
   background-color: transparent !important;
+  padding-left:0px;
 }
 .automated-section {
   background-color: $black;
@@ -3185,7 +3251,7 @@
   .integration-sec {
     text-align: center;
     color: $white;
-
+    position: relative;
     h2 {
       max-width: 776px;
       margin: 8px auto 40px;
