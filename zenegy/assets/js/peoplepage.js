@@ -48,4 +48,26 @@ $(document).ready(function () {
     //             "translate3d(-50%, -" + scroll / 100 + "%, 0) scale(" + (100 - scroll / 20) / 100 + ")",
     //     });
     // });
+
+    if (window.matchMedia("(max-width:599px)").matches) {
+        $('#security-slide').slick({
+          responsive: [
+            {
+              breakpoint:599,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll:1,
+                infinite: true,
+                speed:2000,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      }
 });

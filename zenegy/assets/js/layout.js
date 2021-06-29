@@ -113,28 +113,30 @@ $(document).ready(function() {
     });
 
 
-    // slide in mobile 
+    // // slide in mobile 
    
-    if (window.matchMedia("(max-width:599px)").matches) {
-        $('#mob-app , #doc-management , #comlete-over , #security-slide , #client-app').slick({
-          responsive: [
-            {
-              breakpoint:599,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll:1,
-                infinite: true,
-                speed:2000,
-                dots: true
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-        });
-      }
+    // if (window.matchMedia("(max-width:599px)").matches) {
+    //     $('#mob-app , #doc-management , #comlete-over , #security-slide , #client-app , #dimension-slide').slick({
+    //       responsive: [
+    //         {
+    //           breakpoint:599,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll:1,
+    //             infinite: true,
+    //             speed:2000,
+    //             dots: true,
+    //             prevArrow: false,
+    //             nextArrow: false,
+    //           }
+    //         }
+    //         // You can unslick at a given breakpoint now by adding:
+    //         // settings: "unslick"
+    //         // instead of a settings object
+    //       ]
+    //     });
+    //   }
   
-      AOS.init({disable: 'mobile'});
+   
 
 });

@@ -12846,6 +12846,13 @@ h6, .h6 {
 .save-time.dimention-sec .card.get-started .card-body .bottom a {
   margin-bottom: 20px;
 }
+.save-time.dimention-sec .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #ccc;
+}
+.save-time.dimention-sec .slick-dots li button:before {
+  background-color: #ccc;
+}
 
 .feature-section.pricing-section {
   padding: 100px 0;
@@ -13924,9 +13931,6 @@ h6, .h6 {
     align-items: end;
   }
 
-  .why-us {
-    overflow: hidden;
-  }
   .why-us .card-section .card .card-img {
     min-height: 500px;
   }

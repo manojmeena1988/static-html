@@ -2918,6 +2918,23 @@
         }
       }
     }
+    .slick-dots{
+      li{
+        &.slick-active{
+          button{
+            &:before {
+              opacity: 0.75;
+              color: #ccc;
+            }
+          }
+        } 
+        button{
+          &:before {
+            background-color: #ccc;
+          }
+        }
+      }
+    } 
   }
 }
 .feature-section {
