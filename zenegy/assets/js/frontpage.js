@@ -110,4 +110,7 @@ $(document).ready(function () {
         });
       }
 
+      $('.home-parallax-window').parallax({imageSrc: 'assets/images/people-why-footer@1x.jpg'});
+
 });
+

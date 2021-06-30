@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var inputNum = document.querySelector("#phone-number");
 
     window.intlTelInput(inputNum , {
@@ -31,3 +32,7 @@ var inputNum = document.querySelector("#phone-number");
           ]
         });
       }
+      
+      $('.numbers-parallax-window').parallax({imageSrc: 'assets/images/numbers-why-footer@1x.jpg'});
+
+    });

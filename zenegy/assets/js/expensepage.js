@@ -1,3 +1,5 @@
+$(document).ready(function () {
+
 var input = document.querySelector("#phone-c");
 window.intlTelInput(input, {
    hiddenInput: "full",
@@ -38,3 +40,7 @@ window.intlTelInput(input, {
         ]
       });
     }
+
+    $('.expense-parallax-window').parallax({imageSrc: 'assets/images/expense-why-footer@1x.jpg'});
+
+  }); 

@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var inputNum = document.querySelector("#phone-acc");
 
 window.intlTelInput(inputNum, {
@@ -15,3 +16,7 @@ $(".account-focus").focusin(function(){
   $(".account-focus").focusout(function(){
     $(this).css("border-bottom" , "1px solid rgba(255, 255, 255, 0.3)");
   });
+
+  $('.accounts-parallax-window').parallax({imageSrc: 'assets/images/accounts-why-footer@1x.jpg'});
+
+});

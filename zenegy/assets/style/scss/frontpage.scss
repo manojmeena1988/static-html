@@ -2782,6 +2782,13 @@
           }
         }
       }
+      &.white-label{
+        .top{
+          h4{
+            max-width:100%;
+          }
+        }
+      }
     }
   }
   &.dimention-sec {
@@ -2886,6 +2893,9 @@
       &.document-m {
         .card-body {
           .top {
+            h5{
+              font-weight:900;
+            }
             p {
               color: $gray-700;
             }
@@ -3357,5 +3367,25 @@
       }
     }
   }
+}
+.home-parallax-window {
+  min-height:1000px;
+  background: transparent;
+}
+.people-parallax-window{
+  min-height:1000px;
+  background: transparent;
+}
+.expense-parallax-window{
+  min-height:1350px;
+  background:transparent;
+}
+.numbers-parallax-window{
+  min-height:1400px;
+  background:transparent;
+}
+.accounts-parallax-window{
+  min-height:1500px;
+  background:transparent;
 }
 @import "responsive";
