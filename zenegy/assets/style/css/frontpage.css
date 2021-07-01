@@ -10151,7 +10151,7 @@ body {
 
 .container {
   max-width: 1440px;
-  padding: 0 40px;
+  padding: 0 15px;
 }
 
 a {
@@ -10984,7 +10984,7 @@ h6, .h6 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 40px 20px 0;
+  margin: 66px 20px 0;
 }
 .card-body .icon-wrapper .icon-item {
   text-align: center;
@@ -11092,7 +11092,7 @@ h6, .h6 {
 }
 
 .suite-section {
-  padding: 200px 0;
+  padding: 39px 0 200px;
   text-align: center;
 }
 .suite-section .head-section h2, .suite-section .head-section .h2 {
@@ -11109,7 +11109,7 @@ h6, .h6 {
 }
 .suite-section .screen-toggle {
   position: relative;
-  margin-top: 120px;
+  margin-top: 50px;
 }
 .suite-section .screen-toggle .icv__circle {
   width: 48px;
@@ -11339,7 +11339,7 @@ h6, .h6 {
 
 .stories {
   padding-top: 200px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   background-color: #fff;
 }
 .stories .section-header p {
@@ -11531,12 +11531,11 @@ h6, .h6 {
   color: #979797;
 }
 .zenegy-product .weMake-account .make-account-r .btnBox a {
-  border-color: #979797;
-  color: #979797;
-}
-.zenegy-product .weMake-account .make-account-r .btnBox a:hover {
   background-color: #979797;
   color: #fff;
+}
+.zenegy-product .weMake-account .make-account-r .btnBox a:hover {
+  background-color: #8a8a8a;
 }
 
 .footer {
@@ -13318,6 +13317,11 @@ h6, .h6 {
   background: transparent;
 }
 
+@media screen and (max-width: 1440px) {
+  .card-img-overlay {
+    padding: 25px;
+  }
+}
 @media screen and (max-width: 1330px) {
   h1, .h1 {
     font-size: 46px;
@@ -14023,6 +14027,18 @@ h6, .h6 {
 
   .px-15 {
     padding: 0 15px;
+  }
+
+  .save-time .card {
+    min-height: 100%;
+  }
+
+  .product-section .card {
+    min-height: 100%;
+  }
+
+  .save-time.expense-management .exp-manage {
+    min-height: 520px;
   }
 }
 @media screen and (max-width: 480px) {

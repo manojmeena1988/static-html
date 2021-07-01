@@ -1,3 +1,8 @@
+@media screen and (max-width:1440px){
+  .card-img-overlay {
+    padding:25px;
+  }
+}
 @media screen and (max-width:1330px){
   h1 , .h1{
     font-size:46px;
@@ -951,6 +956,23 @@
   }
   .px-15{
     padding:0 15px;
+  }
+  .save-time{
+    .card {
+      min-height: 100%;
+    }
+  }
+  .product-section{
+    .card {
+      min-height: 100%;
+    } 
+  }
+  .save-time{
+    &.expense-management{
+      .exp-manage {
+        min-height:520px;
+      }
+    }  
   }
 }
 @media screen and (max-width: 480px) {
