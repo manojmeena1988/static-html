@@ -110,7 +110,5 @@ $(document).ready(function () {
         });
       }
 
-      $('.home-parallax-window').parallax({imageSrc: 'assets/images/frontpage-why-footer@1x.jpg'});
-
 });
 
