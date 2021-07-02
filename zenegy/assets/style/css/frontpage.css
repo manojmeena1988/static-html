@@ -10151,7 +10151,7 @@ body {
 
 .container {
   max-width: 1440px;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 a {
@@ -10537,6 +10537,17 @@ h6, .h6 {
 .image-overlay.image-overlay-three::after {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
+.image-overlay.image-overlay-forth::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+.image-overlay.image-overlay-five::after {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.56) 100%);
+}
+
+.section [class*=col-] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
 
 @media screen and (max-width: 1024px) {
   h6, .h6 {
@@ -10767,7 +10778,7 @@ h6, .h6 {
   }
 }
 .hero-section .hero-content.numbers {
-  max-width: 660px;
+  max-width: 760px;
 }
 .hero-section .hero-content.numbers h2 span, .hero-section .hero-content.numbers .h2 span {
   color: #3ba0dd;
@@ -10779,7 +10790,7 @@ h6, .h6 {
   background-color: #2695d9;
 }
 .hero-section .hero-content.expense {
-  max-width: 854px;
+  max-width: 760px;
 }
 .hero-section .hero-content.expense h2 span, .hero-section .hero-content.expense .h2 span {
   color: #a358d0;
@@ -10791,7 +10802,7 @@ h6, .h6 {
   background-color: #9844ca;
 }
 .hero-section .hero-content.accounts {
-  max-width: 1326px;
+  max-width: 710px;
 }
 .hero-section .hero-content.accounts h2 span, .hero-section .hero-content.accounts .h2 span {
   color: #979797;
@@ -10803,7 +10814,7 @@ h6, .h6 {
   background-color: #8a8a8a;
 }
 .hero-section .hero-content.people {
-  max-width: 712px;
+  max-width: 760px;
 }
 .hero-section .hero-content.people h2 span, .hero-section .hero-content.people .h2 span {
   color: #cf4e95;
@@ -10888,7 +10899,7 @@ h6, .h6 {
 }
 .product-section .section-header p {
   color: #1f2227;
-  max-width: 680px;
+  max-width: 760px;
   margin: 0 auto;
 }
 .product-section .section-header .btn-box {
@@ -10916,6 +10927,10 @@ h6, .h6 {
 .product-section .card.digitale-s .card-body h6, .product-section .card.digitale-s .card-body .h6 {
   font-size: 22px;
   line-height: 26px;
+}
+.product-section .card.software-access .card-body .bottom img {
+  max-height: 540px;
+  width: 100%;
 }
 .product-section.expense {
   color: #fff;
@@ -10946,11 +10961,12 @@ h6, .h6 {
   max-width: 1120px;
 }
 .product-section.accounts .section-header .btn-box a {
-  background-color: #979797;
-  color: #fff;
+  border: 2px solid #979797;
+  color: #979797;
 }
 .product-section.accounts .section-header .btn-box a:hover {
-  background-color: #8a8a8a;
+  background-color: #979797;
+  color: #fff;
 }
 .product-section.numbers .section-header .btn-box a {
   background-color: #3ba0dd;
@@ -11029,7 +11045,13 @@ h6, .h6 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: calc(100% - 83px);
+  height: calc(100% - 47px);
+}
+.card .content-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75%;
 }
 .card.bg-theme .card-title {
   color: rgba(255, 255, 255, 0.8);
@@ -11102,7 +11124,7 @@ h6, .h6 {
 }
 
 .suite-section {
-  padding: 39px 0 200px;
+  padding: 200px 0;
   text-align: center;
 }
 .suite-section .head-section h2, .suite-section .head-section .h2 {
@@ -11175,12 +11197,6 @@ h6, .h6 {
   color: #979797;
   margin-bottom: 23px;
 }
-.why-us .card-section .card .card-img-overlay .danske-bank p {
-  color: #00aaff;
-  font-size: 20px;
-  line-height: 36px;
-  font-weight: 900;
-}
 .why-us .card-section .card .card-img-overlay .danske-bank h2, .why-us .card-section .card .card-img-overlay .danske-bank .h2 {
   font-weight: 900;
   margin: 0 0 24px 0;
@@ -11194,6 +11210,9 @@ h6, .h6 {
 }
 .why-us .card-section .card.bg-expense .card-body .card-title {
   color: rgba(255, 255, 255, 0.8);
+}
+.why-us .card-section .card.bg-expense .card-body .bottom {
+  margin: 113px 0 0;
 }
 .why-us .card-section .card .video-bg {
   text-align: center;
@@ -11231,6 +11250,18 @@ h6, .h6 {
   top: 0;
   left: 0;
 }
+.why-us .card-section .card.bank-danske .card-img-overlay .danske-bank h3, .why-us .card-section .card.bank-danske .card-img-overlay .danske-bank .h3 {
+  font-weight: 900;
+}
+.why-us .card-section .card.bank-danske .card-img-overlay .danske-bank h5, .why-us .card-section .card.bank-danske .card-img-overlay .danske-bank .h5 {
+  font-style: italic;
+}
+.why-us .card-section .card.bank-danske .card-img-overlay .danske-bank p {
+  font-weight: 700;
+}
+.why-us .card-section .card.zenegy-card .card-body h2, .why-us .card-section .card.zenegy-card .card-body .h2 {
+  max-width: 323px;
+}
 .why-us .card-section.accounts .col h1, .why-us .card-section.accounts .col .h1 {
   font-weight: 900;
   margin-bottom: 30px;
@@ -11266,6 +11297,9 @@ h6, .h6 {
 .why-us .card-section.numbers .card-img-overlay a:hover {
   background-color: #2695d9;
 }
+.why-us .card-section.expense .card-img-overlay .top p {
+  color: #979797;
+}
 .why-us .card-section.expense .card-img-overlay h1, .why-us .card-section.expense .card-img-overlay .h1 {
   font-weight: 900;
   margin-bottom: 30px;
@@ -11276,7 +11310,7 @@ h6, .h6 {
 }
 .why-us .card-section.expense .card-img-overlay p {
   color: #fff;
-  max-width: 391px;
+  max-width: 530px;
 }
 .why-us .card-section.expense .card-img-overlay a {
   background-color: #a358d0;
@@ -11424,7 +11458,7 @@ h6, .h6 {
 }
 .zenegy-product .feature-d h2, .zenegy-product .feature-d .h2 {
   font-weight: 900;
-  max-width: 750px;
+  max-width: 630px;
   margin: auto;
 }
 .zenegy-product .feature-d h2 span, .zenegy-product .feature-d .h2 span {
@@ -11459,6 +11493,7 @@ h6, .h6 {
 }
 .zenegy-product .card.payroll-sec .card-body .hr-sec p {
   color: #1f2227;
+  max-width: 548px;
 }
 .zenegy-product .card.payroll-sec .card-body .hr-sec .btnBox .btn {
   padding: 10px 25px;
@@ -11491,6 +11526,8 @@ h6, .h6 {
 }
 .zenegy-product .we-make-sec .card .card-body .make-box p {
   color: #1f2227;
+  max-width: 520px;
+  margin: 0 auto 30px;
 }
 .zenegy-product .we-make-sec .card.expense h4 span, .zenegy-product .we-make-sec .card.expense .h4 span {
   color: #a358d0;
@@ -12197,13 +12234,13 @@ h6, .h6 {
   color: #979797;
   margin-bottom: 24px;
 }
-.payroll-banner-section .join-us-form h1, .payroll-banner-section .join-us-form .h1 {
+.payroll-banner-section .join-us-form h2, .payroll-banner-section .join-us-form .h2 {
   color: #fff;
   margin: 0 auto 40px;
-  max-width: 1080px;
+  max-width: 760px;
   font-weight: 900;
 }
-.payroll-banner-section .join-us-form h1 span, .payroll-banner-section .join-us-form .h1 span {
+.payroll-banner-section .join-us-form h2 span, .payroll-banner-section .join-us-form .h2 span {
   opacity: 0.5;
 }
 .payroll-banner-section .join-us-form .company-form-section {
@@ -12592,6 +12629,7 @@ h6, .h6 {
 .product-page .hero-section {
   align-items: center;
   padding: 200px 0;
+  justify-content: center;
 }
 
 .save-time.expense-management .ex-m .card-body .card-title {
@@ -12616,14 +12654,20 @@ h6, .h6 {
   font-size: 12px;
   margin-right: 7px;
 }
-.save-time.expense-management .ex-m.value-t {
-  min-height: 720px;
-}
 .save-time.expense-management .ex-m.value-t .card-body p {
   max-width: 600px;
 }
+.save-time.expense-management .ex-m.value-t .card-body .bottom {
+  margin: 114px 0 0;
+}
 .save-time.expense-management .ex-m.every-o .card-body h5, .save-time.expense-management .ex-m.every-o .card-body .h5 {
   max-width: 600px;
+}
+.save-time.expense-management .ex-m.chart-account .card-body .top h1, .save-time.expense-management .ex-m.chart-account .card-body .top .h1 {
+  max-width: 100%;
+}
+.save-time.expense-management .workflow-card .card-body .bottom {
+  margin: 64px 0 0;
 }
 .save-time.expense-management .exp-manage {
   position: relative;
@@ -12632,6 +12676,9 @@ h6, .h6 {
   position: absolute;
   bottom: 0;
   left: 13%;
+}
+.save-time.expense-management .full-control .card-body .bottom {
+  margin: 57px 0 0;
 }
 .save-time.expense-management .bg-dark h2, .save-time.expense-management .bg-dark .h2 {
   font-weight: 900;
@@ -12675,6 +12722,9 @@ h6, .h6 {
 .save-time.expense-management .card.bg-theme.automate-m .card-body .top p {
   margin-bottom: 30px;
 }
+.save-time.expense-management .card.bg-theme.automate-m .card-body .top h4, .save-time.expense-management .card.bg-theme.automate-m .card-body .top .h4 {
+  font-weight: bold;
+}
 .save-time.expense-management .card.bg-theme.automate-m .card-body .top h6, .save-time.expense-management .card.bg-theme.automate-m .card-body .top .h6 {
   font-weight: 500;
   max-width: 600px;
@@ -12704,6 +12754,9 @@ h6, .h6 {
 .save-time.expense-management .card.business-c .card-body .mid .suite-icons {
   justify-content: space-around;
 }
+.save-time.expense-management .card.business-c .card-body .bottom {
+  margin: 80px 0 0;
+}
 .save-time.expense-management .card.expense-m .card-body h5, .save-time.expense-management .card.expense-m .card-body .h5 {
   max-width: 600px;
 }
@@ -12713,12 +12766,15 @@ h6, .h6 {
 .save-time.expense-management .card.get-started .card-body .bottom a {
   margin-bottom: 20px;
 }
-.save-time.account-management .report-sec .card-body h2, .save-time.account-management .report-sec .card-body .h2 {
+.save-time.expense-management .card.increased-control .card-body .bottom {
+  margin: 100px 0 0;
+}
+.save-time.account-management .report-sec .card-body .top h2, .save-time.account-management .report-sec .card-body .top .h2 {
   font-weight: 900;
   margin-bottom: 24px;
 }
-.save-time.account-management .report-sec .card-body p.is-large {
-  color: #fff;
+.save-time.account-management .report-sec .card-body .top p.is-large {
+  color: rgba(255, 255, 255, 0.8);
 }
 .save-time.account-management .ex-m .card-body .card-title {
   color: white;
@@ -12727,17 +12783,20 @@ h6, .h6 {
   font-weight: 900;
   margin-bottom: 24px;
 }
-.save-time.account-management .ex-m .card-img-overlay .content-center {
+.save-time.account-management .ex-m .card-img-overlay .bottom {
   text-align: center;
 }
-.save-time.account-management .ex-m .card-img-overlay .content-center h1, .save-time.account-management .ex-m .card-img-overlay .content-center .h1 {
+.save-time.account-management .ex-m .card-img-overlay .bottom h1, .save-time.account-management .ex-m .card-img-overlay .bottom .h1 {
   font-weight: 900;
   margin-bottom: 28px;
 }
-.save-time.account-management .ex-m .card-img-overlay .content-center p {
+.save-time.account-management .ex-m .card-img-overlay .bottom p {
   color: #fff;
   max-width: 625px;
   margin: 0 auto;
+}
+.save-time.account-management .ex-m.communication-card .card-img-overlay .top p {
+  color: rgba(255, 255, 255, 0.8);
 }
 .save-time.better-service .card .card-img-overlay p.is-large {
   color: #fff;
@@ -12792,8 +12851,14 @@ h6, .h6 {
 .save-time.better-service .card.bank-b .card-body .top h4, .save-time.better-service .card.bank-b .card-body .top .h4 {
   max-width: 100%;
 }
-.save-time.better-service .card.white-label .top h4, .save-time.better-service .card.white-label .top .h4 {
+.save-time.better-service .card.white-label .card-body .top h4, .save-time.better-service .card.white-label .card-body .top .h4 {
   max-width: 100%;
+}
+.save-time.better-service .card.white-label .card-body .bottom {
+  margin: 100px 0 0;
+}
+.save-time.better-service .card.better-service-card .card-img-overlay .top p {
+  color: rgba(255, 255, 255, 0.8);
 }
 .save-time.dimention-sec .card .card-img-overlay p.is-large {
   color: #fff;
@@ -12846,7 +12911,7 @@ h6, .h6 {
   background-color: #8a8a8a;
 }
 .save-time.dimention-sec .card.bg-gray .card-body p {
-  color: #979797 !important;
+  color: #979797;
 }
 .save-time.dimention-sec .card.bg-gray .card-body h4, .save-time.dimention-sec .card.bg-gray .card-body .h4 {
   font-weight: 900;
@@ -12878,8 +12943,20 @@ h6, .h6 {
 .save-time.dimention-sec .card.mobility-s .card-body p {
   color: #979797;
 }
+.save-time.dimention-sec .card.fully-synced .card-body .bottom {
+  margin: 86px 0 0;
+}
 .save-time.dimention-sec .card.get-started .card-body .bottom a {
   margin-bottom: 20px;
+}
+.save-time.dimention-sec .card.union-agreement .bottom {
+  margin: 80px 0 0;
+}
+.save-time.dimention-sec .card.product-card .card-body .bottom {
+  margin: 100px 0 0;
+}
+.save-time.dimention-sec .card.notification-card .card-body .top p {
+  color: #fff;
 }
 .save-time.dimention-sec .slick-dots li.slick-active button:before {
   opacity: 0.75;
@@ -13255,7 +13332,7 @@ h6, .h6 {
   width: 100%;
 }
 .e-conomic-sec .inner-data p {
-  max-width: 520px;
+  max-width: 720px;
   margin: 8px auto 24px;
   color: #979797;
   font-weight: 400;
@@ -13304,32 +13381,63 @@ h6, .h6 {
 
 .home-parallax-window {
   min-height: 1000px;
-  background: transparent;
+}
+.home-parallax-window .join-us-form h2, .home-parallax-window .join-us-form .h2 {
+  max-width: 936px;
+}
+.home-parallax-window .join-us-form h2 span, .home-parallax-window .join-us-form .h2 span {
+  color: #979797;
+  opacity: 1;
 }
 
 .people-parallax-window {
   min-height: 1000px;
-  background: transparent;
 }
 
 .expense-parallax-window {
   min-height: 1350px;
-  background: transparent;
+}
+.expense-parallax-window .join-us-form h2, .expense-parallax-window .join-us-form .h2 {
+  max-width: 550px;
+}
+.expense-parallax-window .join-us-form h2 span, .expense-parallax-window .join-us-form .h2 span {
+  color: #a358d0;
+  opacity: 1;
 }
 
 .numbers-parallax-window {
   min-height: 1400px;
-  background: transparent;
+}
+.numbers-parallax-window .join-us-form h2 span, .numbers-parallax-window .join-us-form .h2 span {
+  color: #3ba0dd;
+  opacity: 1;
 }
 
 .accounts-parallax-window {
   min-height: 1500px;
-  background: transparent;
+}
+.accounts-parallax-window .join-us-form h2 span, .accounts-parallax-window .join-us-form .h2 span {
+  color: #979797;
+  opacity: 1;
 }
 
 @media screen and (max-width: 1440px) {
   .card-img-overlay {
     padding: 25px;
+  }
+
+  .card-body {
+    padding: 25px;
+  }
+
+  h1, .h1 {
+    font-size: 54px;
+    line-height: 58px;
+  }
+
+  h2, .h2 {
+    font-size: 44px;
+    line-height: 48px;
   }
 }
 @media screen and (max-width: 1330px) {
@@ -13364,7 +13472,7 @@ h6, .h6 {
   }
 
   .card-img-overlay {
-    padding: 22px;
+    padding: 20px;
   }
 
   .card-body {
@@ -13457,7 +13565,7 @@ h6, .h6 {
   }
 
   .common-main-sec {
-    padding: 24px 0;
+    padding: 24px 15;
   }
 }
 @media screen and (max-width: 992px) {
@@ -13997,7 +14105,7 @@ h6, .h6 {
   }
 
   .why-us .card-section .card .card-img {
-    min-height: 500px;
+    min-height: 600px;
   }
   .why-us .card-section .card .card-body .why-us-inner {
     min-height: 100%;
@@ -14028,7 +14136,7 @@ h6, .h6 {
   }
 
   .min-h-720 {
-    min-height: 100%;
+    min-height: 600px;
   }
 
   .zenegy-product {
@@ -14040,15 +14148,15 @@ h6, .h6 {
   }
 
   .save-time .card {
-    min-height: 100%;
+    min-height: 600px;
   }
 
   .product-section .card {
-    min-height: 100%;
+    min-height: 600px;
   }
 
-  .save-time.expense-management .exp-manage {
-    min-height: 520px;
+  .stories .team-blue-sec .left-teamblue .slick-track {
+    height: 200px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -14151,7 +14259,7 @@ h6, .h6 {
 }
 @media screen and (max-width: 360px) {
   .card-img-overlay {
-    padding: 15px;
+    padding: 30px 15px;
   }
 }
 @media screen and (min-width: 991.99px) {

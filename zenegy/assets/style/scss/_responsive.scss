@@ -2,6 +2,17 @@
   .card-img-overlay {
     padding:25px;
   }
+  .card-body{
+    padding:25px;
+  }
+  h1 , .h1{
+    font-size:54px;
+    line-height:58px;
+  }
+  h2 , .h2{
+    font-size:44px;
+    line-height:48px;
+  }
 }
 @media screen and (max-width:1330px){
   h1 , .h1{
@@ -29,7 +40,7 @@
     line-height:24px;
   }
   .card-img-overlay{
-    padding:22px;
+    padding:20px;
   }
   .card-body{
     padding:20px;
@@ -164,7 +175,7 @@
     padding:100px 0;
   } 
   .common-main-sec{
-    padding:24px 0;
+    padding:24px 15;
   }  
 }
 @media screen and (max-width: 992px) {
@@ -678,7 +689,7 @@
     }
   }
   .card {
-    margin-bottom: 20px;
+    margin-bottom:20px;
     height: auto;
     .card-body {
       padding: 20px;
@@ -886,7 +897,7 @@
     .card-section{
       .card{
         .card-img{
-          min-height:500px;
+          min-height:600px;
         }
         .card-body{
           .why-us-inner {
@@ -949,7 +960,7 @@
     }  
   }
   .min-h-720 {
-    min-height: 100%;
+    min-height:600px;
   }
   .zenegy-product {
     padding:50px 0 80px;
@@ -959,20 +970,29 @@
   }
   .save-time{
     .card {
-      min-height: 100%;
+      min-height:600px;
     }
   }
   .product-section{
     .card {
-      min-height: 100%;
+      min-height:600px;
     } 
   }
   .save-time{
     &.expense-management{
       .exp-manage {
-        min-height:520px;
+        // min-height:520px;
       }
     }  
+  }
+  .stories {
+    .team-blue-sec {
+      .left-teamblue {
+        .slick-track{
+          height:200px;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 480px) {
@@ -1169,7 +1189,7 @@
 }
 @media screen and (max-width: 360px) {
   .card-img-overlay {
-    padding: 15px;
+    padding:30px  15px;
   }
 }
 @media screen and (min-width: 991.99px) {

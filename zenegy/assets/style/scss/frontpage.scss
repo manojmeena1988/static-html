@@ -268,7 +268,7 @@
       }
     }
     &.numbers {
-      max-width: 660px;
+      max-width:760px;
       h2 {
         span {
           color: $accent;
@@ -282,7 +282,7 @@
       }
     }
     &.expense {
-      max-width: 854px;
+      max-width:760px;
       h2 {
         span {
           color: $purple;
@@ -296,7 +296,7 @@
       }
     }
     &.accounts {
-      max-width: 1326px;
+      max-width:710px;
       h2 {
         span {
           color: $gray-700;
@@ -310,7 +310,7 @@
       }
     }
     &.people {
-      max-width: 712px;
+      max-width: 760px;
       h2 {
         span {
           color: $pink;
@@ -403,7 +403,7 @@
     }
     p {
       color: $gray-900;
-      max-width: 680px;
+      max-width:760px;
       margin: 0 auto;
     }
     .btn-box {
@@ -436,6 +436,16 @@
         h6 {
           font-size: 22px;
           line-height: 26px;
+        }
+      }
+    }
+    &.software-access{
+      .card-body{
+        .bottom{
+          img{
+            max-height:540px;
+            width:100%;
+          }
         }
       }
     }
@@ -497,10 +507,11 @@
     .section-header {
       .btn-box {
         a {
-          background-color: $gray-700;
-          color: $white;
+          border:2px solid $gray-700;
+          color: $gray-700;
           &:hover {
-            background-color: darken($gray-700, 5%);
+            background-color:$gray-700;
+            color:$white;
           }
         }
       }
@@ -604,7 +615,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: calc(100% - 83px);
+    height: calc(100% - 47px);
+  }
+  .content-space-between{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height:75%;
   }
   &.bg-theme {
     .card-title {
@@ -681,7 +698,7 @@
   }
 }
 .suite-section {
-  padding:39px 0 200px;
+  padding:200px 0;
   text-align: center;
   .head-section {
     h2 {
@@ -762,12 +779,7 @@
           margin-bottom: 23px;
         }
         .danske-bank {
-          p {
-            color: $blue;
-            font-size: 20px;
-            line-height: 36px;
-            font-weight: 900;
-          }
+          
           h2 {
             font-weight: 900;
             margin: 0 0 24px 0;
@@ -783,6 +795,9 @@
         .card-body {
           .card-title {
             color: rgba(255, 255, 255, 0.8);
+          }
+          .bottom{
+            margin:113px 0 0;
           }
         }
       }
@@ -822,6 +837,26 @@
             width: 100%;
             top: 0;
             left: 0;
+          }
+        }
+        .card-img-overlay{
+          .danske-bank{
+            h3{
+              font-weight:900;
+            }
+            h5{
+              font-style:italic;
+            }
+            p{
+              font-weight:700;
+            }
+          }
+        }
+      }
+      &.zenegy-card{
+        .card-body{
+          h2{
+            max-width:323px;
           }
         }
       }
@@ -871,6 +906,11 @@
     }
     &.expense {
       .card-img-overlay {
+        .top{
+          p{
+            color:$gray-700;
+          }
+        }
         h1 {
           font-weight: 900;
           margin-bottom: 30px;
@@ -881,7 +921,7 @@
         }
         p {
           color: $white;
-          max-width: 391px;
+          max-width:530px;
         }
         a {
           background-color: $purple;
@@ -1056,7 +1096,7 @@
     }
     h2 {
       font-weight: 900;
-      max-width: 750px;
+      max-width: 630px;
       margin: auto;
       span {
         opacity: 0.5;
@@ -1092,6 +1132,7 @@
           }
           p {
             color: $gray-900;
+            max-width:548px;
           }
           .btnBox {
             .btn {
@@ -1142,6 +1183,8 @@
           height: 100%;
           p {
             color: $gray-900;
+            max-width:520px;
+            margin:0 auto 30px;
           }
         }
       }
@@ -1977,14 +2020,18 @@
     left: 0;
     right: 0;
     bottom: 0;
+    // display: flex;
+    // align-items: center;
+    // flex-direction: column;
+    // justify-content: center;
     p {
       color: $gray-700;
       margin-bottom: 24px;
     }
-    h1 {
+    h2{
       color: $white;
       margin: 0 auto 40px;
-      max-width: 1080px;
+      max-width:760px;
       font-weight: 900;
       span {
         opacity: 0.5;
@@ -2096,7 +2143,7 @@
   }
   &.numbers {
     .join-us-form {
-      h1 {
+      h1{
         span {
           color: $accent;
           opacity: 1;
@@ -2466,6 +2513,7 @@
   .hero-section {
     align-items: center;
     padding: 200px 0;
+    justify-content:center;
   }
 }
 .save-time {
@@ -2500,10 +2548,12 @@
         }
       }
       &.value-t {
-        min-height: 720px;
         .card-body {
           p {
             max-width: 600px;
+          }
+          .bottom{
+            margin:114px 0 0;
           }
         }
       }
@@ -2514,6 +2564,22 @@
           }
         }
       }
+      &.chart-account{
+        .card-body{
+          .top{
+            h1{
+              max-width:100%;
+            }
+          }
+        }
+      }
+    }
+    .workflow-card{
+      .card-body{
+        .bottom{
+          margin:64px 0 0;
+        }
+      }
     }
     .exp-manage {
       position: relative;
@@ -2521,6 +2587,13 @@
         position: absolute;
         bottom: 0;
         left: 13%;
+      }
+    }
+    .full-control{
+      .card-body{
+        .bottom{
+          margin:57px 0 0;
+        }
       }
     }
     .bg-dark {
@@ -2584,6 +2657,9 @@
               p {
                 margin-bottom: 30px;
               }
+              h4{
+                font-weight:bold;
+              }
               h6 {
                 font-weight: 500;
                 max-width: 600px;
@@ -2635,6 +2711,9 @@
               justify-content: space-around;
             }
           }
+          .bottom{
+            margin:80px 0 0;
+          }
         }
       }
       &.expense-m {
@@ -2658,18 +2737,27 @@
           }
         }
       }
+      &.increased-control{
+        .card-body{
+          .bottom{
+            margin:100px 0 0;
+          }
+        } 
+      }
     }
   }
   &.account-management {
     .report-sec {
       .card-body {
-        h2 {
-          font-weight: 900;
-          margin-bottom: 24px;
-        }
-        p {
-          &.is-large {
-            color: $white;
+        .top{
+          h2 {
+            font-weight: 900;
+            margin-bottom: 24px;
+          }
+          p {
+            &.is-large {
+              color: rgba(255,255,255,0.8);
+            }
           }
         }
       }
@@ -2686,7 +2774,7 @@
         }
       }
       .card-img-overlay {
-        .content-center {
+        .bottom {
           text-align: center;
           h1 {
             font-weight: 900;
@@ -2696,6 +2784,15 @@
             color: $white;
             max-width: 625px;
             margin: 0 auto;
+          }
+        }
+      }
+      &.communication-card{
+        .card-img-overlay{
+          .top{
+            p{
+              color: rgba(255,255,255,0.8);
+            }
           }
         }
       }
@@ -2793,9 +2890,23 @@
         }
       }
       &.white-label{
-        .top{
-          h4{
-            max-width:100%;
+        .card-body{
+          .top{
+            h4{
+              max-width:100%;
+            }
+          }
+          .bottom{
+            margin:100px 0 0;
+          }
+        }
+      }
+      &.better-service-card{
+        .card-img-overlay{
+          .top{
+            p{
+              color:rgba(255, 255, 255, 0.8);
+            }
           }
         }
       }
@@ -2876,7 +2987,7 @@
       &.bg-gray {
         .card-body {
           p {
-            color: $gray-700 !important;
+            color: $gray-700;
           }
           h4 {
             font-weight: 900;
@@ -2928,11 +3039,39 @@
           }
         }
       }
+      &.fully-synced{
+        .card-body{
+          .bottom{
+            margin:86px 0 0;
+          }
+        }
+      }
       &.get-started {
         .card-body {
           .bottom {
             a {
               margin-bottom: 20px;
+            }
+          }
+        }
+      }
+      &.union-agreement{
+        .bottom{
+          margin:80px 0 0;
+        }
+      }
+      &.product-card{
+        .card-body{
+          .bottom{
+            margin:100px 0 0;
+          }
+        }
+      }
+      &.notification-card{
+        .card-body{
+          .top{
+            p{
+              color:$white;
             }
           }
         }
@@ -3331,7 +3470,7 @@
       }
     }
     p {
-      max-width: 520px;
+      max-width:720px;
       margin: 8px auto 24px;
       color: $gray-700;
       font-weight: 400;
@@ -3380,22 +3519,51 @@
 }
 .home-parallax-window {
   min-height:1000px;
-  background: transparent;
+  .join-us-form{
+    h2{
+      max-width:936px;
+      span{
+        color:$gray-700;
+        opacity:1;
+      }
+    }
+  }
 }
 .people-parallax-window{
   min-height:1000px;
-  background: transparent;
 }
 .expense-parallax-window{
   min-height:1350px;
-  background:transparent;
+  .join-us-form{
+    h2{
+      max-width:550px;
+      span{
+        color:$purple;
+        opacity:1;
+      }
+    }
+  }
 }
 .numbers-parallax-window{
   min-height:1400px;
-  background:transparent;
+  .join-us-form{
+    h2{
+      span{
+        color:$accent;
+        opacity:1;
+      }
+    }
+  }
 }
 .accounts-parallax-window{
   min-height:1500px;
-  background:transparent;
+  .join-us-form{
+    h2{
+      span{
+        color:$gray-700;
+        opacity:1;
+      }
+    }
+  }
 }
 @import "responsive";
