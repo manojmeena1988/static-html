@@ -257,7 +257,7 @@ h6 {
 }
 .common-main-sec {
   text-align: center;
-  padding: 24px 20px;
+  padding: 24px 0;
   max-width:600px;
   margin: 0 auto;
   .p-title {
@@ -279,7 +279,8 @@ h6 {
   }
   h4 {
     font-weight: 900;
-    margin-bottom: 16px;
+    margin:0 auto 16px;
+    max-width:520px;
     
   }
   .btnBox {

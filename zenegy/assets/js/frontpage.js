@@ -89,7 +89,7 @@ $(document).ready(function () {
        // slide in mobile 
    
     if (window.matchMedia("(max-width:599px)").matches) {
-        $('#mob-app , #doc-management , #comlete-over').slick({
+        $('#mob-app , #doc-management , #comlete-over , #digital-salary-slide , #get-expense-management , #every-one-place , #automate-workflow , #business-suit-slide , #danske-bank-slide').slick({
           responsive: [
             {
               breakpoint:599,
