@@ -17,6 +17,6 @@ $(".account-focus").focusin(function(){
     $(this).css("border-bottom" , "1px solid rgba(255, 255, 255, 0.3)");
   });
 
-  $('.accounts-parallax-window').parallax({imageSrc: 'assets/images/accounts-why-footer@1x.jpg'});
+  // $('.accounts-parallax-window').parallax({imageSrc: 'assets/images/accounts-why-footer@1x.jpg'});
 
 });

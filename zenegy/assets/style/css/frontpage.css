@@ -13423,6 +13423,10 @@ h6, .h6 {
   opacity: 1;
 }
 
+.image-overlay img, .security-card img, .only-image img {
+  min-height: 600px;
+}
+
 @media screen and (max-width: 1440px) {
   .card-img-overlay {
     padding: 25px;
