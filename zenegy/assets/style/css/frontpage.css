@@ -13573,6 +13573,10 @@ h6, .h6 {
   .common-main-sec {
     padding: 24px 15;
   }
+
+  .why-us .card-section .card .video-bg iframe {
+    top: -10px !important;
+  }
 }
 @media screen and (max-width: 992px) {
   .page-header {
@@ -13793,6 +13797,10 @@ h6, .h6 {
   .save-time .card {
     min-height: 720px;
   }
+
+  .why-us .card-section .card .video-bg iframe {
+    top: -50px !important;
+  }
 }
 @media screen and (max-width: 768px) {
   .product-page .sub-header .nav-header {
@@ -13827,6 +13835,10 @@ h6, .h6 {
 
   .custome-checkbox {
     justify-content: end;
+  }
+
+  .why-us .card-section .card .video-bg iframe {
+    top: -68px !important;
   }
 }
 @media screen and (max-width: 767px) {
@@ -14263,9 +14275,27 @@ h6, .h6 {
     top: 1155px;
   }
 }
+@media screen and (max-width: 375px) {
+  .why-us .card-section .card .video-bg iframe {
+    top: -85px !important;
+  }
+}
 @media screen and (max-width: 360px) {
   .card-img-overlay {
     padding: 30px 15px;
+  }
+
+  .why-us .card-section .card .video-bg iframe {
+    top: -85px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .card-img-overlay {
+    padding: 30px 15px;
+  }
+
+  .why-us .card-section .card .video-bg iframe {
+    top: -95px !important;
   }
 }
 @media screen and (min-width: 991.99px) {
