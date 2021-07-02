@@ -41,6 +41,6 @@ window.intlTelInput(input, {
       });
     }
 
-    $('.expense-parallax-window').parallax({imageSrc: 'assets/images/expense-why-footer@1x.jpg'});
+    // $('.expense-parallax-window').parallax({imageSrc: 'assets/images/expense-why-footer@1x.jpg'});
 
   }); 

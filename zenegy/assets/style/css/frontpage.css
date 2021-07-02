@@ -13394,9 +13394,6 @@ h6, .h6 {
   min-height: 1000px;
 }
 
-.expense-parallax-window {
-  min-height: 1350px;
-}
 .expense-parallax-window .join-us-form h2, .expense-parallax-window .join-us-form .h2 {
   max-width: 550px;
 }
@@ -13405,9 +13402,6 @@ h6, .h6 {
   opacity: 1;
 }
 
-.numbers-parallax-window {
-  min-height: 1400px;
-}
 .numbers-parallax-window .join-us-form h2 span, .numbers-parallax-window .join-us-form .h2 span {
   color: #3ba0dd;
   opacity: 1;
