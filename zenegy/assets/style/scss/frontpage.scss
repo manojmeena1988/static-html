@@ -180,10 +180,10 @@
   height: 100vh;
   position: relative;
   padding: 92px 0 48px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
   .bg-content {
     position: absolute;
     width: 100%;
@@ -209,14 +209,24 @@
       -o-object-position: center;
       object-position: center;
     }
+    iframe {
+      width: 100vw !important;
+      height: 56.25vw !important; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+      min-height: 100vh;
+      min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+      position: absolute;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%);
+    }
   }
-  .top-title{
+  .top-title {
     position: relative;
     width: 100%;
     color: #fff;
-    max-width:480px;
+    max-width: 480px;
     text-align: center;
-    padding:0 20px;
+    padding: 0 20px;
   }
   .hero-content {
     position: relative;
@@ -268,7 +278,7 @@
       }
     }
     &.numbers {
-      max-width:760px;
+      max-width: 760px;
       h2 {
         span {
           color: $accent;
@@ -282,7 +292,7 @@
       }
     }
     &.expense {
-      max-width:760px;
+      max-width: 760px;
       h2 {
         span {
           color: $purple;
@@ -296,7 +306,7 @@
       }
     }
     &.accounts {
-      max-width:710px;
+      max-width: 710px;
       h2 {
         span {
           color: $gray-700;
@@ -403,7 +413,7 @@
     }
     p {
       color: $gray-900;
-      max-width:760px;
+      max-width: 760px;
       margin: 0 auto;
     }
     .btn-box {
@@ -439,12 +449,12 @@
         }
       }
     }
-    &.software-access{
-      .card-body{
-        .bottom{
-          img{
-            max-height:540px;
-            width:100%;
+    &.software-access {
+      .card-body {
+        .bottom {
+          img {
+            max-height: 540px;
+            width: 100%;
           }
         }
       }
@@ -507,11 +517,11 @@
     .section-header {
       .btn-box {
         a {
-          border:2px solid $gray-700;
+          border: 2px solid $gray-700;
           color: $gray-700;
           &:hover {
-            background-color:$gray-700;
-            color:$white;
+            background-color: $gray-700;
+            color: $white;
           }
         }
       }
@@ -570,7 +580,7 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin:66px 20px 0;
+      margin: 66px 20px 0;
       .icon-item {
         text-align: center;
         width: 100%;
@@ -617,11 +627,11 @@
     justify-content: flex-end;
     height: calc(100% - 47px);
   }
-  .content-space-between{
+  .content-space-between {
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    height:75%;
+    justify-content: center;
+    height: 75%;
   }
   &.bg-theme {
     .card-title {
@@ -698,7 +708,7 @@
   }
 }
 .suite-section {
-  padding:200px 0;
+  padding: 200px 0;
   text-align: center;
   .head-section {
     h2 {
@@ -716,7 +726,7 @@
   }
   .screen-toggle {
     position: relative;
-    margin-top:50px;
+    margin-top: 50px;
     .icv__circle {
       width: 48px;
       height: 48px;
@@ -779,7 +789,6 @@
           margin-bottom: 23px;
         }
         .danske-bank {
-          
           h2 {
             font-weight: 900;
             margin: 0 0 24px 0;
@@ -796,8 +805,8 @@
           .card-title {
             color: rgba(255, 255, 255, 0.8);
           }
-          .bottom{
-            margin:113px 0 0;
+          .bottom {
+            margin: 113px 0 0;
           }
         }
       }
@@ -839,24 +848,24 @@
             left: 0;
           }
         }
-        .card-img-overlay{
-          .danske-bank{
-            h3{
-              font-weight:900;
+        .card-img-overlay {
+          .danske-bank {
+            h3 {
+              font-weight: 900;
             }
-            h5{
-              font-style:italic;
+            h5 {
+              font-style: italic;
             }
-            p{
-              font-weight:700;
+            p {
+              font-weight: 700;
             }
           }
         }
       }
-      &.zenegy-card{
-        .card-body{
-          h2{
-            max-width:323px;
+      &.zenegy-card {
+        .card-body {
+          h2 {
+            max-width: 323px;
           }
         }
       }
@@ -906,9 +915,9 @@
     }
     &.expense {
       .card-img-overlay {
-        .top{
-          p{
-            color:$gray-700;
+        .top {
+          p {
+            color: $gray-700;
           }
         }
         h1 {
@@ -921,7 +930,7 @@
         }
         p {
           color: $white;
-          max-width:530px;
+          max-width: 530px;
         }
         a {
           background-color: $purple;
@@ -1010,7 +1019,7 @@
 }
 .stories {
   padding-top: 200px;
-  padding-bottom:200px;
+  padding-bottom: 200px;
   background-color: $white;
   .section-header {
     p {
@@ -1132,7 +1141,7 @@
           }
           p {
             color: $gray-900;
-            max-width:548px;
+            max-width: 548px;
           }
           .btnBox {
             .btn {
@@ -1183,8 +1192,8 @@
           height: 100%;
           p {
             color: $gray-900;
-            max-width:520px;
-            margin:0 auto 30px;
+            max-width: 520px;
+            margin: 0 auto 30px;
           }
         }
       }
@@ -1240,7 +1249,7 @@
   }
 
   .weMake-account {
-    margin:24px 0 0;
+    margin: 24px 0 0;
     .make-account-l {
       img {
         border-radius: 24px 0 0 24px;
@@ -1933,7 +1942,7 @@
     .card-body {
       .get-list {
         padding: 0;
-        margin:0;
+        margin: 0;
         li {
           display: inline-block;
           margin: 0 23px 0 0;
@@ -2028,10 +2037,10 @@
       color: $gray-700;
       margin-bottom: 24px;
     }
-    h2{
+    h2 {
       color: $white;
       margin: 0 auto 40px;
-      max-width:760px;
+      max-width: 760px;
       font-weight: 900;
       span {
         opacity: 0.5;
@@ -2143,7 +2152,7 @@
   }
   &.numbers {
     .join-us-form {
-      h1{
+      h1 {
         span {
           color: $accent;
           opacity: 1;
@@ -2513,7 +2522,7 @@
   .hero-section {
     align-items: center;
     padding: 200px 0;
-    justify-content:center;
+    justify-content: center;
   }
 }
 .save-time {
@@ -2552,8 +2561,8 @@
           p {
             max-width: 600px;
           }
-          .bottom{
-            margin:114px 0 0;
+          .bottom {
+            margin: 114px 0 0;
           }
         }
       }
@@ -2564,20 +2573,20 @@
           }
         }
       }
-      &.chart-account{
-        .card-body{
-          .top{
-            h1{
-              max-width:100%;
+      &.chart-account {
+        .card-body {
+          .top {
+            h1 {
+              max-width: 100%;
             }
           }
         }
       }
     }
-    .workflow-card{
-      .card-body{
-        .bottom{
-          margin:64px 0 0;
+    .workflow-card {
+      .card-body {
+        .bottom {
+          margin: 64px 0 0;
         }
       }
     }
@@ -2589,10 +2598,10 @@
         left: 13%;
       }
     }
-    .full-control{
-      .card-body{
-        .bottom{
-          margin:57px 0 0;
+    .full-control {
+      .card-body {
+        .bottom {
+          margin: 57px 0 0;
         }
       }
     }
@@ -2657,8 +2666,8 @@
               p {
                 margin-bottom: 30px;
               }
-              h4{
-                font-weight:bold;
+              h4 {
+                font-weight: bold;
               }
               h6 {
                 font-weight: 500;
@@ -2711,8 +2720,8 @@
               justify-content: space-around;
             }
           }
-          .bottom{
-            margin:80px 0 0;
+          .bottom {
+            margin: 80px 0 0;
           }
         }
       }
@@ -2737,26 +2746,26 @@
           }
         }
       }
-      &.increased-control{
-        .card-body{
-          .bottom{
-            margin:100px 0 0;
+      &.increased-control {
+        .card-body {
+          .bottom {
+            margin: 100px 0 0;
           }
-        } 
+        }
       }
     }
   }
   &.account-management {
     .report-sec {
       .card-body {
-        .top{
+        .top {
           h2 {
             font-weight: 900;
             margin-bottom: 24px;
           }
           p {
             &.is-large {
-              color: rgba(255,255,255,0.8);
+              color: rgba(255, 255, 255, 0.8);
             }
           }
         }
@@ -2787,11 +2796,11 @@
           }
         }
       }
-      &.communication-card{
-        .card-img-overlay{
-          .top{
-            p{
-              color: rgba(255,255,255,0.8);
+      &.communication-card {
+        .card-img-overlay {
+          .top {
+            p {
+              color: rgba(255, 255, 255, 0.8);
             }
           }
         }
@@ -2889,23 +2898,23 @@
           }
         }
       }
-      &.white-label{
-        .card-body{
-          .top{
-            h4{
-              max-width:100%;
+      &.white-label {
+        .card-body {
+          .top {
+            h4 {
+              max-width: 100%;
             }
           }
-          .bottom{
-            margin:100px 0 0;
+          .bottom {
+            margin: 100px 0 0;
           }
         }
       }
-      &.better-service-card{
-        .card-img-overlay{
-          .top{
-            p{
-              color:rgba(255, 255, 255, 0.8);
+      &.better-service-card {
+        .card-img-overlay {
+          .top {
+            p {
+              color: rgba(255, 255, 255, 0.8);
             }
           }
         }
@@ -3014,8 +3023,8 @@
       &.document-m {
         .card-body {
           .top {
-            h5{
-              font-weight:900;
+            h5 {
+              font-weight: 900;
             }
             p {
               color: $gray-700;
@@ -3039,10 +3048,10 @@
           }
         }
       }
-      &.fully-synced{
-        .card-body{
-          .bottom{
-            margin:86px 0 0;
+      &.fully-synced {
+        .card-body {
+          .bottom {
+            margin: 86px 0 0;
           }
         }
       }
@@ -3055,45 +3064,45 @@
           }
         }
       }
-      &.union-agreement{
-        .bottom{
-          margin:80px 0 0;
+      &.union-agreement {
+        .bottom {
+          margin: 80px 0 0;
         }
       }
-      &.product-card{
-        .card-body{
-          .bottom{
-            margin:100px 0 0;
+      &.product-card {
+        .card-body {
+          .bottom {
+            margin: 100px 0 0;
           }
         }
       }
-      &.notification-card{
-        .card-body{
-          .top{
-            p{
-              color:$white;
+      &.notification-card {
+        .card-body {
+          .top {
+            p {
+              color: $white;
             }
           }
         }
       }
     }
-    .slick-dots{
-      li{
-        &.slick-active{
-          button{
+    .slick-dots {
+      li {
+        &.slick-active {
+          button {
             &:before {
               opacity: 0.75;
               color: #ccc;
             }
           }
-        } 
-        button{
+        }
+        button {
           &:before {
             background-color: #ccc;
           }
         }
       }
-    } 
+    }
   }
 }
 .feature-section {
@@ -3470,7 +3479,7 @@
       }
     }
     p {
-      max-width:720px;
+      max-width: 720px;
       margin: 8px auto 24px;
       color: $gray-700;
       font-weight: 400;
@@ -3519,49 +3528,49 @@
 }
 .home-parallax-window {
   // min-height:1000px;
-  .join-us-form{
-    h2{
-      max-width:936px;
-      span{
-        color:$gray-700;
-        opacity:1;
+  .join-us-form {
+    h2 {
+      max-width: 936px;
+      span {
+        color: $gray-700;
+        opacity: 1;
       }
     }
   }
 }
-.people-parallax-window{
+.people-parallax-window {
   // min-height:1000px;
 }
-.expense-parallax-window{
+.expense-parallax-window {
   // min-height:1350px;
-  .join-us-form{
-    h2{
-      max-width:550px;
-      span{
-        color:$purple;
-        opacity:1;
+  .join-us-form {
+    h2 {
+      max-width: 550px;
+      span {
+        color: $purple;
+        opacity: 1;
       }
     }
   }
 }
-.numbers-parallax-window{
+.numbers-parallax-window {
   // min-height:1400px;
-  .join-us-form{
-    h2{
-      span{
-        color:$accent;
-        opacity:1;
+  .join-us-form {
+    h2 {
+      span {
+        color: $accent;
+        opacity: 1;
       }
     }
   }
 }
-.accounts-parallax-window{
-  min-height:1500px;
-  .join-us-form{
-    h2{
-      span{
-        color:$gray-700;
-        opacity:1;
+.accounts-parallax-window {
+  min-height: 1500px;
+  .join-us-form {
+    h2 {
+      span {
+        color: $gray-700;
+        opacity: 1;
       }
     }
   }
