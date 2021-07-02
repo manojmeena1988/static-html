@@ -71,5 +71,5 @@ $(document).ready(function () {
         });
       }
 
-      $('.people-parallax-window').parallax({imageSrc: 'assets/images/people-why-footer@1x.jpg'});
+      // $('.people-parallax-window').parallax({imageSrc: 'assets/images/people-why-footer@1x.jpg'});
 });

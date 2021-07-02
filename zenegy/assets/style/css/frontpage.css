@@ -13390,10 +13390,6 @@ h6, .h6 {
   opacity: 1;
 }
 
-.people-parallax-window {
-  min-height: 1000px;
-}
-
 .expense-parallax-window .join-us-form h2, .expense-parallax-window .join-us-form .h2 {
   max-width: 550px;
 }
