@@ -10543,6 +10543,9 @@ h6, .h6 {
 .image-overlay.image-overlay-five::after {
   background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.56) 100%);
 }
+.image-overlay.image-overlay-six::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.56) 100%);
+}
 
 .section [class*=col-] {
   padding-left: 12px;
