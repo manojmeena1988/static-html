@@ -583,8 +583,8 @@ progress {
 .container-md,
 .container-sm {
   width: 100%;
-  padding-right: var(--bs-gutter-x, 1.25rem);
-  padding-left: var(--bs-gutter-x, 1.25rem);
+  padding-right: var(--bs-gutter-x, 12px);
+  padding-left: var(--bs-gutter-x, 12px);
   margin-right: auto;
   margin-left: auto;
 }
@@ -615,7 +615,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 2.5rem;
+  --bs-gutter-x: 24px;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -3967,7 +3967,7 @@ textarea.form-control-lg {
 }
 
 .card-group > .card {
-  margin-bottom: 1.25rem;
+  margin-bottom: 12px;
 }
 @media (min-width: 576px) {
   .card-group {
@@ -4643,7 +4643,7 @@ textarea.form-control-lg {
   pointer-events: none;
 }
 .toast-container > :not(:last-child) {
-  margin-bottom: 1.25rem;
+  margin-bottom: 12px;
 }
 
 .toast-header {
@@ -10547,11 +10547,6 @@ h6, .h6 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.56) 100%);
 }
 
-.section [class*=col-] {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
 @media screen and (max-width: 1024px) {
   h6, .h6 {
     font-size: 18px;
@@ -13427,6 +13422,17 @@ h6, .h6 {
   min-height: 600px;
 }
 
+@media screen and (min-width: 1550px) and (max-width: 1680px) {
+  h1, .h1 {
+    font-size: 60px;
+    line-height: 66px;
+  }
+
+  h2, .h2 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .card-img-overlay {
     padding: 25px;
