@@ -176,8 +176,9 @@
 }
 .hero-section {
   min-height: 500px;
-  max-height: 920px;
-  height: 100vh;
+  // max-height: 920px;
+  // height:100vh;
+  height:85vh;
   position: relative;
   padding: 92px 0 48px;
   display: flex;
@@ -195,7 +196,8 @@
     &::after {
       position: absolute;
       content: "";
-      background-color: rgb(31 34 39 / 50%);
+      // background-color: rgb(31 34 39 / 50%);
+      background-color: rgba(31, 34, 39, 0.1);
       height: 100%;
       width: 100%;
       top: 0;
@@ -1985,6 +1987,9 @@
         height: 100%;
         object-fit: cover;
       }
+      &::after{
+        background-color: rgba(31, 34, 39, 0.3);
+      }
     }
     .hero-content {
       img {
@@ -2565,17 +2570,33 @@
           }
           .bottom{
             margin:114px 0 0;
+            .mobile-img{
+              display:none;
+            }
           }
         }
       }
       &.every-o {
+        background-image:url(../../images/frontpage-card-everything-one-place@1x.jpg);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        width:100%;
         .card-body {
           h5 {
             max-width: 600px;
           }
         }
+        .bg-image{
+          
+        }
       }
       &.chart-account{
+        background-image:url(../../images/numbers-card-chart-of-accounts@1x.jpg);
+        width: 100%;
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
         .card-body{
           .top{
             h1{

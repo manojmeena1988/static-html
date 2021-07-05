@@ -10688,8 +10688,7 @@ h6, .h6 {
 
 .hero-section {
   min-height: 500px;
-  max-height: 920px;
-  height: 100vh;
+  height: 85vh;
   position: relative;
   padding: 92px 0 48px;
   display: flex;
@@ -10709,7 +10708,7 @@ h6, .h6 {
 .hero-section .bg-content::after {
   position: absolute;
   content: "";
-  background-color: rgba(31, 34, 39, 0.5);
+  background-color: rgba(31, 34, 39, 0.1);
   height: 100%;
   width: 100%;
   top: 0;
@@ -12208,6 +12207,9 @@ h6, .h6 {
   height: 100%;
   object-fit: cover;
 }
+.hero-section.people-hero-section .bg-content::after {
+  background-color: rgba(31, 34, 39, 0.3);
+}
 .hero-section.people-hero-section .hero-content img {
   max-width: 48px;
 }
@@ -12672,8 +12674,25 @@ h6, .h6 {
 .save-time.expense-management .ex-m.value-t .card-body .bottom {
   margin: 114px 0 0;
 }
+.save-time.expense-management .ex-m.value-t .card-body .bottom .mobile-img {
+  display: none;
+}
+.save-time.expense-management .ex-m.every-o {
+  background-image: url(../../images/frontpage-card-everything-one-place@1x.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
 .save-time.expense-management .ex-m.every-o .card-body h5, .save-time.expense-management .ex-m.every-o .card-body .h5 {
   max-width: 600px;
+}
+.save-time.expense-management .ex-m.chart-account {
+  background-image: url(../../images/numbers-card-chart-of-accounts@1x.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .save-time.expense-management .ex-m.chart-account .card-body .top h1, .save-time.expense-management .ex-m.chart-account .card-body .top .h1 {
   max-width: 100%;
@@ -14197,6 +14216,9 @@ h6, .h6 {
     flex-direction: column;
     justify-content: space-between;
   }
+  .easy-book-keep .card-body p {
+    text-align: center;
+  }
 
   .save-time.expense-management .card.bg-theme.automate-m img {
     min-height: 540px;
@@ -14234,6 +14256,18 @@ h6, .h6 {
 
   .automate-m .card-body .top h4 br, .automate-m .card-body .top .h4 br {
     display: none;
+  }
+
+  .save-time.expense-management .ex-m.value-t .card-body .bottom .desktop-img {
+    display: none;
+  }
+  .save-time.expense-management .ex-m.value-t .card-body .bottom .mobile-img {
+    display: block;
+    height: 100%;
+  }
+  .save-time.expense-management .ex-m.chart-account {
+    background-size: contain;
+    background-position: bottom;
   }
 }
 @media screen and (max-width: 480px) {
