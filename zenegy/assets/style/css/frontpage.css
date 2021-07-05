@@ -10843,6 +10843,7 @@ h6, .h6 {
 }
 .partner-section p {
   color: #979797;
+  padding: 0 15px;
 }
 .partner-section h5, .partner-section .h5 {
   color: #979797;
@@ -11223,6 +11224,12 @@ h6, .h6 {
 }
 .why-us .card-section .card.bg-expense .card-body .bottom {
   margin: 113px 0 0;
+}
+.why-us .card-section .card.client-app {
+  background-image: url(../../images/frontpage-card-mobility@1x.jpg);
+  background-position: center, bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .why-us .card-section .card .video-bg {
   text-align: center;
@@ -12701,12 +12708,11 @@ h6, .h6 {
   margin: 64px 0 0;
 }
 .save-time.expense-management .exp-manage {
-  position: relative;
-}
-.save-time.expense-management .exp-manage .card-img-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 13%;
+  background-image: url(../../images/expense-card-expense-mgmt@1x.jpg);
+  width: 100%;
+  background-position: center, bottom, right;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .save-time.expense-management .full-control .card-body .bottom {
   margin: 57px 0 0;
@@ -12793,6 +12799,13 @@ h6, .h6 {
 }
 .save-time.expense-management .card.the-beginning-card .card-img-overlay p {
   color: #fff;
+}
+.save-time.expense-management .card.expense-m {
+  background-image: url(../../images/frontpage-card-expense-management@1x.jpg);
+  width: 100%;
+  background-position: center, bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .save-time.expense-management .card.expense-m .card-body h5, .save-time.expense-management .card.expense-m .card-body .h5 {
   max-width: 600px;
@@ -12886,11 +12899,24 @@ h6, .h6 {
 .save-time.better-service .card .card-body .bottom.numbers a:hover {
   background-color: #0099e6;
 }
+.save-time.better-service .card.emp-t {
+  background-image: url(../../images/people-card-employee-templates@1x.jpg);
+  width: 100%;
+  background-position: center, bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .save-time.better-service .card.emp-t .card-body .top p {
   color: #fff;
 }
 .save-time.better-service .card.full-con .card-body .top h4, .save-time.better-service .card.full-con .card-body .top .h4 {
   max-width: 100%;
+}
+.save-time.better-service .card.bank-b {
+  background-image: url(../../images/numbers-card-banks@1x.jpg);
+  background-position: center, bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .save-time.better-service .card.bank-b .card-body .top h4, .save-time.better-service .card.bank-b .card-body .top .h4 {
   max-width: 100%;
@@ -12990,6 +13016,12 @@ h6, .h6 {
 }
 .save-time.dimention-sec .card.document-m .card-body .bottom p {
   color: #979797;
+}
+.save-time.dimention-sec .card.mobility-s {
+  background-image: url(../../images/frontpage-card-mobility@1x.jpg);
+  background-position: center, bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .save-time.dimention-sec .card.mobility-s .card-body p {
   color: #979797;
@@ -13460,7 +13492,7 @@ h6, .h6 {
 }
 
 .image-overlay img, .security-card img, .only-image img {
-  min-height: 600px;
+  min-height: 540px;
 }
 
 @media screen and (min-width: 1550px) and (max-width: 1680px) {
@@ -14145,11 +14177,17 @@ h6, .h6 {
     font-size: 40px;
     line-height: 40px;
   }
+  h1 br, .h1 br {
+    display: none;
+  }
 
   h2, .h2 {
     font-size: 34px;
     line-height: 38px;
     margin-bottom: 30px;
+  }
+  h2 br, .h2 br {
+    display: none;
   }
 
   h3, .h3 {
@@ -14201,7 +14239,7 @@ h6, .h6 {
   }
 
   .why-us .card-section .card .card-img {
-    min-height: 600px;
+    min-height: 540px;
   }
   .why-us .card-section .card .card-body .why-us-inner {
     min-height: 100%;
@@ -14258,6 +14296,9 @@ h6, .h6 {
     display: none;
   }
 
+  .save-time.expense-management .ex-m.value-t .card-body .bottom {
+    margin: 75px 0 0;
+  }
   .save-time.expense-management .ex-m.value-t .card-body .bottom .desktop-img {
     display: none;
   }
@@ -14266,7 +14307,33 @@ h6, .h6 {
     height: 100%;
   }
   .save-time.expense-management .ex-m.chart-account {
-    background-size: contain;
+    background-size: 400px;
+    background-position: bottom;
+  }
+  .save-time.expense-management .ex-m.every-o {
+    background-size: 830px;
+    background-position: bottom;
+  }
+  .save-time.expense-management .ex-m.exp-manage {
+    background-position: bottom;
+    background-size: 520px;
+  }
+  .save-time.dimention-sec .card.union-agreement .card-body .top h4, .save-time.dimention-sec .card.union-agreement .card-body .top .h4 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .save-time.dimention-sec .card.union-agreement .card-body .bottom {
+    margin: 40px 0 0;
+  }
+  .save-time.dimention-sec .card.product-card .card-body .bottom {
+    margin: 50px 0 0;
+  }
+  .save-time.better-service .card.emp-t {
+    background-size: 549px;
+    background-position: bottom, center;
+  }
+  .save-time.better-service .card.bank-b {
+    background-size: 550px;
     background-position: bottom;
   }
 }
@@ -14372,6 +14439,12 @@ h6, .h6 {
   .why-us .card-section .card .video-bg iframe {
     top: -85px !important;
   }
+
+  .partner-section p {
+    max-width: 250px;
+    margin: auto;
+    padding: 0;
+  }
 }
 @media screen and (max-width: 360px) {
   .card-img-overlay {
@@ -14388,7 +14461,31 @@ h6, .h6 {
   }
 
   .why-us .card-section .card .video-bg iframe {
-    top: -95px !important;
+    top: -100px !important;
+  }
+
+  h1, .h1 {
+    font-size: 34px;
+    line-height: 38px;
+  }
+
+  h2, .h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  h3, .h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .danske-bank h3, .danske-bank .h3 {
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .danske-bank h5, .danske-bank .h5 {
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 @media screen and (min-width: 991.99px) {

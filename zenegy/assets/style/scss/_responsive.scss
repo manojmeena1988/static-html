@@ -894,11 +894,17 @@
   h1 , .h1 {
     font-size:40px;
     line-height: 40px;
+    br{
+      display:none;
+    }
   }
   h2 , .h2 {
     font-size: 34px;
     line-height: 38px;
     margin-bottom: 30px;
+    br{
+      display:none;
+    }
   }
   h3 , .h3{
     font-size:30px;
@@ -965,7 +971,7 @@
     .card-section{
       .card{
         .card-img{
-          min-height:600px;
+          min-height:540px;
         }
         .card-body{
           .why-us-inner {
@@ -1082,6 +1088,7 @@
         &.value-t{
           .card-body{
             .bottom{
+              margin:75px 0 0;
               .desktop-img{
                 display:none;
               }
@@ -1093,9 +1100,53 @@
           } 
         }
         &.chart-account {
-          background-size:contain;
-          background-position:bottom;
+          background-size: 400px;
+          background-position: bottom;
         } 
+        &.every-o{
+          background-size:830px;
+          background-position:bottom;
+        }
+        &.exp-manage{
+          background-position: bottom;
+          background-size:520px;
+        }
+      }
+    }
+    &.dimention-sec{
+      .card{
+          &.union-agreement{
+            .card-body{
+            .top{
+              h4{
+                font-size:22px;
+                line-height:25px;
+              }
+            }
+            .bottom{
+              margin:40px 0 0;
+            }
+          }
+        }
+        &.product-card{
+          .card-body{
+            .bottom{
+              margin:50px 0 0;
+            }
+          }
+        }
+      }
+    }
+    &.better-service{
+      .card{
+        &.emp-t{
+          background-size: 549px;
+          background-position: bottom , center;
+        }
+        &.bank-b{
+          background-size:550px;
+          background-position:bottom;
+        }
       }
     } 
   }
@@ -1304,6 +1355,13 @@
       } 
     } 
   } 
+  .partner-section{
+    p {
+      max-width:250px;
+      margin:auto;
+      padding:0;
+    }
+  } 
 }
 @media screen and (max-width: 360px) {
   .card-img-overlay {
@@ -1330,12 +1388,34 @@
       .card{
         .video-bg{
           iframe{
-            top:-95px !important;
+            top:-100px !important;
           }
         } 
       } 
     } 
   } 
+  h1 , .h1{
+    font-size:34px;
+    line-height:38px;
+  }
+  h2, .h2 {
+    font-size:32px;
+    line-height:36px;
+  }
+  h3, .h3 {
+    font-size:28px;
+    line-height:32px;
+  }
+  .danske-bank{
+    h3{
+      font-size:24px;
+      line-height:26px;
+    }
+    h5{
+      font-size:20px;
+      line-height:22px;
+    }
+  }
 }
 @media screen and (min-width: 991.99px) {
   .footer .footer-links ul {

@@ -343,6 +343,7 @@
   position: relative;
   p {
     color: $gray-700;
+    padding:0 15px;
   }
   h5 {
     color: $gray-700;
@@ -812,6 +813,12 @@
             margin:113px 0 0;
           }
         }
+      }
+      &.client-app{
+        background-image:url(../../images/frontpage-card-mobility@1x.jpg);
+        background-position:center , bottom;
+        background-size:cover;
+        background-repeat:no-repeat;
       }
       .video-bg {
         text-align: center;
@@ -2614,12 +2621,18 @@
       }
     }
     .exp-manage {
-      position: relative;
-      .card-img-bottom {
-        position: absolute;
-        bottom: 0;
-        left: 13%;
-      }
+      background-image:url(../../images/expense-card-expense-mgmt@1x.jpg);
+      width: 100%;
+      background-position: center , bottom ,right;
+      background-size: cover;
+      background-repeat: no-repeat;
+      // position: relative;
+
+      // .card-img-bottom {
+      //   position: absolute;
+      //   bottom: 0;
+      //   left: 13%;
+      // }
     }
     .full-control{
       .card-body{
@@ -2761,6 +2774,11 @@
         }
       }
       &.expense-m {
+        background-image: url(../../images/frontpage-card-expense-management@1x.jpg);
+        width: 100%;
+        background-position: center , bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
         .card-body {
           h5 {
             max-width: 600px;
@@ -2924,6 +2942,11 @@
         }
       }
       &.emp-t {
+        background-image: url(../../images/people-card-employee-templates@1x.jpg);
+        width: 100%;
+        background-position: center , bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
         .card-body {
           .top {
             p {
@@ -2942,6 +2965,10 @@
         }
       }
       &.bank-b {
+        background-image:url(../../images/numbers-card-banks@1x.jpg);
+        background-position:center , bottom;
+        background-size:cover;
+        background-repeat:no-repeat;
         .card-body {
           .top {
             h4 {
@@ -3111,6 +3138,10 @@
         }
       }
       &.mobility-s {
+        background-image: url(../../images/frontpage-card-mobility@1x.jpg);
+        background-position: center, bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
         .card-body {
           p {
             color: $gray-700;
@@ -3646,7 +3677,7 @@
 }
 .image-overlay , .security-card , .only-image{
   img{
-    min-height:600px;
+    min-height:540px;
   }
 }
 @import "responsive";
