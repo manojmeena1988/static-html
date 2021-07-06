@@ -10939,6 +10939,12 @@ h6, .h6 {
   font-size: 22px;
   line-height: 26px;
 }
+.product-section .card.software-access {
+  background-image: url(../../images/frontpage-card-software-acces@1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .product-section .card.software-access .card-body .bottom img {
   max-height: 540px;
   width: 100%;
@@ -11266,6 +11272,9 @@ h6, .h6 {
   width: 100%;
   top: 0;
   left: 0;
+}
+.why-us .card-section .card.bank-danske .card-img-overlay p {
+  margin-bottom: 30px;
 }
 .why-us .card-section .card.bank-danske .card-img-overlay .danske-bank h3, .why-us .card-section .card.bank-danske .card-img-overlay .danske-bank .h3 {
   font-weight: 900;
@@ -12438,7 +12447,6 @@ h6, .h6 {
   max-width: 762px;
   margin-left: auto;
   margin-bottom: 56px;
-  display: none;
 }
 .feature-section .payroll-feature-section .accordian-box .accordian-content .download-app {
   display: flex;
@@ -12787,6 +12795,7 @@ h6, .h6 {
 }
 .save-time.expense-management .card.business-c .card-body .top p {
   color: #fff;
+  margin-bottom: 30px;
 }
 .save-time.expense-management .card.business-c .card-body .mid h4, .save-time.expense-management .card.business-c .card-body .mid .h4 {
   font-weight: 900;
@@ -12799,6 +12808,10 @@ h6, .h6 {
 }
 .save-time.expense-management .card.the-beginning-card .card-img-overlay p {
   color: #fff;
+}
+.save-time.expense-management .card.the-beginning-card .card-img-overlay .bottom h3, .save-time.expense-management .card.the-beginning-card .card-img-overlay .bottom .h3 {
+  max-width: 775px;
+  margin: 0 auto;
 }
 .save-time.expense-management .card.expense-m {
   background-image: url(../../images/frontpage-card-expense-management@1x.jpg);
@@ -13061,50 +13074,51 @@ h6, .h6 {
 .feature-section.pricing-section .payroll-feature-section .accordian-box {
   border-bottom: transparent;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content {
   max-width: 100%;
   margin-bottom: 0px;
+  display: block;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec {
   margin: 0;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card.card-mid {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card.card-mid {
   background-color: #F9E5F0;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data p {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data p {
   color: #1f2227;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data p:first-child {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data p:first-child {
   margin-top: 24px;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data h1, .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data .h1 {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data h1, .feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data .h1 {
   margin-bottom: 16px;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data h5, .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data .h5 {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data h5, .feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data .h5 {
   margin-bottom: 24px;
   font-weight: 500;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data a {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data a {
   padding: 14px 70px;
   margin: 18px 0 0;
   background-color: #cf4e95;
   color: #fff;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .upper-data a:hover {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data a:hover {
   background-color: #ca3a89;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .btm-list-feature {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .btm-list-feature {
   margin: 50px 0 0;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .btm-list-feature p {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .btm-list-feature p {
   font-weight: 900;
   margin-bottom: 32px;
   color: #1f2227;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .btm-list-feature .f-list {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .btm-list-feature .f-list {
   padding: 0;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .btm-list-feature .f-list li {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .btm-list-feature .f-list li {
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
@@ -13112,39 +13126,42 @@ h6, .h6 {
   margin-bottom: 16px;
   display: flex;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .btm-list-feature .f-list li::before {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .btm-list-feature .f-list li::before {
   content: "";
   font-family: "Font Awesome 5 pro";
   color: #cf4e95;
   margin-right: 12px;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .employee-list-sec {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .employee-list-sec {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .employee-list-sec p {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .employee-list-sec p {
   color: #1f2227;
   font-weight: 700;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul {
   padding: 0;
   margin: 30px 0;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul:last-child {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul:last-child {
   margin-bottom: 0;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul li {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul li {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul li p {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .employee-list-sec ul li p {
   font-weight: 400;
 }
-.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .card .card-body .employee-list-sec .mid-list {
+.feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .employee-list-sec .mid-list {
   margin: 30px 0;
+}
+.feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content {
+  display: none;
 }
 
 .iti__flag {
@@ -13666,6 +13683,28 @@ h6, .h6 {
   .why-us .card-section .card .video-bg iframe {
     top: -10px !important;
   }
+
+  .automated-section .paralex-icon-section .icon-list:nth-child(9) {
+    top: 530px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(15) {
+    top: 1044px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(16) {
+    left: 30%;
+    top: 1156px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(19) {
+    left: 22%;
+    top: 1260px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(22) {
+    top: 1215px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(27) {
+    left: 49%;
+    top: 1433px;
+  }
 }
 @media screen and (max-width: 992px) {
   .page-header {
@@ -13890,6 +13929,102 @@ h6, .h6 {
   .why-us .card-section .card .video-bg iframe {
     top: -50px !important;
   }
+
+  .automated-section .paralex-icon-section .icon-list {
+    left: 101px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(6) {
+    left: 18%;
+    top: 360px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(7) {
+    left: 44%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(8) {
+    top: 380px;
+    left: 61%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(9) {
+    left: 12%;
+    top: 498px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(10) {
+    left: 34%;
+    top: 488px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(11) {
+    left: 48%;
+    top: 576px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(12) {
+    left: 34%;
+    top: 626px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(13) {
+    left: 61%;
+    top: 597px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(14) {
+    left: 81%;
+    top: 678px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(15) {
+    top: 690px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(16) {
+    left: 35%;
+    top: 755px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(17) {
+    left: 60%;
+    top: 714px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(18) {
+    top: 1136px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(19) {
+    top: 1157px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(20) {
+    left: 72%;
+    top: 1150px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(21) {
+    left: 46%;
+    top: 1287px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(22) {
+    left: 55%;
+    top: 1180px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(25) {
+    left: 33%;
+    top: 1419px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(26) {
+    left: 10%;
+    top: 1329px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(27) {
+    left: 49%;
+    top: 1414px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(30) {
+    left: 34%;
+    top: 1570px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(31) {
+    left: 18%;
+    top: 1532px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(33) {
+    left: 44%;
+    top: 1716px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(34) {
+    left: 16%;
+    top: 1684px;
+  }
 }
 @media screen and (max-width: 768px) {
   .product-page .sub-header .nav-header {
@@ -13928,6 +14063,10 @@ h6, .h6 {
 
   .why-us .card-section .card .video-bg iframe {
     top: -68px !important;
+  }
+
+  .automated-section .paralex-icon-section .icon-list:nth-child(8) {
+    top: 377px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -14306,6 +14445,9 @@ h6, .h6 {
     display: block;
     height: 100%;
   }
+  .save-time.expense-management .ex-m.value-t .card-body .bottom .mobile-img svg:first-child {
+    margin-bottom: 20px;
+  }
   .save-time.expense-management .ex-m.chart-account {
     background-size: 400px;
     background-position: bottom;
@@ -14335,6 +14477,209 @@ h6, .h6 {
   .save-time.better-service .card.bank-b {
     background-size: 550px;
     background-position: bottom;
+  }
+
+  .e-conomic-sec {
+    padding: 80px 0;
+  }
+
+  .automated-section {
+    min-height: 1720px;
+  }
+  .automated-section .paralex-icon-section .icon-list {
+    left: 20px;
+    top: 130px;
+  }
+  .automated-section .paralex-icon-section .icon-list img {
+    min-width: 40px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(2) {
+    left: 34%;
+    top: 100px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(3) {
+    left: 11%;
+    top: 210px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(4) {
+    left: 36%;
+    top: 180px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(5) {
+    top: 120px;
+    left: 63%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(5) img {
+    min-width: 60px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(6) {
+    top: 280px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(6) img {
+    min-width: 60px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(7) {
+    left: 60%;
+    top: 210px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(7) img {
+    min-width: 60px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(8) {
+    top: 300px;
+    left: 50%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(8) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(9) {
+    left: 19%;
+    top: 370px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(9) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(10) {
+    left: 62%;
+    top: 410px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(11) {
+    top: 474px;
+    left: 46%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(12) {
+    left: 21%;
+    top: 480px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(13) {
+    left: 75%;
+    top: 491px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(14) {
+    top: 625px;
+    left: 50%;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(14) img {
+    min-width: 60px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(15) {
+    left: 11%;
+    top: 554px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(15) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(16) {
+    left: 20%;
+    top: 655px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(17) {
+    left: 15%;
+    top: 1030px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(18) {
+    left: 42%;
+    top: 1055px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(19) {
+    left: 14%;
+    top: 1120px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(19) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(20) {
+    left: 65%;
+    top: 1026px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(20) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(21) {
+    left: 53%;
+    top: 1140px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(22) {
+    left: 13%;
+    top: 1230px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(22) img {
+    min-width: 60px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(23) {
+    left: 75%;
+    top: 1172px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(24) {
+    left: 76%;
+    top: 1244px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(25) {
+    left: 47%;
+    top: 1235px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(26) {
+    left: 13%;
+    top: 1321px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(26) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(27) {
+    left: 46%;
+    top: 1300px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(27) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(28) {
+    left: 77%;
+    top: 1325px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(29) {
+    left: 41%;
+    top: 1405px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(29) img {
+    min-width: 80px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(30) {
+    left: 11%;
+    top: 1430px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(30) img {
+    min-width: 60px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(31) {
+    left: 74%;
+    top: 1431px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(32) {
+    left: 65%;
+    top: 1516px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(32) img {
+    min-width: 60px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(33) {
+    left: 23%;
+    top: 1531px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(34) {
+    left: 43%;
+    top: 1557px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(35) {
+    left: 64%;
+    top: 542px;
+  }
+  .automated-section .paralex-icon-section .icon-list:nth-child(35) img {
+    min-width: 60px;
+  }
+
+  .product-section .card.software-access {
+    background-position: bottom;
+    background-size: 750px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -14405,34 +14750,6 @@ h6, .h6 {
   }
   .feature-section .payroll-feature-section .accordian-box .accordian-content .app-service-list li {
     width: calc(25% - 10px);
-  }
-
-  .automated-section .paralex-icon-section .icon-list:nth-child(5) {
-    top: 211px;
-  }
-  .automated-section .paralex-icon-section .icon-list:nth-child(8) {
-    top: 385px;
-    left: 78%;
-  }
-  .automated-section .paralex-icon-section .icon-list:nth-child(9) {
-    left: 19%;
-    top: 489px;
-  }
-  .automated-section .paralex-icon-section .icon-list:nth-child(14) {
-    top: 780px;
-    left: 50%;
-  }
-  .automated-section .paralex-icon-section .icon-list:nth-child(15) {
-    left: 19%;
-    top: 617px;
-  }
-  .automated-section .paralex-icon-section .icon-list:nth-child(16) {
-    left: 20%;
-    top: 802px;
-  }
-  .automated-section .paralex-icon-section .icon-list:nth-child(17) {
-    left: 52%;
-    top: 1155px;
   }
 }
 @media screen and (max-width: 375px) {

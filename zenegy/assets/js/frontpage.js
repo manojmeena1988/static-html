@@ -97,7 +97,7 @@ $(document).ready(function () {
                 slidesToShow: 1,
                 slidesToScroll:1,
                 infinite: true,
-                speed:2000,
+                // speed:2000,
                 dots: true,
                 prevArrow: false,
                 nextArrow: false,

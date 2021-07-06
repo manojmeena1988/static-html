@@ -79,21 +79,30 @@ $(document).ready(function() {
 
 
     // =============== people page accordians start
-    $(".accordian-box .accordina-target").click(function() {
+    // $('.accordian-box active').click(function(){
+    //     $(this).toggleClass('active');
+    //     $(this).children(".expend-text").html('<i class="fas fa-minus"></i>');
+    // });
 
+    // $('.accordian-box').click(function(){
+    //     $(this).toggleClass('active');
+    //     $(this).children(".expend-text").html('<i class="fas fa-plus"></i>');
+    // });
+
+    $(".accordian-box .accordina-target").click(function() {
+        $(this).toggleClass('active');
             var target = $(this).parents(".accordian-box");
 
             if (target.find(".expend-text").hasClass("acc-active")) {
 
-                target.find(".accordian-content").slideUp().removeClass("active");
+                target.find(".accordian-content").slideUp();
                 target.find(".expend-text").removeClass("acc-active").html('<i class="fas fa-plus"></i>');
 
             } else {
-
-                $(".payroll-feature-section .accordian-content.active").slideUp().removeClass("active");
+                $(".payroll-feature-section .accordian-content.active").slideUp();
                 $(".payroll-feature-section .acc-active").removeClass("acc-active").html('<i class="fas fa-plus"></i>');
 
-                target.find(".accordian-content").slideDown().addClass("active");
+                target.find(".accordian-content").slideDown();
                 target.find(".expend-text").addClass("acc-active").html('<i class="fas fa-minus"></i>');
             }
     });
