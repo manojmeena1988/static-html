@@ -20,7 +20,7 @@ window.intlTelInput(input, {
        // slide in mobile 
 
     if (window.matchMedia("(max-width:599px)").matches) {
-      $('#client-app').slick({
+      $('#client-app , #expense-full-slide , #complete-overview-slide').slick({
         responsive: [
           {
             breakpoint:599,
@@ -28,7 +28,7 @@ window.intlTelInput(input, {
               slidesToShow: 1,
               slidesToScroll:1,
               infinite: true,
-              speed:2000,
+              // speed:2000,
               dots: true,
               prevArrow: false,
               nextArrow: false,
@@ -40,7 +40,5 @@ window.intlTelInput(input, {
         ]
       });
     }
-
-    // $('.expense-parallax-window').parallax({imageSrc: 'assets/images/expense-why-footer@1x.jpg'});
 
   }); 

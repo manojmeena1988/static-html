@@ -804,7 +804,16 @@
         } 
       } 
     }  
-  }  
+  }
+  .why-us{
+    .card-section{
+      .card{
+        .card-img {
+          min-height:720px;
+        }
+      } 
+    } 
+  }   
 }
 
 @media screen and (min-width: 600px) and (max-width: 730px) {
@@ -1223,13 +1232,12 @@
         &.value-t{
           .card-body{
             .bottom{
-              margin:75px 0 0;
+              margin:25px 0 0;
               .desktop-img{
                 display:none;
               }
               .mobile-img {
                 display: block;
-                height:100%;
                 svg{
                   &:first-child{
                     margin-bottom:20px;
@@ -1250,6 +1258,15 @@
         &.exp-manage{
           background-position: bottom;
           background-size:520px;
+        }
+      }
+      .card{
+        &.business-c{
+          .card-body{
+            .bottom{
+              margin:50px 0 0;
+            }
+          }
         }
       }
     }
@@ -1286,6 +1303,13 @@
         &.bank-b{
           background-size:550px;
           background-position:bottom;
+        }
+        &.white-label{
+          .card-body{
+            .bottom{
+              margin:40px 0 0;
+            }
+          }
         }
       }
     } 

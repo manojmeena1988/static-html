@@ -17,6 +17,28 @@ $(".account-focus").focusin(function(){
     $(this).css("border-bottom" , "1px solid rgba(255, 255, 255, 0.3)");
   });
 
-  // $('.accounts-parallax-window').parallax({imageSrc: 'assets/images/accounts-why-footer@1x.jpg'});
+
+     // slide in mobile 
+
+     if (window.matchMedia("(max-width:599px)").matches) {
+      $('#report-communication , #better-service-slide').slick({
+        responsive: [
+          {
+            breakpoint:599,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll:1,
+              infinite: true,
+              dots: true,
+              prevArrow: false,
+              nextArrow: false
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    }
 
 });

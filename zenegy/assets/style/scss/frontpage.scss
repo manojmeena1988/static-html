@@ -2771,6 +2771,9 @@
           }
           .bottom{
             margin:80px 0 0;
+            img{
+              display:initial;
+            }
           }
         }
       }
@@ -2890,6 +2893,23 @@
         }
       }
     }
+    .slick-dots{
+      li{
+        &.slick-active{
+          button{
+            &:before {
+              opacity: 0.75;
+              color: #ccc;
+            }
+          }
+        } 
+        button{
+          &:before {
+            background-color: #ccc;
+          }
+        }
+      }
+    } 
   }
   &.better-service {
     .card {
@@ -3701,7 +3721,7 @@
 }
 .image-overlay , .security-card , .only-image{
   img{
-    min-height:540px;
+    min-height:100%;
   }
 }
 @import "responsive";

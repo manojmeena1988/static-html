@@ -12,7 +12,7 @@ var inputNum = document.querySelector("#phone-number");
        // slide in mobile 
 
     if (window.matchMedia("(max-width:599px)").matches) {
-        $('#dimension-slide').slick({
+        $('#dimension-slide , #chart-workflow ,#customer-banks').slick({
           responsive: [
             {
               breakpoint:599,
@@ -20,7 +20,6 @@ var inputNum = document.querySelector("#phone-number");
                 slidesToShow: 1,
                 slidesToScroll:1,
                 infinite: true,
-                speed:2000,
                 dots: true,
                 prevArrow: false,
                 nextArrow: false,
@@ -32,7 +31,5 @@ var inputNum = document.querySelector("#phone-number");
           ]
         });
       }
-      
-      // $('.numbers-parallax-window').parallax({imageSrc: 'assets/images/numbers-why-footer@1x.jpg'});
 
     });

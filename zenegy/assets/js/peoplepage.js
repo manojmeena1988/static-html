@@ -50,7 +50,7 @@ $(document).ready(function () {
     // });
 
     if (window.matchMedia("(max-width:599px)").matches) {
-        $('#security-slide').slick({
+        $('#security-slide , #save-time-slide ,#payroll-exp-slide').slick({
           responsive: [
             {
               breakpoint:599,
@@ -58,7 +58,6 @@ $(document).ready(function () {
                 slidesToShow: 1,
                 slidesToScroll:1,
                 infinite: true,
-                speed:2000,
                 dots: true,
                 prevArrow: false,
                 nextArrow: false,
@@ -70,6 +69,4 @@ $(document).ready(function () {
           ]
         });
       }
-
-      // $('.people-parallax-window').parallax({imageSrc: 'assets/images/people-why-footer@1x.jpg'});
 });

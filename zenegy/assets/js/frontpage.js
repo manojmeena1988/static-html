@@ -97,7 +97,6 @@ $(document).ready(function () {
                 slidesToShow: 1,
                 slidesToScroll:1,
                 infinite: true,
-                // speed:2000,
                 dots: true,
                 prevArrow: false,
                 nextArrow: false,
@@ -109,8 +108,6 @@ $(document).ready(function () {
           ]
         });
       }
-
-      // $('.home-parallax-window').parallax({imageSrc: 'assets/images/frontpage-why-footer@1x.jpg'});
 
 });
 
