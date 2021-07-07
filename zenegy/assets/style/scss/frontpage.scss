@@ -602,7 +602,7 @@
             svg {
               // width:104px;
               // height:104px
-              width: 100%;
+              // width: 100%;
             }
 
             path {
@@ -886,6 +886,31 @@
           }
         }
       }
+      &.one-platform{
+        margin-bottom:0;
+        .card-img-overlay{
+          .content-center{
+            height:100%;
+            .p-2{
+              padding:0px !important;
+            }
+          }
+        } 
+      }
+      &.word-founders{
+        margin-bottom:0;
+      }
+      &.efficiency-report{
+        margin-bottom:0;
+        .card-img-overlay{
+          .content-center{
+            height:100%;
+            .p-2{
+              padding:0px !important;
+            }
+          }
+        } 
+      }
     }
     &.accounts {
       .col {
@@ -974,6 +999,7 @@
         }
       }
     }
+    
   }
 }
 .newsroom {
@@ -1277,9 +1303,11 @@
     }
     .make-account-r {
       text-align: center;
-      padding:24px 20px;
+      padding:24px 0px;
       p {
         color: $gray-900;
+        max-width: 520px;
+        margin: 0 auto 30px;
       }
       h4 {
         span {
@@ -1873,7 +1901,7 @@
     color: $gray-700;
   }
   img {
-    margin: 0 0 80px 0;
+    margin: 0;
   }
   .user-r {
     justify-content: center;
@@ -2244,6 +2272,10 @@
   }
   &.accounts {
     .join-us-form {
+      h2{
+        max-width:936px;
+        margin:auto;
+      }
       a {
         background-color: $gray-700;
         color: $white;

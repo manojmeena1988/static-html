@@ -198,11 +198,15 @@
   .why-us{
     .card-section{
       .card{
-        .video-bg{
-          iframe{
-            top:-10px !important;
+        .card-body{
+          .why-us-inner{
+            .video-bg{
+              iframe{
+                top:-10px !important;
+              }
+            } 
           }
-        } 
+        }
       } 
     } 
   }
@@ -510,11 +514,15 @@
   .why-us{
     .card-section{
       .card{
-        .video-bg{
-          iframe{
-            top:-50px !important;
+        .card-body{
+          .why-us-inner{
+            .video-bg{
+              iframe{
+                top:-50px !important;
+              }
+            } 
           }
-        } 
+        }
       } 
     } 
   } 
@@ -617,6 +625,16 @@
       } 
     } 
   } 
+  .save-time{
+    &.expense-management{
+      .ex-m{
+        &.chart-account{
+          background-size:1100px;
+          background-position:bottom;
+        } 
+      }
+    } 
+  }  
 }
 
 @media screen and (max-width: 768px) {
@@ -676,11 +694,15 @@
   .why-us{
     .card-section{
       .card{
-        .video-bg{
-          iframe{
-            top:-68px !important;
+        .card-body{
+          .why-us-inner{
+            .video-bg{
+              iframe{
+                top:-68px !important;
+              }
+            } 
           }
-        } 
+        }
       } 
     } 
   }
@@ -736,7 +758,7 @@
   }
   .card {
     margin-bottom: 30px;
-    height: auto;
+    // height: auto;
   }
   .why-us {
     padding: 100px 0;
@@ -798,6 +820,7 @@
               .box-m{
                 padding-left:0;
                 padding-right:0;
+                margin-bottom:40px;
               }
             }
           } 
@@ -818,6 +841,31 @@
     img{
       min-height:720px;
     }
+  } 
+  .save-time{
+    &.expense-management{
+      .ex-m{
+        &.chart-account{
+          background-size:900px;
+        } 
+      }
+    } 
+  }
+  .why-us{
+    .card-section{
+      .card{
+        .card-body{
+          .why-us-inner{
+            .video-bg {
+              height: 430px;
+              iframe{
+                top:0px !important;
+              }
+            }
+          } 
+        } 
+      } 
+    } 
   }   
 }
 
@@ -829,6 +877,21 @@
       }
     }
   }
+  .why-us{
+    .card-section{
+      .card{
+        .card-body{
+          .why-us-inner{
+            .video-bg{
+              iframe {
+                top: -38px !important;
+              }
+            } 
+          } 
+        } 
+      } 
+    } 
+  } 
 }
 @media screen and (max-width: 599px) {
   .page-header {
@@ -890,7 +953,7 @@
   }
   .card {
     margin-bottom:20px;
-    height: auto;
+    // height: auto;
     .card-body {
       padding: 20px;
       .icon-wrapper {
@@ -1182,6 +1245,9 @@
             } 
           } 
         }
+        &.increased-control{
+          min-height:676px;
+        }
       }
     }  
   }
@@ -1253,8 +1319,7 @@
           } 
         }
         &.chart-account {
-          background-size: 400px;
-          background-position: bottom;
+          background-size:500px;
         } 
         &.every-o{
           background-size:830px;
@@ -1270,6 +1335,21 @@
           .card-body{
             .bottom{
               margin:50px 0 0;
+            }
+          }
+        }
+        &.full-control{
+          .card-body{
+            .top{
+              h4{
+                font-size:25px;
+              }
+            }
+            .bottom{
+              margin:25px 0 0;
+              svg{
+                height:100%;
+              }
             }
           }
         }
@@ -1312,7 +1392,10 @@
         &.white-label{
           .card-body{
             .bottom{
-              margin:40px 0 0;
+              margin:60px 0 0;
+              svg{
+                height:100%;
+              }
             }
           }
         }
@@ -1529,7 +1612,48 @@
     img{
       min-height:540px;
     }
-  } 
+  }
+  .card-body{
+    .icon-wrapper{
+      .icon-item{
+        .icon{
+          .svg-icon{
+            svg {
+              width: 100%;
+            }
+          } 
+        } 
+      } 
+    } 
+  }
+  p{
+    &.is-large{
+      font-size:16px;
+      line-height:20px;
+    } 
+  }
+  .why-us{
+    .card-section{
+      .card{
+        &.bg-expense{
+          .card-body{
+            .bottom {
+              margin: 60px 0 0;
+            }
+          } 
+        }
+        .card-body{
+          .why-us-inner{
+            .video-bg{
+              iframe {
+                top: -65px !important;
+              }
+            } 
+          } 
+        }   
+      }
+    } 
+  }
 }
 @media screen and (max-width: 480px) {
   .product-page {
@@ -1627,12 +1751,16 @@
     padding:50px 0;
     .card-section{
       .card{
-        .video-bg{
-          height:230px;
-          video {
-            top:9px;
+        .card-body{
+          .why-us-inner{
+            .video-bg{
+              height:230px;
+              video {
+                top:9px;
+              }
+            }
           }
-        } 
+        }
       } 
     } 
   }
@@ -1689,15 +1817,44 @@
         } 
       } 
     }
+    .save-time{
+      &.expense-management{
+        .ex-m{
+          &.chart-account{
+            background-size:400px;
+          } 
+        }
+      } 
+    }  
+    .why-us{
+      .card-section{
+        .card{
+          .card-body{
+            .why-us-inner{
+              .video-bg {
+                iframe{
+                  top:-10px !important;
+                }
+              }
+            } 
+          } 
+        } 
+      } 
+    } 
 }
 @media screen and (max-width: 375px) {
   .why-us{
     .card-section{
       .card{
-        .video-bg{
-          iframe{
-            top:-85px !important;
-          }
+        .card-body{
+          .why-us-inner{
+            .video-bg {
+              height:225px;
+              iframe{
+                top:-23px !important;
+              }
+            }
+          } 
         } 
       } 
     } 
@@ -1708,7 +1865,7 @@
       margin:auto;
       padding:0;
     }
-  } 
+  }
 }
 @media screen and (max-width: 360px) {
   .card-img-overlay {
@@ -1717,10 +1874,14 @@
   .why-us{
     .card-section{
       .card{
-        .video-bg{
-          iframe{
-            top:-85px !important;
-          }
+        .card-body{
+          .why-us-inner{
+            .video-bg {
+              iframe{
+                top:-24px !important;
+              }
+            }
+          } 
         } 
       } 
     } 
@@ -1733,10 +1894,15 @@
   .why-us{
     .card-section{
       .card{
-        .video-bg{
-          iframe{
-            top:-100px !important;
-          }
+        .card-body{
+          .why-us-inner{
+            .video-bg {
+              height:242px;
+              iframe{
+                top:-50px !important;
+              }
+            }
+          } 
         } 
       } 
     } 

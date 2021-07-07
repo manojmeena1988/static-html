@@ -10151,7 +10151,7 @@ body {
 
 .container {
   max-width: 1440px;
-  padding: 0 30px;
+  padding: 0 28px;
 }
 
 a {
@@ -11037,9 +11037,6 @@ h6, .h6 {
 .card-body .icon-wrapper .icon-item .icon .svg-icon {
   display: block;
 }
-.card-body .icon-wrapper .icon-item .icon .svg-icon svg {
-  width: 100%;
-}
 .card-body .icon-wrapper .icon-item .icon .svg-icon path {
   fill: #fff;
 }
@@ -11287,6 +11284,27 @@ h6, .h6 {
 }
 .why-us .card-section .card.zenegy-card .card-body h2, .why-us .card-section .card.zenegy-card .card-body .h2 {
   max-width: 323px;
+}
+.why-us .card-section .card.one-platform {
+  margin-bottom: 0;
+}
+.why-us .card-section .card.one-platform .card-img-overlay .content-center {
+  height: 100%;
+}
+.why-us .card-section .card.one-platform .card-img-overlay .content-center .p-2 {
+  padding: 0px !important;
+}
+.why-us .card-section .card.word-founders {
+  margin-bottom: 0;
+}
+.why-us .card-section .card.efficiency-report {
+  margin-bottom: 0;
+}
+.why-us .card-section .card.efficiency-report .card-img-overlay .content-center {
+  height: 100%;
+}
+.why-us .card-section .card.efficiency-report .card-img-overlay .content-center .p-2 {
+  padding: 0px !important;
 }
 .why-us .card-section.accounts .col h1, .why-us .card-section.accounts .col .h1 {
   font-weight: 900;
@@ -11596,10 +11614,12 @@ h6, .h6 {
 }
 .zenegy-product .weMake-account .make-account-r {
   text-align: center;
-  padding: 24px 20px;
+  padding: 24px 0px;
 }
 .zenegy-product .weMake-account .make-account-r p {
   color: #1f2227;
+  max-width: 520px;
+  margin: 0 auto 30px;
 }
 .zenegy-product .weMake-account .make-account-r h4 span, .zenegy-product .weMake-account .make-account-r .h4 span {
   color: #979797;
@@ -12120,7 +12140,7 @@ h6, .h6 {
   color: #979797;
 }
 .just-payroll-section img {
-  margin: 0 0 80px 0;
+  margin: 0;
 }
 .just-payroll-section .user-r {
   justify-content: center;
@@ -12389,6 +12409,10 @@ h6, .h6 {
 }
 .payroll-banner-section.people .join-us-form a:hover {
   background-color: #ca3a89;
+}
+.payroll-banner-section.accounts .join-us-form h2, .payroll-banner-section.accounts .join-us-form .h2 {
+  max-width: 936px;
+  margin: auto;
 }
 .payroll-banner-section.accounts .join-us-form a {
   background-color: #979797;
@@ -13690,7 +13714,7 @@ h6, .h6 {
     padding: 24px 0;
   }
 
-  .why-us .card-section .card .video-bg iframe {
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
     top: -10px !important;
   }
 
@@ -13936,7 +13960,7 @@ h6, .h6 {
     min-height: 720px;
   }
 
-  .why-us .card-section .card .video-bg iframe {
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
     top: -50px !important;
   }
 
@@ -14035,6 +14059,11 @@ h6, .h6 {
     left: 16%;
     top: 1684px;
   }
+
+  .save-time.expense-management .ex-m.chart-account {
+    background-size: 1100px;
+    background-position: bottom;
+  }
 }
 @media screen and (max-width: 768px) {
   .product-page .sub-header .nav-header {
@@ -14071,7 +14100,7 @@ h6, .h6 {
     justify-content: end;
   }
 
-  .why-us .card-section .card .video-bg iframe {
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
     top: -68px !important;
   }
 
@@ -14105,7 +14134,6 @@ h6, .h6 {
 
   .card {
     margin-bottom: 30px;
-    height: auto;
   }
 
   .why-us {
@@ -14136,6 +14164,7 @@ h6, .h6 {
   .feature-section.pricing-section .payroll-feature-section .accordian-box .accordian-content .payroll-price-sec .box-m {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: 40px;
   }
 
   .why-us .card-section .card .card-img {
@@ -14145,10 +14174,25 @@ h6, .h6 {
   .image-overlay img, .security-card img, .only-image img {
     min-height: 720px;
   }
+
+  .save-time.expense-management .ex-m.chart-account {
+    background-size: 900px;
+  }
+
+  .why-us .card-section .card .card-body .why-us-inner .video-bg {
+    height: 430px;
+  }
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
+    top: 0px !important;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 730px) {
   .footer .footer-bottom .f-last {
     flex-wrap: wrap;
+  }
+
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
+    top: -38px !important;
   }
 }
 @media screen and (max-width: 599px) {
@@ -14200,7 +14244,6 @@ h6, .h6 {
 
   .card {
     margin-bottom: 20px;
-    height: auto;
   }
   .card .card-body {
     padding: 20px;
@@ -14424,6 +14467,9 @@ h6, .h6 {
   .save-time.expense-management .card.bg-theme.automate-m .card-body .conolly-c .c-sm:nth-last-child(2) {
     margin-top: 0px;
   }
+  .save-time.expense-management .card.increased-control {
+    min-height: 676px;
+  }
 
   .min-h-720 {
     min-height: 540px;
@@ -14466,8 +14512,7 @@ h6, .h6 {
     margin-bottom: 20px;
   }
   .save-time.expense-management .ex-m.chart-account {
-    background-size: 400px;
-    background-position: bottom;
+    background-size: 500px;
   }
   .save-time.expense-management .ex-m.every-o {
     background-size: 830px;
@@ -14479,6 +14524,15 @@ h6, .h6 {
   }
   .save-time.expense-management .card.business-c .card-body .bottom {
     margin: 50px 0 0;
+  }
+  .save-time.expense-management .card.full-control .card-body .top h4, .save-time.expense-management .card.full-control .card-body .top .h4 {
+    font-size: 25px;
+  }
+  .save-time.expense-management .card.full-control .card-body .bottom {
+    margin: 25px 0 0;
+  }
+  .save-time.expense-management .card.full-control .card-body .bottom svg {
+    height: 100%;
   }
   .save-time.dimention-sec .card.union-agreement .card-body .top h4, .save-time.dimention-sec .card.union-agreement .card-body .top .h4 {
     font-size: 22px;
@@ -14499,7 +14553,10 @@ h6, .h6 {
     background-position: bottom;
   }
   .save-time.better-service .card.white-label .card-body .bottom {
-    margin: 40px 0 0;
+    margin: 60px 0 0;
+  }
+  .save-time.better-service .card.white-label .card-body .bottom svg {
+    height: 100%;
   }
 
   .e-conomic-sec {
@@ -14708,6 +14765,22 @@ h6, .h6 {
   .image-overlay img, .security-card img, .only-image img {
     min-height: 540px;
   }
+
+  .card-body .icon-wrapper .icon-item .icon .svg-icon svg {
+    width: 100%;
+  }
+
+  p.is-large {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .why-us .card-section .card.bg-expense .card-body .bottom {
+    margin: 60px 0 0;
+  }
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
+    top: -65px !important;
+  }
 }
 @media screen and (max-width: 480px) {
   .product-page .sub-header .nav-header .nav li.dropdown a span {
@@ -14754,10 +14827,10 @@ h6, .h6 {
   .why-us {
     padding: 50px 0;
   }
-  .why-us .card-section .card .video-bg {
+  .why-us .card-section .card .card-body .why-us-inner .video-bg {
     height: 230px;
   }
-  .why-us .card-section .card .video-bg video {
+  .why-us .card-section .card .card-body .why-us-inner .video-bg video {
     top: 9px;
   }
 
@@ -14778,10 +14851,21 @@ h6, .h6 {
   .feature-section .payroll-feature-section .accordian-box .accordian-content .app-service-list li {
     width: calc(25% - 10px);
   }
+
+  .save-time.expense-management .ex-m.chart-account {
+    background-size: 400px;
+  }
+
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
+    top: -10px !important;
+  }
 }
 @media screen and (max-width: 375px) {
-  .why-us .card-section .card .video-bg iframe {
-    top: -85px !important;
+  .why-us .card-section .card .card-body .why-us-inner .video-bg {
+    height: 225px;
+  }
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
+    top: -23px !important;
   }
 
   .partner-section p {
@@ -14795,8 +14879,8 @@ h6, .h6 {
     padding: 30px 15px;
   }
 
-  .why-us .card-section .card .video-bg iframe {
-    top: -85px !important;
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
+    top: -24px !important;
   }
 }
 @media screen and (max-width: 320px) {
@@ -14804,8 +14888,11 @@ h6, .h6 {
     padding: 30px 15px;
   }
 
-  .why-us .card-section .card .video-bg iframe {
-    top: -100px !important;
+  .why-us .card-section .card .card-body .why-us-inner .video-bg {
+    height: 242px;
+  }
+  .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
+    top: -50px !important;
   }
 
   h1, .h1 {
