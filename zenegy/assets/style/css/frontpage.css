@@ -14141,6 +14141,10 @@ h6, .h6 {
   .why-us .card-section .card .card-img {
     min-height: 720px;
   }
+
+  .image-overlay img, .security-card img, .only-image img {
+    min-height: 720px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 730px) {
   .footer .footer-bottom .f-last {
@@ -14699,6 +14703,10 @@ h6, .h6 {
   .product-section .card.software-access {
     background-position: bottom;
     background-size: 750px;
+  }
+
+  .image-overlay img, .security-card img, .only-image img {
+    min-height: 540px;
   }
 }
 @media screen and (max-width: 480px) {

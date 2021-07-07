@@ -813,6 +813,11 @@
         }
       } 
     } 
+  }
+  .image-overlay , .security-card , .only-image{
+    img{
+      min-height:720px;
+    }
   }   
 }
 
@@ -1518,6 +1523,11 @@
         background-position: bottom;
         background-size: 750px;
       }
+    }
+  }
+  .image-overlay , .security-card , .only-image{
+    img{
+      min-height:540px;
     }
   } 
 }
