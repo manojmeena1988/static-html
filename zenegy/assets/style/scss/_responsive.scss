@@ -121,6 +121,7 @@
   }
   .stories{
     padding-top:50px;
+    padding-bottom:100px;
   }
   .newsroom{
     padding:100px 0 50px;
@@ -237,6 +238,35 @@
       }
     } 
   }  
+  .zenegy-product{
+    .weMake-account{
+      .make-account-r{
+        padding: 24px 20px;
+      }
+    } 
+  } 
+  .save-time{
+    &.better-service{
+      .card{
+        &.emp-t {
+          background-size:970px;
+          background-position:bottom;
+        }
+        &.bank-b{
+          background-size:970px;
+          background-position:bottom;
+        }
+      }
+    }
+    &.expense-management{
+      .ex-m{
+        &.chart-account{
+          background-size:950px;
+          background-position:bottom;
+        } 
+      }
+    } 
+  }
 }
 @media screen and (max-width: 992px) {
   .page-header {
@@ -501,11 +531,11 @@
       } 
     } 
   }
-  .card{
-    .content-center {
-      height: calc(100% - 47px);
-    } 
-  }
+  // .card{
+  //   .content-center {
+  //     height: calc(100% - 47px);
+  //   } 
+  // }
   .save-time{
     .card{
       min-height:720px;
@@ -634,7 +664,20 @@
         } 
       }
     } 
-  }  
+  } 
+  .why-us{
+    .card-section{
+      .card{
+        &.zenegy-card{
+          .card-body{
+            h2{
+              max-width:100%;
+            } 
+          } 
+        } 
+      }
+    } 
+  } 
 }
 
 @media screen and (max-width: 768px) {
@@ -866,7 +909,16 @@
         } 
       } 
     } 
-  }   
+  }
+  .stories{
+    .team-blue-sec{
+      .left-teamblue{
+        .slick-track {
+          height:320px;
+        } 
+      } 
+    }   
+  } 
 }
 
 @media screen and (min-width: 600px) and (max-width: 730px) {
@@ -957,7 +1009,7 @@
     .card-body {
       padding: 20px;
       .icon-wrapper {
-        margin: 40px 0 0;
+        margin:20px 0 0;
         justify-content: space-around;
         .icon-item {
           padding: 0;
@@ -1215,11 +1267,16 @@
   } 
   .easy-book-keep{
     .card-body{
-      display:flex;
-      flex-direction:column;
-      justify-content:space-between;
-      p{
-        text-align:center;
+      .top{
+        p{
+          text-align:center;
+        }
+      }
+      .bottom{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        height:calc(540px - 90px);
       }
     }
   }
@@ -1367,6 +1424,16 @@
             }
             .bottom{
               margin:40px 0 0;
+            }
+          }
+        }
+        &.complete-overview{
+          .card-body{
+            .mid{
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              height:calc(540px - 140px);
             }
           }
         }
@@ -1654,6 +1721,9 @@
       }
     } 
   }
+  .stories{
+    padding-bottom:100px;
+  }
 }
 @media screen and (max-width: 480px) {
   .product-page {
@@ -1777,7 +1847,7 @@
     // }
     .card{
       .content-center{
-        height: calc(100% - 70px);
+        height: calc(100% - 90px);
       } 
     }
     // .icon-wrapper{

@@ -20,7 +20,7 @@ window.intlTelInput(input, {
        // slide in mobile 
 
     if (window.matchMedia("(max-width:599px)").matches) {
-      $('#client-app , #expense-full-slide , #complete-overview-slide').slick({
+      $('#client-app , #expense-full-slide , #complete-overview-slide , #footer-uper-card').slick({
         responsive: [
           {
             breakpoint:599,

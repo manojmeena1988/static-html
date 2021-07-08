@@ -89,7 +89,7 @@ $(document).ready(function () {
        // slide in mobile 
    
     if (window.matchMedia("(max-width:599px)").matches) {
-        $('#mob-app , #doc-management , #comlete-over , #digital-salary-slide , #get-expense-management , #every-one-place , #automate-workflow , #business-suit-slide , #danske-bank-slide').slick({
+        $('#mob-app , #doc-management , #comlete-over , #digital-salary-slide , #get-expense-management , #every-one-place , #automate-workflow , #business-suit-slide , #danske-bank-slide , #footer-uper-card').slick({
           responsive: [
             {
               breakpoint:599,
@@ -108,6 +108,14 @@ $(document).ready(function () {
           ]
         });
       }
+
+        // form focus js start
+    $(".number-focus").focusin(function(){
+      $(this).css("border-bottom" , "1px solid #00aaff");
+    });
+    $("number-focus").focusout(function(){
+      $(this).css("border-bottom" , "1px solid rgba(255, 255, 255, 0.3)");
+    });
 
 });
 

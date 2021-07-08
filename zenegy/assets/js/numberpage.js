@@ -12,7 +12,7 @@ var inputNum = document.querySelector("#phone-number");
        // slide in mobile 
 
     if (window.matchMedia("(max-width:599px)").matches) {
-        $('#dimension-slide , #chart-workflow ,#customer-banks').slick({
+        $('#dimension-slide , #chart-workflow ,#customer-banks , #footer-uper-card').slick({
           responsive: [
             {
               breakpoint:599,

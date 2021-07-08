@@ -50,7 +50,7 @@ $(document).ready(function () {
     // });
 
     if (window.matchMedia("(max-width:599px)").matches) {
-        $('#security-slide , #save-time-slide ,#payroll-exp-slide').slick({
+        $('#security-slide , #save-time-slide ,#payroll-exp-slide , #footer-uper-card').slick({
           responsive: [
             {
               breakpoint:599,

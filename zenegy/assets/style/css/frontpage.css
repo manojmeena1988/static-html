@@ -11037,6 +11037,9 @@ h6, .h6 {
 .card-body .icon-wrapper .icon-item .icon .svg-icon {
   display: block;
 }
+.card-body .icon-wrapper .icon-item .icon .svg-icon svg {
+  max-width: 100%;
+}
 .card-body .icon-wrapper .icon-item .icon .svg-icon path {
   fill: #fff;
 }
@@ -11602,6 +11605,16 @@ h6, .h6 {
 }
 .zenegy-product .we-make-sec .card.people .btnBox a:hover {
   background-color: #ca3a89;
+}
+.zenegy-product .we-make-sec .slick-dots {
+  bottom: 40px;
+}
+.zenegy-product .we-make-sec .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #ccc;
+}
+.zenegy-product .we-make-sec .slick-dots li button:before {
+  background-color: #333;
 }
 .zenegy-product .weMake-account {
   margin: 24px 0 0;
@@ -13670,6 +13683,7 @@ h6, .h6 {
 
   .stories {
     padding-top: 50px;
+    padding-bottom: 100px;
   }
 
   .newsroom {
@@ -13738,6 +13752,23 @@ h6, .h6 {
   .automated-section .paralex-icon-section .icon-list:nth-child(27) {
     left: 49%;
     top: 1433px;
+  }
+
+  .zenegy-product .weMake-account .make-account-r {
+    padding: 24px 20px;
+  }
+
+  .save-time.better-service .card.emp-t {
+    background-size: 970px;
+    background-position: bottom;
+  }
+  .save-time.better-service .card.bank-b {
+    background-size: 970px;
+    background-position: bottom;
+  }
+  .save-time.expense-management .ex-m.chart-account {
+    background-size: 950px;
+    background-position: bottom;
   }
 }
 @media screen and (max-width: 992px) {
@@ -13952,10 +13983,6 @@ h6, .h6 {
     top: 16px;
   }
 
-  .card .content-center {
-    height: calc(100% - 47px);
-  }
-
   .save-time .card {
     min-height: 720px;
   }
@@ -14063,6 +14090,10 @@ h6, .h6 {
   .save-time.expense-management .ex-m.chart-account {
     background-size: 1100px;
     background-position: bottom;
+  }
+
+  .why-us .card-section .card.zenegy-card .card-body h2, .why-us .card-section .card.zenegy-card .card-body .h2 {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -14185,6 +14216,10 @@ h6, .h6 {
   .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
     top: 0px !important;
   }
+
+  .stories .team-blue-sec .left-teamblue .slick-track {
+    height: 320px;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 730px) {
   .footer .footer-bottom .f-last {
@@ -14249,7 +14284,7 @@ h6, .h6 {
     padding: 20px;
   }
   .card .card-body .icon-wrapper {
-    margin: 40px 0 0;
+    margin: 20px 0 0;
     justify-content: space-around;
   }
   .card .card-body .icon-wrapper .icon-item {
@@ -14449,13 +14484,14 @@ h6, .h6 {
     padding: 16px;
   }
 
-  .easy-book-keep .card-body {
+  .easy-book-keep .card-body .top p {
+    text-align: center;
+  }
+  .easy-book-keep .card-body .bottom {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  }
-  .easy-book-keep .card-body p {
-    text-align: center;
+    justify-content: center;
+    height: calc(540px - 90px);
   }
 
   .save-time.expense-management .card.bg-theme.automate-m img {
@@ -14540,6 +14576,12 @@ h6, .h6 {
   }
   .save-time.dimention-sec .card.union-agreement .card-body .bottom {
     margin: 40px 0 0;
+  }
+  .save-time.dimention-sec .card.complete-overview .card-body .mid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(540px - 140px);
   }
   .save-time.dimention-sec .card.product-card .card-body .bottom {
     margin: 50px 0 0;
@@ -14781,6 +14823,10 @@ h6, .h6 {
   .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
     top: -65px !important;
   }
+
+  .stories {
+    padding-bottom: 100px;
+  }
 }
 @media screen and (max-width: 480px) {
   .product-page .sub-header .nav-header .nav li.dropdown a span {
@@ -14835,7 +14881,7 @@ h6, .h6 {
   }
 
   .card .content-center {
-    height: calc(100% - 70px);
+    height: calc(100% - 90px);
   }
 
   .payroll-banner-section .join-us-form {

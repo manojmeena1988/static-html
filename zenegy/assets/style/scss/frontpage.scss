@@ -603,6 +603,7 @@
               // width:104px;
               // height:104px
               // width: 100%;
+              max-width:100%;
             }
 
             path {
@@ -1285,6 +1286,24 @@
             &:hover {
               background-color: darken($pink, 5%);
             }
+          }
+        }
+      }
+    }
+    .slick-dots{
+      bottom:40px;
+      li{
+        &.slick-active{
+          button{
+            &:before {
+              opacity: 0.75;
+              color: #ccc;
+            }
+          }
+        } 
+        button{
+          &:before {
+            background-color: #333;
           }
         }
       }

@@ -21,7 +21,7 @@ $(".account-focus").focusin(function(){
      // slide in mobile 
 
      if (window.matchMedia("(max-width:599px)").matches) {
-      $('#report-communication , #better-service-slide').slick({
+      $('#report-communication , #better-service-slide , #footer-uper-card').slick({
         responsive: [
           {
             breakpoint:599,
