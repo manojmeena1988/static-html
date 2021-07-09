@@ -25,20 +25,20 @@ $(document).ready(function () {
         asNavFor: '.right-slider-teamblue',
     });
 
-    const inViewport = (entries, observer) => {
-        entries.forEach(entry => {
-            entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
-        });
-    };
+    // const inViewport = (entries, observer) => {
+    //     entries.forEach(entry => {
+    //         entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+    //     });
+    // };
 
-    const Obs = new IntersectionObserver(inViewport);
-    const obsOptions = {};
+    // const Obs = new IntersectionObserver(inViewport);
+    // const obsOptions = {};
 
-    // Attach observer to every [data-inviewport] element:
-    const ELs_inViewport = document.querySelectorAll('.icon-list');
-    ELs_inViewport.forEach(EL => {
-        Obs.observe(EL, obsOptions);
-    });
+    // // Attach observer to every [data-inviewport] element:
+    // const ELs_inViewport = document.querySelectorAll('.icon-list');
+    // ELs_inViewport.forEach(EL => {
+    //     Obs.observe(EL, obsOptions);
+    // });
 
     // $(window).scroll(function () {
     //     var pos = $(".automated-section").offset().top;
