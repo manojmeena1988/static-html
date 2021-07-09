@@ -1,3 +1,58 @@
+@media screen and (min-width:2000px){
+  .product-section{
+    .card{
+      &.software-access {
+        background-image: url(../../images/frontpage-card-software-acces@2x.jpg);
+      }
+    }
+  } 
+  .save-time{
+    &.dimention-sec{
+      .card{
+        &.mobility-s {
+          background-image: url(../../images/frontpage-card-mobility@2x.jpg);
+        }
+      }
+    }
+    &.expense-management{
+      .card{
+        &.expense-m {
+          background-image: url(../../images/frontpage-card-expense-management@2x.jpg);
+        } 
+      }
+      .ex-m{
+        &.every-o {
+          background-image: url(../../images/frontpage-card-everything-one-place@2x.jpg);
+        }
+        &.chart-account {
+          background-image: url(../../images/numbers-card-chart-of-accounts@2x.jpg);
+        }
+      }
+      .exp-manage {
+        background-image: url(../../images/expense-card-expense-mgmt@2x.jpg);
+      }
+    } 
+    &.better-service{
+      .card{
+        &.emp-t {
+          background-image: url(../../images/people-card-employee-templates@2x.jpg);
+        }
+        &.bank-b{
+          background-image: url(../../images/numbers-card-banks@2x.jpg);
+        }
+      }
+    } 
+  }
+  .why-us{
+    .card-section{
+      .card{
+        &.client-app {
+          background-image: url(../../images/frontpage-card-mobility@2x.jpg);
+        }
+      }
+    } 
+  } 
+}
 @media screen and (min-width:1550px) and (max-width:1680px){
   h1 , .h1{
     font-size:54px;
@@ -918,6 +973,14 @@
         } 
       } 
     }   
+  }
+  .hero-section {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    // max-height: 100%;
+    // &.hero-section-home{
+    //   height:100vh;
+    // }
   } 
 }
 
@@ -983,14 +1046,16 @@
   .product-section {
     padding: 50px 0;
     overflow: hidden;
-    .btn-box {
-      .btn {
-        padding: 10px 20px;
-        &:first-child {
-          margin: 0 0 16px 0;
-        }
-        &:not(:first-child) {
-          margin-left: 0;
+    .section-header{
+      .btn-box {
+        .btn {
+          padding: 10px 40px;
+          &:first-child {
+            margin: 0 0 16px 0;
+          }
+          &:not(:first-child) {
+            margin-left: 0;
+          }
         }
       }
     }
@@ -1303,7 +1368,7 @@
           } 
         }
         &.increased-control{
-          min-height:676px;
+          min-height:590px;
         }
       }
     }  
@@ -1376,7 +1441,7 @@
           } 
         }
         &.chart-account {
-          background-size:500px;
+          background-size:650px;
         } 
         &.every-o{
           background-size:830px;
@@ -1410,6 +1475,10 @@
             }
           }
         }
+        &.expense-m{
+          background-position:bottom;
+          background-size: 750px;
+        }
       }
     }
     &.dimention-sec{
@@ -1433,7 +1502,7 @@
               display:flex;
               align-items:center;
               justify-content:center;
-              height:calc(540px - 140px);
+              height:calc(540px - 160px);
             }
           }
         }
@@ -1453,21 +1522,38 @@
           background-position: bottom , center;
         }
         &.bank-b{
-          background-size:550px;
+          background-size:650px;
           background-position:bottom;
         }
         &.white-label{
           .card-body{
             .bottom{
-              margin:60px 0 0;
+              margin:35px 0 0;
               svg{
                 height:100%;
               }
             }
           }
         }
+        .card-img-overlay{
+          .text-sec{
+            h2{
+              text-align: left;
+            }
+          } 
+        } 
       }
+    }
+    &.account-management{
+      .ex-m{
+        .card-img-overlay{
+          .bottom {
+            text-align: left;
+          }
+        }  
+      } 
     } 
+    
   }
   .e-conomic-sec{
     padding:80px 0;
@@ -1773,17 +1859,8 @@
       }
       .nav-header {
         width: calc(100% - 140px);
-        // justify-content: flex-end;
       }
     }
-  }
-  .hero-section {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    // max-height: 100%;
-    // &.hero-section-home{
-    //   height:100vh;
-    // }
   }
   .just-payroll-section {
     .user-r {
@@ -1807,13 +1884,6 @@
       }
     }
   }
-  // .expense , .numbers , .accounts {
-  //   .btn{
-  //     &.btn-fill-theme {
-  //       padding:16px 28px;
-  //     }
-  //   }
-  // }
   .btn {
     padding: 10px 28px;
   }
@@ -1834,33 +1904,11 @@
       } 
     } 
   }
-    // .icon-wrapper{
-    //   .icon-item{
-    //     .icon{
-    //       .svg-icon {
-    //         svg{
-    //           width:60px;
-    //         }
-    //       }
-    //     } 
-    //   } 
-    // }
     .card{
       .content-center{
         height: calc(100% - 90px);
       } 
     }
-    // .icon-wrapper{
-    //   .icon-item{
-    //     .icon{
-    //       .svg-icon{
-    //         svg {
-    //           width: 90px;
-    //         }
-    //       } 
-    //     } 
-    //   }   
-    // } 
     .payroll-banner-section{
       .join-us-form {
         padding-top: 50px;
@@ -1891,7 +1939,7 @@
       &.expense-management{
         .ex-m{
           &.chart-account{
-            background-size:400px;
+            background-size:550px;
           } 
         }
       } 
@@ -1911,6 +1959,41 @@
         } 
       } 
     } 
+    .hero-section{
+      .hero-content{
+        .btn {
+          padding: 10px 28px;
+        }
+      }
+    }
+    .feature-section{
+      &.pricing-section{
+        .payroll-feature-section{
+          .accordian-box{
+            &.active{
+              .accordian-content{
+                .payroll-price-sec{
+                  .card{
+                    .card-body{
+                      .upper-data{
+                        a {
+                          padding: 10px 70px;
+                        }
+                      } 
+                    } 
+                  } 
+                } 
+              } 
+            } 
+          }
+        } 
+      } 
+    }
+    .we-make-sec{
+      .card{
+        min-height:620px;
+      }
+    }
 }
 @media screen and (max-width: 375px) {
   .why-us{
@@ -1936,6 +2019,41 @@
       padding:0;
     }
   }
+  .save-time{
+    &.expense-management{
+      .ex-m{
+        &.exp-manage {
+          background-position: bottom ,center;
+          background-size: 420px;
+        }
+        &.every-o {
+          background-size: 650px;
+        }
+        &.chart-account {
+          background-size: 400px;
+        }
+      }
+      .card{
+        &.increased-control {
+          min-height:625px;
+        }
+      }
+    }
+    &.better-service{
+      .card{
+        .card-body{
+          .top{
+            p {
+              margin-bottom:23px;
+            }
+          } 
+        }
+        &.bank-b {
+          background-size:550px;
+      }  
+      } 
+    } 
+  }
 }
 @media screen and (max-width: 360px) {
   .card-img-overlay {
@@ -1956,6 +2074,12 @@
       } 
     } 
   } 
+  .hero-section{
+    .hero-content{
+      padding-top:50px;
+    }
+  }
+   
 }
 @media screen and (max-width: 320px) {
   .card-img-overlay {
@@ -1999,6 +2123,36 @@
       line-height:22px;
     }
   }
+  .save-time{
+    &.expense-management{
+      .ex-m{
+        &.exp-manage {
+          background-size:370px;
+        }
+      }
+      .card{
+        &.increased-control {
+          min-height: 676px;
+        }
+      }
+    } 
+  }
+  .hero-section{
+    .hero-content{
+      padding-top:80px;
+      h2{
+        font-size:26px;
+        line-height:30px;
+      }
+    } 
+  }
+  .product-section{
+    .card{
+      &.software-access{
+        background-size:690px;
+      } 
+    }
+  } 
 }
 @media screen and (min-width: 991.99px) {
   .footer .footer-links ul {

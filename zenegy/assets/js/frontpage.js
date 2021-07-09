@@ -25,6 +25,7 @@ $(document).ready(function () {
         asNavFor: '.right-slider-teamblue',
     });
 
+    $(window).on('load', function (){
     $(".product-slider").owlCarousel({
         margin: 10,
         responsiveClass: true,
@@ -36,6 +37,7 @@ $(document).ready(function () {
         slideTransition: 'linear',
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
+        responsiveClass:true,
         responsive: {
             0: {
                 items: 2,
@@ -55,6 +57,47 @@ $(document).ready(function () {
             }
         }
     });
+  });
+
+
+    // logo slider 
+
+    // $('.product-slider').slick({
+    //   dots: false,
+    //   infinite: true,
+    //   speed:3000,
+    //   slidesToShow: 8,
+    //   slidesToScroll:1,
+    //   autoplay: true,
+    //   autoplaySpeed:0,
+    //   arrows: false,
+    //   cssEase: 'linear',
+    //   responsive: [
+    //     {
+    //       breakpoint: 1024,
+    //       settings: {
+    //         slidesToShow: 3,
+    //         slidesToScroll: 3,
+    //         infinite: true,
+    //         dots: true
+    //       }
+    //     },
+    //     {
+    //       breakpoint: 600,
+    //       settings: {
+    //         slidesToShow: 2,
+    //         slidesToScroll: 2
+    //       }
+    //     },
+    //     {
+    //       breakpoint: 480,
+    //       settings: {
+    //         slidesToShow: 2,
+    //         slidesToScroll: 1
+    //       }
+    //     }
+    //   ]
+    // });
     
 
     const element = document.getElementById("image-compare");
@@ -113,7 +156,7 @@ $(document).ready(function () {
     $(".number-focus").focusin(function(){
       $(this).css("border-bottom" , "1px solid #00aaff");
     });
-    $("number-focus").focusout(function(){
+    $(".number-focus").focusout(function(){
       $(this).css("border-bottom" , "1px solid rgba(255, 255, 255, 0.3)");
     });
 

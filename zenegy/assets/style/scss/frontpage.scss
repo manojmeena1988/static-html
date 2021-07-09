@@ -94,40 +94,6 @@
       text-decoration: none;
     }
   }
-  // &.page-sub-header{
-  //   top:60px !important;
-  //   border-top:1px solid rgba(255,255,255,0.16);
-  //   z-index:997;
-  //   .logo{
-  //     a{
-  //       color:$white;
-  //       font-size:18px;
-  //       line-height:24px;
-  //       font-weight:700;
-  //     }
-  //   }
-  //   .nav-header{
-  //     .nav{
-  //       li{
-  //         a {
-  //           font-size:14px;
-  //         line-height:24px;
-  //         font-weight:400;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   .right-items{
-  //     .btn{
-  //       background-color:$pink;
-  //       color:$white;
-  //       padding:8px 16px;
-  //       font-size:14px;
-  //       line-height:18px;
-  //       font-weight:500;
-  //     }
-  //   }
-  // }
 }
 .btn-menu-toggle {
   cursor: pointer;
@@ -176,8 +142,6 @@
 }
 .hero-section {
   min-height: 500px;
-  // max-height: 920px;
-  // height:100vh;
   height:85vh;
   position: relative;
   padding: 92px 0 48px;
@@ -196,7 +160,6 @@
     &::after {
       position: absolute;
       content: "";
-      // background-color: rgb(31 34 39 / 50%);
       background-color: rgba(31, 34, 39, 0.1);
       height: 100%;
       width: 100%;
@@ -251,9 +214,6 @@
       }
     }
     h2 {
-      // margin-top: 16px;
-      // margin-bottom: 32px;
-      // max-width:782px;
       margin: 16px auto 24px;
       font-weight: 900;
     }
@@ -454,7 +414,15 @@
     }
     &.software-access{
       background-image: url(../../images/frontpage-card-software-acces@1x.jpg);
-      background-position:center;
+      // @media (-webkit-min-device-pixel-ratio: 2), 
+      // (min-resolution: 192dpi) { 
+      //     &.software-access{
+      //       background:url('../../images/frontpage-card-software-acces@2x.jpg');
+      //       background-position: center , bottom;
+      //       background-size: cover;
+      //     }
+      // }
+      background-position:center , bottom;
       background-size:cover;
       background-repeat:no-repeat;
       .card-body{
@@ -593,19 +561,11 @@
         width: 100%;
         padding: 20px;
         .icon {
-          // padding: 20px ;
-          // width: 88px;
-          // background: rgb(0 0 0 / 8%);
-          // border-radius: 20px;
           .svg-icon {
             display: block;
             svg {
-              // width:104px;
-              // height:104px
-              // width: 100%;
               max-width:100%;
             }
-
             path {
               fill: #fff;
             }
@@ -699,7 +659,7 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top:50px;
   .item {
     margin: 0 30px 30px;
     text-align: center;
@@ -852,7 +812,6 @@
         .danske-img {
           height: 100%;
           width: 100%;
-          // min-height:720px;
           &::after {
             position: absolute;
             content: "";
@@ -883,7 +842,7 @@
       &.zenegy-card{
         .card-body{
           h2{
-            max-width:323px;
+            max-width:324px;
           }
         }
       }
@@ -1039,14 +998,6 @@
         justify-content: space-between;
       }
     }
-    // .news-title {
-    //   font-weight: 700;
-    //   margin-top: 16px;
-    //   margin-bottom: 48px;
-    // }
-    // .text-sm {
-    //   color: $gray-700;
-    // }
     p {
       color: $gray-700;
       margin-bottom: 0;
@@ -1082,9 +1033,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    // a {
-    //   color: $blue;
-    // }
   }
   .team-blue-sec {
     margin: 80px 0 0;
@@ -1101,8 +1049,6 @@
     }
     .right-slider-teamblue {
       margin: 0 auto;
-      // max-width:540px;
-      // word-break: break-word;
       padding: 20px 40px;
       .slider-box {
         img {
@@ -1990,7 +1936,6 @@
 }
 .save-time {
   .bg-theme {
-    // background-color: $pink;
     .icon-wrapper {
       .icon-item {
         width: 33.33%;
@@ -2060,21 +2005,11 @@
         font-weight: 500;
         margin-top: 16px;
       }
-      // .btn{
-      //   background-color:$pink;
-      //   border-color:$pink;
-      // }
     }
   }
 }
 .payroll-banner-section {
   position: relative;
-  // background-image:url("../../images/accounts-why-footer@2x.jpg");
-  // width:100%;
-  // height:100%;
-  // background-position:bottom;
-  // background-size:cover;
-  // background-repeat:no-repeat;
   img {
     width: 100%;
     &.account-img-bg {
@@ -2084,7 +2019,7 @@
       min-height: 1350px;
     }
     &.number-img-bg {
-      min-height: 1400px;
+      min-height: 1300px;
     }
   }
   .join-us-form {
@@ -2097,10 +2032,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    // display: flex;
-    // align-items: center;
-    // flex-direction: column;
-    // justify-content: center;
     p {
       color: $gray-700;
       margin-bottom: 24px;
@@ -2114,11 +2045,7 @@
         opacity: 0.5;
       }
     }
-    // .btn{
-    //   background-color:$pink;
-    //   border-color:$pink;
-    //   color:$white;
-    // }
+   
     .company-form-section {
       margin: 80px 0 0;
       .col {
@@ -2600,7 +2527,6 @@
 .save-time {
   &.expense-management {
     .ex-m {
-      // background-color: $purple;
       .card-body {
         .card-title {
           color: rgba(255, 255, 255, 0.8);
@@ -2619,7 +2545,6 @@
           &.is-large {
             color: $white;
           }
-          // margin: 40px 0;
         }
         a {
           i {
@@ -2673,6 +2598,16 @@
     }
     .workflow-card{
       .card-body{
+        .top{
+          p{
+            &.is-large{
+              color:$white;
+              &.is-500{
+                color:$gray-700;
+              }
+            }
+          }
+        }
         .bottom{
           margin:64px 0 0;
         }
@@ -2684,13 +2619,6 @@
       background-position: center , bottom ,right;
       background-size: cover;
       background-repeat: no-repeat;
-      // position: relative;
-
-      // .card-img-bottom {
-      //   position: absolute;
-      //   bottom: 0;
-      //   left: 13%;
-      // }
     }
     .full-control{
       .card-body{
@@ -2910,7 +2838,6 @@
       }
     }
     .ex-m {
-      // background-color: $gray-700;
       .card-body {
         .card-title {
           color: rgba(255, 255, 255, 1);
@@ -3056,9 +2983,18 @@
         background-repeat:no-repeat;
         .card-body {
           .top {
+            p{
+              &.is-large{
+                color:$white;
+                &.is-500{
+                  color:$gray-700;
+                }
+              }
+            }
             h4 {
               max-width: 100%;
             }
+            
           }
         }
       }
@@ -3197,6 +3133,16 @@
               &:hover {
                 background-color: darken($pink, 5%);
               }
+            }
+          }
+        }
+      }
+      &.complete-overview{
+        .card-body{
+          .mid{
+            h3{
+              font-weight:900;
+              margin: 0 0 24px 0;
             }
           }
         }

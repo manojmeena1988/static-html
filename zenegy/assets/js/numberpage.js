@@ -32,4 +32,12 @@ var inputNum = document.querySelector("#phone-number");
         });
       }
 
+          // form focus js start
+      $(".number-focus").focusin(function(){
+        $(this).css("border-bottom" , "1px solid #00aaff");
+      });
+      $(".number-focus").focusout(function(){
+        $(this).css("border-bottom" , "1px solid rgba(255, 255, 255, 0.3)");
+      });
+
     });

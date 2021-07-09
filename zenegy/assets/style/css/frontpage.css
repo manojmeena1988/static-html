@@ -10941,7 +10941,7 @@ h6, .h6 {
 }
 .product-section .card.software-access {
   background-image: url(../../images/frontpage-card-software-acces@1x.jpg);
-  background-position: center;
+  background-position: center, bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -11123,7 +11123,7 @@ h6, .h6 {
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .suite-icons .item {
   margin: 0 30px 30px;
@@ -11286,7 +11286,7 @@ h6, .h6 {
   font-weight: 700;
 }
 .why-us .card-section .card.zenegy-card .card-body h2, .why-us .card-section .card.zenegy-card .card-body .h2 {
-  max-width: 323px;
+  max-width: 324px;
 }
 .why-us .card-section .card.one-platform {
   margin-bottom: 0;
@@ -12280,7 +12280,7 @@ h6, .h6 {
   min-height: 1350px;
 }
 .payroll-banner-section img.number-img-bg {
-  min-height: 1400px;
+  min-height: 1300px;
 }
 .payroll-banner-section .join-us-form {
   text-align: center;
@@ -12749,6 +12749,12 @@ h6, .h6 {
 .save-time.expense-management .ex-m.chart-account .card-body .top h1, .save-time.expense-management .ex-m.chart-account .card-body .top .h1 {
   max-width: 100%;
 }
+.save-time.expense-management .workflow-card .card-body .top p.is-large {
+  color: #fff;
+}
+.save-time.expense-management .workflow-card .card-body .top p.is-large.is-500 {
+  color: #979797;
+}
 .save-time.expense-management .workflow-card .card-body .bottom {
   margin: 64px 0 0;
 }
@@ -12978,6 +12984,12 @@ h6, .h6 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.save-time.better-service .card.bank-b .card-body .top p.is-large {
+  color: #fff;
+}
+.save-time.better-service .card.bank-b .card-body .top p.is-large.is-500 {
+  color: #979797;
+}
 .save-time.better-service .card.bank-b .card-body .top h4, .save-time.better-service .card.bank-b .card-body .top .h4 {
   max-width: 100%;
 }
@@ -13063,6 +13075,10 @@ h6, .h6 {
 }
 .save-time.dimention-sec .card.bg-gray .card-body .bottom a:hover {
   background-color: #ca3a89;
+}
+.save-time.dimention-sec .card.complete-overview .card-body .mid h3, .save-time.dimention-sec .card.complete-overview .card-body .mid .h3 {
+  font-weight: 900;
+  margin: 0 0 24px 0;
 }
 .save-time.dimention-sec .card.document-m .card-body .top h5, .save-time.dimention-sec .card.document-m .card-body .top .h5 {
   font-weight: 900;
@@ -13559,6 +13575,37 @@ h6, .h6 {
   min-height: 100%;
 }
 
+@media screen and (min-width: 2000px) {
+  .product-section .card.software-access {
+    background-image: url(../../images/frontpage-card-software-acces@2x.jpg);
+  }
+
+  .save-time.dimention-sec .card.mobility-s {
+    background-image: url(../../images/frontpage-card-mobility@2x.jpg);
+  }
+  .save-time.expense-management .card.expense-m {
+    background-image: url(../../images/frontpage-card-expense-management@2x.jpg);
+  }
+  .save-time.expense-management .ex-m.every-o {
+    background-image: url(../../images/frontpage-card-everything-one-place@2x.jpg);
+  }
+  .save-time.expense-management .ex-m.chart-account {
+    background-image: url(../../images/numbers-card-chart-of-accounts@2x.jpg);
+  }
+  .save-time.expense-management .exp-manage {
+    background-image: url(../../images/expense-card-expense-mgmt@2x.jpg);
+  }
+  .save-time.better-service .card.emp-t {
+    background-image: url(../../images/people-card-employee-templates@2x.jpg);
+  }
+  .save-time.better-service .card.bank-b {
+    background-image: url(../../images/numbers-card-banks@2x.jpg);
+  }
+
+  .why-us .card-section .card.client-app {
+    background-image: url(../../images/frontpage-card-mobility@2x.jpg);
+  }
+}
 @media screen and (min-width: 1550px) and (max-width: 1680px) {
   h1, .h1 {
     font-size: 54px;
@@ -14220,6 +14267,11 @@ h6, .h6 {
   .stories .team-blue-sec .left-teamblue .slick-track {
     height: 320px;
   }
+
+  .hero-section {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
 }
 @media screen and (min-width: 600px) and (max-width: 730px) {
   .footer .footer-bottom .f-last {
@@ -14260,13 +14312,13 @@ h6, .h6 {
     padding: 50px 0;
     overflow: hidden;
   }
-  .product-section .btn-box .btn {
-    padding: 10px 20px;
+  .product-section .section-header .btn-box .btn {
+    padding: 10px 40px;
   }
-  .product-section .btn-box .btn:first-child {
+  .product-section .section-header .btn-box .btn:first-child {
     margin: 0 0 16px 0;
   }
-  .product-section .btn-box .btn:not(:first-child) {
+  .product-section .section-header .btn-box .btn:not(:first-child) {
     margin-left: 0;
   }
 
@@ -14504,7 +14556,7 @@ h6, .h6 {
     margin-top: 0px;
   }
   .save-time.expense-management .card.increased-control {
-    min-height: 676px;
+    min-height: 590px;
   }
 
   .min-h-720 {
@@ -14548,7 +14600,7 @@ h6, .h6 {
     margin-bottom: 20px;
   }
   .save-time.expense-management .ex-m.chart-account {
-    background-size: 500px;
+    background-size: 650px;
   }
   .save-time.expense-management .ex-m.every-o {
     background-size: 830px;
@@ -14570,6 +14622,10 @@ h6, .h6 {
   .save-time.expense-management .card.full-control .card-body .bottom svg {
     height: 100%;
   }
+  .save-time.expense-management .card.expense-m {
+    background-position: bottom;
+    background-size: 750px;
+  }
   .save-time.dimention-sec .card.union-agreement .card-body .top h4, .save-time.dimention-sec .card.union-agreement .card-body .top .h4 {
     font-size: 22px;
     line-height: 25px;
@@ -14581,7 +14637,7 @@ h6, .h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(540px - 140px);
+    height: calc(540px - 160px);
   }
   .save-time.dimention-sec .card.product-card .card-body .bottom {
     margin: 50px 0 0;
@@ -14591,14 +14647,20 @@ h6, .h6 {
     background-position: bottom, center;
   }
   .save-time.better-service .card.bank-b {
-    background-size: 550px;
+    background-size: 650px;
     background-position: bottom;
   }
   .save-time.better-service .card.white-label .card-body .bottom {
-    margin: 60px 0 0;
+    margin: 35px 0 0;
   }
   .save-time.better-service .card.white-label .card-body .bottom svg {
     height: 100%;
+  }
+  .save-time.better-service .card .card-img-overlay .text-sec h2, .save-time.better-service .card .card-img-overlay .text-sec .h2 {
+    text-align: left;
+  }
+  .save-time.account-management .ex-m .card-img-overlay .bottom {
+    text-align: left;
   }
 
   .e-conomic-sec {
@@ -14853,11 +14915,6 @@ h6, .h6 {
     width: calc(100% - 140px);
   }
 
-  .hero-section {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
-
   .just-payroll-section .user-r .card .card-body {
     text-align: center;
   }
@@ -14899,11 +14956,23 @@ h6, .h6 {
   }
 
   .save-time.expense-management .ex-m.chart-account {
-    background-size: 400px;
+    background-size: 550px;
   }
 
   .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
     top: -10px !important;
+  }
+
+  .hero-section .hero-content .btn {
+    padding: 10px 28px;
+  }
+
+  .feature-section.pricing-section .payroll-feature-section .accordian-box.active .accordian-content .payroll-price-sec .card .card-body .upper-data a {
+    padding: 10px 70px;
+  }
+
+  .we-make-sec .card {
+    min-height: 620px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -14919,6 +14988,26 @@ h6, .h6 {
     margin: auto;
     padding: 0;
   }
+
+  .save-time.expense-management .ex-m.exp-manage {
+    background-position: bottom, center;
+    background-size: 420px;
+  }
+  .save-time.expense-management .ex-m.every-o {
+    background-size: 650px;
+  }
+  .save-time.expense-management .ex-m.chart-account {
+    background-size: 400px;
+  }
+  .save-time.expense-management .card.increased-control {
+    min-height: 625px;
+  }
+  .save-time.better-service .card .card-body .top p {
+    margin-bottom: 23px;
+  }
+  .save-time.better-service .card.bank-b {
+    background-size: 550px;
+  }
 }
 @media screen and (max-width: 360px) {
   .card-img-overlay {
@@ -14927,6 +15016,10 @@ h6, .h6 {
 
   .why-us .card-section .card .card-body .why-us-inner .video-bg iframe {
     top: -24px !important;
+  }
+
+  .hero-section .hero-content {
+    padding-top: 50px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -14963,6 +15056,25 @@ h6, .h6 {
   .danske-bank h5, .danske-bank .h5 {
     font-size: 20px;
     line-height: 22px;
+  }
+
+  .save-time.expense-management .ex-m.exp-manage {
+    background-size: 370px;
+  }
+  .save-time.expense-management .card.increased-control {
+    min-height: 676px;
+  }
+
+  .hero-section .hero-content {
+    padding-top: 80px;
+  }
+  .hero-section .hero-content h2, .hero-section .hero-content .h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .product-section .card.software-access {
+    background-size: 690px;
   }
 }
 @media screen and (min-width: 991.99px) {
