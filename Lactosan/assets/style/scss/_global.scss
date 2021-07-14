@@ -4,6 +4,7 @@ body {
     color: $dark-3c;
     font-weight:$fw-400;   
     font-family: 'Open Sans', sans-serif;
+    position: relative;
   }
 
   .btn{
@@ -23,14 +24,14 @@ body {
       }
     }
     &.btn-warning{
-        background-color:lighten($Orange , 30%);
-        color:$Orange;
+        background-color:lighten($orange , 30%);
+        color:$orange;
         &:hover{
-          background-color:$Orange;
+          background-color:$orange;
           color:$white;
         }
         &.active{
-          background-color:$Orange;
+          background-color:$orange;
           color:$white; 
         } 
     }
@@ -85,11 +86,35 @@ body {
   }
   .card{
       border:none;
-      border-radius:20px;
-      padding:40px;
+      border-radius:10px;
       overflow: hidden;
+      .card-header{
+        border:none;
+        padding:0;
+      }
+      .card-body{
+        padding:40px;
+      }
       &.bg-gray{
           background-color:$gray-f8;
+      }
+      &.bg-blue-light{
+        background-color:lighten($blue , 30%);
+      }
+      &.bg-orange-light{
+        background-color:lighten($orange , 30%);
+      }
+      &.bg-lilla-light{
+        background-color:lighten($lilla , 30%);
+      }
+      &.bg-green-light{
+        background-color:lighten($green , 30%);
+      }
+      &.bg-turkise-light{
+        background-color:lighten($turkise , 30%);
+      }
+      &.bg-beige{
+        background-color:$Beige;
       }
   }
   input{
@@ -104,6 +129,7 @@ body {
     font-size:13px;
     line-height:21px;
     border-radius:0;
+    box-sizing:border-box;
     &:focus{
       background-color:transparent;
       box-shadow:none;
@@ -133,9 +159,9 @@ body {
       border-bottom:1px solid $dark-3c;
       transition:all 0.1s ease-in-out;
       &:focus{
-        border-bottom:2px solid $blue;
+        border-bottom:1px solid $blue;
         color:$blue;
-        font-weight:$fw-700;
+        // font-weight:$fw-700;
       }
     }
   }
@@ -175,3 +201,45 @@ body {
       background-color:$Beige;
     }
   }
+  .row-y{
+    align-items:center;
+  }
+
+  .img-overlay-bg{  
+    &::after{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: transparent linear-gradient(180deg, #FFFFFF00 0%, rgba(0,0,0,0.6) 100%) 0% 0% no-repeat padding-box;
+      border-radius:10px;
+    }
+  }
+
+  .img-content{
+    position:absolute;
+    left:30px;
+    bottom:30px;
+    color:$white;
+    z-index:1;
+    h3{
+        font-weight:$fw-700;
+    }
+    h4{
+      font-weight:$fw-700;
+    }
+}
+.tabList{
+  padding:0;
+  margin:0;
+  text-align:center;
+  li{
+    display:inline-block;
+    margin-right:12px;
+  }
+}
+.mt-80{
+  margin-top:80px;
+}
