@@ -58,6 +58,18 @@ body {
         background-color:$dark-3c;
         color:$white; 
       }
+    }
+    &.btn-black{
+      background-color:$black;
+      color:$white;
+      &:hover{
+        background-color:lighten($black , 20%);
+        color:$white;
+      }
+      &.active{
+        background-color:lighten($black , 20%);
+        color:$white; 
+      } 
     } 
   }
 
@@ -164,6 +176,12 @@ body {
         // font-weight:$fw-700;
       }
     }
+    &.input-beigen{
+      background-color:$Beige;
+      padding:15px 17px;
+      margin-bottom:17px;
+      border-radius:25px;
+    }
   }
   .custom-select{
     position: relative;
@@ -242,4 +260,29 @@ body {
 }
 .mt-80{
   margin-top:80px;
+}
+.comain-select{
+  position: relative;
+  display:inline-block;
+  i{
+    position:absolute;
+    top:21px;
+    right:30px;
+    color:$blue;
+  }
+}
+
+.filter-tab{
+  width:50px;
+  height:50px;
+  background-color:lighten($blue , 30%);
+  border-radius:26px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:$blue;
+  text-decoration:none;
+  &:hover{
+      text-decoration:none;
+  }
 }
