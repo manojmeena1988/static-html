@@ -48,7 +48,7 @@
               </ul>
             </div>
             <div class="right-items">
-              <a class="login-link" href="#">Login</a>
+                <a class="login-link" href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#login-modal">Login</a>
   
               <div class="dropdown language-item">
                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -84,7 +84,7 @@
             <div class="tab-pane fade show active" id="pills-contact1" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="container">
                     <div class="location-specialist">
-                        <a href="#" class="filter-tab">
+                        <a  class="filter-tab">
                             <i class="fas fa-sort-amount-up"></i>
                         </a>
                         <div class="row mt-5">
@@ -617,10 +617,241 @@
             </div>
         </div>
     </footer>
+
+    <!--Login modal Modal  -->
+  <div class="modal fade login-modal-box" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card bg-beige left-box">
+                        <div class="card-body">
+                            <img class="img-fluid" src="assets/images/temp20.PNG" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card login-form">
+                        <span class="modal-close-icon" data-bs-dismiss="modal">
+                            <i class="fas fa-times"></i>
+                        </span>
+                        <div class="card-body">
+                            <h3>Hello, Sign in</h3>
+                            <form class="form-boxlog">
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <input type="email" class="form-control input-beigen-light" placeholder="" name="email" required/>
+                                        <span>Email</span>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <input type="password" class="form-control input-beigen-light" placeholder="" name="email" required/>
+                                        <span>Password</span>
+                                    </div>
+                                </div>
+                                <div class="form-row password-forgot">
+                                    <div class="form-group col">
+                                      <div class="form-check custom-radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Save password
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="form-group col forgot-link">
+                                        <a href="#">Forgot password?</a>
+                                    </div>
+                                </div>
+                                <div class="signup-btn">
+                                    <button class="btn btn-primary-dark w-100">Sign in</button>
+                                    <a class="singUp-link">Sign up for a New user?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact filter box start -->
+  <div class="offcanvas-overlay"></div>
+  <div class="filter-box">
+      <span class="close-filter"><i class="fas fa-times"></i></span>
+      <div class="filter-single-block">
+        <p class="filter-title">Country</p>
+        <ul class="filter-list">
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Denmark
+                    </label>
+                </div>
+                <span>8</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        China
+                    </label>
+                </div>
+                <span>1</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Germany
+                    </label>
+                </div>
+                <span>2</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Japan
+                    </label>
+                </div>
+                <span>1</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Russia
+                    </label>
+                </div>
+                <span>1</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        United kingdom 
+                    </label>
+                </div>
+                <span>2</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Urugauy
+                    </label>
+                </div>
+                <span>1</span>
+            </li>
+        </ul>
+      </div>
+      <div class="filter-single-block">
+        <p class="filter-title">Department</p>
+        <ul class="filter-list">
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Product development 
+                    </label>
+                </div>
+                <span>8</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Science & Technology 
+                    </label>
+                </div>
+                <span>29</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Customer Service 
+                    </label>
+                </div>
+                <span>12</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Sales 
+                    </label>
+                </div>
+                <span>2</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Quality 
+                    </label>
+                </div>
+                <span>3</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Marketing 
+                    </label>
+                </div>
+                <span>2</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Production
+                    </label>
+                </div>
+                <span>1</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                         Procurement/Purchasing
+                    </label>
+                </div>
+                <span>2</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Finances
+                    </label>
+                </div>
+                <span>2</span>
+            </li>
+            <li>
+                <div class="form-check custom-checkbox">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Agents and distrubutors
+                    </label>
+                </div>
+                <span>1</span>
+            </li>
+        </ul>
+      </div>
+      <button class="btn btn-primary-dark save-button">Save</button>
+  </div>
+
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
   <!-- slick js start -->
   <script src="assets/lib/slick/slick.js"></script>
-  <script src="assets/js/homepage.js"></script>
+  <script src="assets/js/layout.js"></script>
 </body>
 </html>  

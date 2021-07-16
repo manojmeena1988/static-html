@@ -23,6 +23,14 @@ body {
         color:$white; 
       }
     }
+    &.btn-primary-dark{
+      background-color:$blue;
+      color:$white;
+      &:hover{
+        background-color:lighten($blue , 5%);
+        color:$white;
+      }
+    }
     &.btn-warning{
         background-color:lighten($orange , 30%);
         color:$orange;
@@ -96,6 +104,7 @@ body {
   .container-fluid{
       padding:0 30px;
   }
+ 
   .card{
       border:none;
       border-radius:10px;
@@ -176,11 +185,14 @@ body {
         // font-weight:$fw-700;
       }
     }
-    &.input-beigen{
-      background-color:$Beige;
+    &.input-beigen-light{
+      background-color:$Beige-fa;
       padding:15px 17px;
       margin-bottom:17px;
       border-radius:25px;
+      &:focus{
+        background-color:$Beige;
+      }
     }
   }
   .custom-select{
@@ -194,6 +206,24 @@ body {
     }
   }
   .custom-radio{
+    .form-check-input{
+      width:18px;
+      height:18px;
+      border-color:$dark-3c;
+      cursor:pointer;
+      margin-right:8px;
+      &:checked{
+        background-color:$white;
+        box-shadow:none;
+        background-image:url(../../images/circle-black.svg);
+      }
+    }
+    label{
+      font-size:13px;
+      line-height:21px;
+    }
+  }
+  .custom-checkbox{
     .form-check-input{
       width:18px;
       height:18px;
@@ -282,7 +312,88 @@ body {
   justify-content:center;
   color:$blue;
   text-decoration:none;
+  cursor: pointer;
   &:hover{
       text-decoration:none;
+  }
+}
+
+.custom-progress{
+  border-radius:20px;
+  background-color:transparent;
+  height:12px;
+  margin:0 0 22px;
+  &:last-child{
+    margin:0;
+  }
+  .progress-bar{
+    border-radius:20px;
+    &.progress-lilla{
+      background-color:$lilla;
+    }
+    &.progress-orange{
+      background-color:$orange;
+    }
+    &.progress-blue{
+      background-color:$blue;
+    }
+    &.progress-green{
+      background-color:$green;
+    }
+    &.progress-dark-blue{
+      background-color:$dark-blue;
+    }
+  }
+}
+
+
+.drop-box{
+  width:280px;
+  border-radius:10px;
+  border:none;
+  box-shadow:0 3px 26px rgba(0,0,0,0.26);
+  margin-left:14px !important;
+  padding:34px 28px;
+  position: relative;
+}
+
+.food-items-tab{
+  .nav-item{
+      .nav-link{
+          background-color:transparent;
+          color:$black;
+          &.active{
+              font-weight:$fw-700;
+          }
+      }
+  }
+}
+.custom-pagination{
+  padding:82px 0 0;
+  display: flex;
+  justify-content: center;
+  li{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:$dark;
+    margin:0 16px 0 0;
+    font-weight:$fw-600;
+    cursor:pointer;
+    &:last-child{
+      margin:0;
+    }
+    &.active{
+      background-color:lighten($blue , 30%);
+      color:$blue;
+    }
+    &:hover{
+      background-color:lighten($blue , 30%);
+      color:$blue;
+    }
   }
 }
