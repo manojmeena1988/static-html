@@ -78,6 +78,18 @@ body {
         background-color:lighten($black , 20%);
         color:$white; 
       } 
+    }
+    &.btn-outline-white{
+      border:1px solid $white;
+       color:$white;
+       &:hover{
+        background-color:$white;
+        color:$dark-3c;
+      }
+      &.active{
+        background-color:$white;
+        color:$dark-3c;
+      }
     } 
   }
 
@@ -104,7 +116,12 @@ body {
   .container-fluid{
       padding:0 30px;
   }
- 
+  .container{
+    padding:0 15px;
+  }
+  ul{
+    padding:0;
+  }
   .card{
       border:none;
       border-radius:10px;
@@ -136,6 +153,9 @@ body {
       }
       &.bg-beige{
         background-color:$Beige;
+      }
+      &.bg-green{
+        background-color:$green;
       }
   }
   input{
@@ -185,6 +205,25 @@ body {
         // font-weight:$fw-700;
       }
     }
+    &.outline-white{
+      border-bottom:1px solid #707070;
+      transition:all 0.1s ease-in-out;
+      color:$white;
+      &::-webkit-input-placeholder { /* Edge */
+        color:$white;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color:$white;
+        }
+      &::placeholder {
+          color:$white;
+      }
+      &:focus{
+        border-bottom:1px solid $white;
+        color:$white;
+        // font-weight:$fw-700;
+      }
+    }
     &.input-beigen-light{
       background-color:$Beige-fa;
       padding:15px 17px;
@@ -206,8 +245,12 @@ body {
     }
   }
   .custom-radio{
+    display:flex;
+    min-height:22px;
+    align-items:center;
     .form-check-input{
       width:18px;
+      min-width:18px;
       height:18px;
       border-color:$dark-3c;
       cursor:pointer;
@@ -248,6 +291,29 @@ body {
     &.bg-beige{
       background-color:$Beige;
     }
+    &.bg-lilla{
+      background-color:$lilla;
+    }
+    &.bg-orange{
+      background-color:$orange;
+    }
+    &.bg-light-orange{
+      background-color:lighten($orange , 30%);
+    }
+    &.bg-gray{
+      background-color:$gray-f8;
+    }
+    &.bg-black{
+      background-color:#080808F2;
+      padding:160px 0;
+      // color:$white;
+    }
+    &.padding-top-0{
+      padding-top:0;
+    }
+    &.padding-bottom-0{
+      padding-bottom:0;
+    }
   }
   .row-y{
     align-items:center;
@@ -286,6 +352,9 @@ body {
   li{
     display:inline-block;
     margin-right:12px;
+    &:last-child{
+      margin-right:0;
+    }
   }
 }
 .mt-80{
@@ -359,12 +428,17 @@ body {
 
 .food-items-tab{
   .nav-item{
+    margin-right:22px;
       .nav-link{
           background-color:transparent;
           color:$black;
+          padding:0;
           &.active{
               font-weight:$fw-700;
           }
+      }
+      &:last-child{
+        margin-right:0;
       }
   }
 }
@@ -395,5 +469,170 @@ body {
       background-color:lighten($blue , 30%);
       color:$blue;
     }
+  }
+}
+.custom-select-box{
+  width:100%;
+  .application-items{
+    color:$gray-99;
+    &:focus{
+      color:$dark;
+    }
+    option{
+      &:first-child{
+        color:$gray-99;
+      }
+    }
+  }
+  .select2-container{
+    .select2-selection{
+      border-bottom:1px solid $dark;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      background-color:transparent;
+      border-radius: 0;
+      &:focus{
+        border:none;
+      }
+    }
+  }
+}
+
+.video-block{
+  padding:0px;
+  border-radius:10px;
+  position: relative;
+  overflow: hidden;
+  max-height:578px;
+  .play-box{
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          position:absolute;
+          top:0;
+          left:0;
+          width:100%;
+          height:100%;
+      .play-item{
+          width:100px;
+          height:100px;
+          background-color:rgba(0,0,0,0.66);
+          border-radius:50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration:none;
+          transition:all 0.5s ease-in-out;
+          &:hover{
+              transform:scale(1.2);
+          }
+          i{
+              font-size:28px;
+              line-height:32px;
+              color:$white;
+          }
+      }    
+  }
+  
+}
+
+.section-heading{
+  h1{
+    font-weight:$fw-700;
+    text-align:center;
+    color:$dark;
+  }
+}
+
+.product-item-box{
+  background-color:transparent;
+  margin:0 0 160px;
+  .card-header{
+      max-width:508px;
+      img{
+          width:100%;
+          border-radius:10px;
+      }
+  }
+  .card-body{
+      padding:50px 0;
+      color:$dark;
+      h3{
+          font-weight:$fw-700;
+      }
+      p{
+          max-width:505px;
+          padding:28px 0;
+      }
+  }
+  &.space-top{
+      margin-top:270px;
+  }
+  &:last-child{
+    margin-bottom:0;
+  }
+}
+.product-cover-banner{
+  position: relative;
+  img{
+    width:100%;
+    max-height:739px;
+    object-fit:cover;
+  }
+  .banner-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+}
+
+
+.latest-news{
+  h4{
+     font-size:25px;
+     max-width:330px;
+     color:$dark-3c;
+     span{
+      font-weight:$fw-700;
+     } 
+  }
+  .news-form{
+      margin:50px 0 0;
+      max-width:380px;
+      position: relative;
+      .form-row{
+          margin:30px 0 26px 0;
+          position: relative;
+          .form-group{
+              input{
+                 &:focus ~ span{
+                      transform:translateY(-32px);
+                      font-size:8px;
+                 } 
+                 &:valid ~ span{
+                  transform:translateY(-32px);
+                  font-size:8px;
+                 } 
+              }
+              span{
+                  position:absolute;
+                  top:0;
+                  left:0;
+                  padding:5px 0;
+                  display:inline-block;
+                  pointer-events:none;
+                  transition:0.3s;
+                  color:$dark;
+                  font-size:13px;
+                  line-height:21px;
+              }
+          }
+      }
   }
 }

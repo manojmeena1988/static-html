@@ -36,47 +36,52 @@
                 </div>
             </div>
           </div>
-         <a href="#" class="up-scroll"><i class="fas fa-chevron-up"></i></a>
+         <a href="#scrollTop" class="up-scroll"><i class="fas fa-chevron-up"></i></a>
      </div>
-     <!-- chat and scroll section end  -->
-    <header class="top-header">
-        <div class="container-fluid">
-            <div class="logo">
-              <a href="home.html">
-                <img
-                  src="
-                    assets/images/logo.png
-                  "
-                  alt=""
-                />
-              </a>
-            </div>
-            <div class="nav-header">
-              <ul class="nav">
-                <li class="active"><a href="#">Cheese Powder Solutions</a></li>
-                <li class=""><a href="#">Applications</a></li>
-                <li class=""><a href="#">Services</a></li>
-                <li class=""><a href="#">News & Trends</a></li>
-                <li class=""><a href="#">Company</a></li>
-                <li class=""><a href="#">Get in touch</a></li>
-              </ul>
-            </div>
-            <div class="right-items">
-                <a class="login-link" href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#login-modal">Login</a>
-  
-              <div class="dropdown language-item">
-                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  EN
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">EN</a></li>
-                  <li><a class="dropdown-item" href="#">DE</a></li>
-                  <li><a class="dropdown-item" href="#">SE</a></li>
-                </ul>
-              </div>
-            </div>
+       <!-- scroll top end -->
+   <header id="scrollTop" class="top-header">
+    <div class="container-fluid">
+        <div class="logo">
+          <a href="home.html">
+            <img
+              src="
+                assets/images/logo.png
+              "
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="nav-header">
+          <ul class="nav">
+            <li class="active"><a href="product-page.html">Cheese Powder Solutions</a></li>
+            <li class=""><a href="application.html">Applications</a></li>
+            <li class=""><a href="service.html">Services</a></li>
+            <li class=""><a href="news-trends.html">News & Trends</a></li>
+            <li class=""><a href="company.html">Company</a></li>
+            <li class=""><a href="get-in-tuch.html">Get in touch</a></li>
+          </ul>
+        </div>
+        <div class="right-items">
+          <a class="login-link" href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#login-modal">Login</a>
+
+          <div class="dropdown language-item">
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              EN
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">EN</a></li>
+              <li><a class="dropdown-item" href="#">DE</a></li>
+              <li><a class="dropdown-item" href="#">SE</a></li>
+            </ul>
           </div>
-    </header>
+        </div>
+        <div class="mobile-menu">
+            <span class="hamburg-one"></span>
+            <span class="hamburg-two"></span>
+            <span class="hamburg-three"></span>
+        </div>
+      </div>
+   </header>
     <!-- header section end -->
     <section class="section bg-beige product-blend-banner">
         <div class="container">
@@ -188,116 +193,228 @@
         </div>
     </section>
     <!-- section end -->
-<footer class="footer-section">
-    <div class="container">
-        <div class="footer-logo">
-            <img class="img-fluid" src="assets/images/logo.PNG" alt="" />
-        </div>
-        <div class="footer-mid">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-items">
-                        <p>Loctosan A/S</p>
-                        <p>Nordbakken 2 | DK-5750 Ringe <br> Tel +45 63 620 520 <br> Fax +45 62 623 526 <br> lactosan@lactosan.com</p>
+<section class="section bg-light-orange mobile-latest-news">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="latest-news">
+              <h4>Don’t miss out on <span> new trends</span> and the <span>latest news </span> </h4>
+              <form class="news-form">
+                  <div class="form-row">
+                      <div class="form-group col">
+                          <input type="text" class="form-control outline-drak" placeholder="" name="userName" required="">
+                          <span>Your name</span>
+                      </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col">
+                      <input type="email" class="form-control outline-drak" placeholder="" name="userEmail" required="">
+                      <span>Your email</span>
                     </div>
-                    <div class="footer-items">
-                      <p>Here goes a headline</p>
-                      <p>Get in touch <br> career <br> Thornico group <br> Company</p>
                   </div>
-                  <div class="footer-items">
-                    <p>Danish Food Smiley</p>
-                    <div class="food-search">
-                        <input class="" type="text" placeholder="inspection&#10;Report" name="food-search" />
-                        <img class="img-fluid" src="assets/images/searching.png" alt="" />
+                  <div class="form-row">
+                    <div class="form-group col custom-select">
+                      <select class="form-control outline-drak">
+                          <option>Choose an application area</option>
+                          <option>Choose an application area</option>
+                      </select>
+                      <i class="fas fa-chevron-down"></i>
                     </div>
-                  </div>  
-                </div>
-                <div class="col-md-5">
-                  <div class="footer-items">
-                    <p>Follow us on</p>
-                    <ul class="social-icons">
-                        <li>
-                          <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                          </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fab fa-youtube"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                    </li>
-                    </ul>
                   </div>
-                  <div class="footer-items">
-                    <p>Here goes a headline</p>
-                    <p>Cheese powder Solutions <br> Applications <br> Services <br> News & Trends</p>
+                  <div class="form-row">
+                      <div class="form-group col">
+                        <div class="form-check custom-radio">
+                          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label class="form-check-label" for="flexRadioDefault1">
+                            GDPR: Lorem ipsum dolor sit amet
+                          </label>
+                        </div>
+                      </div>
                   </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="latest-news">
-                        <h4>Don’t miss out on <span> new trends</span> and the <span>latest news </span> </h4>
-                        <form class="news-form">
-                            <div class="form-row">
-                                <div class="form-group col">
-                                    <input type="text" class="form-control outline-drak" placeholder="" name="userName" required />
-                                    <span>Your name</span>
+                  <button class="btn btn-outline-primary mt-3"> <span> Sign up </span> <i class="fas fa-chevron-right"></i></button>
+              </form>
+          </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- section end -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-logo">
+                <img class="img-fluid" src="assets/images/logo.PNG" alt="" />
+            </div>
+            <div class="footer-mid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-items">
+                            <p class="p-title">Loctosan A/S</p>
+                            <p>Nordbakken 2 | DK-5750 Ringe <br> Tel +45 63 620 520 <br> Fax +45 62 623 526 <br> lactosan@lactosan.com</p>
+                        </div>
+                        <div class="footer-items">
+                          <p>Here goes a headline</p>
+                          <ul class="footer-nav-link">
+                              <li>
+                                <a href="get-in-tuch.html">
+                                  Get in touch
+                                </a>
+                              </li>
+                              <li>
+                                <a href="get-in-tuch.html">
+                                  career
+                                </a>
+                              </li>
+                              <li class="sub-menu">
+                                <a href="javascript:void(0)"> Thornico group <div class='fa fa-chevron-down right'></div></a>
+                                <ul class="sub-menu-list">
+                                  <li><a href='#'>Privacy & Cookie Policy</a></li>
+                                  <li>
+                                    <a href="product-cheese-powder.html">
+                                      Cheese powder Solutions
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="application.html">
+                                      Applications
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="service.html">
+                                      Services
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a href="news-trends.html">
+                                      News & Trends
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li>
+                                <a href="company.html">
+                                  Company
+                                </a>
+                              </li>
+                          </ul>
+                          <!-- <p>Get in touch <br> career <br> Thornico group <br> Company</p> -->
+                      </div>
+                      <div class="footer-items">
+                        <p class="p-title">Danish Food Smiley</p>
+                        <div class="food-search">
+                            <!-- <input class="" type="text" placeholder="inspection&#10;Report" name="food-search" />
+                            <img class="img-fluid" src="assets/images/searching.png" alt="" /> -->
+                            <img class="img-fluid w-100" src="assets/images/food-search-white-img.PNG" />
+                        </div>
+                      </div>  
+                    </div>
+                    <div class="col-md-5">
+                      <div class="footer-items">
+                        <p>Follow us on</p>
+                        <ul class="social-icons">
+                            <li>
+                              <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fab fa-youtube"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        </ul>
+                      </div>
+                      <div class="footer-items app-nav">
+                        <p>Here goes a headline</p>
+                        <!-- <p>Cheese powder Solutions <br> Applications <br> Services <br> News & Trends</p> -->
+                        <ul class="footer-nav-link">
+                          <li>
+                            <a href="product-cheese-powder.html">
+                              Cheese powder Solutions
+                            </a>
+                          </li>
+                          <li>
+                            <a href="application.html">
+                              Applications
+                            </a>
+                          </li>
+                          <li>
+                            <a href="service.html">
+                              Services
+                            </a>
+                          </li>
+                          <li>
+                            <a href="news-trends.html">
+                              News & Trends
+                            </a>
+                          </li>
+                      </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="latest-news">
+                            <h4>Don’t miss out on <span> new trends</span> and the <span>latest news </span> </h4>
+                            <form class="news-form">
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <input type="text" class="form-control outline-drak" placeholder="" name="userName" required />
+                                        <span>Your name</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col">
-                                <input type="email" class="form-control outline-drak" placeholder="" name="userEmail"  required />
-                                <span>Your email</span>
-                              </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col custom-select">
-                                <select class="form-control outline-drak">
-                                    <option>Choose an application area</option>
-                                    <option>Choose an application area</option>
-                                </select>
-                                <i class="fas fa-chevron-down"></i>
-                              </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col">
-                                  <div class="form-check custom-radio">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                      GDPR: Lorem ipsum dolor sit amet
-                                    </label>
+                                <div class="form-row">
+                                  <div class="form-group col">
+                                    <input type="email" class="form-control outline-drak" placeholder="" name="userEmail"  required />
+                                    <span>Your email</span>
                                   </div>
                                 </div>
-                            </div>
-                            <button class="btn btn-outline-primary mt-3">Sign up</button>
-                        </form>
+                                <div class="form-row">
+                                  <div class="form-group col custom-select">
+                                    <select class="form-control outline-drak">
+                                        <option>Choose an application area</option>
+                                        <option>Choose an application area</option>
+                                    </select>
+                                    <i class="fas fa-chevron-down"></i>
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                      <div class="form-check custom-radio">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          GDPR: Lorem ipsum dolor sit amet
+                                        </label>
+                                      </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline-primary mt-3">Sign up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row row-y">
+                    <div class="col-md-6">
+                        <div class="privacy-policy">
+                            <p>Privacy & Cookie Policy | Cookie Consent Settings</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bottom-logo">
+                            <img class="img-fluid" src="assets/images/footer-logo.PNG" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="row row-y">
-                <div class="col-md-6">
-                    <div class="privacy-policy">
-                        <p>Privacy & Cookie Policy | Cookie Consent Settings</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="bottom-logo">
-                        <img class="img-fluid" src="assets/images/footer-logo.PNG" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>   
+    </footer>
 
-<!--Login modal Modal  -->
-<div class="modal fade login-modal-box" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <!--Login modal Modal  -->
+   <div class="modal fade login-modal-box" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-body">
@@ -311,12 +428,20 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card login-form">
+                        <span class="back-btn">
+                            <a href="home.html"><i class="fas fa-chevron-left"></i> Back</a>
+                        </span>
                         <span class="modal-close-icon" data-bs-dismiss="modal">
                             <i class="fas fa-times"></i>
                         </span>
                         <div class="card-body">
                             <h3>Hello, Sign in</h3>
                             <form class="form-boxlog">
+                              <div class="login-title">
+                                <h2>Login</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since </p>
+                              </div>
+                              <div class="input-Area">
                                 <div class="form-row">
                                     <div class="form-group col">
                                         <input type="email" class="form-control input-beigen-light" placeholder="" name="email" required/>
@@ -342,9 +467,10 @@
                                         <a href="#">Forgot password?</a>
                                     </div>
                                 </div>
+                              </div>
                                 <div class="signup-btn">
                                     <button class="btn btn-primary-dark w-100">Sign in</button>
-                                    <a class="singUp-link">Sign up for a New user?</a>
+                                    <a href="#" class="singUp-link">Sign up for a New user?</a>
                                 </div>
                             </form>
                         </div>
@@ -355,6 +481,51 @@
       </div>
     </div>
   </div>
+
+    <!-- mobile navbar html start -->
+    <div class="mobile-panel">
+        <div class="top-link">
+          <h2>Menu</h2>
+          <ul class="mobile-navbar">
+            <li class="sub-menu">
+              <a href="javascript:void(0)">Cheese powder Solutions <div class='fa fa-chevron-down right'></div></a>
+              <ul class="sub-menu-list">
+                <li><a href='product-cheese-powder.html'>Cheese powders</a></li>
+                <li><a href='product-ncb.html'>Natural Culinary Boosters</a></li>
+                <li><a href='product-blends.html'>Cheese blends</a></li>
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:void(0)">Application <div class='fa fa-chevron-down right'></div></a>
+              <ul class="sub-menu-list">
+                <li><a href='application.html'>Application</a></li>
+                <li><a href='application-bread-pastry.html'>Application Bread pastry</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="news-trends.html">News & Trends</a>
+            </li>
+            <li>
+              <a href="company.html">Company</a>
+            </li>
+            <li>
+              <a href="get-in-tuch.html">Get in touch</a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-link">
+            <a href="javascript:void(0)"  data-bs-toggle="modal" data-bs-target="#login-modal">Login</a>
+            <ul class="language-list">
+              <li>
+                <a href="#" class="active">DK</a>
+              </li>
+              <li>/</li>
+              <li>
+                <a href="#">EN</a>
+              </li>
+            </ul>
+        </div>
+    </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
   <!-- slick js start -->

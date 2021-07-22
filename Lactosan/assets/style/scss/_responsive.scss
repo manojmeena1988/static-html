@@ -1,0 +1,661 @@
+@media only screen and (max-width:1399px){
+    .application-section{
+        .right-application{
+            .smallImg {
+                max-width: 265px;
+            }
+        } 
+    } 
+    .tabList{
+        li{
+            margin-bottom:20px;
+        }
+    } 
+}
+@media only screen and (max-width:1330px){
+    .top-header{
+        .container-fluid{
+            padding:0 15px;
+            .logo{
+                a{
+                    img{
+                        max-width:150px;
+                    }
+                }
+            }
+            .right-items{
+                min-width:112px;
+            }
+            .nav-header{
+                .nav{
+                    li{
+                        margin:0 40px 0 0;
+                        &.active{
+                            &::after{
+                                bottom:-24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cheese-powder-sec{
+        .container-fluid{
+            .singleBox{
+                .inner-item{
+                    img{
+                        max-width:120px;
+                    }
+                    h2{
+                        font-size:28px;
+                        line-height:32px;
+                    }
+                }
+            }
+        }
+    }
+    .location-tabs{
+        &.product-cheese-tabs{
+            .tab-lists{
+                .nav-item{
+                    .nav-link {
+                        padding:15px 20px;
+                    }
+                } 
+            } 
+        } 
+    }
+}
+
+
+
+@media only screen and (max-width:1024px){
+    .top-header{
+        .container-fluid{
+            .nav-header{
+                .nav{
+                    li{
+                        margin:0 24px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    .application-section{
+        .right-application{
+            .smallImg {
+                max-width: 214px;
+            }
+        } 
+    } 
+    .img-content {
+        left: 15px;
+        bottom:15px;
+    }
+    .location-tabs{
+        &.product-cheese-tabs{
+            .tab-lists{
+                top:-30px;
+                .nav-item{
+                    .nav-link {
+                        padding:15px 10px;
+                        max-width:150px;
+                    }
+                } 
+            } 
+            .what-wedo{
+                .right-cards{
+                    .card{
+                        &:first-child{
+                            .card-body{
+                                h4{
+                                    font-size:18px;
+                                    line-height:20px;
+                                }
+                            }
+                        } 
+                    }
+                } 
+            }
+        } 
+    }
+    .explore-product{
+        .bg-gray , .card{
+            p{
+                font-size: 15px;
+                line-height: 18px;
+            }
+        } 
+    } 
+    .card{
+        .card-body {
+            padding:20px;
+        }
+    }
+    .product-cover-banner{
+        img{
+            min-height:550px;
+        }
+        &.whats-kokumi-banner{
+            
+            .banner-content{
+                padding-left:47px;
+                .display-l1 {
+                    font-size:70px;
+                    line-height:76px;
+                    max-width:477px;
+                }
+            } 
+        }
+        &.product-range-banner{
+            .banner-content{
+                h1{
+                    font-size: 100px;
+                    line-height: 80px;
+                }
+            }
+        } 
+    }
+    .natural-booster{
+        .offer-box{
+            .card-body {
+                padding:20px 15px;
+            }
+        } 
+    } 
+}
+
+@media only screen and (max-width:991px){
+    .display-l1{
+        font-size:34px;
+        line-height:38px;
+    }
+    h1 , .h1{
+        font-size:32px;
+        line-height:36px;
+      }
+      h2 , .h2{
+        font-size:28px;
+        line-height:36px;  
+      }
+      h3 , .h3{
+        font-size:26px;
+        line-height:32px;
+      }
+    .container-fluid{
+        padding:0 15px;
+    }
+
+     
+    .top-header{
+        .container-fluid{
+            .nav-header{
+                display: none;
+            }
+            .right-items{
+                display:none;
+            }
+            .mobile-menu{
+                display:block;
+            }
+        }
+    }
+    .login-modal-box{
+        background-color:$dark-blue;
+        .modal-dialog{
+            max-width:100%;
+            margin:0;
+            min-height: 100%;
+            .modal-content{
+                height:100vh;
+                border-radius:0px;
+                .modal-body{
+                    .row{
+                        .col-md-6{
+                            width:100%;
+                            height:100vh;
+                            display:flex;
+                            align-items:center;
+                            justify-content:center;
+                            background-color:$dark-blue;
+                            &:first-child{
+                                display:none;
+                            }
+                            .login-form{
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 0px;
+                                background-color:$dark-blue;
+                                .back-btn{
+                                    display:block;
+                                }
+                                .modal-close-icon{
+                                    color:$white;
+                                }
+                                .card-body{
+                                    // display: flex;
+                                    // flex-direction: column;
+                                    // align-items: center;
+                                    // justify-content: space-between;
+                                    // width: 100%;
+                                    padding: 100px 30px 40px;
+                                    h3{
+                                        display:none;
+                                    }
+                                    .login-title{
+                                       display:block;
+                                    }
+                                    .form-boxlog{
+                                        width: 100%;
+                                        padding:0;
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        height:100%;
+                                        .input-Area{
+                                            width:100%;
+                                            .form-row{
+                                                &.password-forgot{
+                                                    .custom-radio{
+                                                        .form-check-label{
+                                                            color:$white;
+                                                        }
+                                                        .form-check-input {
+                                                            background-color: transparent;
+                                                            &:checked{
+                                                                background-image:url(../../images/circle-white.svg);
+                                                                border-color:$white;
+                                                            }
+                                                        }
+                                                    } 
+                                                    .forgot-link{
+                                                        a {
+                                                            color:$white;
+                                                        }
+                                                    } 
+                                                } 
+                                            }
+                                        }
+                                        .signup-btn {
+                                            display:flex;
+                                            flex-direction: column-reverse;
+                                            width:100%;
+                                            .singUp-link {
+                                                color:$white;
+                                                margin-bottom: 30px;
+                                                font-weight:$fw-300;
+                                            }
+                                        }
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    .application-section{
+        .right-application{
+            .smallImg {
+                max-width:150px;
+            }
+        } 
+    } 
+    .home-banner{
+        .banner-content {
+            padding-left: 70px;
+        }
+    } 
+    .location-tabs{
+        &.product-cheese-tabs{
+            .tab-lists{
+                .nav-item{
+                    .nav-link {
+                        max-width:120px;
+                    }
+                } 
+            } 
+        } 
+    }
+}
+
+@media only screen and (max-width:768px){
+    .cheese-powder-sec{
+        .container-fluid{
+            .singleBox{
+                .inner-item{
+                    img{
+                        max-width:100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:767px){
+    body{
+        color:$black;
+    }
+    .display-l1{
+        font-size:34px;
+        line-height:38px;
+    }
+    h1 , .h1{
+        font-size:32px;
+        line-height:36px;
+      }
+      h2 , .h2{
+        font-size:28px;
+        line-height:36px;  
+      }
+      h3 , .h3{
+        font-size:26px;
+        line-height:32px;
+      }
+    .container-fluid{
+        padding:0 15px;
+    }
+    .home-banner{
+        img{
+            min-height:500px;
+        }
+        .banner-content{
+            padding-left:15px;
+            .display-l1{
+                max-width:280px;
+            } 
+            p{
+                max-width:280px;
+            }
+        }
+    } 
+    .application-section{
+        overflow: hidden;
+        padding:0 0 80px;
+        .get-inspired{
+            h3{
+                font-weight:$fw-700;
+            }
+        } 
+        .left-application{
+            display:inline-flex !important;
+            .single-img{
+                img {
+                    min-height: 100%;
+                }
+            } 
+        } 
+        .right-application{
+            display:inline-flex !important;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            .smallImg {
+                width:100%;
+                min-width:100%;
+            }
+        } 
+        .seeAll-btn{
+            a {
+                min-width: 100%;
+            }
+        } 
+    } 
+    .secret-ingredient{
+        padding:50px 0;
+        .card{
+            &.bg-gray{
+                background-color:transparent;
+                .card-body{
+                    padding:0;
+                }
+                .next-success {
+                    padding:0;
+                    text-align: left;
+                    h3{
+                        padding:0 0 20px;
+                        color:$black;
+                    }
+                    p{
+                        color:$black;
+                        padding: 0 0 70px;
+                    }
+                }
+            }
+        } 
+    }
+    .video-block{
+        max-height:100%;
+        .play-box{
+            .play-item{
+                width:50px;
+                height:50px;
+                i{
+                    font-size:16px;
+                    line-height:24px;
+                }
+            }    
+        }
+    }
+    .success-next{
+        .tab-slide-section{
+            .tabs-section{
+                .tab-lists{
+                    li {
+                        margin: 0 0px 26px 0;
+                        .btn{
+                            padding:12px 40px;
+                        }
+                    }
+                } 
+            } 
+        } 
+    } 
+    .what-forme {
+        padding:50px 0 0;
+        h2{
+            text-align:center;
+        }
+        .row{
+            justify-content:center;
+            .col{
+                max-width: 140px;
+                min-width: 130px;
+                margin-bottom:20px;
+                .card {
+                    max-height:85px;
+                    .card-body{
+                        padding:20px;
+                        max-height:100%;
+                    }
+                    
+                }
+                h4{
+                    font-size:15px;
+                    color:$dark-3c;
+                }
+            } 
+        }
+        .product-cards {
+            padding:50px 0;
+            .card{
+                margin-bottom:30px;
+            }
+            .right-product-col {
+                margin:0;
+                .card{
+                    margin-bottom:30px;
+                }
+            }
+        }
+    }
+    .journey-step{
+        padding:0 0 90px;
+    } 
+    .latestNews-block{
+        padding:60px 0;
+        .left-block-news{
+            h2 {
+                margin-bottom: 40px;
+            }
+        } 
+    } 
+    .footer-section{
+        .footer-logo{
+            text-align:center;
+            padding: 60px 0 30px;
+        }
+        .footer-mid {
+            text-align: center;
+            border-bottom: none;
+            padding-bottom:30px;
+            .footer-items{
+                p{
+                    &:first-child{
+                        display:none;
+                    }
+                    &.p-title{
+                        display: block;
+                    }
+                }
+                .footer-nav-link{
+                    li{
+                        &.sub-menu{
+                            display:block;
+                            .right{
+                                display:inline-block;
+                            }
+                        }
+                    }
+                }
+                .food-search {
+                    margin:18px auto 0;
+                }
+                .social-icons{
+                    margin:0;
+                }
+                &.app-nav{
+                    display:none;
+                }
+            } 
+            .latest-news{
+                display:none;
+            }
+        } 
+        .footer-bottom{
+            .row{
+                flex-direction: column-reverse;
+            }
+            .privacy-policy{
+                text-align:center;
+                 margin-bottom: 10px;
+            }
+            .bottom-logo{
+                text-align:center;
+                margin-bottom:25px;
+            }
+        }
+    } 
+    .application-section{
+        .iceaCream-product{
+            display:none;
+        }
+    } 
+    .latestNews-block{
+        overflow: hidden;
+        .card{
+            .card-body {
+                padding:30px 20px;
+            }
+        } 
+        // .col-md-6{
+        //     &.right-block-news{
+        //         display:none !important;
+        //     }
+        // }
+    }
+    .what-forme{
+        .product-cards{
+            .card{
+                .card-body {
+                    padding:30px 20px;
+                }
+            } 
+        } 
+    } 
+    .mobile-latest-news{
+        display: block;
+    }
+    .cheese-powder-sec{
+        padding:0 0 80px;
+        .container-fluid{
+            flex-direction:column;
+            .singleBox{
+                width:100%;
+                min-height:200px;
+            }
+        }
+    }
+    .cleanlabel-section{
+        padding:80px 0  ;
+        h3 {
+            margin-top:20px;
+        }
+    } 
+    .secret-ingred-sec{
+        padding:0 0 80px;
+        h1 {
+            font-size:32px;
+            line-height:36px;
+            margin-bottom:20px;
+        }
+    } 
+    .bring-next {
+        padding:60px 0;
+    }
+    .get-intuch {
+        padding: 0 0 80px;
+    }
+    .cheese-powder-banner{
+        .left-img {
+            text-align:center;
+        }
+        .right-content{
+            text-align:center;
+        }
+    } 
+}
+
+@media only screen and (max-width:599px){
+    .mobile-panel{
+        padding:100px 20px 50px;
+    }
+    .login-modal-box{
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    .row{
+                        .col-md-6{
+                            .login-form{
+                                .card-body {
+                                    padding:80px 30px 30px;
+                                    .form-boxlog{
+                                        .signup-btn{
+                                            .singUp-link {
+                                                margin-bottom:18px;
+                                            }
+                                        } 
+                                    } 
+                                }
+                            } 
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    } 
+}
