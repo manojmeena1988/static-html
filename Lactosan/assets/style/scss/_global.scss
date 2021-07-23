@@ -196,7 +196,7 @@ body {
     &::placeholder {
         color:$dark-3c;
     }
-    &.outline-drak{
+    &.outline-dark{
       border-bottom:1px solid $dark-3c;
       transition:all 0.1s ease-in-out;
       &:focus{
@@ -336,6 +336,7 @@ body {
     position:absolute;
     left:30px;
     bottom:30px;
+    right:15px;
     color:$white;
     z-index:1;
     h3{
@@ -449,6 +450,7 @@ body {
   li{
     display:inline-block;
     width:30px;
+    min-width:30px;
     height:30px;
     border-radius:50%;
     display:flex;

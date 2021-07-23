@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //   if (window.matchMedia("(max-width:767px)").matches) {
-        $('.iceaCream-product , .news-boxs').slick({
+        $('.iceaCream-product').slick({
             responsive: [
               {
                 breakpoint:768,

@@ -1,15 +1,48 @@
-@media only screen and (max-width:1399px){
-    .application-section{
-        .right-application{
-            .smallImg {
-                max-width: 265px;
+@media only screen and (max-width:1440px){
+    .section{
+        &.application-slider{
+            .slick-arrow{
+                &.slick-next {
+                    right: 75%;
+                } 
             }
         } 
+    }
+}
+@media only screen and (max-width:1400px){
+    .home-banner{
+        .banner-content {
+            padding-left:50px;
+        }
+    } 
+    .product-cover-banner{
+        .banner-content {
+            padding-left: 50px;
+        }
+    } 
+}
+@media only screen and (max-width:1399px){
+    .application-section{
+        .desktop-view{
+            .right-application{
+                .smallImg {
+                    max-width: 265px;
+                }
+            } 
+        }
+        
     } 
     .tabList{
         li{
             margin-bottom:20px;
         }
+    }
+    .all-category-tab{
+        .product-list-box{
+            .offset-md-1{
+                margin-left:4%;
+            }
+        } 
     } 
 }
 @media only screen and (max-width:1330px){
@@ -67,9 +100,18 @@
         } 
     }
 }
-
-
-
+@media only screen and (max-width:1199px){
+    .all-category-tab{
+        .product-list-box{
+            .product-img{
+                img {
+                    min-height: 320px;
+                    object-fit: cover;
+                }
+            } 
+        } 
+    } 
+}
 @media only screen and (max-width:1024px){
     .top-header{
         .container-fluid{
@@ -83,11 +125,14 @@
         }
     }
     .application-section{
-        .right-application{
-            .smallImg {
-                max-width: 214px;
-            }
-        } 
+        .desktop-view{
+            .right-application{
+                .smallImg {
+                    max-width: 214px;
+                }
+            } 
+        }
+        
     } 
     .img-content {
         left: 15px;
@@ -96,7 +141,7 @@
     .location-tabs{
         &.product-cheese-tabs{
             .tab-lists{
-                top:-30px;
+                top:-45px;
                 .nav-item{
                     .nav-link {
                         padding:15px 10px;
@@ -134,13 +179,14 @@
         }
     }
     .product-cover-banner{
+        .banner-content{
+            padding-left:47px;
+        }
         img{
             min-height:550px;
         }
         &.whats-kokumi-banner{
-            
             .banner-content{
-                padding-left:47px;
                 .display-l1 {
                     font-size:70px;
                     line-height:76px;
@@ -163,7 +209,28 @@
                 padding:20px 15px;
             }
         } 
-    } 
+    }
+    .application-slider {
+        padding-left: 50px !important;
+        overflow: hidden;
+    }
+    .section{
+        &.application-slider {
+            padding-left:50px;
+            overflow: hidden;
+            .slick-arrow{
+                &.slick-next {
+                    right: 72%;
+                }
+            }
+        } 
+    }
+    .product-item-box {
+        margin: 0 0 80px;
+       &.space-top {
+            margin-top: 150px;
+        }
+    }
 }
 
 @media only screen and (max-width:991px){
@@ -298,15 +365,18 @@
         }
     } 
     .application-section{
-        .right-application{
-            .smallImg {
-                max-width:150px;
-            }
-        } 
+        .desktop-view{
+            .right-application{
+                .smallImg {
+                    max-width:150px;
+                }
+            } 
+        }
+       
     } 
     .home-banner{
         .banner-content {
-            padding-left: 70px;
+            padding-left:37px;
         }
     } 
     .location-tabs{
@@ -320,6 +390,91 @@
             } 
         } 
     }
+    .top-header{
+        .container-fluid{
+            .logo{
+                z-index: 1;
+            }
+        } 
+    } 
+    .home-banner {
+        margin-top: -72px;
+        img {
+            min-height:600px;
+        }
+    }
+    .why-cheese-powder{
+        .colorBox{
+            .card{
+                .card-body{
+                    .inner-box {
+                        h3{
+                            font-size:20px;
+                        }
+                    }
+                } 
+            } 
+        } 
+    }
+    .all-category-tab{
+        .newslatter-signup{
+            .card{
+                .left-img {
+                    padding:110px 30px;
+                } 
+                .newslatter-box {
+                    padding: 0 10px 0 0;
+                }
+            } 
+        }
+        .product-list-box{
+            .product-detail{
+                h3{
+                    font-size:22px;
+                    line-height:26px;
+                }
+            } 
+        }  
+    }
+    .food-items-tab {
+        .nav-item {
+            margin-right: 15px;
+        }
+    }
+    .related-news-section{
+        .related-news-box{
+            .card-body {
+                padding:30px 15px;
+            }
+        } 
+    }
+    .news-detail-area{
+        .category-date-box {
+            max-width: 380px;
+            padding: 15px 40px;
+        } 
+    } 
+    .location-tabs{
+        .find-distributor{
+            .single-country-list{
+                .row{
+                    .col-md-2{
+                        width:13%;
+                    }
+                    .col-md-5{
+                        width:36%;
+                    }
+                }
+            }
+        } 
+        .contact-form-section{
+            .receive-form{
+                .card-body {
+                    padding: 40px 25px;
+                }
+            } 
+        }
+    } 
 }
 
 @media only screen and (max-width:768px){
@@ -334,6 +489,58 @@
             }
         }
     }
+    .section{
+        &.application-slider{
+            .slick-arrow{
+                &.slick-next {
+                    right: 66%;
+                }
+            }
+        } 
+    }
+    .product-ncb-banner{
+        .banner-content{
+            h1 {
+                font-size:36px;
+                line-height:40px;
+            }
+        } 
+    } 
+    .cookie-box{
+        .modal-dialog{
+            .modal-content{
+                .modal-body{
+                    .detail-area{
+                        .card-body {
+                            padding:30px 15px;
+                        }
+                    }
+                    .btn-area{
+                        padding:30px 15px;
+                        .btn{
+                            padding: 15px 20px;
+                        }
+                    } 
+                    .all-toggle-btns{
+                        li {
+                            width: calc(50% - 4px);
+                            border-bottom:1px solid #F0F0F0;
+                            &:first-child{
+                                border-right:1px solid #F0F0F0;
+                            }
+                            &:last-child{
+                                border-bottom:transparent;
+                            }
+                            &:nth-last-child(2){
+                                border-bottom:transparent;
+                                border-right:1px solid #F0F0F0;
+                            }
+                        }
+                    } 
+                } 
+            } 
+        } 
+    } 
 }
 
 
@@ -362,7 +569,7 @@
     }
     .home-banner{
         img{
-            min-height:500px;
+            min-height:550px;
         }
         .banner-content{
             padding-left:15px;
@@ -376,7 +583,10 @@
     } 
     .application-section{
         overflow: hidden;
-        padding:0 0 80px;
+        padding:0 0 50px;
+        .container-fluid{
+            padding:0;
+        }
         .get-inspired{
             h3{
                 font-weight:$fw-700;
@@ -561,8 +771,14 @@
         }
     } 
     .application-section{
-        .iceaCream-product{
+        .get-inspired{
+            margin-bottom:40px;
+        }
+        .desktop-view{
             display:none;
+        }
+        .iceaCream-product{
+            display:block;
         }
     } 
     .latestNews-block{
@@ -589,6 +805,14 @@
     } 
     .mobile-latest-news{
         display: block;
+        .latest-news{
+            .news-form {
+                max-width:100%;
+                .btn{
+                    padding:15px 45px;
+                }
+            }
+        } 
     }
     .cheese-powder-sec{
         padding:0 0 80px;
@@ -627,7 +851,573 @@
         .right-content{
             text-align:center;
         }
+    }
+    .natural-booster{
+        .offer-box{
+            .card-body{
+                h4 {
+                    max-width: 100%;
+                } 
+            } 
+        } 
+    }
+    .product-cover-banner{
+        img {
+            min-height: 360px;
+        }
+        .banner-content {
+            padding-left:20px;
+        }
+        &.NCb-food{
+            .banner-content{
+                h1{
+                    line-height:36px;
+                    max-width:280px;
+                }
+            } 
+        }
+        &.whats-kokumi-banner{
+            .banner-content{
+                .display-l1 {
+                    font-size: 40px;
+                    line-height: 46px;
+                    max-width: 270px;
+                } 
+            } 
+        } 
+        &.creamy-banner{
+            .banner-content{
+                h1 {
+                    font-size: 32px;
+                    line-height: 36px;
+                    max-width: 270px;
+                }
+            } 
+        } 
     } 
+    .product-ncb-banner{
+        .banner-content{
+            h1 {
+                font-size: 32px;
+                line-height: 36px;
+            }
+        } 
+    } 
+    .section{
+        &.bg-black {
+            padding:50px 0;
+        }
+    }
+    .product-item-box{
+        margin:0 0 20px;
+        &.space-top {
+            margin-top:0px;
+        }
+    }
+    .rnd-section{
+        &.bg-black{
+            .row{
+                padding:0 0 50px;
+                .right-content {
+                    margin:20px 0 0;
+                }
+                &:nth-child(2){
+                    flex-direction:column-reverse;
+                }
+            } 
+        } 
+    }
+    .section{
+        &.application-slider{
+            .slick-arrow{
+                &.slick-next {
+                    right: 49%;
+                }
+            }
+        } 
+    }
+    .application-section{
+        .card{
+            background-color:transparent;
+            .card-body {
+                padding:20px 0px 40px;
+            }
+        } 
+        .iceaCream-product{
+            .mob-product-icea {
+                display: block;
+            }
+        } 
+    } 
+    .latestNews-block{
+        .desktop-view{
+            display:none;
+        }
+        .mobile-view{
+            display:block;
+        }
+    }
+    .why-cheese-powder{
+        padding:0 0 50px;
+    }
+    .location-tabs{
+        // overflow: hidden;
+        &.product-cheese-tabs{
+            padding:30px 0 0;
+            .tab-lists{
+                position:initial;
+                // overflow:scroll;
+                // justify-content: flex-start;
+                // margin:0;
+                .nav-item{
+                    margin:0 10px 5px;
+                    width:100%;
+                    .nav-link {
+                        white-space: nowrap;
+                        max-width:100%;
+                        width:100%;
+                        border-radius:0;
+                    }
+                } 
+            }
+            .product-item-sec {
+                padding:50px 0 20px;
+                h3{
+                    margin:0 0 20px;
+                }
+            }
+            .what-wedo{
+                padding:0 0 50px;
+                .left-content {
+                    margin:0 0 20px;
+                }
+                .right-cards{
+                    .card{
+                        &:first-child{
+                            .card-body{
+                                h4{
+                                    font-size: 14px;
+                                    line-height:18px;
+                                }
+                            } 
+                        } 
+                    }
+                } 
+            }
+            .did-know {
+                padding: 0 0 50px;
+                ul{
+                    padding-left:20px;
+                }
+            }
+            .explore-product {
+                padding: 0 0 50px 0;
+            } 
+        }
+    }
+    .long-term-potential{
+        margin:0 0 50px;
+        .right-content{
+            h2{
+                margin: auto;
+            }
+        } 
+    }  
+    .product-blend-banner{
+        padding:0 0 60px;
+        .row{
+            flex-direction: column-reverse;
+            .right-img{
+                margin-bottom:50px;
+            }
+        }
+    }
+    .cleanlabel-section{
+        .row{
+            &:nth-child(2){
+                flex-direction:column-reverse;
+            }
+        }
+    }
+    .only-content{
+        padding:50px 0;
+    }
+    .abount-section{
+        padding:0 0 50px;
+    }
+    .we-love-it{
+        padding:50px 0;
+        margin:0 0 50px;
+        .section-heading {
+            margin: 0 0 50px;
+        }
+    } 
+    .rnd-section{
+        padding:0 0 50px;
+        .left-img {
+            margin: 0 0 20px;
+        }
+    } 
+    .behind-success{
+        padding:20px 0 50px;
+        .left-content{
+            margin:0 0 20px;
+            h1{
+                font-size: 32px;
+                line-height: 36px;
+            }
+        }
+    }
+    .social-comment{
+        padding:0 0 50px;
+        .comment-heading {
+            margin: 0 0 50px;
+            h2{
+                margin:0 0 20px;
+            }
+        }
+       .comment-item {
+            margin: 0 0 30px;
+            .card-body{
+                padding:40px;
+                h4{
+                    font-size:16px;
+                }
+            }
+        }
+    }
+    .faq-section{
+        .faq-custom-accordian{
+            .accordion-item{
+                .accordion-header{
+                    .accordion-button{
+                        padding:20px;
+                    }   
+                } 
+                .accordion-collapse{
+                    .accordion-body {
+                        padding: 0px 20px 30px;
+                    }
+                } 
+            } 
+        } 
+    }
+    .quality-banner {
+        padding:50px 15px;
+    }
+    .our-quality-section{
+        .left-content-area {
+            padding: 0 0 50px;
+        } 
+        .video-block {
+            margin-bottom:50px;
+        }
+    } 
+    .faq-section {
+        padding:50px 0;
+        &.section{
+            &.bg-beige{
+                background-color:lighten($blue , 30%);
+            }
+        } 
+    }
+    .food-items-tab {
+        margin-bottom:20px;
+        justify-content:center;
+        .nav-item {
+            margin-bottom:15px;
+        }
+    }
+    .all-category-tab{
+        .popular-items {
+            justify-content:center;
+        }
+    } 
+    .familiar-with{
+        margin:0 0 50px;
+        .inner-fam{
+            .btn-item{
+                display:inline-flex;
+                flex-direction: column-reverse;
+                .btn{
+                    margin:0 0 15px 0;
+                    padding:15px 30px;
+                    &.btn-warning{
+                        background-color:$orange;
+                    }
+                }
+            }
+        } 
+    }
+    .bread-pastry-banner{
+        padding:50px 0;
+        .right-img{
+            margin:30px 0 0 0;
+        }
+        .left-content{
+            .btn-primary {
+                padding: 10px 30px;
+            } 
+        } 
+    }
+    .test-function{
+        .function-sec{
+            .top-flavours {
+                padding:50px 0;
+            }
+            .top-card{
+                .card-body {
+                    padding: 32px 20px;
+                    i{
+                        margin-bottom:20px;
+                    }
+                }
+            } 
+        } 
+    }  
+    .german-sandwich{
+        padding:50px 0;
+        .left-img{
+            margin-bottom:30px;
+        }
+    }
+    .loyalty-box{
+        padding:0 0 50px;
+        .card{
+            overflow:visible;
+            img{
+                object-fit:cover;
+                min-height:450px;
+                border-radius:10px;
+            }
+            .plus-items{
+                .plus-btn{
+                    left: 50%;
+                    &.plus-btn-two{
+                        left:50%;
+                    }
+                    &.plus-btn-three {
+                        display:none;
+                    }
+                    .drop-box{
+                        max-width:200px;
+                        padding:20px 15px;
+                    }
+                }
+            } 
+        }
+    }
+    .get-intuch{
+        .getLeft{
+            overflow: hidden;
+            max-height:300px;
+            img {
+                
+                min-height:300px;
+            }
+        }
+    }
+    .news-trend-banner{
+        padding:50px 15px;
+    }
+    .all-category-tab{
+        .product-list-box{
+            margin:30px 0 50px;
+            .offset-md-1 {
+                margin-left: 0;
+            }
+            .product-img{
+                margin-bottom:40px;
+                overflow: hidden;
+                max-height:380px;
+                img {
+                   border-radius:10px 10px 0 0;
+                   min-height: 380px;
+                }
+            }
+        } 
+    }
+    .custom-pagination li {
+        width:22px;
+        min-width:22px;
+        height:22px;
+        margin: 0 10px 0 0;
+        font-size:12px;
+    } 
+    .all-category-tab{
+        padding:0 0 50px;
+        .newslatter-signup{
+            padding:50px 0;
+            .card{
+                .row{
+                    flex-direction:column-reverse;
+                    .newslatter-box {
+                        padding:30px 30px 60px;
+                    }
+                    .left-img {
+                        border-radius:0 0 10px 10px;
+                        padding:15px;
+                    }
+                }
+            } 
+        } 
+    }
+    .custom-pagination {
+        padding: 50px 0 0;
+    } 
+    .related-news-section{
+        padding:0 0 50px;
+        .related-news-box{
+            margin:0 0 30px;
+            .card-header{
+                overflow: hidden;
+                max-height:380px;
+                img {
+                    min-height:380px;
+                }
+            } 
+        }
+    }
+    .news-detail-area{
+        padding:50px 0;
+    } 
+    .our-mission-section{
+        padding:50px 0;
+    }
+    .roadmape-section{
+        margin-bottom:50px;
+    }
+    .social-response-section{
+        padding:0 0 50px;
+        .left-img {
+            margin-bottom:30px;
+        }
+        .right-content{
+            h3{
+                max-width:100%;
+            }
+        }
+    }
+    .join-us-section{
+        padding:0 0 70px;
+        .card{
+            .row{
+                flex-direction: column-reverse;
+                .right-content{
+                    padding:30px 15px 50px;
+                    .btn{
+                        padding:15px 45px;
+                    }
+                }
+            }
+        }
+    } 
+
+    .how-can-section{
+        padding:80px 0;
+    }
+
+    .location-tabs{
+        .tab-lists{
+            position:initial;
+            .nav-item{
+                margin:0 10px 5px;
+                width:100%;
+                &:first-child{
+                    .nav-link{
+                        border-radius:0px;
+                    }
+                }
+                &:last-child{
+                    .nav-link{
+                        border-radius:0px;
+                    }
+                }
+                .nav-link {
+                    white-space: nowrap;
+                    max-width:100%;
+                    width:100%;
+                    border-radius:0px;
+                    padding:15px 10px;
+                }
+            } 
+        }
+    }
+    .filter-box{
+        overflow-y:scroll;
+    }
+    .location-tabs{
+        padding:0 0 70px;
+        .find-distributor{
+            padding:50px 0 0;
+            .single-country-list{
+                .country-add{
+                    margin:15px 0;
+                }
+                .view-web{
+                    text-align:left;
+                    margin:25px 0 0;
+                }
+            } 
+        }
+        .location-specialist {
+            padding:50px 0 0;
+        }
+        .contact-form-section {
+            padding:50px 0 0;
+            .contact-info{
+                margin:15px 0 0;
+            }
+            .receive-form{
+                .card-body {
+                    padding:40px 15px;
+                }
+            }
+        } 
+    } 
+    .open-position{
+        .single-job-box{
+            .card-body{
+                .readMore-btn {
+                    text-align: left;
+                    margin:15px 0 0;
+                }
+            } 
+        } 
+    } 
+    .cleanlabel-section{
+        .row{
+            flex-direction: column-reverse;
+            img{
+                margin:0 0 30px;
+                border-radius:10px 10px 0 0;
+            }
+        }
+    }
+    .test-function{
+        .function-sec{
+            .top-flavours{
+                .progress-items{
+                    .row {
+                        .prog-bar{
+                            width:80%;
+                        }
+                        .per-item{
+                            width:20%;
+                        }
+                    }
+                }
+            } 
+        } 
+    } 
+    .tab-content{
+        overflow: hidden;
+    }
+    .news-cat-1{
+        .slick-slide{
+            margin-right:15px;
+        }
+    }
 }
 
 @media only screen and (max-width:599px){
@@ -657,5 +1447,112 @@
                 } 
             } 
         } 
+    }
+    .section{
+        &.application-slider{
+            .slick-arrow{
+                &.slick-next {
+                    right:60%;
+                }
+            }
+        } 
     } 
+    .product-cover-banner{
+        &.product-range-banner{
+            .banner-content{
+                h1 {
+                    font-size:45px;
+                    line-height:48px;
+                }
+            } 
+        } 
+    }
+    .filter-box{
+        padding:75px 20px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .section{
+        &.application-slider{
+            .slick-arrow{
+                &.slick-next {
+                    right:48%;
+                }
+            }
+        } 
+    }
+    .btn{
+        padding:12px 35px;
+    }
+    .get-intuch{
+        .getLeft{
+            overflow: hidden;
+            max-height:250px;
+            img {
+                
+                min-height:250px;
+            }
+        }
+    }
+    .news-detail-area{
+        .category-date-box {
+            max-width: 300px;
+            padding:15px 20px;
+        } 
+        .news-content{
+            p{
+                a {
+                    word-break: break-word;
+                }
+            } 
+        }
+    } 
+    
+}
+
+@media only screen and (max-width:375px){
+    .section{
+        &.application-slider{
+            .slick-arrow{
+                &.slick-next {
+                    right:42%;
+                }
+            }
+        } 
+    }
+}
+
+@media only screen and (max-width:360px){
+    .product-cover-banner{
+        &.product-range-banner{
+            .banner-content{
+                h1 {
+                    font-size: 38px;
+                    line-height: 44px;
+                }
+            } 
+        } 
+    }
+    .location-tabs{
+        .tab-lists{
+            .nav-item{
+                .nav-link{
+                    font-size:14px;
+                    line-height:18px;
+                }
+            } 
+        } 
+    } 
+}
+@media only screen and (max-width:320px){
+    .section{
+        &.application-slider{
+            .slick-arrow{
+                &.slick-next {
+                    right:34%;
+                }
+            }
+        } 
+    }
 }

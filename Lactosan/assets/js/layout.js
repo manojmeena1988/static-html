@@ -28,6 +28,8 @@ $(document).ready(function(){
         $(this).find(".right").toggleClass("fa-chevron-up fa-chevron-down");
     });
 
+    // footer select js start
+
 });
 
 
