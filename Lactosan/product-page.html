@@ -15,6 +15,8 @@
       type="text/css"
       href="assets/lib/slick/slick-theme.css"
     />
+     <!-- multi select css start -->
+     <link rel="stylesheet" type="text/css" href="assets/lib/multi-select/bootstrap-multiselect.css" />
   </head>
   <body class="">
     <div class="complete-body">
@@ -331,7 +333,7 @@
                     <div class="getRight">
                         <h3>Get in touch with a specialist</h3>
                         <p>Christine Hirse Rene R&D Co-ordinator Call: +45 63 620 520 lactosan@lactosan.com</p>
-                        <a href="#" class="btn btn-primary">Get in touch</a>
+                        <a href="get-in-tuch.html" class="btn btn-primary">Get in touch</a>
                     </div>
                 </div>
             </div>
@@ -349,20 +351,25 @@
                   <div class="form-row">
                       <div class="form-group col">
                           <input type="text" class="form-control outline-dark" placeholder="" name="userName" required="">
-                          <span>Your name</span>
+                          <span class="custom_label">Your name</span>
                       </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col">
                       <input type="email" class="form-control outline-dark" placeholder="" name="userEmail" required="">
-                      <span>Your email</span>
+                      <span class="custom_label">Your email</span>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col custom-select">
-                      <select class="form-control outline-dark">
-                          <option>Choose an application area</option>
-                          <option>Choose an application area</option>
+                      <select id="multi-mob" class="form-control outline-dark" multiple="multiple">
+                        <option value="Beverages">Beverages</option>
+                        <option value="Biscuits , Wafers ,Crackers & Cripsbread">Biscuits , Wafers ,Crackers & Cripsbread</option>
+                        <option value="Bread & Pastry">Bread & Pastry</option>
+                        <option value="Cakes & Cookies">Cakes  & Cookies</option>
+                        <option value="Cheese (imitation & processed)">Cheese (imitation & processed)</option>
+                        <option value="Cheese fillings">Cheese fillings</option>
+                        <option value="Confectionery">Confectionery</option>
                       </select>
                       <i class="fas fa-chevron-down"></i>
                     </div>
@@ -388,7 +395,9 @@
 <footer class="footer-section">
     <div class="container">
         <div class="footer-logo">
+          <a href="home.html">
             <img class="img-fluid" src="assets/images/logo.PNG" alt="" />
+          </a>
         </div>
         <div class="footer-mid">
             <div class="row">
@@ -442,7 +451,6 @@
                             </a>
                           </li>
                       </ul>
-                      <!-- <p>Get in touch <br> career <br> Thornico group <br> Company</p> -->
                   </div>
                   <div class="footer-items">
                     <p class="p-title">Danish Food Smiley</p>
@@ -457,26 +465,25 @@
                   <div class="footer-items">
                     <p>Follow us on</p>
                     <ul class="social-icons">
-                        <li>
-                          <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                          </a>
-                      </li>
                       <li>
-                        <a href="#">
-                          <i class="fab fa-youtube"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
+                        <a href="https://www.linkedin.com/company/lactosan-a-s/" target="_blank">
+                          <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
-                    </ul>
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                  </li>
+                  </ul>
                   </div>
                   <div class="footer-items app-nav">
                     <p>Here goes a headline</p>
-                    <!-- <p>Cheese powder Solutions <br> Applications <br> Services <br> News & Trends</p> -->
                     <ul class="footer-nav-link">
                       <li>
                         <a href="product-cheese-powder.html">
@@ -508,20 +515,25 @@
                             <div class="form-row">
                                 <div class="form-group col">
                                     <input type="text" class="form-control outline-dark" placeholder="" name="userName" required />
-                                    <span>Your name</span>
+                                    <span class="custom_label">Your name</span>
                                 </div>
                             </div>
                             <div class="form-row">
                               <div class="form-group col">
                                 <input type="email" class="form-control outline-dark" placeholder="" name="userEmail"  required />
-                                <span>Your email</span>
+                                <span class="custom_label">Your email</span>
                               </div>
                             </div>
                             <div class="form-row">
                               <div class="form-group col custom-select">
-                                <select class="form-control outline-dark">
-                                    <option>Choose an application area</option>
-                                    <option>Choose an application area</option>
+                                <select id="multi-1" class="form-control outline-dark" multiple="multiple">
+                                  <option value="Beverages">Beverages</option>
+                                  <option value="Biscuits , Wafers ,Crackers & Cripsbread">Biscuits , Wafers ,Crackers & Cripsbread</option>
+                                  <option value="Bread & Pastry">Bread & Pastry</option>
+                                  <option value="Cakes & Cookies">Cakes  & Cookies</option>
+                                  <option value="Cheese (imitation & processed)">Cheese (imitation & processed)</option>
+                                  <option value="Cheese fillings">Cheese fillings</option>
+                                  <option value="Confectionery">Confectionery</option>
                                 </select>
                                 <i class="fas fa-chevron-down"></i>
                               </div>
@@ -546,12 +558,14 @@
             <div class="row row-y">
                 <div class="col-md-6">
                     <div class="privacy-policy">
-                        <p>Privacy & Cookie Policy | Cookie Consent Settings</p>
+                      <p><a href="#" target="_blank">Privacy & Cookie Policy</a> | <a href="#" target="_blank">Cookie Consent Settings</a></p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="bottom-logo">
+                      <a href="https://www.thornico.com/" target="_blank">
                         <img class="img-fluid" src="assets/images/footer-logo.PNG" />
+                      </a>
                     </div>
                 </div>
             </div>
@@ -675,6 +689,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="assets/lib/bs5/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/lib/fw/fontawesome.js"></script>
+      <!-- multiselect js start -->
+      <script src="assets/lib/multi-select/bootstrap-multiselect.js"></script>
   <!-- slick js start -->
   <script src="assets/lib/slick/slick.js"></script>
   <script src="assets/js/layout.js"></script>

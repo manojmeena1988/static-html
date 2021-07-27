@@ -240,7 +240,7 @@ body {
       position: absolute;
       top: 14px;
       right: 8px;
-      font-weight: 500;
+      font-weight:$fw-600;
       font-size: 12px;
     }
   }
@@ -622,7 +622,7 @@ body {
                   font-size:8px;
                  } 
               }
-              span{
+              .custom_label{
                   position:absolute;
                   top:0;
                   left:0;
@@ -638,3 +638,60 @@ body {
       }
   }
 }
+
+
+.custom-select{
+  .multiselect-native-select{
+    .btn-group{
+      width:100%;
+      border-bottom: 1px solid $dark-3c;
+      .custom-select{
+        border: none;
+        width: 100%;
+        text-align: left;
+        background-color: transparent;
+        padding:6px 20px 6px 0;
+        font-size:13px;
+        line-height:21px;
+        color:$dark-3c;
+        white-space: inherit;
+      }
+      .multiselect-container{
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 3px 6px #00000029;
+        top: 38px;
+        width: 100%;
+        padding: 12px 8px;
+        .multiselect-option{
+          &.active{
+            background-color:transparent;
+          }
+          .form-check{
+            .form-check-input{
+              &:checked{
+                background-image: url(../../images/circle-blue.svg);
+                background-color:$white;
+                border:1px solid $gray-99;
+              }
+            }
+            .form-check-label{
+              white-space: break-spaces;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer-section{
+  &.footer-dark{
+    .custom-select .multiselect-native-select .btn-group{
+      border-bottom: 1px solid #707070;
+      .multiselect-container .multiselect-option .form-check .form-check-label {
+        color:$dark-3c;
+      }
+    }
+  }
+} 

@@ -214,6 +214,9 @@
         padding-left: 50px !important;
         overflow: hidden;
     }
+    .roadmape-section {
+        padding: 88px 0 0 50px;
+    }
     .section{
         &.application-slider {
             padding-left:50px;
@@ -294,6 +297,7 @@
                                 height: 100%;
                                 border-radius: 0px;
                                 background-color:$dark-blue;
+                                overflow-y:scroll;
                                 .back-btn{
                                     display:block;
                                 }
@@ -523,7 +527,7 @@
                     } 
                     .all-toggle-btns{
                         li {
-                            width: calc(50% - 4px);
+                            width: calc(50% - 2px);
                             border-bottom:1px solid #F0F0F0;
                             &:first-child{
                                 border-right:1px solid #F0F0F0;
@@ -740,6 +744,9 @@
                                 display:inline-block;
                             }
                         }
+                        &:nth-child(3){
+                            display:none;
+                        }
                     }
                 }
                 .food-search {
@@ -805,6 +812,7 @@
     } 
     .mobile-latest-news{
         display: block;
+        padding: 50px 0px 80px;
         .latest-news{
             .news-form {
                 max-width:100%;
@@ -1040,7 +1048,7 @@
         }
     }
     .only-content{
-        padding:50px 0;
+        padding:50px 15px;
     }
     .abount-section{
         padding:0 0 50px;
@@ -1192,15 +1200,15 @@
             }
             .plus-items{
                 .plus-btn{
-                    left: 50%;
+                    left:45%;
                     &.plus-btn-two{
-                        left:50%;
+                        left:45%;
                     }
                     &.plus-btn-three {
                         display:none;
                     }
                     .drop-box{
-                        max-width:200px;
+                        max-width:280px;
                         padding:20px 15px;
                     }
                 }
@@ -1321,12 +1329,18 @@
         .tab-lists{
             position:initial;
             .nav-item{
-                margin:0 10px 5px;
+                margin:0 0 5px;
                 width:100%;
                 &:first-child{
                     .nav-link{
-                        border-radius:0px;
+                        border-radius:0px;  
                     }
+                }
+                &:nth-child(2){
+                   .nav-link{
+                    border-left:none;
+                    border-right:none;
+                   }
                 }
                 &:last-child{
                     .nav-link{
@@ -1357,6 +1371,14 @@
                 .view-web{
                     text-align:left;
                     margin:25px 0 0;
+                }
+                .row{
+                    .col-md-2{
+                        width:100%;
+                    }
+                    .col-md-5{
+                        width:100%;
+                    }
                 }
             } 
         }
@@ -1418,6 +1440,19 @@
             margin-right:15px;
         }
     }
+    .roadmape-section{
+        padding:50px 0 0 15px;
+        margin-bottom: 100px;
+        .road-content{
+            .roadmape-arrow {
+                justify-content: flex-start;
+                display:none;
+            }
+        } 
+        .outer-slider-sec {
+            padding: 90px 0 100px 0;
+        }
+    } 
 }
 
 @media only screen and (max-width:599px){
@@ -1470,6 +1505,62 @@
     .filter-box{
         padding:75px 20px;
     }
+    .roadmape-section{
+        &::after {
+            content: "";
+            position: absolute;
+            bottom:122px;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #FDB02B;
+        }
+        .btm-year {
+            bottom:80px;
+            left: 20px;
+        }
+        .outer-slider-sec{
+            padding:50px 0 140px 0;
+            .yearly-slider{
+                .single-slide {
+                    max-width:280px;
+                    min-width: 280px;
+                    .card-body{
+                        p {
+                            max-width:100%;
+                        }
+                    } 
+                    &.single-big {
+                        max-width: 450px;
+                        min-width: 450px;
+                        .card-header{
+                            min-width:110px;
+                        }
+                        .card-body{
+                            min-width:300px;
+                            padding:15px;
+                            p {
+                                max-width:100%;
+                            }
+                        } 
+                    }
+                }
+            } 
+        } 
+    } 
+    .location-tabs{
+        .google-map{
+            .denmark-address{
+                .dk-btn {
+                    left: 50%;
+                    top:180px;
+                    &.lnd-btn {
+                        left: 50%;
+                    }
+                }
+            } 
+        } 
+    } 
 }
 
 @media only screen and (max-width:480px){
@@ -1508,7 +1599,20 @@
             } 
         }
     } 
-    
+    .loyalty-box{
+        .card{
+            .plus-items{
+                .plus-btn {
+                    .drop-box{
+                        transform: translate3d(-120px, 42px, 0px) !important;
+                    }
+                }
+            } 
+        } 
+    } 
+    .drop-box{
+        transform: translate3d(-139px, 42px, 0px) !important;
+    }
 }
 
 @media only screen and (max-width:375px){
@@ -1521,6 +1625,40 @@
             }
         } 
     }
+    .loyalty-box{
+        .card{
+            .plus-items{
+                .plus-btn {
+                    left:45%;
+                    &.plus-btn-two {
+                        left: 45%;
+                    }
+                    // .drop-box{
+                    //     transform: translate3d(-61px, 42px, 0px) !important;
+                    //     max-width:284px;
+                    // }
+                }
+            } 
+        } 
+    } 
+    .location-tabs{
+        .google-map{
+            .denmark-address{
+                .dk-btn {
+                    left:47%;
+                    &.lnd-btn {
+                        left:47%;
+                    }
+                }
+            } 
+        } 
+    } 
+    .complete-body{
+        .chat-box{
+            min-width:270px;
+            max-width:270px;
+        }
+    } 
 }
 
 @media only screen and (max-width:360px){
@@ -1544,6 +1682,7 @@
             } 
         } 
     } 
+    
 }
 @media only screen and (max-width:320px){
     .section{
@@ -1555,4 +1694,25 @@
             }
         } 
     }
+    .loyalty-box{
+        .card{
+            .plus-items{
+                .plus-btn {
+                    left:45%;
+                    &.plus-btn-two {
+                        left: 45%;
+                    }
+                    .drop-box{
+                        transform: translate3d(-106px, 42px, 0px) !important;
+                        max-width:240px;
+                    }
+                }
+            } 
+        } 
+    }
+    .complete-body{
+        .chat-box{
+            transform: translate3d(-150px, -52px, 0px) !important;
+        }
+    } 
 }

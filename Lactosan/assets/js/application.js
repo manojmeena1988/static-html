@@ -18,3 +18,8 @@ $(document).ready(function() {
           });
     //   }
 });
+
+//for application page  tabs js ========================================= 
+$('.food-items-tab .nav-item .nav-link').on('shown.bs.tab', function (e) {
+  $('.iceaCream-product').slick('setPosition');
+})
