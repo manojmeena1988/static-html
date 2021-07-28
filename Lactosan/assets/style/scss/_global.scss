@@ -137,7 +137,7 @@ body {
           background-color:$gray-f8;
       }
       &.bg-blue-light{
-        background-color:lighten($blue , 30%);
+        background-color:lighten($blue , 33%);
       }
       &.bg-orange-light{
         background-color:lighten($orange , 30%);
@@ -146,10 +146,10 @@ body {
         background-color:lighten($lilla , 30%);
       }
       &.bg-green-light{
-        background-color:lighten($green , 30%);
+        background-color:lighten($green , 34%);
       }
       &.bg-turkise-light{
-        background-color:lighten($turkise , 30%);
+        background-color:lighten($turkise , 37%);
       }
       &.bg-beige{
         background-color:$Beige;
@@ -161,6 +161,28 @@ body {
   input{
     &:focus{
       outline:none;
+    }
+  }
+  input[type=email]{
+    &::-webkit-input-placeholder { /* Edge */
+      color:transparent;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color:transparent;
+      }
+    &::placeholder {
+        color:transparent;
+    }
+    &:focus{
+      &::-webkit-input-placeholder { /* Edge */
+        color:transparent;
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:transparent;
+        }
+      &::placeholder {
+          color:transparent;
+      }
     }
   }
   .form-control{
@@ -246,7 +268,7 @@ body {
   }
   .custom-radio{
     display:flex;
-    min-height:22px;
+    min-height:21px;
     align-items:center;
     .form-check-input{
       width:18px;
@@ -255,11 +277,15 @@ body {
       border-color:$dark-3c;
       cursor:pointer;
       margin-right:8px;
+      margin-top:0px;
       &:checked{
         background-color:$white;
         box-shadow:none;
         background-image:url(../../images/circle-black.svg);
       }
+    }
+    input[type=checkbox]{
+      border-radius:50%;
     }
     label{
       font-size:13px;
@@ -622,6 +648,12 @@ body {
                   font-size:8px;
                  } 
               }
+              input[type=email]{
+                &:not(:placeholder-shown) ~ span{
+                  transform:translateY(-32px);
+                  font-size:8px;
+                 }
+              }
               .custom_label{
                   position:absolute;
                   top:0;
@@ -695,3 +727,8 @@ body {
     }
   }
 } 
+
+.box-content{
+  max-width:530px;
+  margin:auto;
+}

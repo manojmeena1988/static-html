@@ -41,7 +41,7 @@ $(document).ready(function() {
                 breakpoint: 480,
                 settings: {
                   slidesToShow:2.8,
-                  slidesToScroll: 1,
+                  slidesToScroll: 0.9,
                   
                 }
               }
