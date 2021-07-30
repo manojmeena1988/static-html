@@ -17,4 +17,14 @@ $(document).ready(function() {
             ]
           });
     //   }
+
+    $('.step-circle li').click(function(){
+      var tab_id = $(this).data('tab');
+      console.log(tab_id)
+      $('.step-circle li').removeClass('current');
+      $('.tabs-section').removeClass('current');
+  
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    })
 });

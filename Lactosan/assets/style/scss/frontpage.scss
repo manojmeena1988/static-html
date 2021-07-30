@@ -20,20 +20,20 @@
             .nav{
                 li{
                     margin:0 70px 0 0;
-                    position: relative;
+                    // position: relative;
                     &.active{
                         a{
                             font-weight:$fw-700;
                         }
-                        &::after{
-                            content:"";
-                            width:100%;
-                            height:3px;
-                            background-color:$black;
-                            position: absolute;
-                            bottom: -31px;
-                            left: 0;
-                        }
+                        // &::after{
+                        //     content:"";
+                        //     width:100%;
+                        //     height:3px;
+                        //     background-color:$black;
+                        //     position: absolute;
+                        //     bottom: -31px;
+                        //     left: 0;
+                        // }
                     }
                     a{
                         font-size:11px;
@@ -42,6 +42,7 @@
                         color:$black;
                         text-transform:capitalize;
                         padding:32px 0;
+                        
                     }
                     &:last-child{
                         
@@ -51,6 +52,196 @@
                            border-radius:26px;
                            color:$white;
                         }
+                    }
+                    .mega-menu{
+                        position:absolute;
+                        left:0;
+                        top:88px;
+                        background-color:$Beige;
+                        padding:50px 15px;
+                        width:100%;
+                        min-height:300px;
+                        z-index:9;
+                        transition:all 0.3s;
+                        visibility:hidden;
+                        opacity:0;
+                        display: flex;
+                        align-items: center;
+                        &.cheese-mega-menu{
+                            .menu-row{
+                                display:flex;
+                                justify-content:space-between;
+                                .inner-box{
+                                    width:calc(33.33% - 20px);
+                                    position: relative;
+                                    padding:0;
+                                    img{
+                                        width:100%;
+                                        height:100%;
+                                        max-height:250px;
+                                        object-fit:cover;
+                                    }
+                                    .img-content{
+                                        display:flex;
+                                        align-items:center;
+                                        justify-content:center;
+                                        position:absolute;
+                                        left:0;
+                                        top:0;
+                                        right: 0;
+                                        bottom: 0;
+                                        h2{
+                                            font-weight:$fw-700;
+                                            max-width: 150px;
+                                            margin: auto;
+                                            line-height:44px;
+                                            display:flex;
+                                            align-items:flex-end;
+                                            span{
+                                                font-size:18px;
+                                                line-height: 26px;
+                                            }
+                                        }
+                                    }
+                                    &.bg-clr{
+                                        background-color:$orange;
+                                        .img-content{
+                                            img{
+                                                width:100px;
+                                                margin-left:auto;
+                                            }
+                                            h2{
+                                                // max-width:220px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.application-mega-menu{
+                            .menu-row{
+                                display:flex;
+                                justify-content:space-between;
+                                .app-list{
+                                    width:calc(25% - 20px);
+                                    padding:0;
+                                    margin:0;
+                                    h4{
+                                        font-weight:$fw-700;
+                                        margin-bottom:12px;
+                                    }
+                                    li{
+                                        list-style:none;
+                                        margin:0;
+                                        a{
+                                            font-size:15px;
+                                            line-height:19px;
+                                            color:$dark-3c;
+                                            font-weight:$fw-400;
+                                        }
+                                        &:last-child{
+                                            a{
+                                                background-color:transparent;
+                                                color:$dark-3c;
+                                                padding:0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.service-mega-menu{
+                            .menu-row{
+                                display:flex;
+                                justify-content:space-between;
+                                .left-service-area{
+                                    width:calc(65% - 20px);
+                                    display:flex;
+                                    margin:50px 0 0;
+                                    .inner-service{
+                                        min-width:320px;
+                                        h5{
+                                            font-size:16px;
+                                            margin:0;
+                                            font-weight:$fw-700;
+                                        }
+                                        p{
+                                            span{
+                                                display:block;
+                                                line-height:21px;
+                                            }
+                                        }
+                                        .head-list{
+                                            display:flex;
+                                            flex-direction:column;
+                                            h4{
+                                                font-size:16px;
+                                                line-height:22px;
+                                                margin: 0;
+                                                font-weight:$fw-700;
+                                            }
+                                        }
+                                    }
+                                }
+                                .righ-service-area{
+                                    width:35%;
+                                    .inner-area{
+                                        position: relative;
+                                        img{
+                                            border-radius:10px;
+                                            width:100%;
+                                            max-height:280px;
+                                            object-fit:cover;
+                                            margin-bottom:18px;
+                                        }
+                                        h5{
+                                            font-weight:$fw-700;
+                                            font-size:17px;
+                                        }
+                                        .img-overlay{
+                                            position:absolute;
+                                            left:0;
+                                            right:0;
+                                            top:0;
+                                            bottom:0;
+                                            display:flex;
+                                            align-items:center;
+                                            justify-content:center;
+                                            text-align:center;
+                                            h2{
+                                                color:$white;
+                                                font-weight:$fw-700;
+                                                max-width: 250px;
+                                                margin: auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &.company-mega-menu{
+                            .menu-row{
+                                .left-service-area{
+                                    align-items:center;
+                                    margin:0;
+                                    .inner-service{
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-around;
+                                        height: 100%;
+                                        .head-list{
+                                            h4{
+                                                margin:0 0 20px 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                      }
+                      &:hover .mega-menu{
+                        visibility:visible;
+                        opacity:1;
                     }
                 }
             }
@@ -148,6 +339,7 @@
             color:$dark-3c;
             max-width:633px;
             font-weight:$fw-700;
+            font-family: "CentraleSans";
         }
         h1{
             font-weight:$fw-700;
@@ -160,8 +352,8 @@
         }
         a{
             display:inline-block;
-            background-color:$orange;
-            color:$white;
+            // background-color:$orange;
+            // color:$white;
             padding:11px 31px;
             max-width:140px;
             font-size:12px;
@@ -235,7 +427,7 @@
 .footer-section{
     background-color:lighten($blue, 34%);
     .footer-logo{
-        padding:80px 0 50px;
+        padding:80px 0 49px;
     }
     .footer-mid{
         padding-bottom:80px;
@@ -365,6 +557,7 @@
     background-repeat: no-repeat;
     .tab-slide-section{
        .tabs-section{
+           display:none;
             .we-strive{
                 color:$black;
                 h3{
@@ -394,31 +587,64 @@
                     }
                 }
             }
-            .step-circle{
-                padding:0;
-                margin:86px 0 0;
-                text-align:center;
-                li{
-                    width:52px;
-                    height:52px;
-                    border-radius:50%;
-                    border:1px solid $gray-af;
-                    background-color:transparent; 
-                    display: inline-flex;
-                    align-items:center;
-                    justify-content:center;
-                    margin:0 8px 0 0;
-                    cursor: pointer;
-                    &.active{
-                        border-color:$blue;
-                        color:$blue;
-                    }
-                }
-            }
-            &:nth-child(2) , &:last-child{
-                display:none;
+            // .step-circle{
+            //     padding:0;
+            //     margin:86px 0 0;
+            //     text-align:center;
+            //     li{
+            //         width:52px;
+            //         height:52px;
+            //         border-radius:50%;
+            //         border:1px solid $gray-af;
+            //         background-color:transparent; 
+            //         display: inline-flex;
+            //         align-items:center;
+            //         justify-content:center;
+            //         margin:0 8px 0 0;
+            //         cursor: pointer;
+            //         &.active{
+            //             border-color:$blue;
+            //             color:$blue;
+            //         }
+            //     }
+            // }
+            // &:first-child{
+            //     display:inherit;
+            // }
+            &.current{
+                display:inherit;
             }
        }
+    }
+    .step-circle{
+        padding:0;
+        margin:86px 0 0;
+        text-align:center;
+        li{
+            width:52px;
+            height:52px;
+            border-radius:50%;
+            border:1px solid $gray-af;
+            background-color:transparent; 
+            display: inline-flex;
+            align-items:center;
+            justify-content:center;
+            margin:0 8px 0 0;
+            cursor: pointer;
+            transition:all 0.3s ease-in-out;
+            &.active{
+                border-color:$blue;
+                color:$blue;
+            }
+            &.current{
+                border-color:$blue;
+                color:$blue;
+            }
+            &:hover{
+                border-color:$blue;
+                color:$blue;
+            }
+        }
     }
 }
 .what-forme{
@@ -429,8 +655,8 @@
     }
     .col{
         text-align:center;
-        padding-left:13px;
-        padding-right:13px;
+        padding-left:10px;
+        padding-right:10px;
         .card{
             border-radius:10px;
             max-height: 108px;
@@ -438,6 +664,14 @@
             align-items: center;
             justify-content: center;
             height:100%;
+            .card-body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    max-width:70px;
+                }
+            }
         }
         h4{
             font-weight:$fw-700;
@@ -619,6 +853,7 @@
     .card{
         margin-bottom:50px;
         border-radius:10px;
+        transition:all 0.3s;
         .card-header{
             max-height:177px;
             overflow: hidden;
@@ -645,6 +880,10 @@
                 max-width:425px;
                 padding-bottom:40px;
             }
+        }
+        &:hover{
+            box-shadow:0 10px 20px #00000029;
+            transform:translateY(-10px);
         }
     }
     .left-block-news{
@@ -760,6 +999,10 @@
                     }
                 }
             }
+        }
+        [class*=col-]{
+            padding-left:6px;
+            padding-right:6px;
         }
     }
     
@@ -1422,7 +1665,7 @@
                             }
                             .custom-radio{
                                 .form-check-input{
-                                    border-radius:5px;
+                                    border-radius:50%;
                                     width:15px;
                                     min-width:15px;
                                     height:15px;
@@ -1493,12 +1736,42 @@
             }
         }
     }
+    .inner-fam-2{
+        display: none;
+        text-align:center;
+        h3{
+            font-weight:$fw-700;
+            color:$black;
+            span{
+                font-weight:$fw-400;
+            }
+        }
+        p{
+            color:$black;
+            max-width:600px;
+            padding:20px 0 50px;
+            margin:auto;
+        }
+        .btn-item{
+            .list{
+                max-width:650px;
+                margin:auto;
+                li{
+                    margin:0 18px 20px 0;
+                    &:last-child{
+                        margin-right:0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
 // login modal box css start
 .login-modal-box{
-    background-color:#c3c3c3;
+    // background-color:#c3c3c3;
+    background-color:transparent;
     .modal-content {
         border-radius:10px;
         max-width: 1050px;
@@ -1533,6 +1806,8 @@
                     a{
                         color:$white;
                         text-decoration:none;
+                        font-size:15px;
+                        font-weight:$fw-300;
                         i{
                             margin-right: 6px;
                             font-weight: 600;
@@ -1586,6 +1861,9 @@
                                        &:valid ~ span{
                                         transform:translateY(-12px);
                                         font-size:8px;
+                                       }
+                                       &.error{
+                                           border:1px solid red;
                                        } 
                                     }
                                     input[type=email]{
@@ -1758,10 +2036,10 @@
 
 .panel-active{
     overflow: hidden;
-    .page-blur{
-        filter: blur(5px);
-        -webkit-filter: blur(5px);
-    }
+    // .page-blur{
+    //     filter: blur(5px);
+    //     -webkit-filter: blur(5px);
+    // }
     .offcanvas-overlay {
         position: fixed;
         height: 100vh;
@@ -1769,9 +2047,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        -webkit-backdrop-filter: saturate(180%) blur(5px);
-        backdrop-filter: saturate(180%) blur(5px);
-        background: rgba(0, 0, 0, 0.25);
+        // -webkit-backdrop-filter: saturate(180%) blur(5px);
+        // backdrop-filter: saturate(180%) blur(5px);
+        // background: rgba(0, 0, 0, 0.25);
         z-index:8;
     }
     .filter-box{
@@ -1931,6 +2209,10 @@
     padding:0 0 140px;
     .card{
         position: relative;
+        overflow:visible;
+        img{
+            border-radius:10px;
+        }
         .plus-items{
             .plus-btn{
                 position:absolute;
@@ -1961,6 +2243,7 @@
                     margin:16px 0 0 !important;
                     padding:39px 22px 39px 35px;
                     color:$black;
+                    transform: translate(-116px, 40px) !important;
                 }
                 &.plus-btn-two{
                     top:260px;
@@ -2764,6 +3047,12 @@
     .comment-item{
         margin:0 0 56px;
         max-width:500px;
+        transition:all 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            box-shadow:0 10px 20px #00000029;
+            transform:translateY(-10px);
+        }
         .card-body{
             padding:51px 59px 51px 41px;
             h4{
@@ -2892,6 +3181,7 @@
         display:flex;
         align-items:center;
         justify-content:center;
+        cursor: pointer;
         p{
             font-size:17px;
             line-height:21px;
@@ -3497,13 +3787,17 @@
             li{
                 display: block;
                 a{
-                    color:$white;
+                    color:#f3f3f3;
                     text-decoration:none;
                     font-size:20px;
                     line-height:25px;
                     font-weight:$fw-400;
-                    margin-bottom:16px;
+                    margin-bottom:23px;
                     display: inline-block;
+                    transition:all 0.3s ease-in-out;
+                    &:hover{
+                        transform:translateY(2px);
+                    }
                 }
                 &.sub-menu{
                     .right{
@@ -3635,7 +3929,7 @@
                       }
                     .custom-radio{
                         .form-check-input {
-                            border-radius:5px;
+                            border-radius:50%;
                             border-color:transparent;
                             width: 16px;
                             min-width: 16px;

@@ -68,6 +68,9 @@
                                 bottom:-24px;
                             }
                         }
+                        .mega-menu{
+                            top:72px;
+                        }
                     }
                 }
             }
@@ -385,6 +388,13 @@
                                                             color:$white;
                                                         }
                                                     } 
+                                                }
+                                                .form-group{
+                                                    .input-beigen-light{
+                                                        &:focus{
+                                                            background-color:$white;
+                                                        }
+                                                    } 
                                                 } 
                                             }
                                         }
@@ -517,6 +527,23 @@
                 }
             } 
         }
+    }
+    .loyalty-box{
+        .card{
+            .plus-items{
+                .plus-btn{
+                    top: 70px;
+                    left: 60%;
+                    &.plus-btn-two {
+                        top:160px;
+                    }
+                    &.plus-btn-three {
+                        top: 220px;
+                        left: 70%;
+                    }
+                }
+            } 
+        }  
     } 
 }
 
@@ -724,10 +751,13 @@
                 margin-bottom:20px;
                 .card {
                     max-height:85px;
-                    height:auto;
+                    // height:auto;
                     .card-body{
                         padding:20px;
                         max-height:100%;
+                        img{
+                            max-width:40px;
+                        }
                     }
                     
                 }
@@ -962,7 +992,7 @@
     } 
     .section{
         &.bg-black {
-            padding:50px 0;
+            padding:50px 0 75px;
         }
     }
     .product-item-box{
@@ -1538,6 +1568,18 @@
     .application-banner{
         padding:60px 0;
     }
+    .test-function{
+        .function-sec{
+            .top-flavours{
+                .spot-box{
+                    margin:0 0 30px;
+                }
+                .progress-items {
+                    margin:18px 0 0;
+                }
+            } 
+        } 
+    } 
 }
 
 @media only screen and (max-width:599px){

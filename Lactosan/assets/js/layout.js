@@ -39,6 +39,38 @@ $(document).ready(function(){
 
     $(".multiselect-selected-text").html("Choose an application area");
 
+
+    $('#newsForm').validate({
+        errorPlacement: function(error,element) {
+          return true;
+        },
+        submitHandler: function(form) {
+            console.log('Submitted')
+          }
+      });
+      
+      $('#mobNewform').validate({
+        errorPlacement: function(error,element) {
+          return true;
+        },
+        submitHandler: function(form) {
+            console.log('Submitted')
+        }
+      });
+      $('#loginForm').validate({
+        errorPlacement: function(error,element) {
+          return true;
+        },
+        submitHandler: function(form) {
+            console.log('Submitted')
+        }
+      });
+
+    // +++++++++++++ For applciation page js for showing divs
+    $('.inner-fam .btn-warning').click(function(){
+        $('.inner-fam').fadeOut('fast')
+        $('.inner-fam-2').fadeIn('slow')
+    })
 });
 
 

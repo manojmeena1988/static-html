@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'CentraleSans';
+  src: url(../../fonts/Centrale_Sans/CentraleSansRegular.ttf) format('opentype');
+}
+
 body {
     font-size: 15px;
     line-height: 25px;
@@ -224,7 +229,10 @@ body {
       &:focus{
         border-bottom:1px solid $blue;
         color:$blue;
-        // font-weight:$fw-700;
+        font-weight:$fw-700;
+      }
+      &.error{
+        border-bottom-color:red;
       }
     }
     &.outline-white{
@@ -264,6 +272,7 @@ body {
       right: 8px;
       font-weight:$fw-600;
       font-size: 12px;
+      pointer-events:none;
     }
   }
   .custom-radio{
@@ -409,8 +418,21 @@ body {
   color:$blue;
   text-decoration:none;
   cursor: pointer;
+  transition:all 0.3s;
   &:hover{
       text-decoration:none;
+      background-color:$blue;
+      color:$white;
+      width:160px;
+       span{
+         display:inline-block;
+       }
+  }
+  span{
+    display:none;
+    margin-left:10px;
+    font-weight:$fw-300;
+    font-size:16px;
   }
 }
 
@@ -631,26 +653,26 @@ body {
      } 
   }
   .news-form{
-      margin:50px 0 0;
+      margin:39px 0 0;
       max-width:380px;
       position: relative;
       .form-row{
-          margin:30px 0 26px 0;
+          margin:20px 0 20px 0;
           position: relative;
           .form-group{
               input{
                  &:focus ~ span{
-                      transform:translateY(-32px);
+                      transform:translateY(-25px);
                       font-size:8px;
                  } 
                  &:valid ~ span{
-                  transform:translateY(-32px);
+                  transform:translateY(-25px);
                   font-size:8px;
                  } 
               }
               input[type=email]{
                 &:not(:placeholder-shown) ~ span{
-                  transform:translateY(-32px);
+                  transform:translateY(-25px);
                   font-size:8px;
                  }
               }

@@ -10723,6 +10723,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "CentraleSans";
+  src: url(../../fonts/Centrale_Sans/CentraleSansRegular.ttf) format("opentype");
+}
 body {
   font-size: 15px;
   line-height: 25px;
@@ -10964,6 +10968,10 @@ input[type=email]:focus::placeholder {
 .form-control.outline-dark:focus {
   border-bottom: 1px solid #2CA3DB;
   color: #2CA3DB;
+  font-weight: 700;
+}
+.form-control.outline-dark.error {
+  border-bottom-color: red;
 }
 .form-control.outline-white {
   border-bottom: 1px solid #707070;
@@ -11004,6 +11012,7 @@ input[type=email]:focus::placeholder {
   right: 8px;
   font-weight: 600;
   font-size: 12px;
+  pointer-events: none;
 }
 
 .custom-radio {
@@ -11149,9 +11158,22 @@ input[type=email]:focus::placeholder {
   color: #2CA3DB;
   text-decoration: none;
   cursor: pointer;
+  transition: all 0.3s;
 }
 .filter-tab:hover {
   text-decoration: none;
+  background-color: #2CA3DB;
+  color: #fff;
+  width: 160px;
+}
+.filter-tab:hover span {
+  display: inline-block;
+}
+.filter-tab span {
+  display: none;
+  margin-left: 10px;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .custom-progress {
@@ -11362,24 +11384,24 @@ input[type=email]:focus::placeholder {
   font-weight: 700;
 }
 .latest-news .news-form {
-  margin: 50px 0 0;
+  margin: 39px 0 0;
   max-width: 380px;
   position: relative;
 }
 .latest-news .news-form .form-row {
-  margin: 30px 0 26px 0;
+  margin: 20px 0 20px 0;
   position: relative;
 }
 .latest-news .news-form .form-row .form-group input:focus ~ span {
-  transform: translateY(-32px);
+  transform: translateY(-25px);
   font-size: 8px;
 }
 .latest-news .news-form .form-row .form-group input:valid ~ span {
-  transform: translateY(-32px);
+  transform: translateY(-25px);
   font-size: 8px;
 }
 .latest-news .news-form .form-row .form-group input[type=email]:not(:placeholder-shown) ~ span {
-  transform: translateY(-32px);
+  transform: translateY(-25px);
   font-size: 8px;
 }
 .latest-news .news-form .form-row .form-group .custom_label {
@@ -11463,19 +11485,9 @@ input[type=email]:focus::placeholder {
 }
 .top-header .container-fluid .nav-header .nav li, .top-header .container-sm .nav-header .nav li, .top-header .container-md .nav-header .nav li, .top-header .container-lg .nav-header .nav li, .top-header .container-xl .nav-header .nav li, .top-header .container-xxl .nav-header .nav li {
   margin: 0 70px 0 0;
-  position: relative;
 }
 .top-header .container-fluid .nav-header .nav li.active a, .top-header .container-sm .nav-header .nav li.active a, .top-header .container-md .nav-header .nav li.active a, .top-header .container-lg .nav-header .nav li.active a, .top-header .container-xl .nav-header .nav li.active a, .top-header .container-xxl .nav-header .nav li.active a {
   font-weight: 700;
-}
-.top-header .container-fluid .nav-header .nav li.active::after, .top-header .container-sm .nav-header .nav li.active::after, .top-header .container-md .nav-header .nav li.active::after, .top-header .container-lg .nav-header .nav li.active::after, .top-header .container-xl .nav-header .nav li.active::after, .top-header .container-xxl .nav-header .nav li.active::after {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: #000;
-  position: absolute;
-  bottom: -31px;
-  left: 0;
 }
 .top-header .container-fluid .nav-header .nav li a, .top-header .container-sm .nav-header .nav li a, .top-header .container-md .nav-header .nav li a, .top-header .container-lg .nav-header .nav li a, .top-header .container-xl .nav-header .nav li a, .top-header .container-xxl .nav-header .nav li a {
   font-size: 11px;
@@ -11490,6 +11502,175 @@ input[type=email]:focus::placeholder {
   padding: 11px 30px;
   border-radius: 26px;
   color: #fff;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu, .top-header .container-sm .nav-header .nav li .mega-menu, .top-header .container-md .nav-header .nav li .mega-menu, .top-header .container-lg .nav-header .nav li .mega-menu, .top-header .container-xl .nav-header .nav li .mega-menu, .top-header .container-xxl .nav-header .nav li .mega-menu {
+  position: absolute;
+  left: 0;
+  top: 88px;
+  background-color: #F2F0E4;
+  padding: 50px 15px;
+  width: 100%;
+  min-height: 300px;
+  z-index: 9;
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row {
+  display: flex;
+  justify-content: space-between;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box {
+  width: calc(33.33% - 20px);
+  position: relative;
+  padding: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box img, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box img, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box img, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box img, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box img, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box img {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2, .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2 {
+  font-weight: 700;
+  max-width: 150px;
+  margin: auto;
+  line-height: 44px;
+  display: flex;
+  align-items: flex-end;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2 span, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2 span, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2 span, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2 span, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2 span, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content h2 span, .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2 span, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2 span, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2 span, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2 span, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2 span, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .img-content .h2 span {
+  font-size: 18px;
+  line-height: 26px;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr {
+  background-color: #FDB02B;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img {
+  width: 100px;
+  margin-left: auto;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row {
+  display: flex;
+  justify-content: space-between;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list {
+  width: calc(25% - 20px);
+  padding: 0;
+  margin: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list h4, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list h4, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list h4, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list h4, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list h4, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list h4, .top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list .h4, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list .h4, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list .h4, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list .h4, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list .h4, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list .h4 {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li {
+  list-style: none;
+  margin: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li a, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li a, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li a, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li a, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li a, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li a {
+  font-size: 15px;
+  line-height: 19px;
+  color: #3C3C39;
+  font-weight: 400;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a {
+  background-color: transparent;
+  color: #3C3C39;
+  padding: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row {
+  display: flex;
+  justify-content: space-between;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area {
+  width: calc(65% - 20px);
+  display: flex;
+  margin: 50px 0 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service {
+  min-width: 320px;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service h5, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service h5, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service h5, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service h5, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service h5, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service h5, .top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .h5, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .h5, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .h5, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .h5, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .h5, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .h5 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 700;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span {
+  display: block;
+  line-height: 21px;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list {
+  display: flex;
+  flex-direction: column;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list .h4 {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  font-weight: 700;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area {
+  width: 35%;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area {
+  position: relative;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area img, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area img, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area img, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area img, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area img, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area img {
+  border-radius: 10px;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area h5, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area h5, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area h5, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area h5, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area h5, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area h5, .top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .h5, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .h5, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .h5, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .h5, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .h5, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .h5 {
+  font-weight: 700;
+  font-size: 17px;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay h2, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay h2, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay h2, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay h2, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay h2, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay h2, .top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay .h2, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay .h2, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay .h2, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay .h2, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay .h2, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .righ-service-area .inner-area .img-overlay .h2 {
+  color: #fff;
+  font-weight: 700;
+  max-width: 250px;
+  margin: auto;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area {
+  align-items: center;
+  margin: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4 {
+  margin: 0 0 20px 0;
+}
+.top-header .container-fluid .nav-header .nav li:hover .mega-menu, .top-header .container-sm .nav-header .nav li:hover .mega-menu, .top-header .container-md .nav-header .nav li:hover .mega-menu, .top-header .container-lg .nav-header .nav li:hover .mega-menu, .top-header .container-xl .nav-header .nav li:hover .mega-menu, .top-header .container-xxl .nav-header .nav li:hover .mega-menu {
+  visibility: visible;
+  opacity: 1;
 }
 .top-header .container-fluid .right-items, .top-header .container-sm .right-items, .top-header .container-md .right-items, .top-header .container-lg .right-items, .top-header .container-xl .right-items, .top-header .container-xxl .right-items {
   display: flex;
@@ -11582,6 +11763,7 @@ input[type=email]:focus::placeholder {
   color: #3C3C39;
   max-width: 633px;
   font-weight: 700;
+  font-family: "CentraleSans";
 }
 .home-banner .banner-content h1, .home-banner .banner-content .h1 {
   font-weight: 700;
@@ -11594,8 +11776,6 @@ input[type=email]:focus::placeholder {
 }
 .home-banner .banner-content a {
   display: inline-block;
-  background-color: #FDB02B;
-  color: #fff;
   padding: 11px 31px;
   max-width: 140px;
   font-size: 12px;
@@ -11638,7 +11818,7 @@ input[type=email]:focus::placeholder {
   background-color: #c0e4f4;
 }
 .footer-section .footer-logo {
-  padding: 80px 0 50px;
+  padding: 80px 0 49px;
 }
 .footer-section .footer-mid {
   padding-bottom: 80px;
@@ -11756,6 +11936,9 @@ input[type=email]:focus::placeholder {
   background-position: bottom;
   background-repeat: no-repeat;
 }
+.success-next .tab-slide-section .tabs-section {
+  display: none;
+}
 .success-next .tab-slide-section .tabs-section .we-strive {
   color: #000;
 }
@@ -11785,12 +11968,15 @@ input[type=email]:focus::placeholder {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.29);
   border-color: #2CA3DB;
 }
-.success-next .tab-slide-section .tabs-section .step-circle {
+.success-next .tab-slide-section .tabs-section.current {
+  display: inherit;
+}
+.success-next .step-circle {
   padding: 0;
   margin: 86px 0 0;
   text-align: center;
 }
-.success-next .tab-slide-section .tabs-section .step-circle li {
+.success-next .step-circle li {
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -11801,13 +11987,19 @@ input[type=email]:focus::placeholder {
   justify-content: center;
   margin: 0 8px 0 0;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-.success-next .tab-slide-section .tabs-section .step-circle li.active {
+.success-next .step-circle li.active {
   border-color: #2CA3DB;
   color: #2CA3DB;
 }
-.success-next .tab-slide-section .tabs-section:nth-child(2), .success-next .tab-slide-section .tabs-section:last-child {
-  display: none;
+.success-next .step-circle li.current {
+  border-color: #2CA3DB;
+  color: #2CA3DB;
+}
+.success-next .step-circle li:hover {
+  border-color: #2CA3DB;
+  color: #2CA3DB;
 }
 
 .what-forme {
@@ -11819,8 +12011,8 @@ input[type=email]:focus::placeholder {
 }
 .what-forme .col {
   text-align: center;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .what-forme .col .card {
   border-radius: 10px;
@@ -11829,6 +12021,14 @@ input[type=email]:focus::placeholder {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+.what-forme .col .card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.what-forme .col .card .card-body img {
+  max-width: 70px;
 }
 .what-forme .col h4, .what-forme .col .h4 {
   font-weight: 700;
@@ -11979,6 +12179,7 @@ input[type=email]:focus::placeholder {
 .latestNews-block .card {
   margin-bottom: 50px;
   border-radius: 10px;
+  transition: all 0.3s;
 }
 .latestNews-block .card .card-header {
   max-height: 177px;
@@ -12006,6 +12207,10 @@ input[type=email]:focus::placeholder {
   color: #333333;
   max-width: 425px;
   padding-bottom: 40px;
+}
+.latestNews-block .card:hover {
+  box-shadow: 0 10px 20px #00000029;
+  transform: translateY(-10px);
 }
 .latestNews-block .left-block-news h2, .latestNews-block .left-block-news .h2 {
   font-weight: 700;
@@ -12109,6 +12314,10 @@ input[type=email]:focus::placeholder {
 }
 .application-section .desktop-view .right-application .biglImg .img-content p {
   max-width: 194px;
+}
+.application-section .desktop-view [class*=col-] {
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .application-section .iceaCream-product {
   display: none;
@@ -12727,7 +12936,7 @@ input[type=email]:focus::placeholder {
   resize: none;
 }
 .location-tabs .contact-form-section .receive-form .card-body .detail-info-form .form-row .form-group .custom-radio .form-check-input {
-  border-radius: 5px;
+  border-radius: 50%;
   width: 15px;
   min-width: 15px;
   height: 15px;
@@ -12786,9 +12995,36 @@ input[type=email]:focus::placeholder {
 .familiar-with .inner-fam .btn-item .btn.btn-warning {
   color: #fff;
 }
+.familiar-with .inner-fam-2 {
+  display: none;
+  text-align: center;
+}
+.familiar-with .inner-fam-2 h3, .familiar-with .inner-fam-2 .h3 {
+  font-weight: 700;
+  color: #000;
+}
+.familiar-with .inner-fam-2 h3 span, .familiar-with .inner-fam-2 .h3 span {
+  font-weight: 400;
+}
+.familiar-with .inner-fam-2 p {
+  color: #000;
+  max-width: 600px;
+  padding: 20px 0 50px;
+  margin: auto;
+}
+.familiar-with .inner-fam-2 .btn-item .list {
+  max-width: 650px;
+  margin: auto;
+}
+.familiar-with .inner-fam-2 .btn-item .list li {
+  margin: 0 18px 20px 0;
+}
+.familiar-with .inner-fam-2 .btn-item .list li:last-child {
+  margin-right: 0;
+}
 
 .login-modal-box {
-  background-color: #c3c3c3;
+  background-color: transparent;
 }
 .login-modal-box .modal-content {
   border-radius: 10px;
@@ -12828,6 +13064,8 @@ input[type=email]:focus::placeholder {
 .login-modal-box .modal-content .modal-body .login-form .back-btn a {
   color: #fff;
   text-decoration: none;
+  font-size: 15px;
+  font-weight: 300;
 }
 .login-modal-box .modal-content .modal-body .login-form .back-btn a i {
   margin-right: 6px;
@@ -12884,6 +13122,9 @@ input[type=email]:focus::placeholder {
 .login-modal-box .modal-content .modal-body .login-form .card-body .form-boxlog .input-Area .form-row .form-group .input-beigen-light:valid ~ span {
   transform: translateY(-12px);
   font-size: 8px;
+}
+.login-modal-box .modal-content .modal-body .login-form .card-body .form-boxlog .input-Area .form-row .form-group .input-beigen-light.error {
+  border: 1px solid red;
 }
 .login-modal-box .modal-content .modal-body .login-form .card-body .form-boxlog .input-Area .form-row .form-group input[type=email]:not(:placeholder-shown) ~ span {
   transform: translateY(-12px);
@@ -13039,10 +13280,6 @@ input[type=email]:focus::placeholder {
 .panel-active {
   overflow: hidden;
 }
-.panel-active .page-blur {
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
-}
 .panel-active .offcanvas-overlay {
   position: fixed;
   height: 100vh;
@@ -13050,9 +13287,6 @@ input[type=email]:focus::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-backdrop-filter: saturate(180%) blur(5px);
-  backdrop-filter: saturate(180%) blur(5px);
-  background: rgba(0, 0, 0, 0.25);
   z-index: 8;
 }
 .panel-active .filter-box {
@@ -13201,6 +13435,10 @@ input[type=email]:focus::placeholder {
 }
 .loyalty-box .card {
   position: relative;
+  overflow: visible;
+}
+.loyalty-box .card img {
+  border-radius: 10px;
 }
 .loyalty-box .card .plus-items .plus-btn {
   position: absolute;
@@ -13230,6 +13468,7 @@ input[type=email]:focus::placeholder {
   margin: 16px 0 0 !important;
   padding: 39px 22px 39px 35px;
   color: #000;
+  transform: translate(-116px, 40px) !important;
 }
 .loyalty-box .card .plus-items .plus-btn.plus-btn-two {
   top: 260px;
@@ -13983,6 +14222,12 @@ input[type=email]:focus::placeholder {
 .social-comment .comment-item {
   margin: 0 0 56px;
   max-width: 500px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.social-comment .comment-item:hover {
+  box-shadow: 0 10px 20px #00000029;
+  transform: translateY(-10px);
 }
 .social-comment .comment-item .card-body {
   padding: 51px 59px 51px 41px;
@@ -14101,6 +14346,7 @@ input[type=email]:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .explore-product .bg-gray p, .explore-product .card p {
   font-size: 17px;
@@ -14616,13 +14862,17 @@ input[type=email]:focus::placeholder {
   display: block;
 }
 .mobile-panel .top-link .mobile-navbar li a {
-  color: #fff;
+  color: #f3f3f3;
   text-decoration: none;
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
-  margin-bottom: 16px;
+  margin-bottom: 23px;
   display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.mobile-panel .top-link .mobile-navbar li a:hover {
+  transform: translateY(2px);
 }
 .mobile-panel .top-link .mobile-navbar li.sub-menu .right {
   font-size: 12px;
@@ -14734,7 +14984,7 @@ input[type=email]:focus::placeholder {
   color: transparent;
 }
 .mobile-latest-news .latest-news .news-form .form-row .form-group .custom-radio .form-check-input {
-  border-radius: 5px;
+  border-radius: 50%;
   border-color: transparent;
   width: 16px;
   min-width: 16px;
@@ -14813,6 +15063,9 @@ input[type=email]:focus::placeholder {
   }
   .top-header .container-fluid .nav-header .nav li.active::after, .top-header .container-sm .nav-header .nav li.active::after, .top-header .container-md .nav-header .nav li.active::after, .top-header .container-lg .nav-header .nav li.active::after, .top-header .container-xl .nav-header .nav li.active::after, .top-header .container-xxl .nav-header .nav li.active::after {
     bottom: -24px;
+  }
+  .top-header .container-fluid .nav-header .nav li .mega-menu, .top-header .container-sm .nav-header .nav li .mega-menu, .top-header .container-md .nav-header .nav li .mega-menu, .top-header .container-lg .nav-header .nav li .mega-menu, .top-header .container-xl .nav-header .nav li .mega-menu, .top-header .container-xxl .nav-header .nav li .mega-menu {
+    top: 72px;
   }
 
   .cheese-powder-sec .container-fluid .singleBox .inner-item img, .cheese-powder-sec .container-sm .singleBox .inner-item img, .cheese-powder-sec .container-md .singleBox .inner-item img, .cheese-powder-sec .container-lg .singleBox .inner-item img, .cheese-powder-sec .container-xl .singleBox .inner-item img, .cheese-powder-sec .container-xxl .singleBox .inner-item img {
@@ -15044,6 +15297,9 @@ input[type=email]:focus::placeholder {
   .login-modal-box .modal-dialog .modal-content .modal-body .row .col-md-6 .login-form .card-body .form-boxlog .input-Area .form-row.password-forgot .forgot-link a {
     color: #fff;
   }
+  .login-modal-box .modal-dialog .modal-content .modal-body .row .col-md-6 .login-form .card-body .form-boxlog .input-Area .form-row .form-group .input-beigen-light:focus {
+    background-color: #fff;
+  }
   .login-modal-box .modal-dialog .modal-content .modal-body .row .col-md-6 .login-form .card-body .form-boxlog .signup-btn {
     display: flex;
     flex-direction: column-reverse;
@@ -15114,6 +15370,18 @@ input[type=email]:focus::placeholder {
   }
   .location-tabs .contact-form-section .receive-form .card-body {
     padding: 40px 25px;
+  }
+
+  .loyalty-box .card .plus-items .plus-btn {
+    top: 70px;
+    left: 60%;
+  }
+  .loyalty-box .card .plus-items .plus-btn.plus-btn-two {
+    top: 160px;
+  }
+  .loyalty-box .card .plus-items .plus-btn.plus-btn-three {
+    top: 220px;
+    left: 70%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -15285,11 +15553,13 @@ input[type=email]:focus::placeholder {
   }
   .what-forme .row .col .card {
     max-height: 85px;
-    height: auto;
   }
   .what-forme .row .col .card .card-body {
     padding: 20px;
     max-height: 100%;
+  }
+  .what-forme .row .col .card .card-body img {
+    max-width: 40px;
   }
   .what-forme .row .col h4, .what-forme .row .col .h4 {
     font-size: 15px;
@@ -15478,7 +15748,7 @@ input[type=email]:focus::placeholder {
   }
 
   .section.bg-black {
-    padding: 50px 0;
+    padding: 50px 0 75px;
   }
 
   .product-item-box {
@@ -15979,6 +16249,13 @@ input[type=email]:focus::placeholder {
 
   .application-banner {
     padding: 60px 0;
+  }
+
+  .test-function .function-sec .top-flavours .spot-box {
+    margin: 0 0 30px;
+  }
+  .test-function .function-sec .top-flavours .progress-items {
+    margin: 18px 0 0;
   }
 }
 @media only screen and (max-width: 599px) {
