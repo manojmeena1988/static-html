@@ -13,8 +13,8 @@ $(document).ready(function(){
 
 
     $('.sub-menu ul').hide();
-        $(".sub-menu a").click(function () {
-        $(this).parent(".sub-menu").children("ul").slideToggle("100");
+    $(".sub-menu a").click(function () {
+        $(this).parent(".sub-menu").toggleClass('ftr').children("ul").slideToggle("100");
         $(this).find(".right").toggleClass("fa-chevron-up fa-chevron-down");
     });
 
@@ -71,6 +71,7 @@ $(document).ready(function(){
         $('.inner-fam').fadeOut('fast')
         $('.inner-fam-2').fadeIn('slow')
     })
+
 });
 
 

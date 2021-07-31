@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     //   if (window.matchMedia("(max-width:767px)").matches) {
         $('.iceaCream-product').slick({
             responsive: [
@@ -17,4 +18,11 @@ $(document).ready(function() {
             ]
           });
     //   }
+    
+
+    // Layout drop down work
+    $(".loyalty-box .circle-btn").click(function(){
+        $(this).parents('.plus-btn').find('.drop-box').toggleClass('active')
+        $(this).toggleClass('active')
+    });
 });

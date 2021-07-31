@@ -11485,9 +11485,22 @@ input[type=email]:focus::placeholder {
 }
 .top-header .container-fluid .nav-header .nav li, .top-header .container-sm .nav-header .nav li, .top-header .container-md .nav-header .nav li, .top-header .container-lg .nav-header .nav li, .top-header .container-xl .nav-header .nav li, .top-header .container-xxl .nav-header .nav li {
   margin: 0 70px 0 0;
+  position: relative;
+}
+.top-header .container-fluid .nav-header .nav li:hover, .top-header .container-sm .nav-header .nav li:hover, .top-header .container-md .nav-header .nav li:hover, .top-header .container-lg .nav-header .nav li:hover, .top-header .container-xl .nav-header .nav li:hover, .top-header .container-xxl .nav-header .nav li:hover {
+  position: initial;
 }
 .top-header .container-fluid .nav-header .nav li.active a, .top-header .container-sm .nav-header .nav li.active a, .top-header .container-md .nav-header .nav li.active a, .top-header .container-lg .nav-header .nav li.active a, .top-header .container-xl .nav-header .nav li.active a, .top-header .container-xxl .nav-header .nav li.active a {
   font-weight: 700;
+}
+.top-header .container-fluid .nav-header .nav li.active::after, .top-header .container-sm .nav-header .nav li.active::after, .top-header .container-md .nav-header .nav li.active::after, .top-header .container-lg .nav-header .nav li.active::after, .top-header .container-xl .nav-header .nav li.active::after, .top-header .container-xxl .nav-header .nav li.active::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  position: absolute;
+  bottom: -31px;
+  left: 0;
 }
 .top-header .container-fluid .nav-header .nav li a, .top-header .container-sm .nav-header .nav li a, .top-header .container-md .nav-header .nav li a, .top-header .container-lg .nav-header .nav li a, .top-header .container-xl .nav-header .nav li a, .top-header .container-xxl .nav-header .nav li a {
   font-size: 11px;
@@ -11506,17 +11519,17 @@ input[type=email]:focus::placeholder {
 .top-header .container-fluid .nav-header .nav li .mega-menu, .top-header .container-sm .nav-header .nav li .mega-menu, .top-header .container-md .nav-header .nav li .mega-menu, .top-header .container-lg .nav-header .nav li .mega-menu, .top-header .container-xl .nav-header .nav li .mega-menu, .top-header .container-xxl .nav-header .nav li .mega-menu {
   position: absolute;
   left: 0;
-  top: 88px;
+  top: 84px;
   background-color: #F2F0E4;
   padding: 50px 15px;
   width: 100%;
   min-height: 300px;
   z-index: 9;
-  transition: all 0.3s;
   visibility: hidden;
   opacity: 0;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row {
   display: flex;
@@ -11852,10 +11865,6 @@ input[type=email]:focus::placeholder {
   line-height: 21px;
   transition: all 0.3s;
 }
-.footer-section .footer-mid .footer-items .footer-nav-link li a:hover {
-  color: #2CA3DB;
-  font-weight: 700;
-}
 .footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu {
   display: none;
 }
@@ -11864,6 +11873,14 @@ input[type=email]:focus::placeholder {
 }
 .footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu ul {
   display: none;
+}
+.footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu ul li a:not(:focus) {
+  color: #3C3C39;
+  font-weight: 400;
+}
+.footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu.ftr a {
+  color: #2CA3DB;
+  font-weight: 700;
 }
 .footer-section .footer-mid .footer-items .food-search {
   position: relative;
@@ -12268,6 +12285,7 @@ input[type=email]:focus::placeholder {
 }
 .application-section .desktop-view .left-application .single-img {
   position: relative;
+  display: block;
 }
 .application-section .desktop-view .left-application .single-img img {
   border-radius: 10px;
@@ -12488,6 +12506,8 @@ input[type=email]:focus::placeholder {
 .why-cheese-powder .colorBox .card {
   margin-bottom: 20px;
   min-height: 246px;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 .why-cheese-powder .colorBox .card .card-body {
   display: flex;
@@ -12509,6 +12529,10 @@ input[type=email]:focus::placeholder {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.why-cheese-powder .colorBox .card:hover {
+  box-shadow: 0 10px 20px #00000029;
+  transform: translateY(-10px);
 }
 
 .product-blend-banner {
@@ -13457,7 +13481,7 @@ input[type=email]:focus::placeholder {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
   color: #fff;
 }
-.loyalty-box .card .plus-items .plus-btn .circle-btn.show i {
+.loyalty-box .card .plus-items .plus-btn .circle-btn.active i {
   transform: rotate(45deg);
 }
 .loyalty-box .card .plus-items .plus-btn .circle-btn i {
@@ -13465,10 +13489,15 @@ input[type=email]:focus::placeholder {
   transition: 0.3s;
 }
 .loyalty-box .card .plus-items .plus-btn .drop-box {
+  display: none;
   margin: 16px 0 0 !important;
   padding: 39px 22px 39px 35px;
   color: #000;
-  transform: translate(-116px, 40px) !important;
+  transform: translate(-116px, 0px) !important;
+  background-color: #fff;
+}
+.loyalty-box .card .plus-items .plus-btn .drop-box.active {
+  display: block;
 }
 .loyalty-box .card .plus-items .plus-btn.plus-btn-two {
   top: 260px;
@@ -13847,7 +13876,7 @@ input[type=email]:focus::placeholder {
 .roadmape-section::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 23px;
   left: 0;
   width: 100%;
   height: 5px;
@@ -13896,8 +13925,6 @@ input[type=email]:focus::placeholder {
   padding: 90px 0 78px 0;
 }
 .roadmape-section .outer-slider-sec .yearly-slider {
-  display: flex;
-  align-items: flex-end;
   position: relative;
 }
 .roadmape-section .outer-slider-sec .yearly-slider::before {
@@ -13947,6 +13974,14 @@ input[type=email]:focus::placeholder {
   margin-bottom: 18px;
   display: inline-block;
 }
+.roadmape-section .outer-slider-sec .yearly-slider .single-slide .card-body .year-item.btm-year-tag {
+  position: absolute;
+  background-color: #FDB02B;
+  color: #fff;
+  bottom: -73px;
+  left: 213px;
+  margin-bottom: 0;
+}
 .roadmape-section .outer-slider-sec .yearly-slider .single-slide .card-body p {
   color: #000;
   font-size: 14px;
@@ -13993,6 +14028,28 @@ input[type=email]:focus::placeholder {
   content: "";
   color: #3C3C39;
 }
+.roadmape-section .outer-slider-sec .yearly-slider .slick-dots {
+  bottom: -70px;
+  display: flex;
+  z-index: 9;
+}
+.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li {
+  height: 20px;
+  width: 100%;
+}
+.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li button {
+  padding: 18px 0;
+}
+.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li button::before {
+  border-radius: 0;
+  background-color: #FDB02B;
+  height: 5px;
+  opacity: 0.5;
+  margin: 0;
+}
+.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li.slick-active button::before {
+  opacity: 1;
+}
 .roadmape-section .btm-year {
   background-color: #FDB02B;
   color: #fff;
@@ -14004,6 +14061,7 @@ input[type=email]:focus::placeholder {
   bottom: -12px;
   left: 290px;
   z-index: 1;
+  display: none;
 }
 
 .cookie-box {
@@ -14234,6 +14292,9 @@ input[type=email]:focus::placeholder {
 }
 .social-comment .comment-item .card-body h4, .social-comment .comment-item .card-body .h4 {
   margin: 0 0 20px 0;
+  font-style: italic;
+  font-family: "CentraleSans";
+  color: #333333;
 }
 .social-comment .comment-item .card-body p {
   font-size: 16px;
@@ -14751,13 +14812,13 @@ input[type=email]:focus::placeholder {
   position: relative;
   width: -webkit-fill-available;
   background-color: transparent;
+  max-height: 300px;
+  overflow: hidden;
 }
 .section.application-slider .application-items .slick-slide .product-item img {
   border-radius: 10px;
-  max-width: 300px;
-  max-height: 300px;
-  min-width: 300px;
   min-height: 300px;
+  object-fit: cover;
 }
 .section.application-slider .application-items .slick-slide .product-item .img-overlay {
   position: absolute;
@@ -15021,6 +15082,11 @@ input[type=email]:focus::placeholder {
   display: block;
 }
 
+@media only screen and (min-width: 1441px) and (max-width: 1650px) {
+  .section.application-slider .slick-arrow.slick-next {
+    right: 76%;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .section.application-slider .slick-arrow.slick-next {
     right: 75%;
@@ -15383,6 +15449,15 @@ input[type=email]:focus::placeholder {
     top: 220px;
     left: 70%;
   }
+
+  .section.application-slider .slick-arrow.slick-next {
+    right: 71%;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .section.application-slider .slick-arrow.slick-next {
+    right: 68%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .cheese-powder-sec .container-fluid .singleBox .inner-item img, .cheese-powder-sec .container-sm .singleBox .inner-item img, .cheese-powder-sec .container-md .singleBox .inner-item img, .cheese-powder-sec .container-lg .singleBox .inner-item img, .cheese-powder-sec .container-xl .singleBox .inner-item img, .cheese-powder-sec .container-xxl .singleBox .inner-item img {
@@ -15390,7 +15465,7 @@ input[type=email]:focus::placeholder {
   }
 
   .section.application-slider .slick-arrow.slick-next {
-    right: 66%;
+    right: 67%;
   }
 
   .product-ncb-banner .banner-content h1, .product-ncb-banner .banner-content .h1 {
@@ -15576,6 +15651,10 @@ input[type=email]:focus::placeholder {
   }
   .what-forme .product-cards .right-product-col .card {
     margin-bottom: 30px;
+  }
+  .what-forme .product-cards [class*=col-] {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .journey-step {
@@ -15769,7 +15848,7 @@ input[type=email]:focus::placeholder {
   }
 
   .section.application-slider .slick-arrow.slick-next {
-    right: 49%;
+    right: 68%;
   }
 
   .application-section .card {
@@ -16257,6 +16336,15 @@ input[type=email]:focus::placeholder {
   .test-function .function-sec .top-flavours .progress-items {
     margin: 18px 0 0;
   }
+
+  .why-cheese-powder .colorBox .mt-5 {
+    margin-top: 0px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section.application-slider .slick-arrow.slick-next {
+    right: 62%;
+  }
 }
 @media only screen and (max-width: 599px) {
   .mobile-panel {
@@ -16286,7 +16374,7 @@ input[type=email]:focus::placeholder {
   .roadmape-section::after {
     content: "";
     position: absolute;
-    bottom: 122px;
+    bottom: 45px;
     left: 0;
     width: 100%;
     height: 5px;
@@ -16297,7 +16385,7 @@ input[type=email]:focus::placeholder {
     left: 20px;
   }
   .roadmape-section .outer-slider-sec {
-    padding: 50px 0 140px 0;
+    padding: 50px 0 100px 0;
   }
   .roadmape-section .outer-slider-sec .yearly-slider .single-slide {
     max-width: 280px;
@@ -16331,7 +16419,7 @@ input[type=email]:focus::placeholder {
 }
 @media only screen and (max-width: 480px) {
   .section.application-slider .slick-arrow.slick-next {
-    right: 48%;
+    right: 52%;
   }
 
   .btn {
