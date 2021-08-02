@@ -18,6 +18,11 @@
                     right: 75%;
                 } 
             }
+            .slick-dots{
+                li {
+                    min-width: 296px;
+                }
+            } 
         } 
     }
 }
@@ -55,6 +60,27 @@
                 margin-left:4%;
             }
         } 
+    }
+    .top-header{
+        .container-fluid{
+            .nav-header{
+                .nav{
+                    li{
+                        .mega-menu{
+                            &.cheese-mega-menu{
+                                .menu-row{
+                                    .inner-box{
+                                        .cheeseText{
+                                            left: 385px;
+                                        }
+                                    } 
+                                } 
+                            } 
+                        }
+                    }
+                } 
+            } 
+        }
     } 
 }
 @media only screen and (max-width:1330px){
@@ -125,7 +151,34 @@
                 }
             } 
         } 
-    } 
+    }
+    .top-header{
+        .container-fluid{
+            .nav-header{
+                .nav{
+                    li{
+                        .mega-menu{
+                            &.cheese-mega-menu{
+                                .menu-row{
+                                    .inner-box{
+                                        .cheeseText{
+                                            left: 310px;
+                                            h4{
+                                                margin-bottom:10px;
+                                            }
+                                            p{
+                                                font-size:13px;
+                                            }
+                                        }
+                                    } 
+                                } 
+                            } 
+                        }
+                    }
+                } 
+            } 
+        }
+    }  
 }
 @media only screen and (max-width:1024px){
     .top-header{
@@ -287,6 +340,19 @@
             padding-left:12px;
             padding-right:12px;
         }
+    }
+    .why-cheese-powder{
+        .colorBox{
+            .card{
+                .card-body{
+                    .inner-box{
+                        .drop-box {
+                            left: -21px;
+                        }
+                    } 
+                } 
+            } 
+        }  
     } 
 }
 
@@ -643,6 +709,20 @@
                 } 
             } 
         } 
+    } 
+    .why-cheese-powder{
+        .colorBox{
+            .card{
+                .card-body{
+                    .inner-box{
+                        .drop-box {
+                            max-width:230px;
+                            padding:35px 25px;
+                        }
+                    } 
+                } 
+            } 
+        }  
     } 
 }
 
@@ -1642,6 +1722,22 @@
             }
         } 
     }     
+    .why-cheese-powder{
+        .colorBox{
+            .card{
+                .card-body{
+                    .inner-box{
+                        .drop-box{
+                            transform:none !important;
+                            max-width: 100%;
+                            width: 100%;
+                            left: 0;
+                        }
+                    } 
+                } 
+            } 
+        } 
+    } 
 }
 @media only screen and (max-width:600px){
     .section{
@@ -1707,20 +1803,14 @@
     }
     .roadmape-section{
         &::after {
-            content: "";
-            position: absolute;
-            bottom:45px;
-            left: 0;
-            width: 100%;
-            height: 5px;
-            background-color: #FDB02B;
+            bottom:105px;
         }
         .btm-year {
             bottom:80px;
             left: 20px;
         }
         .outer-slider-sec{
-            padding:50px 0 100px 0;
+            padding:50px 0 140px 0;
             .yearly-slider{
                 .single-slide {
                     max-width:280px;
@@ -1745,6 +1835,10 @@
                         } 
                     }
                 }
+            }
+            .btm-year-tag{
+                left: 15px;
+                bottom: 63px;
             } 
         } 
     } 

@@ -1,15 +1,11 @@
 $(document).ready(function() {
   $('.yearly-slider').slick({
-      dots:true,
+      dots:false,
       infinite:true,
-      // speed: 500,
-      // fade: true,
-      // slide: '> div',
-      cssEase: 'linear',
+      speed: 500,
       slidesToShow:2,
       slidesToScroll:1,
-      
-      // arrows: true,
+      variableWidth: true,
       appendArrows: $('.news__arrows'),
       prevArrow: '<button class="slick-prev slick-arrow"></button>',
       nextArrow: '<button class="slick-next slick-arrow"></button>',

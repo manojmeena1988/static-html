@@ -11568,12 +11568,55 @@ input[type=email]:focus::placeholder {
   font-size: 18px;
   line-height: 26px;
 }
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText {
+  position: absolute;
+  left: 440px;
+  width: 280px;
+  display: none;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4 {
+  color: #3C3C39;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #000;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p span, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p span, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p span, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p span, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p span, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p span {
+  display: block;
+  margin-bottom: 3px;
+}
 .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr {
   background-color: #FDB02B;
 }
 .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box.bg-clr .img-content img {
   width: 100px;
   margin-left: auto;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box {
+  width: calc(20% - 20px);
+  transition: all 0.5s;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.bg-clr, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.bg-clr, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.bg-clr, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.bg-clr, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.bg-clr, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.bg-clr {
+  width: calc(33% - 20px);
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text h2, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text h2, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text h2, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text h2, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text h2, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text h2, .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text .h2, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text .h2, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text .h2, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text .h2, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text .h2, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .na-text .h2 {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .cheeseText, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .cheeseText, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .cheeseText, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .cheeseText, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .cheeseText, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box .cheeseText {
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.naturalBooster, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.naturalBooster, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.naturalBooster, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.naturalBooster, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.naturalBooster, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row.cheese-d .inner-box.naturalBooster {
+  margin-left: auto;
+  margin-right: 20px;
 }
 .top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row {
   display: flex;
@@ -12015,8 +12058,9 @@ input[type=email]:focus::placeholder {
   color: #2CA3DB;
 }
 .success-next .step-circle li:hover {
+  background-color: #2CA3DB;
   border-color: #2CA3DB;
-  color: #2CA3DB;
+  color: #fff;
 }
 
 .what-forme {
@@ -12494,6 +12538,10 @@ input[type=email]:focus::placeholder {
 .why-cheese-powder {
   padding: 0 0 160px;
 }
+.why-cheese-powder .card {
+  overflow: visible;
+  border-radius: 10px;
+}
 .why-cheese-powder .why-left h1, .why-cheese-powder .why-left .h1 {
   font-weight: 700;
   max-width: 335px;
@@ -12508,6 +12556,7 @@ input[type=email]:focus::placeholder {
   min-height: 246px;
   transition: all 0.3s;
   cursor: pointer;
+  overflow: visible;
 }
 .why-cheese-powder .colorBox .card .card-body {
   display: flex;
@@ -12530,9 +12579,45 @@ input[type=email]:focus::placeholder {
   align-items: center;
   justify-content: center;
 }
+.why-cheese-powder .colorBox .card .card-body .inner-box span i {
+  font-size: 13px;
+  transition: all 0.5s;
+}
+.why-cheese-powder .colorBox .card .card-body .inner-box span.active i {
+  transform: rotate(45deg);
+}
+.why-cheese-powder .colorBox .card .card-body .inner-box .drop-box {
+  background-color: #fff;
+  text-align: left;
+  margin-left: 0 !important;
+  margin-top: 15px;
+  position: absolute;
+  left: 28px;
+  right: 0;
+  z-index: 99;
+  display: none;
+}
+.why-cheese-powder .colorBox .card .card-body .inner-box .drop-box li {
+  color: #000;
+  font-size: 14px;
+  list-style: none;
+  position: relative;
+}
+.why-cheese-powder .colorBox .card .card-body .inner-box .drop-box li::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: -12px;
+  top: 12px;
+}
+.why-cheese-powder .colorBox .card .card-body .inner-box .drop-box.active {
+  display: block;
+}
 .why-cheese-powder .colorBox .card:hover {
   box-shadow: 0 10px 20px #00000029;
-  transform: translateY(-10px);
 }
 
 .product-blend-banner {
@@ -12580,6 +12665,7 @@ input[type=email]:focus::placeholder {
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
   padding: 28px 20px;
   border-radius: 10px;
+  border-radius: 0px;
 }
 .complete-body .chat-box .inner-chat {
   display: flex;
@@ -12694,6 +12780,7 @@ input[type=email]:focus::placeholder {
   max-width: 206px;
   border-right: 1px solid #fff;
   height: 100%;
+  border-radius: 0px;
 }
 .location-tabs .tab-lists .nav-item .nav-link:hover {
   background-color: #afdcf1;
@@ -13876,7 +13963,7 @@ input[type=email]:focus::placeholder {
 .roadmape-section::after {
   content: "";
   position: absolute;
-  bottom: 23px;
+  bottom: 0px;
   left: 0;
   width: 100%;
   height: 5px;
@@ -13974,14 +14061,6 @@ input[type=email]:focus::placeholder {
   margin-bottom: 18px;
   display: inline-block;
 }
-.roadmape-section .outer-slider-sec .yearly-slider .single-slide .card-body .year-item.btm-year-tag {
-  position: absolute;
-  background-color: #FDB02B;
-  color: #fff;
-  bottom: -73px;
-  left: 213px;
-  margin-bottom: 0;
-}
 .roadmape-section .outer-slider-sec .yearly-slider .single-slide .card-body p {
   color: #000;
   font-size: 14px;
@@ -14028,27 +14107,17 @@ input[type=email]:focus::placeholder {
   content: "";
   color: #3C3C39;
 }
-.roadmape-section .outer-slider-sec .yearly-slider .slick-dots {
-  bottom: -70px;
-  display: flex;
-  z-index: 9;
-}
-.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li {
-  height: 20px;
-  width: 100%;
-}
-.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li button {
-  padding: 18px 0;
-}
-.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li button::before {
-  border-radius: 0;
+.roadmape-section .outer-slider-sec .btm-year-tag {
+  position: absolute;
   background-color: #FDB02B;
-  height: 5px;
-  opacity: 0.5;
-  margin: 0;
-}
-.roadmape-section .outer-slider-sec .yearly-slider .slick-dots li.slick-active button::before {
-  opacity: 1;
+  color: #fff;
+  bottom: -10px;
+  left: 213px;
+  margin-bottom: 0;
+  border-radius: 55px;
+  padding: 2.5px 18px;
+  z-index: 9;
+  font-weight: 700;
 }
 .roadmape-section .btm-year {
   background-color: #FDB02B;
@@ -14842,6 +14911,7 @@ input[type=email]:focus::placeholder {
   background-color: #fff;
   opacity: 1;
   margin: 0;
+  border-radius: 0;
 }
 .section.application-slider .slick-dots li.slick-active {
   height: 4px;
@@ -15091,6 +15161,9 @@ input[type=email]:focus::placeholder {
   .section.application-slider .slick-arrow.slick-next {
     right: 75%;
   }
+  .section.application-slider .slick-dots li {
+    min-width: 296px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .home-banner .banner-content {
@@ -15112,6 +15185,10 @@ input[type=email]:focus::placeholder {
 
   .all-category-tab .product-list-box .offset-md-1 {
     margin-left: 4%;
+  }
+
+  .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText {
+    left: 385px;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -15150,6 +15227,16 @@ input[type=email]:focus::placeholder {
   .all-category-tab .product-list-box .product-img img {
     min-height: 320px;
     object-fit: cover;
+  }
+
+  .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText {
+    left: 310px;
+  }
+  .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText h4, .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText .h4 {
+    margin-bottom: 10px;
+  }
+  .top-header .container-fluid .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-sm .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-md .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-lg .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-xl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p, .top-header .container-xxl .nav-header .nav li .mega-menu.cheese-mega-menu .menu-row .inner-box .cheeseText p {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -15256,6 +15343,10 @@ input[type=email]:focus::placeholder {
   .natural-booster [class*=col-] {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .why-cheese-powder .colorBox .card .card-body .inner-box .drop-box {
+    left: -21px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -15495,6 +15586,11 @@ input[type=email]:focus::placeholder {
   .cookie-box .modal-dialog .modal-content .modal-body .all-toggle-btns li:nth-last-child(2) {
     border-bottom: transparent;
     border-right: 1px solid #F0F0F0;
+  }
+
+  .why-cheese-powder .colorBox .card .card-body .inner-box .drop-box {
+    max-width: 230px;
+    padding: 35px 25px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -16340,6 +16436,13 @@ input[type=email]:focus::placeholder {
   .why-cheese-powder .colorBox .mt-5 {
     margin-top: 0px !important;
   }
+
+  .why-cheese-powder .colorBox .card .card-body .inner-box .drop-box {
+    transform: none !important;
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   .section.application-slider .slick-arrow.slick-next {
@@ -16372,20 +16475,14 @@ input[type=email]:focus::placeholder {
   }
 
   .roadmape-section::after {
-    content: "";
-    position: absolute;
-    bottom: 45px;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: #FDB02B;
+    bottom: 105px;
   }
   .roadmape-section .btm-year {
     bottom: 80px;
     left: 20px;
   }
   .roadmape-section .outer-slider-sec {
-    padding: 50px 0 100px 0;
+    padding: 50px 0 140px 0;
   }
   .roadmape-section .outer-slider-sec .yearly-slider .single-slide {
     max-width: 280px;
@@ -16407,6 +16504,10 @@ input[type=email]:focus::placeholder {
   }
   .roadmape-section .outer-slider-sec .yearly-slider .single-slide.single-big .card-body p {
     max-width: 100%;
+  }
+  .roadmape-section .outer-slider-sec .btm-year-tag {
+    left: 15px;
+    bottom: 63px;
   }
 
   .location-tabs .google-map .denmark-address .dk-btn {

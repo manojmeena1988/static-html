@@ -72,6 +72,13 @@ $(document).ready(function(){
         $('.inner-fam-2').fadeIn('slow')
     })
 
+
+    // ===================== nav cheese powder js
+
+    $(".inner-box.bg-clr").click(function(){
+      $('.cheeseText').toggle(); 
+      $('.menu-row').addClass('cheese-d');
+    });
 });
 
 

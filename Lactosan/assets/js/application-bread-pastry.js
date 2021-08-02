@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
     //   if (window.matchMedia("(max-width:767px)").matches) {
         $('.iceaCream-product').slick({
             responsive: [
