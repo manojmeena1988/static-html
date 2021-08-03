@@ -12,6 +12,8 @@ $(document).ready(function(){
     });
 
 
+    // mobile and footer nav menu slide ==============================
+
     $('.sub-menu ul').hide();
     $(".sub-menu a").click(function () {
         $(this).parent(".sub-menu").toggleClass('ftr').children("ul").slideToggle("100");
@@ -39,6 +41,8 @@ $(document).ready(function(){
 
     $(".multiselect-selected-text").html("Choose an application area");
 
+
+    // Validate js start=====================================
 
     $('#newsForm').validate({
         errorPlacement: function(error,element) {

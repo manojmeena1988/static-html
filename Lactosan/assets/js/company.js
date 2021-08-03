@@ -3,7 +3,7 @@ $(document).ready(function() {
       dots:false,
       infinite:true,
       speed: 500,
-      slidesToShow:2,
+      slidesToShow:1,
       slidesToScroll:1,
       variableWidth: true,
       appendArrows: $('.news__arrows'),
@@ -13,7 +13,7 @@ $(document).ready(function() {
       {
           breakpoint: 1441,
           settings: {
-          slidesToShow:2,
+          slidesToShow:1,
           slidesToScroll:1,
             }
           },
@@ -29,4 +29,17 @@ $(document).ready(function() {
         // instead of a settings object
       ]
     });
+
+    // Company slick slider on scroll changes =============================
+
+    function changeYear(){
+      var year =  $(".slick-active .year-item").text();
+      $('.btm-year-tag').text(year);
+    }
+    changeYear();
+
+    $(".yearly-slider").on("afterChange", function (){
+      changeYear()
+  })
+
 });
