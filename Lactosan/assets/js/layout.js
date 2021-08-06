@@ -78,7 +78,6 @@ $(document).ready(function(){
 
 
     // ===================== nav cheese powder js
-
     $(".inner-box.bg-clr").click(function(){
       $('.cheeseText').toggle(); 
       $('.menu-row').addClass('cheese-d');

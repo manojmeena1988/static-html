@@ -2,7 +2,7 @@
 @import "global";
 
 .top-header{
-    padding:11px 0;
+    padding:22px 0;
     .container-fluid{
         display: flex;
         flex-wrap: wrap;
@@ -106,9 +106,16 @@
                                                 line-height: 26px;
                                             }
                                         }
+                                        &.text-c{
+                                            h2{
+                                                margin-left: auto;
+                                                padding-left: 20px;
+                                            }
+                                        }
                                     }
                                     .cheeseText{
                                         position: absolute;
+                                        top:0;
                                         left:440px;
                                         width: 280px;
                                         display:none;
@@ -238,13 +245,28 @@
                                     width:35%;
                                     .inner-area{
                                         position: relative;
-                                        img{
-                                            border-radius:10px;
-                                            width:100%;
-                                            max-height:280px;
-                                            object-fit:cover;
-                                            margin-bottom:18px;
+                                        display: inherit;
+                                        padding: 0;
+                                        .bg-overlay{
+                                            &::after{
+                                                position: absolute;
+                                                content: "";
+                                                background-color:rgba(0,0,0,0.1);
+                                                height: calc(100% - 38px);
+                                                width: 100%;
+                                                top: 0;
+                                                left: 0;
+                                                border-radius: 10px;
+                                            }
+                                            img{
+                                                border-radius:10px;
+                                                width:100%;
+                                                max-height:280px;
+                                                object-fit:cover;
+                                                margin-bottom:18px;
+                                            }
                                         }
+                                        
                                         h5{
                                             font-weight:$fw-700;
                                             font-size:17px;
@@ -441,6 +463,9 @@
             position: relative;
             overflow: hidden;
             max-height:578px;
+            img{
+                object-fit:cover;
+            }
             // .play-box{
             //         display:flex;
             //         align-items:center;
@@ -617,8 +642,8 @@
 
 .success-next{
     padding:65px 0 300px;
-    background-image:url(../../images/temp11.PNG);
-    background-position:bottom;
+    background-image:url(../../images/shutterstock_1006113829_cheddar.PNG);
+    background-position: center bottom -114px;
     background-repeat: no-repeat;
     .tab-slide-section{
        .tabs-section{
@@ -768,8 +793,11 @@
                     position: absolute;
                     bottom: -24px;
                     right: 24px;
+                    min-height:55px;
+                    min-width: 82px;
                     img{
                         max-width:30px;
+                        max-height:30px;
                     }
                     &.bg-products{
                         background-color:$blue;
@@ -1021,12 +1049,20 @@
                 display: block;
                 overflow: hidden;
                 border-radius:10px;
+                max-height:612px;
+                height:100%;
                 img{
                     border-radius:10px;
                     width:100%;
-                    min-height:612px;
+                    // min-height:612px;
                     object-fit:cover;
                     transition:all 0.3s;
+                    height:100%;
+                }
+                .img-content{
+                    p{
+                        margin-bottom:0;
+                    }
                 }
             }
         }
@@ -1036,6 +1072,7 @@
             flex-wrap: wrap;
             justify-content:space-between;
             margin-bottom:12px;
+            height:100%;
             .smallImg{
                 width:50%;
                 min-width: calc(50% - 6px);
@@ -1048,14 +1085,16 @@
                 img{
                     border-radius:10px;
                     width:100%;
-                    min-height:300px;
+                    // min-height:300px;
                     max-height:300px;
                     object-fit:cover;
                     transition:all 0.3s;
+                    height:100%;
                 }
                 .img-content{
                     p{
                         max-width:194px;
+                        margin-bottom:0;
                     }
                 }
             }
@@ -1076,6 +1115,7 @@
                 .img-content{
                     p{
                         max-width:194px;
+                        margin-bottom:0;
                     }
                 }
             }
@@ -1092,9 +1132,7 @@
        .slick-slide{
            margin-right:18px;
         .mob-product-icea{
-            .mob-product-icea{
-                position: relative;
-            }
+            position: relative;
         }
        }
     }
@@ -1147,14 +1185,21 @@
                     max-width:130px;
                 }
             }
+            &.singleBox-one{
+               .inner-item{
+                   h2{
+                       margin-left:15px;
+                   }
+               } 
+            }
             &.singleBox-two{
-                background-image: url(../../images/app1.PNG);
+                background-image: url(../../images/nbc-img.PNG);
                 background-repeat:no-repeat;
                 background-position:center;
                 background-size:cover;
             }
             &.singleBox-three{
-                background-image: url(../../images/app1.PNG);
+                background-image: url(../../images/shutterstock_191073656_1.PNG);
                 background-repeat:no-repeat;
                 background-position:center;
                 background-size:cover;
@@ -1393,7 +1438,6 @@
         box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
         padding:28px 20px;
         border-radius: 10px;
-        border-radius: 0px;
         .inner-chat{
             display:flex;
             align-items:center;
@@ -1839,8 +1883,8 @@
 }
 .familiar-with{
     padding:96px 0 221px;
-    background-image: url(../../images/temp11.PNG);
-    background-position: bottom;
+    background-image:url(../../images/shutterstock_1006113829_cheddar.PNG);
+    background-position: center bottom -114px;
     background-repeat: no-repeat;
     margin:0 0 160px;
     .inner-fam{
@@ -2676,8 +2720,9 @@
     .mission-box{
         color:$dark;
         .card{
+            max-width:508px;
             img{
-                max-width:508px;
+                // max-width:508px;
                 border-radius:10px;
             }
         }
@@ -3396,6 +3441,11 @@
             font-weight:$fw-700;
             margin:16px 0 0;
         }
+        img{
+            max-width:50px;
+            max-height:50px;
+            min-height:50px;
+        }
         &:hover{
             background-color:lighten($blue , 30%);
             p{
@@ -3768,6 +3818,7 @@
             padding:0 0 160px;
             .left-img{
                 max-width:508px;
+                background-color: transparent;
             }
             .right-content{
                 color:$white;
@@ -3847,6 +3898,14 @@
         }
     }
     &.product-range-banner{
+        .twoImg-banner{
+            display:flex;
+            flex-wrap:wrap;
+            img{
+                max-height:100%;
+                width:50%;
+            }
+        }
         .banner-content{
             padding:15px;
             align-items:center;
@@ -3923,6 +3982,7 @@
                             background-color:$orange;
                             opacity:1;
                             height:4px;
+                            border-radius:2px;
                         }
                     }
                 }

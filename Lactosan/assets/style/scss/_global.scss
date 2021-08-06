@@ -179,6 +179,12 @@ body {
   ul{
     padding:0;
   }
+  .bg-warning{
+    background-color:$orange;
+  }
+  .bg-beige{
+    background-color:$Beige;
+  }
   .card{
       border:none;
       border-radius:10px;

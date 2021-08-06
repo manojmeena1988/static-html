@@ -39,7 +39,7 @@ $(document).ready(function() {
     changeYear();
 
     $(".yearly-slider").on("afterChange", function (){
-      changeYear()
+      changeYear();
   })
 
 });

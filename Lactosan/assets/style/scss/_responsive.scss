@@ -353,7 +353,32 @@
                 } 
             } 
         }  
-    } 
+    }
+    .top-header{
+        .container-fluid{
+            .nav-header{
+                .nav{
+                    li{
+                        .mega-menu{
+                            &.cheese-mega-menu{
+                                .menu-row{
+                                    .inner-box{
+                                        .img-content{
+                                            text-align:center;
+                                            h2{
+                                                font-size:24px;
+                                                line-height:28px;
+                                            } 
+                                        }
+                                    } 
+                                } 
+                            } 
+                        }
+                    } 
+                } 
+            } 
+        } 
+    }   
 }
 
 @media only screen and (max-width:991px){
@@ -497,9 +522,45 @@
     } 
     .application-section{
         .desktop-view{
+            .left-application{
+                .single-img{
+                    .img-content{
+                        h3{
+                            font-size:16px;
+                            line-height:20px;
+                        }
+                        p{
+                            font-size:14px;
+                            line-height:18px;
+                        }
+                    }
+                }
+            } 
             .right-application{
                 .smallImg {
                     max-width:150px;
+                    .img-content{
+                        h4{
+                            font-size:16px;
+                            line-height:18px;
+                        }
+                        p{
+                            font-size:14px;
+                            line-height:18px;
+                        }
+                    }
+                }
+                .biglImg{
+                    .img-content{
+                        h4{
+                            font-size:16px;
+                            line-height:18px;
+                        }
+                        p{
+                            font-size:14px;
+                            line-height:18px;
+                        }
+                    }
                 }
             } 
         }
@@ -529,7 +590,7 @@
         } 
     } 
     .home-banner {
-        margin-top: -72px;
+        margin-top: -81px;
         img {
             min-height:600px;
         }
@@ -1150,6 +1211,11 @@
         .iceaCream-product{
             .mob-product-icea {
                 display: block;
+                .img-overlay-bg{
+                    img{
+                        width:100%;
+                    }
+                }
             }
         } 
     } 

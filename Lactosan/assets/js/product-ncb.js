@@ -1,29 +1,30 @@
 $(document).ready(function(){    
     $('.application-items').slick({
       dots: true,
-      infinite: false,
-      // speed: 300,
-      slidesToShow:5.2,
+      infinite: true,
+      speed: 300,
+      variableWidth: true,
+      slidesToShow:1,
       slidesToScroll:1,
       responsive: [  
       {
           breakpoint: 1441,
           settings: {
-          slidesToShow:4.2,
+          slidesToShow:1,
           slidesToScroll:1,
         }
       },          
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow:3.2,
+          slidesToShow:1,
           slidesToScroll:1,
         }
       },
       {
         breakpoint:769,
         settings: {
-          slidesToShow:2.2,
+          slidesToShow:1,
           slidesToScroll:1,
         }
       },
@@ -31,7 +32,7 @@ $(document).ready(function(){
       {
         breakpoint: 481,
         settings: {
-          slidesToShow:1.2,
+          slidesToShow:1,
           slidesToScroll: 1
         }
       }
