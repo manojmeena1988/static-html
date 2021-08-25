@@ -82,6 +82,13 @@ $(document).ready(function(){
       $('.cheeseText').toggle(); 
       $('.menu-row').addClass('cheese-d');
     });
+
+
+    //why cheese box open js start======================
+    $(".inner-box span , .innerGrid span , .devlepmentBox span , .popUpbox span ").click(function(){
+      $(this).parents('.endProject').find('.drop-box').fadeToggle('active , 2000')
+      $(this).toggleClass('active');
+    });
 });
 
 

@@ -17,9 +17,5 @@ $(document).ready(function() {
             ]
           });
     //   }
-
-    $(".inner-box span").click(function(){
-      $(this).parents('.endProject').find('.drop-box').fadeToggle('active , 2000')
-      $(this).toggleClass('active');
-  });
+    
 });

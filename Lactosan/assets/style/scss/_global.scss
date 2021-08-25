@@ -63,7 +63,6 @@ body {
     font-family: 'Open Sans', sans-serif;
     position: relative;
   }
-
   .btn{
     padding:15px 45px;
     border-radius:26px;
@@ -296,7 +295,7 @@ body {
         font-weight:$fw-700;
       }
       &.error{
-        border-bottom-color:red;
+        border-bottom-color:$red;
       }
     }
     &.outline-white{
@@ -836,4 +835,6 @@ body {
   max-width:530px;
   margin:auto;
 }
+
+
 
