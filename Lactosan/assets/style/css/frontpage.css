@@ -10768,6 +10768,9 @@ body {
   border-radius: 26px;
   border: none;
 }
+.btn:focus {
+  box-shadow: none;
+}
 .btn.btn-primary {
   background-color: #afdcf1;
   color: #2CA3DB;
@@ -11207,6 +11210,18 @@ input[type=email]:focus::placeholder {
 .filter-tab:hover span {
   display: inline-block;
 }
+.filter-tab:hover img.h-blue {
+  display: none;
+}
+.filter-tab:hover img.h-white {
+  display: inline-block;
+}
+.filter-tab img {
+  width: 25px;
+}
+.filter-tab img.h-white {
+  display: none;
+}
 .filter-tab span {
   display: none;
   margin-left: 10px;
@@ -11517,6 +11532,11 @@ input[type=email]:focus::placeholder {
 
 .top-header {
   padding: 22px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+  background: #fff;
 }
 .top-header .container-fluid, .top-header .container-sm, .top-header .container-md, .top-header .container-lg, .top-header .container-xl, .top-header .container-xxl {
   display: flex;
@@ -11904,10 +11924,15 @@ input[type=email]:focus::placeholder {
 }
 .home-banner .banner-content a {
   display: inline-block;
+  background-color: #FDB02B;
+  color: #fff;
   padding: 11px 31px;
   max-width: 140px;
   font-size: 12px;
   line-height: 17px;
+}
+.home-banner .banner-content a:hover {
+  background-color: #fdb944;
 }
 
 .secret-ingredient {
@@ -11999,6 +12024,9 @@ input[type=email]:focus::placeholder {
 .footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu.ftr a {
   color: #2CA3DB;
   font-weight: 700;
+}
+.footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu.ftr .sub-menu-list li a {
+  color: #fff;
 }
 .footer-section .footer-mid .footer-items .food-search {
   position: relative;
@@ -12706,7 +12734,7 @@ input[type=email]:focus::placeholder {
   display: block;
 }
 .journey-step .leaderShipBox .popUpbox.conceptText {
-  left: 22%;
+  left: 20%;
   top: 7%;
   z-index: 7;
 }
@@ -12715,8 +12743,11 @@ input[type=email]:focus::placeholder {
   position: relative;
   left: -25px;
 }
+.journey-step .leaderShipBox .popUpbox.conceptText img {
+  margin-right: 20px;
+}
 .journey-step .leaderShipBox .popUpbox.ideaText {
-  left: 17%;
+  left: 15%;
   top: 480px;
 }
 .journey-step .leaderShipBox .popUpbox.ideaText p {
@@ -12725,15 +12756,23 @@ input[type=email]:focus::placeholder {
   bottom: 35px;
   left: -14px;
 }
+.journey-step .leaderShipBox .popUpbox.ideaText img {
+  transform: rotate(-14deg);
+  margin: -66px 40px 0px 0;
+}
 .journey-step .leaderShipBox .popUpbox.postlaunchText {
-  right: 12%;
-  top: 112px;
+  right: 14%;
+  top: 40px;
   z-index: 6;
 }
 .journey-step .leaderShipBox .popUpbox.postlaunchText p {
   transform: rotate(15deg);
   position: relative;
   bottom: 65px;
+}
+.journey-step .leaderShipBox .popUpbox.postlaunchText img {
+  transform: rotate(-6deg);
+  margin: 0 20px 65px 0;
 }
 .journey-step .leaderShipBox .popUpbox.postlaunchText .endProject .drop-box li {
   list-style: disc;
@@ -12747,14 +12786,17 @@ input[type=email]:focus::placeholder {
   list-style: none;
 }
 .journey-step .leaderShipBox .popUpbox.launchText {
-  right: 13%;
-  top: 480px;
+  right: 14%;
+  top: 441px;
 }
 .journey-step .leaderShipBox .popUpbox.launchText p {
   margin: 0 0 0 30px;
   transform: rotate(-38deg);
   position: relative;
   bottom: 38px;
+}
+.journey-step .leaderShipBox .popUpbox.launchText img {
+  margin: 0 0px 60px 20px;
 }
 .journey-step .leaderShipBox .postLaunchBox {
   width: 148px;
@@ -13433,6 +13475,7 @@ input[type=email]:focus::placeholder {
   font-size: 12px;
   line-height: 20px;
   font-weight: 600;
+  color: #fff;
 }
 .location-tabs .google-map .denmark-address .dk-btn .drop-box p {
   font-size: 15px;
@@ -13963,9 +14006,6 @@ input[type=email]:focus::placeholder {
   left: 0;
   right: 0;
   bottom: 0;
-  -webkit-backdrop-filter: saturate(100%) blur(5px);
-  backdrop-filter: saturate(100%) blur(5px);
-  background: rgba(0, 0, 0, 0.25);
   z-index: 8;
 }
 .panel-active .filter-box {
@@ -15226,6 +15266,9 @@ input[type=email]:focus::placeholder {
   max-width: 491px;
   color: #333333;
 }
+.location-tabs.product-cheese-tabs .did-know ul li::marker {
+  font-size: 9px;
+}
 
 .footer-section.footer-dark {
   background-color: #3C3C39;
@@ -16205,22 +16248,22 @@ input[type=email]:focus::placeholder {
     transform: rotate(55deg);
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText {
-    right: 7%;
+    right: 10%;
   }
   .journey-step .leaderShipBox .popUpbox.launchText {
-    right: 7%;
-    top: 463px;
+    right: 8%;
+    top: 416px;
   }
   .journey-step .leaderShipBox .popUpbox.conceptText {
-    left: 19%;
-    top: 9%;
+    left: 16%;
+    top: 8%;
   }
   .journey-step .leaderShipBox .popUpbox.conceptText p {
     transform: rotate(-11deg);
   }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 14%;
-    top: 470px;
+    left: 10%;
+    top: 460px;
   }
   .journey-step .leaderShipBox .left-leader .idea-y {
     transform: rotate(9deg);
@@ -16422,19 +16465,27 @@ input[type=email]:focus::placeholder {
     top: 20%;
     height: 35px;
   }
+  .journey-step .leaderShipBox .popUpbox.conceptText {
+    left: 14%;
+    top: 6%;
+  }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 13%;
+    left: 11%;
     top: 400px;
   }
   .journey-step .leaderShipBox .popUpbox.launchText {
     right: 7%;
-    top: 395px;
+    top: 355px;
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText {
-    right: 5%;
+    right: 6%;
+    top: 32px;
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText p {
     bottom: 80px;
+  }
+  .journey-step .leaderShipBox .popUpbox.postlaunchText img {
+    margin: 0 20px 107px 0;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -16584,6 +16635,11 @@ input[type=email]:focus::placeholder {
     padding: 0 15px;
   }
 
+  .top-header {
+    position: inherit;
+    background-color: transparent;
+    z-index: inherit;
+  }
   .top-header .container-fluid .nav-header, .top-header .container-sm .nav-header, .top-header .container-md .nav-header, .top-header .container-lg .nav-header, .top-header .container-xl .nav-header, .top-header .container-xxl .nav-header {
     display: none;
   }
@@ -16993,7 +17049,7 @@ input[type=email]:focus::placeholder {
     padding: 24px 20px;
   }
   .journey-step .leaderShipBox .popUpbox.conceptText {
-    left: 17%;
+    left: 16%;
     top: 7%;
   }
   .journey-step .leaderShipBox .popUpbox.conceptText p {
@@ -17003,9 +17059,13 @@ input[type=email]:focus::placeholder {
     left: 0;
     bottom: 5px;
   }
+  .journey-step .leaderShipBox .popUpbox.conceptText img {
+    margin: 0 20px 0 0;
+    width: 80px;
+  }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 11%;
-    top: 252px;
+    left: 10%;
+    top: 260px;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText p {
     transform: rotate(43deg);
@@ -17014,22 +17074,35 @@ input[type=email]:focus::placeholder {
     left: 0;
     margin: 0 12px 0 0;
   }
+  .journey-step .leaderShipBox .popUpbox.ideaText img {
+    width: 35px;
+    transform: rotate(-6deg);
+    margin: -80px 40px 0px 0;
+  }
   .journey-step .leaderShipBox .popUpbox.launchText {
     right: 10%;
-    top: 257px;
+    top: 220px;
   }
   .journey-step .leaderShipBox .popUpbox.launchText p {
     margin: 0 0 0 12px;
     transform: rotate(-34deg);
     bottom: 26px;
   }
+  .journey-step .leaderShipBox .popUpbox.launchText img {
+    width: 70px;
+  }
   .journey-step .leaderShipBox .popUpbox.postlaunchText {
     right: 9%;
-    top: 66px;
+    top: 0;
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText p {
     bottom: 48px;
     margin: 0 12px 0 0;
+  }
+  .journey-step .leaderShipBox .popUpbox.postlaunchText img {
+    width: 110px;
+    margin: 15px 10px 104px 0;
+    transform: rotate(-4deg);
   }
   .journey-step .leaderShipBox .devlepmentBox {
     height: 45px;
@@ -17051,6 +17124,9 @@ input[type=email]:focus::placeholder {
   }
   .journey-step .leaderShipBox .devlepmentBox .endProject span i {
     font-size: 9px;
+  }
+  .journey-step .leaderShipBox .devlepmentBox .endProject .drop-box {
+    padding: 24px 20px;
   }
   .journey-step .leaderShipBox .devlepmentBox::before {
     bottom: -5px;
@@ -17398,6 +17474,15 @@ input[type=email]:focus::placeholder {
   }
   .cheese-powder-sec .container-fluid .singleBox:hover, .cheese-powder-sec .container-sm .singleBox:hover, .cheese-powder-sec .container-md .singleBox:hover, .cheese-powder-sec .container-lg .singleBox:hover, .cheese-powder-sec .container-xl .singleBox:hover, .cheese-powder-sec .container-xxl .singleBox:hover {
     width: 100%;
+  }
+  .cheese-powder-sec .container-fluid .singleBox.singleBox-one, .cheese-powder-sec .container-sm .singleBox.singleBox-one, .cheese-powder-sec .container-md .singleBox.singleBox-one, .cheese-powder-sec .container-lg .singleBox.singleBox-one, .cheese-powder-sec .container-xl .singleBox.singleBox-one, .cheese-powder-sec .container-xxl .singleBox.singleBox-one {
+    max-height: 200px;
+  }
+  .cheese-powder-sec .container-fluid .singleBox.singleBox-two .inner-item, .cheese-powder-sec .container-sm .singleBox.singleBox-two .inner-item, .cheese-powder-sec .container-md .singleBox.singleBox-two .inner-item, .cheese-powder-sec .container-lg .singleBox.singleBox-two .inner-item, .cheese-powder-sec .container-xl .singleBox.singleBox-two .inner-item, .cheese-powder-sec .container-xxl .singleBox.singleBox-two .inner-item {
+    text-align: center;
+  }
+  .cheese-powder-sec .container-fluid .singleBox.singleBox-three .inner-item, .cheese-powder-sec .container-sm .singleBox.singleBox-three .inner-item, .cheese-powder-sec .container-md .singleBox.singleBox-three .inner-item, .cheese-powder-sec .container-lg .singleBox.singleBox-three .inner-item, .cheese-powder-sec .container-xl .singleBox.singleBox-three .inner-item, .cheese-powder-sec .container-xxl .singleBox.singleBox-three .inner-item {
+    text-align: center;
   }
 
   .cleanlabel-section {
@@ -17955,6 +18040,9 @@ input[type=email]:focus::placeholder {
     background-size: 22px;
     margin-left: 10px;
   }
+  .faq-section.section.bg-beige.quality-certification .faq-custom-accordian .accordion-item .accordion-header .accordion-button:not(.collapsed)::after {
+    transform: rotate(45deg);
+  }
 
   .application-slider {
     padding-left: 15px !important;
@@ -18044,7 +18132,7 @@ input[type=email]:focus::placeholder {
   }
   .journey-step .leaderShipBox .popUpbox.conceptText {
     left: 35%;
-    top: 2%;
+    top: 3%;
     z-index: 8;
   }
   .journey-step .leaderShipBox .popUpbox.conceptText p {
@@ -18052,27 +18140,35 @@ input[type=email]:focus::placeholder {
     bottom: -8px;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 63%;
-    top: 151px;
+    left: 70%;
+    top: 180px;
     z-index: 7;
+    flex-direction: column;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText p {
     transform: rotate(60deg);
     bottom: 48px;
     left: 43px;
   }
+  .journey-step .leaderShipBox .popUpbox.ideaText img {
+    margin: -80px 10px 20px 0;
+    transform: rotate(25deg);
+  }
   .journey-step .leaderShipBox .popUpbox.ideaText .endProject .drop-box {
     margin-left: -251px !important;
   }
   .journey-step .leaderShipBox .popUpbox.launchText {
-    right: 29%;
-    bottom: 13px;
+    right: 24%;
+    bottom: -26px;
     top: initial;
   }
+  .journey-step .leaderShipBox .popUpbox.launchText img {
+    transform: rotate(-9deg);
+  }
   .journey-step .leaderShipBox .popUpbox.postlaunchText {
-    left: 7%;
+    left: 45%;
     top: inherit;
-    bottom: 65px;
+    bottom: 135px;
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText p {
     bottom: 77px;
@@ -18081,7 +18177,14 @@ input[type=email]:focus::placeholder {
     transform: rotate(-85deg);
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText .endProject .drop-box {
-    margin-left: 0 !important;
+    margin-left: -236px !important;
+  }
+  .journey-step .leaderShipBox .popUpbox.postlaunchText img {
+    transform: rotate(2deg);
+  }
+
+  .journey-step .top-steps p {
+    padding: 28px 0 80px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -18284,7 +18387,7 @@ input[type=email]:focus::placeholder {
   }
 
   .product-solution-grid .gridBoxs .innerGrid .endProject .drop-box {
-    transform: translate3d(0px, 42px, 0px) !important;
+    transform: translate3d(0px, 12px, 0px) !important;
   }
   .product-solution-grid .gridBoxs .innerGrid.bg-lilla .c-dots {
     right: 25%;
@@ -18366,23 +18469,18 @@ input[type=email]:focus::placeholder {
     transform: rotate(-14deg);
     bottom: 0px;
   }
-  .journey-step .leaderShipBox .popUpbox.postlaunchText {
-    left: 1%;
-  }
   .journey-step .leaderShipBox .popUpbox.postlaunchText .endProject .drop-box {
-    transform: translate3d(176px, 42px, 0px) !important;
-    margin-left: -182px !important;
+    transform: translate3d(0px, 12px, 0px) !important;
   }
   .journey-step .leaderShipBox .popUpbox.launchText {
     right: 22%;
-    bottom: 20px;
   }
   .journey-step .leaderShipBox .popUpbox.launchText p {
     transform: rotate(-49deg);
     bottom: 39px;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 64%;
+    left: 72%;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText p {
     transform: rotate(72deg);
@@ -18456,15 +18554,19 @@ input[type=email]:focus::placeholder {
     top: 99px;
   }
 
-  .journey-step .leaderShipBox .popUpbox.postlaunchText {
-    left: -6%;
-  }
   .journey-step .leaderShipBox .popUpbox.launchText {
     right: 19%;
-    bottom: 20px;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 66%;
+    left: 75%;
+  }
+  .journey-step .leaderShipBox .popUpbox.conceptText .endProject .drop-box {
+    margin-left: -30px !important;
+  }
+}
+@media only screen and (max-width: 411px) {
+  .journey-step .leaderShipBox .popUpbox.postlaunchText p {
+    transform: rotate(-90deg);
   }
 }
 @media only screen and (max-width: 375px) {
@@ -18496,7 +18598,7 @@ input[type=email]:focus::placeholder {
   }
 
   .product-solution-grid .gridBoxs .innerGrid .endProject .drop-box {
-    transform: translate3d(38px, 42px, 0px) !important;
+    transform: translate3d(38px, 12px, 0px) !important;
     width: 200px;
   }
   .product-solution-grid .gridBoxs .innerGrid.bg-lilla .c-dots::before {
@@ -18518,7 +18620,7 @@ input[type=email]:focus::placeholder {
     left: -137px;
   }
   .product-solution-grid .gridBoxs .innerGrid.bg-green .endProject .drop-box {
-    transform: translate3d(-40px, 42px, 0px) !important;
+    transform: translate3d(-40px, 12px, 0px) !important;
   }
   .product-solution-grid .gridBoxs .innerGrid.bg-green .c-dots {
     left: 50%;
@@ -18537,7 +18639,7 @@ input[type=email]:focus::placeholder {
     left: -103px;
   }
   .product-solution-grid .gridBoxs .innerGrid.bg-blue .endProject .drop-box {
-    transform: translate3d(-40px, 42px, 0px) !important;
+    transform: translate3d(-40px, 12px, 0px) !important;
   }
   .product-solution-grid .gridBoxs .innerGrid.bg-blue .c-dots {
     top: 50%;
@@ -18556,8 +18658,8 @@ input[type=email]:focus::placeholder {
     top: 75px;
   }
 
-  .journey-step .leaderShipBox .popUpbox.postlaunchText {
-    left: -13%;
+  .journey-step .leaderShipBox .popUpbox.conceptText {
+    left: 30%;
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText p {
     left: 47px;
@@ -18566,7 +18668,7 @@ input[type=email]:focus::placeholder {
     right: 15%;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 68%;
+    left: 79%;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -18602,6 +18704,20 @@ input[type=email]:focus::placeholder {
   .product-solution-grid .gridBoxs .innerGrid.bg-green .c-dots.c-dot-b::before {
     transform: rotate(105deg);
     left: -102px;
+  }
+
+  .journey-step .leaderShipBox .popUpbox.postlaunchText {
+    left: 42%;
+  }
+  .journey-step .leaderShipBox .popUpbox.launchText {
+    right: 13%;
+  }
+  .journey-step .leaderShipBox .popUpbox.conceptText {
+    top: 4%;
+  }
+  .journey-step .leaderShipBox .popUpbox.conceptText p {
+    transform: rotate(-6deg);
+    bottom: 9px;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -18672,24 +18788,17 @@ input[type=email]:focus::placeholder {
   }
 
   .journey-step .leaderShipBox .popUpbox.conceptText .endProject .drop-box {
-    transform: translate3d(-174px, 0px, 0px) !important;
+    transform: translate3d(-152px, 0px, 0px) !important;
   }
   .journey-step .leaderShipBox .popUpbox.postlaunchText {
-    left: -25%;
-  }
-  .journey-step .leaderShipBox .popUpbox.postlaunchText .endProject .drop-box {
-    transform: translate3d(168px, 0px, 0px) !important;
+    left: 40%;
   }
   .journey-step .leaderShipBox .popUpbox.launchText {
     right: 9%;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText {
-    left: 71%;
+    left: 85%;
   }
-  .journey-step .leaderShipBox .popUpbox .endProject .drop-box {
-    margin-left: -12px !important;
-  }
-
   .what-benefit .card .tabList li a {
     padding: 12px 16px;
     font-size: 15px;

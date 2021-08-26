@@ -3,6 +3,11 @@
 
 .top-header{
     padding:22px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+    background: $white;
     .container-fluid{
         display: flex;
         flex-wrap: wrap;
@@ -428,12 +433,15 @@
         }
         a{
             display:inline-block;
-            // background-color:$orange;
-            // color:$white;
+            background-color:$orange;
+            color:$white;
             padding:11px 31px;
             max-width:140px;
             font-size:12px;
             line-height:17px;
+            &:hover{
+                background-color:lighten($orange , 5%);
+            }
         }
     }
 }
@@ -560,6 +568,13 @@
                             a{
                                 color:$blue;
                                 font-weight:$fw-700;
+                            }
+                            .sub-menu-list{
+                                li{
+                                    a{
+                                        color:$white;
+                                    }
+                                }
                             }
                         }
                     }
@@ -1369,7 +1384,7 @@
                 }
             }
             &.conceptText{
-                left: 22%;
+                left: 20%;
                 top: 7%;
                 z-index:7;
                 p{
@@ -1377,9 +1392,12 @@
                     position: relative;
                     left: -25px;
                 }
+                img{
+                    margin-right:20px;
+                }
             }
             &.ideaText{
-                left:17%;
+                left:15%;
                 top:480px;
                 p{
                     transform: rotate(35deg);
@@ -1387,15 +1405,23 @@
                     bottom: 35px;
                     left: -14px;
                 }
+                img{
+                    transform: rotate(-14deg);
+                    margin: -66px 40px 0px 0;
+                }
             }
             &.postlaunchText{
-                right:12%;
-                top:112px;
+                right:14%;
+                top:40px;
                 z-index:6;
                 p{
                     transform: rotate(15deg);
                     position: relative;
                     bottom: 65px;
+                }
+                img{
+                    transform: rotate(-6deg);
+                    margin: 0 20px 65px 0;
                 }
                 .endProject{
                     .drop-box{
@@ -1414,13 +1440,16 @@
                 } 
             }
             &.launchText{
-                right:13%;
-                top:480px;
+                right:14%;
+                top:441px;
                 p{
                     margin:0 0 0 30px;
                     transform: rotate(-38deg);
                     position: relative;
                     bottom: 38px;
+                }
+                img{
+                    margin: 0 0px 60px 20px;
                 }
             }
         }
@@ -2155,6 +2184,7 @@
                         font-size:12px;
                         line-height:20px;
                         font-weight:$fw-600;
+                        color:$white;
                     }
                 }
                 .drop-box{
@@ -2728,9 +2758,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        -webkit-backdrop-filter: saturate(100%) blur(5px);
-        backdrop-filter: saturate(100%) blur(5px);
-        background: rgba(0, 0, 0, 0.25);
+        // -webkit-backdrop-filter: saturate(100%) blur(5px);
+        // backdrop-filter: saturate(100%) blur(5px);
+        // background: rgba(0, 0, 0, 0.25);
         z-index:8;
     }
     .filter-box{
@@ -4124,6 +4154,9 @@
                 line-height:26px;
                 max-width:491px;
                 color:$dark;
+                &::marker{
+                    font-size:9px;
+                }
             }
           }
       }

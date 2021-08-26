@@ -165,22 +165,22 @@
             }
             .popUpbox{
                 &.postlaunchText {
-                    right: 7%;
+                    right:10%;
                 }
                 &.launchText {
-                    right: 7%;
-                    top: 463px;
+                    right:8%;
+                    top: 416px;
                 }
                 &.conceptText {
-                    left: 19%;
-                    top: 9%;
+                    left:16%;
+                    top:8%;
                     p{
                         transform:rotate(-11deg);
                     }
                 }
                 &.ideaText {
-                    left: 14%;
-                    top: 470px;
+                    left: 10%;
+                    top: 460px;
                 }
             }
             .left-leader{
@@ -486,18 +486,26 @@
                 height:35px;
             }
             .popUpbox{
+                &.conceptText {
+                    left: 14%;
+                    top: 6%;
+                }
                 &.ideaText {
-                    left: 13%;
+                    left: 11%;
                     top: 400px;
                 }
                 &.launchText {
                     right: 7%;
-                    top: 395px;
+                    top: 355px;
                 }
                 &.postlaunchText {
-                    right: 5%;
+                    right:6%;
+                    top:32px;
                     p{
                         bottom: 80px;
+                    }
+                    img {
+                        margin: 0 20px 107px 0;
                     }
                 }
             }
@@ -741,6 +749,9 @@
 
      
     .top-header{
+        position:inherit;
+        background-color:transparent;
+        z-index:inherit;
         .container-fluid{
             .nav-header{
                 display: none;
@@ -1291,7 +1302,7 @@
                     }
                 } 
                 &.conceptText {
-                    left: 17%;
+                    left: 16%;
                     top:7%;
                     p {
                         transform: rotate(-12deg);
@@ -1300,10 +1311,14 @@
                         left: 0;
                         bottom:5px;
                     }
+                    img{
+                        margin:0 20px 0 0;
+                        width: 80px;
+                    }
                 }
                 &.ideaText {
-                    left:11%;
-                    top: 252px;
+                    left: 10%;
+                    top: 260px;
                     p{
                         transform: rotate(43deg);
                         position: relative;
@@ -1311,22 +1326,35 @@
                         left: 0;
                         margin:0 12px 0 0;
                     }
+                    img{
+                        width:35px;
+                        transform: rotate(-6deg);
+                        margin: -80px 40px 0px 0;
+                    }
                 }
                 &.launchText {
                     right: 10%;
-                    top: 257px;
+                    top: 220px;
                     p {
                         margin: 0 0 0 12px;
                         transform: rotate(-34deg);
                         bottom: 26px;
                     }
+                    img{
+                        width:70px;
+                    }
                 }
                 &.postlaunchText {
-                    right: 9%;
-                    top: 66px;
+                    right:9%;
+                    top:0;
                     p{
                         bottom: 48px;
                         margin: 0 12px 0 0;
+                    }
+                    img{
+                        width:110px;
+                        margin: 15px 10px 104px 0;
+                        transform: rotate(-4deg);
                     }
                     // .endProject{
                     //     .drop-box{
@@ -1353,6 +1381,9 @@
                         i{
                             font-size:9px;
                         }
+                    }
+                    .drop-box{
+                        padding:24px 20px;
                     }
                 } 
                 &::before {
@@ -1799,6 +1830,19 @@
                 min-height:200px;
                 &:hover{
                     width:100%;
+                }
+                &.singleBox-one{
+                    max-height:200px;
+                }
+                &.singleBox-two{
+                    .inner-item{
+                        text-align:center;
+                    }
+                }
+                &.singleBox-three{
+                    .inner-item{
+                        text-align:center;
+                    }
                 }
             }
         }
@@ -2447,6 +2491,12 @@
                                         background-image:url(../../images/plus-white.svg);
                                         background-size:22px;
                                         margin-left: 10px;
+                                        
+                                    }
+                                    &:not(.collapsed){
+                                       &::after{
+                                        transform: rotate( 45deg);
+                                       }
                                     }
                                 }
                             } 
@@ -2589,7 +2639,7 @@
             .popUpbox{
                 &.conceptText {
                     left:35%;
-                    top:2%;
+                    top:3%;
                     z-index:8;
                     p {
                         transform: rotate(-22deg);
@@ -2597,13 +2647,18 @@
                     }
                 }
                 &.ideaText {
-                    left: 63%;
-                    top: 151px;
+                    left:70%;
+                    top:180px;
                     z-index:7;
+                    flex-direction:column;
                     p {
                         transform: rotate(60deg);
                         bottom: 48px;
                         left:43px;
+                    }
+                    img{
+                        margin: -80px 10px 20px 0;
+                        transform: rotate(25deg);
                     }
                     .endProject{
                         .drop-box{
@@ -2612,14 +2667,17 @@
                     }
                 }
                 &.launchText {
-                    right: 29%;
-                    bottom: 13px;
+                    right:24%;
+                    bottom:-26px;
                     top: initial;
+                    img{
+                        transform: rotate( -9deg);
+                    }
                 }
                 &.postlaunchText {
-                    left:7%;
+                    left:45%;
                     top: inherit;
-                    bottom:65px;
+                    bottom:135px;
                     p {
                         bottom:77px;
                         margin: 0;
@@ -2628,12 +2686,22 @@
                     }
                     .endProject{
                         .drop-box{
-                            margin-left: 0 !important;
+                            margin-left:-236px !important;
                         }
+                    }
+                    img{
+                        transform: rotate(2deg);
                     }
                 }
             }
         }
+    } 
+    .journey-step{
+        .top-steps{
+            p {
+                padding: 28px 0 80px;
+            }
+        } 
     } 
 }
 @media only screen and (max-width:600px){
@@ -2983,7 +3051,7 @@
             .innerGrid{
                 .endProject{
                     .drop-box{
-                        transform: translate3d(0px, 42px, 0px) !important;
+                        transform: translate3d(0px, 12px, 0px) !important;
                     } 
                 } 
                 &.bg-lilla{
@@ -3080,24 +3148,21 @@
                     }
                 } 
                 &.postlaunchText {
-                    left:1%;
                     .endProject{
                         .drop-box{
-                            transform: translate3d(176px, 42px, 0px) !important;
-                            margin-left: -182px !important;
+                            transform: translate3d(0px, 12px, 0px) !important;
                         }
                     }
                 }
                 &.launchText {
-                    right:22%;
-                    bottom:20px;
+                    right: 22%;
                     p {
                         transform: rotate(-49deg);
                         bottom: 39px;
                     }
                 }
                 &.ideaText {
-                    left: 64%;
+                    left:72%;
                     p{
                         transform: rotate(72deg);
                     }
@@ -3116,7 +3181,6 @@
             }
             .devlepmentBox{
                 .endProject {
-                    // transform: rotate(-50deg);
                     .drop-box{
                         transform: translate3d(-182px, 15px, 0px) !important;
                         margin-left:0px !important;
@@ -3214,15 +3278,31 @@
     .journey-step{
         .leaderShipBox{
             .popUpbox{
-                &.postlaunchText {
-                    left: -6%;
-                }
                 &.launchText {
                     right: 19%;
-                    bottom: 20px;
                 }
                 &.ideaText {
-                    left: 66%;
+                    left:75%;
+                }
+                &.conceptText{
+                    .endProject{
+                        .drop-box {
+                            margin-left: -30px !important;
+                        }
+                    } 
+                }
+            }
+        } 
+    } 
+}
+@media only screen and (max-width:411px){
+    .journey-step{
+        .leaderShipBox{
+            .popUpbox{
+                &.postlaunchText {
+                    p{
+                        transform: rotate( -90deg);
+                    }
                 }
             }
         } 
@@ -3247,10 +3327,6 @@
                     &.plus-btn-two {
                         left: 45%;
                     }
-                    // .drop-box{
-                    //     transform: translate3d(-61px, 42px, 0px) !important;
-                    //     max-width:284px;
-                    // }
                 }
             } 
         } 
@@ -3296,7 +3372,7 @@
             .innerGrid{
                 .endProject{
                     .drop-box {
-                        transform: translate3d(38px, 42px, 0px) !important;
+                        transform: translate3d(38px, 12px, 0px) !important;
                         width:200px;
                     }
                 } 
@@ -3333,7 +3409,7 @@
                 &.bg-green{
                     .endProject{
                         .drop-box {
-                            transform: translate3d(-40px, 42px, 0px) !important;
+                            transform: translate3d(-40px, 12px, 0px) !important;
                         }
                     } 
                     .c-dots{
@@ -3356,7 +3432,7 @@
                 &.bg-blue{
                     .endProject{
                         .drop-box {
-                            transform: translate3d(-40px, 42px, 0px) !important;
+                            transform: translate3d(-40px, 12px, 0px) !important;
                         }
                     } 
                     .c-dots{
@@ -3381,16 +3457,11 @@
     }
     .journey-step{
         .leaderShipBox{
-            .devlepmentBox {
-                // top: 46%;
-                // transform: rotate(56deg);
-                .endProject {
-                    // transform: rotate( -56deg);
-                }
-            } 
             .popUpbox{
+                &.conceptText{
+                    left: 30%;
+                }
                 &.postlaunchText {
-                    left: -13%;
                     p{
                         left:47px;
                     }
@@ -3399,7 +3470,7 @@
                     right: 15%;
                 }
                 &.ideaText {
-                    left: 68%;
+                    left:79%;
                 }
             }
         } 
@@ -3485,7 +3556,25 @@
             }
         } 
     } 
-    
+    .journey-step{
+        .leaderShipBox{
+            .popUpbox{
+                &.postlaunchText {
+                    left:42%;
+                }
+                &.launchText {
+                    right: 13%;
+                }
+                &.conceptText {
+                    top: 4%;
+                    p {
+                        transform: rotate(-6deg);
+                        bottom: 9px;
+                    }
+                }
+            }
+        } 
+    } 
 }
 @media only screen and (max-width:320px){
     .section{
@@ -3604,15 +3693,16 @@
                 &.conceptText{
                     .endProject{
                         .drop-box {
-                            transform: translate3d(-174px, 0px, 0px) !important;
+                            transform: translate3d(-152px, 0px, 0px) !important;
                         }
                     } 
                 }
                 &.postlaunchText {
-                    left: -25%;
+                    // left: -25%;
+                    left:40%;
                     .endProject{
                         .drop-box {
-                            transform: translate3d(168px, 0px, 0px) !important;
+                            // transform: translate3d(168px, 0px, 0px) !important;
                         }
                     } 
                 }
@@ -3620,11 +3710,11 @@
                     right: 9%;
                 }
                 &.ideaText {
-                    left: 71%;
+                    left:85%;
                 }
                 .endProject{
                     .drop-box {
-                        margin-left: -12px !important;
+                        // margin-left: -12px !important;
                     }
                 } 
             }
