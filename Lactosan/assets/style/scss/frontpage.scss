@@ -1371,7 +1371,7 @@
             &.conceptText{
                 left: 22%;
                 top: 7%;
-                z-index:6;
+                z-index:7;
                 p{
                     transform: rotate(-15deg);
                     position: relative;
@@ -4424,6 +4424,7 @@
             img{
                 max-height:100%;
                 width:50%;
+                object-fit: inherit;
             }
         }
         .banner-content{
@@ -5130,4 +5131,13 @@
         }
     }
 }
+.top-header{
+    &.productNBC-head{
+        .logo{
+            .mobile-v{
+                display:none;
+            }
+        }
+    }
+} 
 @import "responsive";

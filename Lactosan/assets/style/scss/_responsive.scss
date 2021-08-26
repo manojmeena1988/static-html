@@ -1368,6 +1368,35 @@
             } 
         } 
     } 
+    .product-cover-banner{
+        &.product-range-banner{
+            .twoImg-banner{
+                img {
+                    object-fit: cover;
+                }
+            } 
+        } 
+    }
+    .top-header{
+        &.productNBC-head{
+            .logo{
+                .desktop-v{
+                    display:none;
+                }
+                .mobile-v{
+                    display:inline-block;
+                }
+            }
+        }
+    } 
+    .product-ncb-banner{
+        .banner-content{
+            h1{
+                font-size: 50px;
+                line-height: 56px;
+            }
+        } 
+    } 
 }
 
 @media only screen and (max-width:850px){
@@ -2561,6 +2590,7 @@
                 &.conceptText {
                     left:35%;
                     top:2%;
+                    z-index:8;
                     p {
                         transform: rotate(-22deg);
                         bottom: -8px;
@@ -2569,6 +2599,7 @@
                 &.ideaText {
                     left: 63%;
                     top: 151px;
+                    z-index:7;
                     p {
                         transform: rotate(60deg);
                         bottom: 48px;
@@ -3490,7 +3521,14 @@
     .product-solution-grid{
         .gridBoxs{
             .innerGrid{
-                
+                .endProject{
+                    .drop-box{
+                        li {
+                            color: #000;
+                            font-size: 14px;
+                        }
+                    } 
+                } 
                 &.bg-lilla{
                     .c-dots{
                         &::before {
@@ -3534,6 +3572,9 @@
                             }
                         }
                     }
+                    .endProject{
+                        margin-right:15px;
+                    }
                 } 
                 &.bg-blue{
                     .c-dots{
@@ -3550,23 +3591,15 @@
                             }
                         }
                     }
+                    .endProject{
+                        margin-right:15px;
+                    }
                 } 
             }
         } 
     }
     .journey-step{
         .leaderShipBox{
-            .devlepmentBox {
-                // top: 47%;
-                // transform: rotate(61deg);
-                // width:32%;
-                // .endProject {
-                //     transform: rotate(-61deg);
-                // }
-            } 
-            .left-leader{
-                // margin-bottom:40px;
-            }
             .popUpbox{
                 &.conceptText{
                     .endProject{
@@ -3595,6 +3628,18 @@
                     }
                 } 
             }
+        } 
+    } 
+    .what-benefit{
+        .card{
+            .tabList{
+                li{
+                    a{
+                        padding: 12px 16px;
+                        font-size: 15px;
+                    }
+                } 
+            } 
         } 
     } 
 }

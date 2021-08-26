@@ -12708,7 +12708,7 @@ input[type=email]:focus::placeholder {
 .journey-step .leaderShipBox .popUpbox.conceptText {
   left: 22%;
   top: 7%;
-  z-index: 6;
+  z-index: 7;
 }
 .journey-step .leaderShipBox .popUpbox.conceptText p {
   transform: rotate(-15deg);
@@ -15460,6 +15460,7 @@ input[type=email]:focus::placeholder {
 .product-cover-banner.product-range-banner .twoImg-banner img {
   max-height: 100%;
   width: 50%;
+  object-fit: inherit;
 }
 .product-cover-banner.product-range-banner .banner-content {
   padding: 15px;
@@ -16109,6 +16110,10 @@ input[type=email]:focus::placeholder {
   max-width: 450px;
   font-size: 16px;
   margin: 0;
+}
+
+.top-header.productNBC-head .logo .mobile-v {
+  display: none;
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1650px) {
@@ -17056,6 +17061,22 @@ input[type=email]:focus::placeholder {
     width: 76px;
     top: 24%;
     height: 24px;
+  }
+
+  .product-cover-banner.product-range-banner .twoImg-banner img {
+    object-fit: cover;
+  }
+
+  .top-header.productNBC-head .logo .desktop-v {
+    display: none;
+  }
+  .top-header.productNBC-head .logo .mobile-v {
+    display: inline-block;
+  }
+
+  .product-ncb-banner .banner-content h1, .product-ncb-banner .banner-content .h1 {
+    font-size: 50px;
+    line-height: 56px;
   }
 }
 @media only screen and (max-width: 850px) {
@@ -18024,6 +18045,7 @@ input[type=email]:focus::placeholder {
   .journey-step .leaderShipBox .popUpbox.conceptText {
     left: 35%;
     top: 2%;
+    z-index: 8;
   }
   .journey-step .leaderShipBox .popUpbox.conceptText p {
     transform: rotate(-22deg);
@@ -18032,6 +18054,7 @@ input[type=email]:focus::placeholder {
   .journey-step .leaderShipBox .popUpbox.ideaText {
     left: 63%;
     top: 151px;
+    z-index: 7;
   }
   .journey-step .leaderShipBox .popUpbox.ideaText p {
     transform: rotate(60deg);
@@ -18601,6 +18624,10 @@ input[type=email]:focus::placeholder {
     transform: translate3d(-150px, -52px, 0px) !important;
   }
 
+  .product-solution-grid .gridBoxs .innerGrid .endProject .drop-box li {
+    color: #000;
+    font-size: 14px;
+  }
   .product-solution-grid .gridBoxs .innerGrid.bg-lilla .c-dots::before {
     width: 190px;
     transform: rotate(102deg);
@@ -18627,6 +18654,9 @@ input[type=email]:focus::placeholder {
   .product-solution-grid .gridBoxs .innerGrid.bg-green .c-dots.c-dot-b::before {
     left: -98px;
   }
+  .product-solution-grid .gridBoxs .innerGrid.bg-green .endProject {
+    margin-right: 15px;
+  }
   .product-solution-grid .gridBoxs .innerGrid.bg-blue .c-dots::before {
     width: 204px;
     transform: rotate(-112deg);
@@ -18636,6 +18666,9 @@ input[type=email]:focus::placeholder {
     width: 127px;
     transform: rotate(-109deg);
     left: -26px;
+  }
+  .product-solution-grid .gridBoxs .innerGrid.bg-blue .endProject {
+    margin-right: 15px;
   }
 
   .journey-step .leaderShipBox .popUpbox.conceptText .endProject .drop-box {
@@ -18655,6 +18688,11 @@ input[type=email]:focus::placeholder {
   }
   .journey-step .leaderShipBox .popUpbox .endProject .drop-box {
     margin-left: -12px !important;
+  }
+
+  .what-benefit .card .tabList li a {
+    padding: 12px 16px;
+    font-size: 15px;
   }
 }
 
