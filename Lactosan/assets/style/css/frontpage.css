@@ -15283,9 +15283,6 @@ input[type=email]:focus::placeholder {
 .footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li a {
   color: #fff;
 }
-.footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li a:hover {
-  color: #2CA3DB;
-}
 .footer-section.footer-dark .footer-mid .footer-items .social-icons li a {
   border: 1px solid #fff;
   color: #fff;

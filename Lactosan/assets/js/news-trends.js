@@ -18,7 +18,7 @@ $(document).ready(function() {
     //       });
     //   }
     $("#treadBtn").click(function(){
-        $("#newsform").hide(300);
+        $("#newsform").hide(100);
         $(".latest-news h3").text("Lorem ipsome dolor sit amet,  consectetur");
       });
 });
