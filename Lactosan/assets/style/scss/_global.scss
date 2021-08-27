@@ -319,6 +319,9 @@ body {
         color:$white;
         // font-weight:$fw-700;
       }
+      &.error{
+        border-bottom-color:$red;
+      }
     }
     &.input-beigen-light{
       background-color:$Beige-fa;

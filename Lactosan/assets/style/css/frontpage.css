@@ -11034,6 +11034,9 @@ input[type=email]:focus::placeholder {
   border-bottom: 1px solid #fff;
   color: #fff;
 }
+.form-control.outline-white.error {
+  border-bottom-color: #dc3545;
+}
 .form-control.input-beigen-light {
   background-color: #FAF9F4;
   padding: 15px 17px;
@@ -11558,6 +11561,9 @@ input[type=email]:focus::placeholder {
   margin: 0 70px 0 0;
   position: relative;
 }
+.top-header .container-fluid .nav-header .nav li.newsTrends-l:hover, .top-header .container-sm .nav-header .nav li.newsTrends-l:hover, .top-header .container-md .nav-header .nav li.newsTrends-l:hover, .top-header .container-lg .nav-header .nav li.newsTrends-l:hover, .top-header .container-xl .nav-header .nav li.newsTrends-l:hover, .top-header .container-xxl .nav-header .nav li.newsTrends-l:hover {
+  position: relative;
+}
 .top-header .container-fluid .nav-header .nav li:hover, .top-header .container-sm .nav-header .nav li:hover, .top-header .container-md .nav-header .nav li:hover, .top-header .container-lg .nav-header .nav li:hover, .top-header .container-xl .nav-header .nav li:hover, .top-header .container-xxl .nav-header .nav li:hover {
   position: initial;
 }
@@ -12024,9 +12030,6 @@ input[type=email]:focus::placeholder {
 .footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu.ftr a {
   color: #2CA3DB;
   font-weight: 700;
-}
-.footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu.ftr .sub-menu-list li a {
-  color: #fff;
 }
 .footer-section .footer-mid .footer-items .food-search {
   position: relative;
@@ -13618,6 +13621,9 @@ input[type=email]:focus::placeholder {
 .location-tabs .contact-form-section .receive-form .card-body .detail-info-form .form-row .form-group .outline-dark {
   border-bottom: 1px solid #707070;
   color: #333333;
+}
+.location-tabs .contact-form-section .receive-form .card-body .detail-info-form .form-row .form-group .outline-dark.error {
+  border-bottom-color: #dc3545;
 }
 .location-tabs .contact-form-section .receive-form .card-body .detail-info-form .form-row .form-group .outline-dark::-webkit-input-placeholder {
   /* Edge */
@@ -15283,6 +15289,9 @@ input[type=email]:focus::placeholder {
 .footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li a {
   color: #fff;
 }
+.footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li.sub-menu .sub-menu-list a {
+  color: #fff;
+}
 .footer-section.footer-dark .footer-mid .footer-items .social-icons li a {
   border: 1px solid #fff;
   color: #fff;
@@ -15557,6 +15566,7 @@ input[type=email]:focus::placeholder {
 }
 .section.application-slider .slick-dots li {
   width: -webkit-fill-available;
+  width: 100%;
 }
 .section.application-slider .slick-dots li button::before {
   background-color: #fff;
@@ -17396,9 +17406,6 @@ input[type=email]:focus::placeholder {
   }
   .footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu .right {
     display: inline-block;
-  }
-  .footer-section .footer-mid .footer-items .footer-nav-link li:nth-child(3) {
-    display: none;
   }
   .footer-section .footer-mid .footer-items .food-search {
     margin: 18px auto 0;

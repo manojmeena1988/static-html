@@ -26,6 +26,11 @@
                 li{
                     margin:0 70px 0 0;
                     position: relative;
+                    &.newsTrends-l{
+                        &:hover{
+                            position: relative;
+                        }
+                    }
                     &:hover{
                         position:initial;
                     }
@@ -568,13 +573,6 @@
                             a{
                                 color:$blue;
                                 font-weight:$fw-700;
-                            }
-                            .sub-menu-list{
-                                li{
-                                    a{
-                                        color:$white;
-                                    }
-                                }
                             }
                         }
                     }
@@ -2339,6 +2337,9 @@
                             .outline-dark{
                                 border-bottom:1px solid #707070;
                                 color:$dark;
+                                &.error{
+                                    border-bottom-color:$red;
+                                  }
                                 &::-webkit-input-placeholder { /* Edge */
                                     color:$gray-99;
                                 }
@@ -4184,6 +4185,13 @@
                             //     color:$blue;
                             // }
                         }
+                        &.sub-menu{
+                            .sub-menu-list{
+                                a{
+                                    color:$white;
+                                }
+                            }
+                        }
                     } 
                 } 
                 .social-icons{
@@ -4522,6 +4530,7 @@
             align-items: center;
             li{
                 width: -webkit-fill-available;
+                width: 100%;
                 button{
                     &::before{
                         background-color:$white;
