@@ -818,6 +818,8 @@ body {
         top: 38px;
         width: 100%;
         padding: 12px 8px;
+        max-height: 220px;
+        overflow-y: scroll;
         .multiselect-option{
           &.active{
             background-color:transparent;
@@ -832,6 +834,7 @@ body {
             }
             .form-check-label{
               white-space: break-spaces;
+              color:$black;
             }
           }
         }

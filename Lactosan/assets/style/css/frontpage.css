@@ -11508,6 +11508,8 @@ input[type=email]:focus::placeholder {
   top: 38px;
   width: 100%;
   padding: 12px 8px;
+  max-height: 220px;
+  overflow-y: scroll;
 }
 .custom-select .multiselect-native-select .btn-group .multiselect-container .multiselect-option.active {
   background-color: transparent;
@@ -11519,6 +11521,7 @@ input[type=email]:focus::placeholder {
 }
 .custom-select .multiselect-native-select .btn-group .multiselect-container .multiselect-option .form-check .form-check-label {
   white-space: break-spaces;
+  color: #000;
 }
 
 .footer-section.footer-dark .custom-select .multiselect-native-select .btn-group {
@@ -15312,6 +15315,17 @@ input[type=email]:focus::placeholder {
 }
 .footer-section.footer-dark .footer-mid .latest-news h4, .footer-section.footer-dark .footer-mid .latest-news .h4 {
   color: #fff;
+}
+.footer-section.footer-dark .footer-mid .latest-news .news-form .form-row .form-group .outline-white::-webkit-input-placeholder {
+  /* Edge */
+  color: transparent;
+}
+.footer-section.footer-dark .footer-mid .latest-news .news-form .form-row .form-group .outline-white:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: transparent;
+}
+.footer-section.footer-dark .footer-mid .latest-news .news-form .form-row .form-group .outline-white::placeholder {
+  color: transparent;
 }
 .footer-section.footer-dark .footer-mid .latest-news .news-form .form-row .form-group span {
   color: #fff;
