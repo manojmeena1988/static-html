@@ -40,16 +40,19 @@
                     &.active{
                         a{
                             font-weight:$fw-700;
+                            &.mainNav{
+                                border-bottom:3px solid #000;
+                            }
                         }
-                        &::after{
-                            content:"";
-                            width:100%;
-                            height:3px;
-                            background-color:$black;
-                            position: absolute;
-                            bottom: -31px;
-                            left: 0;
-                        }
+                        // &::after{
+                        //     content:"";
+                        //     width:100%;
+                        //     height:3px;
+                        //     background-color:$black;
+                        //     position: absolute;
+                        //     bottom: -31px;
+                        //     left: 0;
+                        // }
                     }
                     a{
                         font-size:11px;
@@ -71,7 +74,7 @@
                     .mega-menu{
                         position:absolute;
                         left:0;
-                        top:84px;
+                        top:86px;
                         background-color:$Beige;
                         padding:50px 15px;
                         width:100%;
@@ -235,12 +238,31 @@
                                             margin:0;
                                             font-weight:$fw-700;
                                         }
-                                        p{
-                                            span{
-                                                display:block;
-                                                line-height:21px;
+                                        .companyList-t{
+                                            padding:0;
+                                            margin:0 0 16px 0;
+                                            li{
+                                                list-style:none;
+                                                a{
+                                                    font-size:15px;
+                                                    line-height:18px;
+                                                    color:$dark-3c;
+                                                    padding:0;
+                                                }
+                                                &:last-child{
+                                                    a{
+                                                        background-color:transparent;
+                                                        padding:0;
+                                                    }
+                                                }
                                             }
-                                        }
+                                        }           
+                                        // p{
+                                        //     span{
+                                        //         display:block;
+                                        //         line-height:21px;
+                                        //     }
+                                        // }
                                         .head-list{
                                             display:flex;
                                             flex-direction:column;
@@ -318,16 +340,49 @@
                                             h4{
                                                 margin:0 0 20px 0;
                                             }
+                                            .companyList-t{
+                                                padding:0;
+                                                margin:0;
+                                                li{
+                                                    list-style:none;
+                                                    a{
+                                                        font-size:15px;
+                                                        line-height:18px;
+                                                        color:$dark-3c;
+                                                        padding:0;
+                                                    }
+                                                    &:last-child{
+                                                        a{
+                                                            background-color:transparent;
+                                                            padding:0;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            // p{
+                                            //     a{
+                                            //         font-size:15px;
+                                            //         line-height:18px;
+                                            //         color:$dark-3c;
+                                            //     }
+                                            // }
                                         }
                                     }
                                 }
                             }
                         }
                       }
-                      &:hover .mega-menu{
-                        visibility:visible;
-                        opacity:1;
-                    }
+                      &:hover{
+                        .mega-menu{
+                            visibility:visible;
+                            opacity:1;
+                        }
+                        // a{
+                        //     &.mainNav{
+                        //         border-bottom:3px solid #000;
+                        //     }
+                        // }
+                      } 
                 }
             }
         }
@@ -339,12 +394,12 @@
                 font: size 13px;
                 line-height:25px;
                 font-weight:$fw-700;
-                color:$dark;
+                color:$dark-blue;
                 text-decoration:none;
                 margin:0 22px 0 0;
-                &:hover{
-                    color:$dark-blue;
-                }
+                // &:hover{
+                //     color:$dark-blue;
+                // }
             }
             .language-item{
                 .dropdown-toggle{
@@ -353,9 +408,10 @@
                     font: size 13px;
                     line-height:25px;
                     font-weight:$fw-700;
-                    &:hover{
-                        color:$dark-blue;
-                    }
+                    color:$dark-blue;
+                    // &:hover{
+                    //     color:$dark-blue;
+                    // }
                 }
                 .dropdown-menu{
                     border:transparent;
@@ -646,6 +702,10 @@
                 a{
                     color:$dark-3c;
                     text-decoration:none;
+                    &:hover{
+                        color:$blue;
+                        font-weight:$fw-700;
+                    }
                 }
             }
         }
@@ -2383,6 +2443,21 @@
                             }
                         }
                     }
+                    .send-detail{
+                        transition:all 0.3s ease-in-out;
+                        i{
+                            display:none;
+                            opacity:0;
+                        }
+                        &:hover{
+                            i{
+                                display:inline-block;
+                                color:$white;
+                                opacity:1;
+                                margin:0 0 0 10px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -2464,6 +2539,8 @@
                 margin:auto;
                 li{
                     margin:0 18px 20px 0;
+                    list-style:none;
+                    display:inline-block;
                     &:last-child{
                         margin-right:0;
                     }
@@ -2960,6 +3037,7 @@
                     background-color:$white;
                     &.active{
                         display: block;
+                        z-index:9;
                     }
                 }
                 &.plus-btn-two{
@@ -3218,6 +3296,11 @@
 
 //company page css start ===============
 .company-banner-section{    
+    // background-image:url(../../images/company-banner.png);
+    // background-repeat:no-repeat;
+    // background-size:cover;
+    // background-position:center;
+    // height:683px;
     .banner-img{
         position: relative;
         img{

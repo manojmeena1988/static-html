@@ -11576,14 +11576,8 @@ input[type=email]:focus::placeholder {
 .top-header .container-fluid .nav-header .nav li.active a, .top-header .container-sm .nav-header .nav li.active a, .top-header .container-md .nav-header .nav li.active a, .top-header .container-lg .nav-header .nav li.active a, .top-header .container-xl .nav-header .nav li.active a, .top-header .container-xxl .nav-header .nav li.active a {
   font-weight: 700;
 }
-.top-header .container-fluid .nav-header .nav li.active::after, .top-header .container-sm .nav-header .nav li.active::after, .top-header .container-md .nav-header .nav li.active::after, .top-header .container-lg .nav-header .nav li.active::after, .top-header .container-xl .nav-header .nav li.active::after, .top-header .container-xxl .nav-header .nav li.active::after {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: #000;
-  position: absolute;
-  bottom: -31px;
-  left: 0;
+.top-header .container-fluid .nav-header .nav li.active a.mainNav, .top-header .container-sm .nav-header .nav li.active a.mainNav, .top-header .container-md .nav-header .nav li.active a.mainNav, .top-header .container-lg .nav-header .nav li.active a.mainNav, .top-header .container-xl .nav-header .nav li.active a.mainNav, .top-header .container-xxl .nav-header .nav li.active a.mainNav {
+  border-bottom: 3px solid #000;
 }
 .top-header .container-fluid .nav-header .nav li a, .top-header .container-sm .nav-header .nav li a, .top-header .container-md .nav-header .nav li a, .top-header .container-lg .nav-header .nav li a, .top-header .container-xl .nav-header .nav li a, .top-header .container-xxl .nav-header .nav li a {
   font-size: 11px;
@@ -11602,7 +11596,7 @@ input[type=email]:focus::placeholder {
 .top-header .container-fluid .nav-header .nav li .mega-menu, .top-header .container-sm .nav-header .nav li .mega-menu, .top-header .container-md .nav-header .nav li .mega-menu, .top-header .container-lg .nav-header .nav li .mega-menu, .top-header .container-xl .nav-header .nav li .mega-menu, .top-header .container-xxl .nav-header .nav li .mega-menu {
   position: absolute;
   left: 0;
-  top: 84px;
+  top: 86px;
   background-color: #F2F0E4;
   padding: 50px 15px;
   width: 100%;
@@ -11751,9 +11745,22 @@ input[type=email]:focus::placeholder {
   margin: 0;
   font-weight: 700;
 }
-.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service p span {
-  display: block;
-  line-height: 21px;
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t {
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li {
+  list-style: none;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li a, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li a, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li a, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li a, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li a, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li a {
+  font-size: 15px;
+  line-height: 18px;
+  color: #3C3C39;
+  padding: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a {
+  background-color: transparent;
+  padding: 0;
 }
 .top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .head-list {
   display: flex;
@@ -11824,6 +11831,23 @@ input[type=email]:focus::placeholder {
 .top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list h4, .top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .h4 {
   margin: 0 0 20px 0;
 }
+.top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t {
+  padding: 0;
+  margin: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li {
+  list-style: none;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li a, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li a, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li a, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li a, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li a, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li a {
+  font-size: 15px;
+  line-height: 18px;
+  color: #3C3C39;
+  padding: 0;
+}
+.top-header .container-fluid .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li:last-child a, .top-header .container-sm .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li:last-child a, .top-header .container-md .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li:last-child a, .top-header .container-lg .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li:last-child a, .top-header .container-xl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li:last-child a, .top-header .container-xxl .nav-header .nav li .mega-menu.company-mega-menu .menu-row .left-service-area .inner-service .head-list .companyList-t li:last-child a {
+  background-color: transparent;
+  padding: 0;
+}
 .top-header .container-fluid .nav-header .nav li:hover .mega-menu, .top-header .container-sm .nav-header .nav li:hover .mega-menu, .top-header .container-md .nav-header .nav li:hover .mega-menu, .top-header .container-lg .nav-header .nav li:hover .mega-menu, .top-header .container-xl .nav-header .nav li:hover .mega-menu, .top-header .container-xxl .nav-header .nav li:hover .mega-menu {
   visibility: visible;
   opacity: 1;
@@ -11837,12 +11861,9 @@ input[type=email]:focus::placeholder {
   font: size 13px;
   line-height: 25px;
   font-weight: 700;
-  color: #333333;
+  color: #005385;
   text-decoration: none;
   margin: 0 22px 0 0;
-}
-.top-header .container-fluid .right-items .login-link:hover, .top-header .container-sm .right-items .login-link:hover, .top-header .container-md .right-items .login-link:hover, .top-header .container-lg .right-items .login-link:hover, .top-header .container-xl .right-items .login-link:hover, .top-header .container-xxl .right-items .login-link:hover {
-  color: #005385;
 }
 .top-header .container-fluid .right-items .language-item .dropdown-toggle, .top-header .container-sm .right-items .language-item .dropdown-toggle, .top-header .container-md .right-items .language-item .dropdown-toggle, .top-header .container-lg .right-items .language-item .dropdown-toggle, .top-header .container-xl .right-items .language-item .dropdown-toggle, .top-header .container-xxl .right-items .language-item .dropdown-toggle {
   border: none;
@@ -11850,8 +11871,6 @@ input[type=email]:focus::placeholder {
   font: size 13px;
   line-height: 25px;
   font-weight: 700;
-}
-.top-header .container-fluid .right-items .language-item .dropdown-toggle:hover, .top-header .container-sm .right-items .language-item .dropdown-toggle:hover, .top-header .container-md .right-items .language-item .dropdown-toggle:hover, .top-header .container-lg .right-items .language-item .dropdown-toggle:hover, .top-header .container-xl .right-items .language-item .dropdown-toggle:hover, .top-header .container-xxl .right-items .language-item .dropdown-toggle:hover {
   color: #005385;
 }
 .top-header .container-fluid .right-items .language-item .dropdown-menu, .top-header .container-sm .right-items .language-item .dropdown-menu, .top-header .container-md .right-items .language-item .dropdown-menu, .top-header .container-lg .right-items .language-item .dropdown-menu, .top-header .container-xl .right-items .language-item .dropdown-menu, .top-header .container-xxl .right-items .language-item .dropdown-menu {
@@ -12094,6 +12113,10 @@ input[type=email]:focus::placeholder {
 .footer-section .footer-bottom .privacy-policy p a {
   color: #3C3C39;
   text-decoration: none;
+}
+.footer-section .footer-bottom .privacy-policy p a:hover {
+  color: #2CA3DB;
+  font-weight: 700;
 }
 .footer-section .footer-bottom .bottom-logo {
   text-align: right;
@@ -13670,6 +13693,19 @@ input[type=email]:focus::placeholder {
   border-color: #2CA3DB;
   background-image: url(../../images/circle-blue.svg);
 }
+.location-tabs .contact-form-section .receive-form .card-body .detail-info-form .send-detail {
+  transition: all 0.3s ease-in-out;
+}
+.location-tabs .contact-form-section .receive-form .card-body .detail-info-form .send-detail i {
+  display: none;
+  opacity: 0;
+}
+.location-tabs .contact-form-section .receive-form .card-body .detail-info-form .send-detail:hover i {
+  display: inline-block;
+  color: #fff;
+  opacity: 1;
+  margin: 0 0 0 10px;
+}
 
 .application-banner {
   padding: 119px 0;
@@ -13743,6 +13779,8 @@ input[type=email]:focus::placeholder {
 }
 .familiar-with .inner-fam-2 .btn-item .list li {
   margin: 0 18px 20px 0;
+  list-style: none;
+  display: inline-block;
 }
 .familiar-with .inner-fam-2 .btn-item .list li:last-child {
   margin-right: 0;
@@ -14202,6 +14240,7 @@ input[type=email]:focus::placeholder {
 }
 .loyalty-box .card .plus-items .plus-btn .drop-box.active {
   display: block;
+  z-index: 9;
 }
 .loyalty-box .card .plus-items .plus-btn.plus-btn-two {
   top: 260px;
@@ -16319,7 +16358,7 @@ input[type=email]:focus::placeholder {
     bottom: -24px;
   }
   .top-header .container-fluid .nav-header .nav li .mega-menu, .top-header .container-sm .nav-header .nav li .mega-menu, .top-header .container-md .nav-header .nav li .mega-menu, .top-header .container-lg .nav-header .nav li .mega-menu, .top-header .container-xl .nav-header .nav li .mega-menu, .top-header .container-xxl .nav-header .nav li .mega-menu {
-    top: 72px;
+    top: 83px;
   }
 
   .cheese-powder-sec .container-fluid .singleBox .inner-item img, .cheese-powder-sec .container-sm .singleBox .inner-item img, .cheese-powder-sec .container-md .singleBox .inner-item img, .cheese-powder-sec .container-lg .singleBox .inner-item img, .cheese-powder-sec .container-xl .singleBox .inner-item img, .cheese-powder-sec .container-xxl .singleBox .inner-item img {
@@ -16783,8 +16822,22 @@ input[type=email]:focus::placeholder {
     line-height: 18px;
   }
 
+  .home-banner {
+    margin-top: -81px;
+  }
   .home-banner .banner-content {
     padding-left: 37px;
+  }
+  .home-banner img {
+    min-height: 600px;
+  }
+  .home-banner.company-banner-section .banner-content h1, .home-banner.company-banner-section .banner-content .h1 {
+    max-width: 390px;
+    margin: 0 0 15px 0;
+  }
+  .home-banner.company-banner-section .banner-content p {
+    max-width: 360px;
+    margin: 0 0 15px 0;
   }
 
   .location-tabs.product-cheese-tabs .tab-lists .nav-item .nav-link {
@@ -16793,13 +16846,6 @@ input[type=email]:focus::placeholder {
 
   .top-header .container-fluid .logo, .top-header .container-sm .logo, .top-header .container-md .logo, .top-header .container-lg .logo, .top-header .container-xl .logo, .top-header .container-xxl .logo {
     z-index: 1;
-  }
-
-  .home-banner {
-    margin-top: -81px;
-  }
-  .home-banner img {
-    min-height: 600px;
   }
 
   .why-cheese-powder .colorBox .card .card-body .inner-box h3, .why-cheese-powder .colorBox .card .card-body .inner-box .h3 {
@@ -17228,6 +17274,14 @@ input[type=email]:focus::placeholder {
     font-size: 22px;
     line-height: 26px;
   }
+
+  .home-banner .banner-content .display-l1 {
+    max-width: 480px;
+  }
+  .home-banner .banner-content p {
+    max-width: 380px;
+    margin: 15px 0 30px 0;
+  }
 }
 @media only screen and (max-width: 767px) {
   body {
@@ -17266,9 +17320,14 @@ input[type=email]:focus::placeholder {
   }
   .home-banner .banner-content .display-l1 {
     max-width: 280px;
+    margin: 0 0 30px 0;
   }
   .home-banner .banner-content p {
     max-width: 280px;
+    display: none;
+  }
+  .home-banner.company-banner-section .banner-content h1, .home-banner.company-banner-section .banner-content .h1 {
+    max-width: 290px;
   }
 
   .application-section {
@@ -17421,6 +17480,9 @@ input[type=email]:focus::placeholder {
   .footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu .right {
     display: inline-block;
   }
+  .footer-section .footer-mid .footer-items .footer-nav-link li:nth-child(3) {
+    display: none;
+  }
   .footer-section .footer-mid .footer-items .food-search {
     margin: 18px auto 0;
   }
@@ -17557,11 +17619,13 @@ input[type=email]:focus::placeholder {
     font-size: 32px;
     line-height: 36px;
     max-width: 270px;
+    color: #3C3C39;
   }
 
   .product-ncb-banner .banner-content h1, .product-ncb-banner .banner-content .h1 {
     font-size: 32px;
     line-height: 36px;
+    margin: 0 0 30px 0;
   }
 
   .section.bg-black {
@@ -17611,6 +17675,9 @@ input[type=email]:focus::placeholder {
 
   .why-cheese-powder {
     padding: 0 0 50px;
+  }
+  .why-cheese-powder.home-why-cheese-p {
+    margin: 20px 0 0;
   }
 
   .location-tabs.product-cheese-tabs {
@@ -17812,6 +17879,7 @@ input[type=email]:focus::placeholder {
 
   .loyalty-box {
     padding: 0 0 50px;
+    overflow: hidden;
   }
   .loyalty-box .card {
     overflow: visible;
@@ -17826,6 +17894,7 @@ input[type=email]:focus::placeholder {
   }
   .loyalty-box .card .plus-items .plus-btn.plus-btn-two {
     left: 45%;
+    top: 50%;
   }
   .loyalty-box .card .plus-items .plus-btn.plus-btn-three {
     display: none;
@@ -18393,7 +18462,7 @@ input[type=email]:focus::placeholder {
   }
 
   .loyalty-box .card .plus-items .plus-btn .drop-box {
-    transform: translate3d(-120px, 42px, 0px) !important;
+    transform: translate3d(-120px, 8px, 0px) !important;
   }
 
   .drop-box {
@@ -18581,6 +18650,16 @@ input[type=email]:focus::placeholder {
   .journey-step .leaderShipBox .popUpbox.conceptText .endProject .drop-box {
     margin-left: -30px !important;
   }
+
+  .product-cover-banner.creamy-banner .banner-content h1, .product-cover-banner.creamy-banner .banner-content .h1 {
+    font-size: 24px;
+    line-height: 28px;
+    max-width: 150px;
+  }
+
+  .home-banner.company-banner-section .banner-content h1, .home-banner.company-banner-section .banner-content .h1 {
+    max-width: 180px;
+  }
 }
 @media only screen and (max-width: 411px) {
   .journey-step .leaderShipBox .popUpbox.postlaunchText p {
@@ -18687,6 +18766,15 @@ input[type=email]:focus::placeholder {
   }
   .journey-step .leaderShipBox .popUpbox.ideaText {
     left: 79%;
+  }
+
+  .product-cover-banner.creamy-banner .banner-content h1, .product-cover-banner.creamy-banner .banner-content .h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .home-banner .banner-content .display-l1 {
+    max-width: 230px;
   }
 }
 @media only screen and (max-width: 360px) {

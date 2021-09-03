@@ -1,9 +1,10 @@
+
 $(document).ready(function(){
 
     $(".filter-tab").on("click", function() {
         $("body").toggleClass("panel-active");
     });
-    $("body ").on("click", ".offcanvas-overlay , .close-filter", function() {
+    $("body ").on("click", ".offcanvas-overlay , .close-filter, .save-button", function() {
         $("body").removeClass("panel-active");
     });
 
@@ -79,6 +80,9 @@ $(document).ready(function(){
 
     // ===================== nav cheese powder js
     $(".inner-box.bg-clr").click(function(){
+      if( $(this).parents('.menu-row').hasClass('cheese-d') ){
+        window.location.href='product-cheese-powder.html';
+      }
       $('.cheeseText').toggle(); 
       $('.menu-row').addClass('cheese-d');
     });
