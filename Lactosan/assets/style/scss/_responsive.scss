@@ -9,7 +9,17 @@
         } 
     }
 }  
-
+// @media only screen and (min-width:1440px){
+//     .section{
+//         &.application-slider{
+//             .slick-dots{
+//                 li{
+//                     min-width:300px;
+//                 }
+//             } 
+//         } 
+//     }
+// }
 @media only screen and (max-width:1440px){
     .section{
         &.application-slider{

@@ -15713,17 +15713,22 @@ input[type=email]:focus::placeholder {
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
-  margin-bottom: 23px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }
 .mobile-panel .top-link .mobile-navbar li a:hover {
   transform: translateY(2px);
 }
-.mobile-panel .top-link .mobile-navbar li.sub-menu .right {
-  font-size: 12px;
+.mobile-panel .top-link .mobile-navbar li.sub-menu .wrap-list {
+  display: flex;
+  align-items: center;
+  margin: 0 0 23px 0;
+}
+.mobile-panel .top-link .mobile-navbar li.sub-menu .wrap-list .right {
+  font-size: 14px;
   font-weight: 600;
-  margin: 0 0 0 3px;
+  margin: 0 0 0 15px;
+  color: #f3f3f3;
 }
 .mobile-panel .top-link .mobile-navbar li.sub-menu .sub-menu-list {
   padding: 0;
@@ -15734,6 +15739,32 @@ input[type=email]:focus::placeholder {
   line-height: 20px;
   font-weight: 300;
   margin-bottom: 16px;
+}
+.mobile-panel .top-link .mobile-navbar li.sub-menu.product-submenu-list {
+  padding: 0 0 0 20px;
+}
+.mobile-panel .top-link .mobile-navbar li.sub-menu.product-submenu-list a.inner-title-l {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.mobile-panel .top-link .mobile-navbar li.sub-menu.product-submenu-list a.inner-title-l .right-inner {
+  margin: 0 0 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.mobile-panel .top-link .mobile-navbar li.sub-menu.product-submenu-list a.inner-title-l.ftr {
+  display: block;
+}
+.mobile-panel .top-link .mobile-navbar li.sub-menu.product-submenu-list .sub-menu-list {
+  padding: 0 0 0 20px;
+  margin: 0 0 15px 0;
+}
+.mobile-panel .top-link .mobile-navbar li.sub-menu.product-submenu-list .sub-menu-list li a {
+  margin: 0 0 5px 0;
+}
+.mobile-panel .top-link .mobile-navbar li.singleMenu a {
+  margin: 0 0 23px 0;
 }
 .mobile-panel .bottom-link {
   display: flex;

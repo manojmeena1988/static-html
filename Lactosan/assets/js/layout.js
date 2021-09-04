@@ -16,10 +16,31 @@ $(document).ready(function(){
     // mobile and footer nav menu slide ==============================
 
     $('.sub-menu ul').hide();
-    $(".sub-menu a").click(function () {
-        $(this).parent(".sub-menu").toggleClass('ftr').children("ul").slideToggle("100");
-        $(this).find(".right").toggleClass("fa-chevron-up fa-chevron-down");
+
+    $(".sub-menu .thornic-menu").click(function () {
+      $(this).parent(".sub-menu").toggleClass('ftr').children("ul").slideToggle("100");
+      $(this).find(".right").toggleClass("fa-chevron-up fa-chevron-down");
     });
+    // footer menu dropdown end ==============================
+    $(".sub-menu .openToggle-m").click(function () {
+        const opend = $(this).closest(".sub-menu").hasClass('ftr');
+        $(".sub-menu").removeClass('ftr').children("ul").slideUp("100");
+        $(".right").removeClass("fa-chevron-up ");
+        if(!opend){
+          $(this).closest(".sub-menu").addClass('ftr').children("ul").slideDown("100");
+          $(this).addClass("fa-chevron-up ");
+        }
+    });
+
+    $(".sub-menu .inner-title-l").click(function () {
+      const opend = $(this).parent(".sub-menu.product-submenu-list").hasClass('ftr');
+      $(".sub-menu.product-submenu-list").removeClass('ftr').children("ul").slideUp("100");
+      $(".right-inner").removeClass("fa-chevron-up ");
+      if(!opend){
+        $(this).parent(".sub-menu.product-submenu-list").addClass('ftr').children("ul").slideDown("100");
+        $(this).find(".right-inner").addClass("fa-chevron-up ");
+      }
+  });
 
     // footer select and mobile js start 
 
@@ -70,7 +91,14 @@ $(document).ready(function(){
             console.log('Submitted')
         }
       });
-
+      $('#getForm').validate({
+        errorPlacement: function(error,element) {
+          return true;
+        },
+        submitHandler: function(form) {
+            console.log('Submitted')
+        }
+      });
     // +++++++++++++ For applciation page js for showing divs
     $('.inner-fam .btn-warning').click(function(){
         $('.inner-fam').fadeOut('fast')
