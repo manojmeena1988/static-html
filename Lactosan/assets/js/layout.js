@@ -121,6 +121,10 @@ $(document).ready(function(){
       $(this).parents('.endProject').find('.drop-box').fadeToggle('active , 2000')
       $(this).toggleClass('active');
     });
+
+    // multiselect  selector nice scroll js start===========================
+    $(".multiselect-container").niceScroll({cursorcolor:"#ddd",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});
+
 });
 
 

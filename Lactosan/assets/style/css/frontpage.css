@@ -11072,6 +11072,9 @@ input[type=email]:focus::placeholder {
   cursor: pointer;
   margin-right: 8px;
   margin-top: 0px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .custom-radio .form-check-input:checked {
   background-color: #fff;
@@ -11534,6 +11537,10 @@ input[type=email]:focus::placeholder {
 .box-content {
   max-width: 530px;
   margin: auto;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .top-header {
@@ -15331,6 +15338,9 @@ input[type=email]:focus::placeholder {
 .footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li a {
   color: #fff;
 }
+.footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li.sub-menu {
+  display: none;
+}
 .footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li.sub-menu .sub-menu-list a {
   color: #fff;
 }
@@ -15729,6 +15739,7 @@ input[type=email]:focus::placeholder {
   font-weight: 600;
   margin: 0 0 0 15px;
   color: #f3f3f3;
+  transition: all 0.3s ease-in-out;
 }
 .mobile-panel .top-link .mobile-navbar li.sub-menu .sub-menu-list {
   padding: 0;
@@ -15769,6 +15780,7 @@ input[type=email]:focus::placeholder {
 .mobile-panel .bottom-link {
   display: flex;
   justify-content: space-between;
+  margin: 20px 0 0;
 }
 .mobile-panel .bottom-link a {
   color: #fff;
@@ -17252,6 +17264,10 @@ input[type=email]:focus::placeholder {
     font-size: 50px;
     line-height: 56px;
   }
+
+  .footer-section .footer-mid .footer-items .social-icons {
+    margin: 14px 0 82px;
+  }
 }
 @media only screen and (max-width: 850px) {
   .section.application-slider .slick-arrow.slick-next {
@@ -17536,6 +17552,12 @@ input[type=email]:focus::placeholder {
   .footer-section .footer-bottom .bottom-logo {
     text-align: center;
     margin-bottom: 25px;
+  }
+  .footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li:nth-child(3) {
+    display: none;
+  }
+  .footer-section.footer-dark .footer-mid .footer-items .footer-nav-link li.sub-menu {
+    display: block;
   }
 
   .application-section .get-inspired {

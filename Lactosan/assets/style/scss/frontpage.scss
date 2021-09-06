@@ -4269,12 +4269,14 @@
                             // }
                         }
                         &.sub-menu{
+                            display:none;
                             .sub-menu-list{
                                 a{
                                     color:$white;
                                 }
                             }
                         }
+                        
                     } 
                 } 
                 .social-icons{
@@ -4743,6 +4745,7 @@
                             font-weight:$fw-600;
                             margin: 0 0 0 15px;
                             color:#f3f3f3;
+                            transition:all 0.3s ease-in-out;
                         }
                     }
                     .sub-menu-list{
@@ -4799,6 +4802,7 @@
     .bottom-link{
         display:flex;
         justify-content:space-between;
+        margin:20px 0 0;
         a{
             color:$white;
             text-decoration:none;

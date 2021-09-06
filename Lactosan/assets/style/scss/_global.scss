@@ -356,6 +356,9 @@ body {
       cursor:pointer;
       margin-right:8px;
       margin-top:0px;
+      -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
       &:checked{
         background-color:$white;
         box-shadow:none;
@@ -858,6 +861,8 @@ body {
   max-width:530px;
   margin:auto;
 }
-
+html{
+  scroll-behavior:smooth;
+}
 
 
