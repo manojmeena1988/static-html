@@ -380,6 +380,9 @@ body {
       border-color:$dark-3c;
       cursor:pointer;
       margin-right:8px;
+      -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
       &:checked{
         background-color:$white;
         box-shadow:none;
@@ -829,6 +832,9 @@ body {
           }
           .form-check{
             .form-check-input{
+              -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
               &:checked{
                 background-image: url(../../images/circle-blue.svg);
                 background-color:$white;

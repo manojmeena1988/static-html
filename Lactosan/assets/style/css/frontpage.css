@@ -11095,6 +11095,9 @@ input[type=email]:focus::placeholder {
   border-color: #3C3C39;
   cursor: pointer;
   margin-right: 8px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .custom-checkbox .form-check-input:checked {
   background-color: #fff;
@@ -11517,6 +11520,11 @@ input[type=email]:focus::placeholder {
 .custom-select .multiselect-native-select .btn-group .multiselect-container .multiselect-option.active {
   background-color: transparent;
 }
+.custom-select .multiselect-native-select .btn-group .multiselect-container .multiselect-option .form-check .form-check-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 .custom-select .multiselect-native-select .btn-group .multiselect-container .multiselect-option .form-check .form-check-input:checked {
   background-image: url(../../images/circle-blue.svg);
   background-color: #fff;
@@ -11729,6 +11737,7 @@ html {
   line-height: 19px;
   color: #3C3C39;
   font-weight: 400;
+  padding: 0;
 }
 .top-header .container-fluid .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-sm .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-md .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-lg .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-xl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a, .top-header .container-xxl .nav-header .nav li .mega-menu.application-mega-menu .menu-row .app-list li:last-child a {
   background-color: transparent;
@@ -11764,6 +11773,7 @@ html {
   line-height: 18px;
   color: #3C3C39;
   padding: 0;
+  font-weight: 400;
 }
 .top-header .container-fluid .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-sm .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-md .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-lg .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-xl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a, .top-header .container-xxl .nav-header .nav li .mega-menu.service-mega-menu .menu-row .left-service-area .inner-service .companyList-t li:last-child a {
   background-color: transparent;
@@ -11871,6 +11881,25 @@ html {
   color: #005385;
   text-decoration: none;
   margin: 0 22px 0 0;
+}
+.top-header .container-fluid .right-items .languageSelect, .top-header .container-sm .right-items .languageSelect, .top-header .container-md .right-items .languageSelect, .top-header .container-lg .right-items .languageSelect, .top-header .container-xl .right-items .languageSelect, .top-header .container-xxl .right-items .languageSelect {
+  position: relative;
+}
+.top-header .container-fluid .right-items .languageSelect .innerLang, .top-header .container-sm .right-items .languageSelect .innerLang, .top-header .container-md .right-items .languageSelect .innerLang, .top-header .container-lg .right-items .languageSelect .innerLang, .top-header .container-xl .right-items .languageSelect .innerLang, .top-header .container-xxl .right-items .languageSelect .innerLang {
+  cursor: pointer;
+  font-weight: 700;
+  color: #005385;
+  font-size: 15px;
+}
+.top-header .container-fluid .right-items .languageSelect .innerLang option, .top-header .container-sm .right-items .languageSelect .innerLang option, .top-header .container-md .right-items .languageSelect .innerLang option, .top-header .container-lg .right-items .languageSelect .innerLang option, .top-header .container-xl .right-items .languageSelect .innerLang option, .top-header .container-xxl .right-items .languageSelect .innerLang option {
+  padding: 10px 5px;
+}
+.top-header .container-fluid .right-items .languageSelect i, .top-header .container-sm .right-items .languageSelect i, .top-header .container-md .right-items .languageSelect i, .top-header .container-lg .right-items .languageSelect i, .top-header .container-xl .right-items .languageSelect i, .top-header .container-xxl .right-items .languageSelect i {
+  position: absolute;
+  right: -2px;
+  top: 9px;
+  pointer-events: none;
+  color: #005385;
 }
 .top-header .container-fluid .right-items .language-item .dropdown-toggle, .top-header .container-sm .right-items .language-item .dropdown-toggle, .top-header .container-md .right-items .language-item .dropdown-toggle, .top-header .container-lg .right-items .language-item .dropdown-toggle, .top-header .container-xl .right-items .language-item .dropdown-toggle, .top-header .container-xxl .right-items .language-item .dropdown-toggle {
   border: none;
@@ -12042,6 +12071,9 @@ html {
   font-size: 14px;
   line-height: 21px;
   transition: all 0.3s;
+}
+.footer-section .footer-mid .footer-items .footer-nav-link li a:hover {
+  color: #2CA3DB;
 }
 .footer-section .footer-mid .footer-items .footer-nav-link li.sub-menu {
   display: none;
@@ -12957,11 +12989,14 @@ html {
   border-radius: 10px;
   width: 100%;
   object-fit: cover;
-  transition: all 0.3s;
+  transition: all 0.5s ease-in-out;
   height: 100%;
 }
 .application-section .desktop-view .left-application .single-img .img-content p {
   margin-bottom: 0;
+}
+.application-section .desktop-view .left-application .single-img:hover img {
+  transform: scale(1.1);
 }
 .application-section .desktop-view .right-application {
   position: relative;
@@ -12986,12 +13021,15 @@ html {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
-  transition: all 0.3s;
+  transition: all 0.5s ease-in-out;
   height: 100%;
 }
 .application-section .desktop-view .right-application .smallImg .img-content p {
   max-width: 194px;
   margin-bottom: 0;
+}
+.application-section .desktop-view .right-application .smallImg:hover img {
+  transform: scale(1.1);
 }
 .application-section .desktop-view .right-application .biglImg {
   width: 100%;
@@ -13006,11 +13044,14 @@ html {
   max-height: 300px;
   object-fit: cover;
   height: 100%;
-  transition: all 0.3s;
+  transition: all 0.5s ease-in-out;
 }
 .application-section .desktop-view .right-application .biglImg .img-content p {
   max-width: 194px;
   margin-bottom: 0;
+}
+.application-section .desktop-view .right-application .biglImg:hover img {
+  transform: scale(1.1);
 }
 .application-section .desktop-view [class*=col-] {
   padding-left: 6px;
@@ -15431,6 +15472,7 @@ html {
 .natural-booster .offer-box {
   transition: all 0.3s;
   margin: 0 0 31px 0;
+  height: calc(100% - 31px);
 }
 .natural-booster .offer-box .card-body {
   padding: 42px 41px 52px 22px;

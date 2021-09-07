@@ -27,4 +27,12 @@ $(document).ready(function() {
       $(this).addClass('current');
       $("#"+tab_id).addClass('current');
     })
+
+    // Home page show max 5 news cards js ===============================
+
+  $(".lastNew-d").hide();
+  $(".seeMore-news").click(function(){
+      $(".lastNew-d").show("slow");
+      $(this).hide();
+  });
 });
