@@ -6,7 +6,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    z-index:999;
+    z-index:99;
     background: $white;
     .container-fluid{
         display: flex;
@@ -1671,7 +1671,7 @@
                 }
                 &:hover{
                     img{
-                        transform:scale(1.1);
+                        transform:scale(1.07);
                     }
                 }
             }
@@ -2021,13 +2021,6 @@
                 box-shadow:0 10px 20px #00000029;
                 transform:translateY(-10px);
                 z-index:1;
-                // .card-body{
-                //     .inner-box{
-                //         .drop-box{
-                //             background-color:red;
-                //         }
-                //     } 
-                // } 
             }
         }
     }
@@ -4388,6 +4381,13 @@
                             }
                         }
                     }
+                    .btn-outline-white{
+                        &:hover{
+                            background-color:$blue;
+                            color:$white;
+                            border-color:$blue;
+                        }
+                    }
                 }
             } 
         } 
@@ -4397,6 +4397,9 @@
                     a{
                         color:$white;
                         text-decoration:none;
+                        &:hover{
+                            color:$blue;
+                        }
                     }
                 }
             } 
@@ -4552,7 +4555,7 @@
             }
             .right-content{
                 color:$white;
-                max-width:439px;
+                max-width:458px;
                 margin: auto;
                 h4{
                     font-weight:$fw-700;

@@ -711,7 +711,7 @@
                 .nav-item{
                     .nav-link {
                         padding:15px 10px;
-                        max-width:150px;
+                        max-width:160px;
                     }
                 } 
             } 
@@ -898,6 +898,11 @@
                 }
             } 
         } 
+    }
+    .we-love-it{
+        &.bg-black{
+            padding-bottom: 30px;
+        }
     }
 }
 
@@ -1617,7 +1622,7 @@
         .footer-mid{
             .footer-items{
                 .social-icons{
-                    margin:14px 0 82px;
+                    // margin:14px 0 82px;
                 }
             } 
         } 
@@ -1715,6 +1720,13 @@
         }
     }
     .location-tabs{
+        padding:0 0 80px;
+        .contact-form-section{
+            padding:140px 0 0;
+        }
+        .location-specialist{
+            padding:140px 0 0; 
+        }
         &.product-cheese-tabs{
             .what-wedo{
                 .right-cards{
@@ -1799,6 +1811,64 @@
     }
     .cleanlabel-section{
         padding:100px 0;
+    }
+    .why-cheese-powder{
+        padding:0 0 80px;
+        &.home-why-cheese-p{
+            margin:80px 0 0;
+        }
+    }
+    .secret-ingredient{
+        padding:80px 0 100px;
+        .card{
+            max-height: 730px;
+        }
+    }
+    .what-forme{
+        padding:70px 0 0;
+        .product-cards{
+            padding:70px 0 80px;
+            .card{
+                .card-body {
+                    padding: 45px 25px;
+                }
+            } 
+        } 
+    } 
+    .latestNews-block{
+        padding:100px 0;
+        .card{
+            .card-header{
+                img{
+                    min-height:125px;
+                }
+            }
+            .card-body{
+                padding:30px 20px;
+            } 
+        } 
+    } 
+    .our-mission-section{
+        padding:120px 0 80px;
+    }
+    .abount-section{
+        padding:0 0 80px;
+    }
+    .join-us-section{
+        padding:0 0 110px;
+    }
+    .news-detail-area{
+        padding:100px 0 80px;
+    }
+    .related-news-section{
+        padding:0 0 90px;
+        .related-news-box{
+            .card-header{
+                img {
+                    min-height: 115px;
+                }
+            } 
+        } 
     } 
 }
 
@@ -1930,6 +2000,18 @@
                                 }
                             } 
                         } 
+                    }
+                } 
+            } 
+        } 
+    }
+    .product-cover-banner{
+        &.creamy-banner{
+            .banner-content{
+                h1{
+                    span{
+                        font-size:50px;
+                        line-height:54px;
                     }
                 } 
             } 
@@ -2346,6 +2428,10 @@
                     line-height: 36px;
                     max-width: 270px;
                     color:$dark-3c;
+                    span{
+                        font-size:inherit;
+                        line-height:inherit;
+                    }
                 }
             } 
         } 
@@ -2457,7 +2543,7 @@
             .what-wedo{
                 padding:0 0 50px;
                 .left-content {
-                    margin:0 0 20px;
+                    margin:0 0 40px;
                 }
                 .right-cards{
                     .card{
@@ -3209,7 +3295,21 @@
         .news-form{
             max-width:100%;
         }
-    } 
+    }
+    .sub-heading{
+        padding:80px 15px;
+    }
+    .what-forme{
+        .product-cards{
+            .card{
+                .card-body{
+                    p{
+                        max-width:100%;
+                    }
+                } 
+            } 
+        } 
+    }  
 }
 @media only screen and (max-width:600px){
     .section{
