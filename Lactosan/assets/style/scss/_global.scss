@@ -694,6 +694,7 @@ body {
   margin:0 0 160px;
   .card-header{
       max-width:508px;
+      min-width:508px;
       img{
           width:100%;
           border-radius:10px;
@@ -728,7 +729,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    padding-left: 100px;
+    padding-left: 114px;
     display: flex;
     flex-direction: column;
     justify-content: center;

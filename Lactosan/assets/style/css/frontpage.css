@@ -11395,6 +11395,7 @@ input[type=email]:focus::placeholder {
 }
 .product-item-box .card-header {
   max-width: 508px;
+  min-width: 508px;
 }
 .product-item-box .card-header img {
   width: 100%;
@@ -11430,7 +11431,7 @@ input[type=email]:focus::placeholder {
   position: absolute;
   top: 0;
   left: 0;
-  padding-left: 100px;
+  padding-left: 114px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11556,7 +11557,7 @@ html {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 11;
+  z-index: 999;
   background: #fff;
 }
 .top-header .container-fluid, .top-header .container-sm, .top-header .container-md, .top-header .container-lg, .top-header .container-xl, .top-header .container-xxl {
@@ -11912,6 +11913,7 @@ html {
 .top-header .container-fluid .right-items .language-item .dropdown-menu, .top-header .container-sm .right-items .language-item .dropdown-menu, .top-header .container-md .right-items .language-item .dropdown-menu, .top-header .container-lg .right-items .language-item .dropdown-menu, .top-header .container-xl .right-items .language-item .dropdown-menu, .top-header .container-xxl .right-items .language-item .dropdown-menu {
   border: transparent;
   box-shadow: 0 3px 6px #00000029;
+  min-width: auto;
 }
 .top-header .container-fluid .mobile-menu, .top-header .container-sm .mobile-menu, .top-header .container-md .mobile-menu, .top-header .container-lg .mobile-menu, .top-header .container-xl .mobile-menu, .top-header .container-xxl .mobile-menu {
   display: none;
@@ -13177,9 +13179,16 @@ html {
 }
 .cleanlabel-section .card {
   max-width: 570px;
+  margin-left: auto;
 }
 .cleanlabel-section .card .left-img img {
   border-radius: 10px;
+}
+.cleanlabel-section .card.care-pre {
+  margin-left: auto;
+}
+.cleanlabel-section .right-content.box-content {
+  margin: 0 0 0 auto;
 }
 
 .secret-ingred-sec {
@@ -13300,6 +13309,8 @@ html {
 }
 .why-cheese-powder .colorBox .card:hover {
   box-shadow: 0 10px 20px #00000029;
+  transform: translateY(-10px);
+  z-index: 1;
 }
 
 .product-blend-banner {
@@ -14530,7 +14541,7 @@ html {
 }
 .company-banner-section .banner-img img {
   width: 100%;
-  max-height: 680px;
+  max-height: 770px;
   object-fit: cover;
 }
 .company-banner-section .banner-img .banner-content {
@@ -14557,9 +14568,8 @@ html {
 }
 .our-mission-section .mission-box {
   color: #333333;
-}
-.our-mission-section .mission-box .card {
   max-width: 508px;
+  margin: 0 auto;
 }
 .our-mission-section .mission-box .card img {
   border-radius: 10px;
@@ -14591,6 +14601,7 @@ html {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 365px;
 }
 .abount-section .abount-box .card-body img {
   margin: 0 0 53px 0;
@@ -15002,6 +15013,7 @@ html {
 }
 .we-love-it .product-item-box {
   overflow: visible;
+  align-items: center;
 }
 
 .rnd-section {
@@ -15042,6 +15054,7 @@ html {
 }
 .behind-success .right-img {
   max-width: 560px;
+  margin-left: auto;
 }
 
 .social-comment {
@@ -15067,10 +15080,6 @@ html {
   max-width: 500px;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
-}
-.social-comment .comment-item:hover {
-  box-shadow: 0 10px 20px #00000029;
-  transform: translateY(-10px);
 }
 .social-comment .comment-item .card-body {
   padding: 51px 59px 51px 41px;
@@ -15283,6 +15292,7 @@ html {
 
 .location-tabs.product-cheese-tabs .tab-lists .nav-item .nav-link {
   padding: 25px 34px 24px;
+  max-width: 188px;
 }
 .location-tabs.product-cheese-tabs .product-item-sec {
   padding: 167px 0 140px;
@@ -15436,6 +15446,7 @@ html {
   line-height: 80px;
   max-width: 459px;
   color: #fff;
+  text-transform: uppercase;
 }
 .product-ncb-banner .banner-content p {
   font-size: 17px;
@@ -15473,10 +15484,14 @@ html {
   transition: all 0.3s;
   margin: 0 0 31px 0;
   height: calc(100% - 31px);
+  min-height: 300px;
 }
 .natural-booster .offer-box .card-body {
-  padding: 42px 41px 52px 22px;
+  padding: 25px 41px 30px 22px;
   color: #3C3C39;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .natural-booster .offer-box .card-body h3, .natural-booster .offer-box .card-body .h3 {
   font-weight: 700;
@@ -15490,6 +15505,12 @@ html {
 }
 .natural-booster .offer-box .card-body p {
   margin: 0 0 22px;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
 }
 .natural-booster .offer-box .card-body a {
   font-size: 16px;
@@ -15498,6 +15519,7 @@ html {
   color: #333333;
   text-decoration: none;
   position: relative;
+  width: fit-content;
 }
 .natural-booster .offer-box .card-body a::after {
   content: "";
@@ -15529,6 +15551,7 @@ html {
 }
 .we-love-it.bg-black .product-item-box {
   overflow: visible;
+  align-items: center;
 }
 .we-love-it.bg-black .product-item-box .card-body h3, .we-love-it.bg-black .product-item-box .card-body .h3 {
   color: #fff;
@@ -15547,10 +15570,12 @@ html {
 .rnd-section.bg-black .row .left-img {
   max-width: 508px;
   background-color: transparent;
+  margin: auto;
 }
 .rnd-section.bg-black .row .right-content {
   color: #fff;
   max-width: 439px;
+  margin: auto;
 }
 .rnd-section.bg-black .row .right-content h4, .rnd-section.bg-black .row .right-content .h4 {
   font-weight: 700;
@@ -15631,7 +15656,7 @@ html {
 }
 
 .section.application-slider {
-  padding-left: 150px;
+  padding-left: 114px;
   overflow: hidden;
 }
 .section.application-slider h2, .section.application-slider .h2 {
@@ -16309,9 +16334,19 @@ html {
     right: 76%;
   }
 }
+@media only screen and (min-width: 1400px) {
+  .location-tabs.product-cheese-tabs .tab-lists .nav-item .nav-link {
+    min-width: 216px;
+    padding: 25px 38px 24px;
+  }
+
+  .natural-booster .container, .rnd-section .container, .abount-section .container {
+    max-width: 1254px;
+  }
+}
 @media only screen and (max-width: 1440px) {
   .section.application-slider .slick-arrow.slick-next {
-    right: 75%;
+    right: 76%;
   }
 }
 @media only screen and (max-width: 1400px) {
@@ -16424,6 +16459,10 @@ html {
     left: 415px;
     transform: rotate(-5deg);
     top: 189px;
+  }
+
+  .behind-success .right-img {
+    max-width: 500px;
   }
 }
 @media only screen and (max-width: 1330px) {
@@ -16632,6 +16671,110 @@ html {
   .journey-step .leaderShipBox .popUpbox.postlaunchText img {
     margin: 0 20px 107px 0;
   }
+
+  .product-item-box .card-header {
+    max-width: 400px;
+    min-width: 400px;
+  }
+
+  .rnd-section {
+    padding: 0 0 120px;
+  }
+  .rnd-section .left-img {
+    max-width: 420px;
+  }
+  .rnd-section.bg-black .row .left-img {
+    max-width: 400px;
+  }
+  .rnd-section.bg-black .row .right-content {
+    max-width: 400px;
+  }
+
+  .cleanlabel-section .card .left-img {
+    max-width: 425px;
+  }
+  .cleanlabel-section .card.care-pre .left-img {
+    margin-left: auto;
+  }
+  .cleanlabel-section .right-content.box-content {
+    max-width: 425px;
+  }
+
+  .product-blend-banner .left-content h1, .product-blend-banner .left-content .h1 {
+    font-size: 50px;
+    line-height: 54px;
+  }
+
+  .application-section .desktop-view .right-application .smallImg {
+    max-width: 225px;
+  }
+
+  .journey-step {
+    padding: 0 0 100px;
+  }
+  .journey-step .top-steps p {
+    padding: 28px 0 90px;
+  }
+
+  .behind-success {
+    padding: 20px 0 100px;
+  }
+
+  .social-comment {
+    padding: 0 0 70px;
+  }
+
+  .serviceAll-section {
+    margin: 0 0 80px;
+  }
+
+  .we-love-it {
+    padding: 76px 0 120px;
+    margin: 0 0 100px;
+  }
+
+  .application-section {
+    padding: 0 0 80px;
+  }
+
+  .location-tabs {
+    padding: 0 0 120px;
+  }
+  .location-tabs.product-cheese-tabs .what-wedo {
+    padding: 0 0 70px;
+  }
+  .location-tabs.product-cheese-tabs .did-know {
+    padding: 0 0 120px;
+  }
+
+  .cleanlabel-section .card {
+    max-width: 420px;
+  }
+
+  .secret-ingred-sec h1, .secret-ingred-sec .h1 {
+    font-size: 44px;
+    line-height: 48px;
+  }
+  .secret-ingred-sec .card {
+    max-width: 420px;
+    margin-left: auto;
+  }
+
+  .location-tabs.product-cheese-tabs .what-wedo .right-cards .card:first-child .card-body img {
+    width: 90px;
+  }
+
+  .behind-success .right-img {
+    max-width: 400px;
+  }
+
+  .all-category-tab .newslatter-signup .card .newslatter-box {
+    padding: 0 40px 0 40px;
+  }
+
+  .our-mission-section .mission-box {
+    max-width: 400px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .top-header .container-fluid .nav-header .nav li, .top-header .container-sm .nav-header .nav li, .top-header .container-md .nav-header .nav li, .top-header .container-lg .nav-header .nav li, .top-header .container-xl .nav-header .nav li, .top-header .container-xxl .nav-header .nav li {
@@ -16735,8 +16878,8 @@ html {
   }
 
   .natural-booster [class*=col-] {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .why-cheese-powder .colorBox .card .card-body .inner-box .drop-box {
@@ -16753,6 +16896,10 @@ html {
 
   .journey-step .leaderShipBox .popUpbox.postlaunchText .endProject .drop-box {
     margin-left: -192px !important;
+  }
+
+  .product-cover-banner.NCb-food .banner-content h1, .product-cover-banner.NCb-food .banner-content .h1 {
+    line-height: 70px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -16941,7 +17088,7 @@ html {
     padding: 110px 30px;
   }
   .all-category-tab .newslatter-signup .card .newslatter-box {
-    padding: 0 10px 0 0;
+    padding: 0 30px 0 0;
   }
   .all-category-tab .product-list-box .product-detail h3, .all-category-tab .product-list-box .product-detail .h3 {
     font-size: 22px;
@@ -17310,6 +17457,125 @@ html {
   .footer-section .footer-mid .footer-items .social-icons {
     margin: 14px 0 82px;
   }
+
+  .natural-booster .offer-box {
+    min-height: 250px;
+  }
+  .natural-booster .offer-box .card-body h4, .natural-booster .offer-box .card-body .h4 {
+    max-width: 100%;
+  }
+
+  .product-item-box .card-header {
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+  .rnd-section.bg-black .row .left-img {
+    max-width: 300px;
+  }
+  .rnd-section.bg-black .row .right-content {
+    max-width: 300px;
+  }
+
+  .product-blend-banner .left-content h1, .product-blend-banner .left-content .h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .behind-success .left-content h1, .behind-success .left-content .h1 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .abount-section .abount-box .card-body {
+    min-height: 300px;
+  }
+  .abount-section .abount-box .card-body img {
+    margin: 0 0 25px 0;
+  }
+
+  .our-mission-section .mission-box {
+    max-width: 300px;
+  }
+
+  .social-response-section .left-img {
+    max-width: 310px;
+  }
+  .social-response-section .right-content {
+    max-width: 310px;
+  }
+
+  .join-us-section .right-content {
+    max-width: 300px;
+  }
+  .join-us-section .right-content p {
+    margin: 0 0 15px 0;
+  }
+  .join-us-section .right-content .btn {
+    padding: 10px 30px;
+  }
+
+  .cleanlabel-section h3, .cleanlabel-section .h3 {
+    margin: 0 0 15px 0;
+  }
+  .cleanlabel-section .card {
+    max-width: 300px;
+  }
+
+  .secret-ingred-sec .card {
+    max-width: 300px;
+  }
+
+  .location-tabs.product-cheese-tabs .what-wedo .right-cards .card:first-child .card-body h4, .location-tabs.product-cheese-tabs .what-wedo .right-cards .card:first-child .card-body .h4 {
+    font-size: 16px;
+  }
+
+  .product-cover-banner.NCb-food .banner-content h1, .product-cover-banner.NCb-food .banner-content .h1 {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .bread-pastry-banner .left-content .btn-primary {
+    margin: 0 0 20px 0;
+  }
+
+  .home-banner.service-banner .banner-content h1, .home-banner.service-banner .banner-content .h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .quality-banner {
+    padding: 72px 15px 100px;
+  }
+
+  .our-quality-section .left-content-area {
+    padding: 0 0 100px;
+  }
+  .our-quality-section .video-block {
+    margin-bottom: 100px;
+  }
+
+  .faq-section {
+    padding: 60px 0 100px;
+  }
+
+  .news-trend-banner {
+    padding: 70px 15px 80px;
+  }
+
+  .single-news-banner .img-banner .overlay-content h1, .single-news-banner .img-banner .overlay-content .h1 {
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .open-position .single-job-box .card-body .readMore-btn a {
+    padding: 15px 22px;
+  }
+
+  .cleanlabel-section {
+    padding: 100px 0;
+  }
 }
 @media only screen and (max-width: 850px) {
   .section.application-slider .slick-arrow.slick-next {
@@ -17370,6 +17636,15 @@ html {
   .home-banner .banner-content p {
     max-width: 380px;
     margin: 15px 0 30px 0;
+  }
+
+  .location-tabs.product-cheese-tabs .what-wedo .right-cards .card:first-child .card-body img {
+    width: 65px;
+  }
+  .location-tabs.product-cheese-tabs .what-wedo .right-cards .card:first-child .card-body h4, .location-tabs.product-cheese-tabs .what-wedo .right-cards .card:first-child .card-body .h4 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 8px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -17702,6 +17977,7 @@ html {
     padding-left: 15px;
   }
   .product-cover-banner.NCb-food .banner-content h1, .product-cover-banner.NCb-food .banner-content .h1 {
+    font-size: 32px;
     line-height: 36px;
     max-width: 280px;
   }
@@ -17728,10 +18004,13 @@ html {
   }
 
   .product-item-box {
-    margin: 0 0 20px;
+    margin: 0 0 40px;
   }
   .product-item-box.space-top {
     margin-top: 0px;
+  }
+  .product-item-box:last-child {
+    margin: 0 0 40px;
   }
 
   .rnd-section.bg-black .row {
@@ -17739,6 +18018,7 @@ html {
   }
   .rnd-section.bg-black .row .right-content {
     margin: 20px 0 0;
+    max-width: 100%;
   }
   .rnd-section.bg-black .row:nth-child(2) {
     flex-direction: column-reverse;
@@ -17859,6 +18139,7 @@ html {
   }
   .rnd-section .left-img {
     margin: 0 0 20px;
+    max-width: 100%;
   }
 
   .behind-success {
@@ -17920,14 +18201,13 @@ html {
 
   .food-items-tab {
     margin-bottom: 20px;
-    justify-content: center;
   }
   .food-items-tab .nav-item {
     margin-bottom: 15px;
   }
 
   .all-category-tab .popular-items {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .familiar-with {
@@ -18077,6 +18357,12 @@ html {
   .our-mission-section {
     padding: 50px 0;
   }
+  .our-mission-section .mission-box {
+    max-width: 100%;
+  }
+  .our-mission-section .mission-box p {
+    max-width: 100%;
+  }
 
   .roadmape-section {
     margin-bottom: 50px;
@@ -18087,8 +18373,15 @@ html {
   }
   .social-response-section .left-img {
     margin-bottom: 30px;
+    max-width: 100%;
+  }
+  .social-response-section .right-content {
+    max-width: 100%;
   }
   .social-response-section .right-content h3, .social-response-section .right-content .h3 {
+    max-width: 100%;
+  }
+  .social-response-section .right-content p {
     max-width: 100%;
   }
 
@@ -18100,6 +18393,7 @@ html {
   }
   .join-us-section .card .row .right-content {
     padding: 30px 25px 50px;
+    max-width: 100%;
   }
   .join-us-section .card .row .right-content .btn {
     padding: 15px 45px;
@@ -18368,6 +18662,46 @@ html {
   .journey-step .top-steps p {
     padding: 28px 0 80px;
   }
+
+  .natural-booster .offer-box {
+    min-height: 210px;
+  }
+
+  .product-item-box .card-header {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .rnd-section.bg-black .row .left-img {
+    max-width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .cleanlabel-section p {
+    max-width: 100%;
+  }
+  .cleanlabel-section .card {
+    max-width: 100%;
+  }
+
+  .secret-ingred-sec .card {
+    max-width: 100%;
+  }
+
+  .why-cheese-powder .why-left {
+    margin: 0 0 40px 0;
+  }
+  .why-cheese-powder .why-left p {
+    max-width: 100%;
+  }
+
+  .behind-success .right-img {
+    max-width: 100%;
+  }
+
+  .latest-news .news-form {
+    max-width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .section.application-slider .slick-arrow.slick-next {
@@ -18452,6 +18786,12 @@ html {
 
   .product-solution-grid .gridBoxs .innerGrid .endProject .drop-box {
     width: 250px;
+  }
+
+  .home-banner.service-banner .banner-content h1, .home-banner.service-banner .banner-content .h1 {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 300px;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -18677,6 +19017,15 @@ html {
   .journey-step .leaderShipBox .devlepmentBox .endProject .drop-box {
     transform: translate3d(-182px, 15px, 0px) !important;
     margin-left: 0px !important;
+  }
+
+  .home-banner.service-banner .banner-content h1, .home-banner.service-banner .banner-content .h1 {
+    max-width: 200px;
+  }
+
+  .single-news-banner .img-banner .overlay-content h1, .single-news-banner .img-banner .overlay-content .h1 {
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 @media only screen and (max-width: 425px) {

@@ -9,23 +9,31 @@
         } 
     }
 }  
-// @media only screen and (min-width:1440px){
-//     .section{
-//         &.application-slider{
-//             .slick-dots{
-//                 li{
-//                     min-width:300px;
-//                 }
-//             } 
-//         } 
-//     }
-// }
+@media only screen and (min-width:1400px){
+    .location-tabs{
+        &.product-cheese-tabs{
+            .tab-lists{
+                .nav-item{
+                    .nav-link{
+                        min-width:216px;
+                        padding:25px 38px 24px;
+                    }
+                } 
+            } 
+        } 
+    }
+    .natural-booster , .rnd-section , .abount-section{
+        .container{
+            max-width:1254px;
+        }
+    }
+}
 @media only screen and (max-width:1440px){
     .section{
         &.application-slider{
             .slick-arrow{
                 &.slick-next {
-                    right: 75%;
+                    right: 76%;
                 } 
             }
             // .slick-dots{
@@ -216,6 +224,11 @@
             } 
         } 
     } 
+    .behind-success{
+        .right-img{
+            max-width: 500px;
+        }
+    } 
 }
 @media only screen and (max-width:1330px){
     .top-header{
@@ -274,6 +287,7 @@
             } 
         } 
     }
+    
 }
 @media only screen and (max-width:1199px){
     .all-category-tab{
@@ -521,6 +535,148 @@
             }
         } 
     } 
+    .product-item-box{
+        .card-header{
+            max-width:400px;
+            min-width:400px;
+        }
+    } 
+    .rnd-section{
+        padding:0 0 120px;
+        .left-img{
+            max-width:420px;
+        }
+        &.bg-black{
+            .row{
+                .left-img{
+                    max-width:400px;
+                }
+                .right-content{
+                    max-width:400px;
+                }
+            } 
+        } 
+    }
+    .cleanlabel-section{
+        .card{
+            .left-img{
+                max-width:425px;
+            }
+            &.care-pre{
+                .left-img{
+                    margin-left:auto;
+                } 
+            }
+        } 
+        .right-content{
+            &.box-content{
+                max-width:425px;
+            }
+        }
+    } 
+    .product-blend-banner{
+        .left-content{
+            h1{
+                font-size:50px;
+                line-height:54px;
+            }
+        } 
+    } 
+    .application-section{
+        .desktop-view{
+            .right-application{
+                .smallImg {
+                    max-width: 225px;
+                }
+            } 
+        } 
+    } 
+    .journey-step{
+        padding:0 0 100px;
+        .top-steps{
+            p{
+                padding: 28px 0 90px;
+            }
+        } 
+    } 
+    .behind-success{
+        padding: 20px 0 100px;
+    }
+    .social-comment{
+        padding:0 0 70px;
+    }
+    .serviceAll-section{
+        margin:0 0 80px;
+    }
+    .we-love-it{
+        padding:76px 0 120px;
+        margin:0 0 100px;
+    }
+    .application-section{
+        padding:0 0 80px;
+    }
+    .location-tabs{
+        padding:0 0 120px;
+        &.product-cheese-tabs{
+            .what-wedo{
+                padding:0 0 70px;
+            } 
+            .did-know{
+                padding:0 0 120px;
+            }
+        } 
+    }
+    .cleanlabel-section{
+        .card{
+            max-width:420px;
+        }
+    } 
+    .secret-ingred-sec{
+        h1{
+            font-size:44px;
+            line-height:48px;
+        }
+        .card{
+            max-width:420px;
+            margin-left: auto;
+        }
+    }
+    .location-tabs{
+        &.product-cheese-tabs{
+            .what-wedo{
+                .right-cards{
+                    .card{
+                        &:first-child{
+                            .card-body{
+                                img {
+                                    width:90px;
+                                }
+                            } 
+                        } 
+                    }
+                } 
+            } 
+        } 
+    }
+    .behind-success{
+        .right-img {
+            max-width: 400px;
+        }
+    } 
+    .all-category-tab{
+        .newslatter-signup{
+            .card{
+                .newslatter-box{
+                    padding: 0 40px 0 40px;
+                }
+            } 
+        } 
+    } 
+    .our-mission-section{
+        .mission-box{
+            max-width:400px;
+        }
+    } 
 }
 @media only screen and (max-width:1024px){
     .top-header{
@@ -679,8 +835,8 @@
     } 
     .natural-booster{
         [class*=col-] {
-            padding-left:12px;
-            padding-right:12px;
+            padding-left:8px;
+            padding-right:8px;
         }
     }
     .why-cheese-powder{
@@ -733,7 +889,16 @@
                 } 
             }
         } 
-    }    
+    }
+    .product-cover-banner{
+        &.NCb-food{
+            .banner-content{
+                h1{
+                line-height:70px;
+                }
+            } 
+        } 
+    }
 }
 
 @media only screen and (max-width:991px){
@@ -983,7 +1148,7 @@
                     padding:110px 30px;
                 } 
                 .newslatter-box {
-                    padding: 0 10px 0 0;
+                    padding: 0 30px 0 0;
                 }
             } 
         }
@@ -1457,6 +1622,184 @@
             } 
         } 
     } 
+    .natural-booster{
+        .offer-box{
+            min-height:250px;
+            .card-body{
+                h4{
+                    max-width:100%;
+                }
+            } 
+        }
+    } 
+    .product-item-box{
+        .card-header {
+            max-width: 300px;
+            min-width: 300px;
+        }
+    } 
+    .rnd-section{
+        &.bg-black{
+            .row{
+                .left-img {
+                    max-width:300px;
+                }
+                .right-content{
+                    max-width:300px;
+                }
+            } 
+        } 
+    }
+    .product-blend-banner{
+        .left-content{
+            h1{
+                font-size:32px;
+                line-height:38px;
+            }
+        } 
+    } 
+    .behind-success{
+        .left-content{
+            h1{
+                font-size:44px;
+                line-height:50px;
+            }
+        } 
+    } 
+    .abount-section{
+        .abount-box{
+            .card-body{
+                min-height:300px;
+                img{
+                    margin:0 0 25px 0;
+                }
+            }
+        } 
+    } 
+    .our-mission-section{
+        .mission-box{
+            max-width:300px;
+        }
+    } 
+    .social-response-section{
+        .left-img{
+            max-width:310px;
+        }
+        .right-content{
+            max-width:310px;
+        }
+    } 
+    .join-us-section{
+        .right-content{
+            max-width:300px;
+            p{
+                margin:0 0 15px 0;
+            }
+            .btn{
+                padding:10px 30px;
+            }
+        }
+    } 
+    .cleanlabel-section{
+        h3{
+            margin:0 0 15px 0;
+        }
+        .card{
+            max-width:300px;
+        }
+    } 
+    .secret-ingred-sec{
+        
+        .card{
+            max-width:300px;
+        }
+    }
+    .location-tabs{
+        &.product-cheese-tabs{
+            .what-wedo{
+                .right-cards{
+                    .card{
+                        &:first-child{
+                            .card-body{
+                                h4{
+                                    font-size:16px;
+                                }
+                            } 
+                        } 
+                    }
+                } 
+            } 
+        } 
+    }
+    .product-cover-banner{
+        &.NCb-food{
+            .banner-content{
+                h1{
+                font-size:48px;
+                line-height:54px;
+                }
+            } 
+        } 
+    }
+    .bread-pastry-banner{
+        .left-content{
+            .btn-primary{
+                margin:0 0 20px 0;
+            }
+        } 
+    } 
+    .home-banner{
+        &.service-banner{
+            .banner-content{
+                h1{
+                    font-size:42px;
+                    line-height:48px;
+                }
+            }
+        }
+    } 
+    .quality-banner{
+        padding: 72px 15px 100px;
+    }
+    .our-quality-section{
+        .left-content-area{
+            padding: 0 0 100px;
+        }
+        .video-block{
+            margin-bottom:100px;
+        }
+    }  
+    .faq-section{
+        padding:60px 0 100px;
+    }
+    .news-trend-banner{
+        padding:70px 15px 80px;
+    }
+    .single-news-banner{
+        .img-banner{
+            .overlay-content{
+                h1{
+                    font-size:42px;
+                    line-height:48px;
+                    text-align:center;
+                }
+            } 
+        } 
+    } 
+    .open-position{
+        .single-job-box{
+            .card-body{
+                .readMore-btn{
+                    a{
+                        padding:15px 22px;
+                    }
+                } 
+            } 
+        } 
+    }
+    .cleanlabel-section{
+        padding:100px 0;
+    } 
 }
 
 @media only screen and (max-width:850px){
@@ -1570,6 +1913,28 @@
             }
         } 
     } 
+    .location-tabs{
+        &.product-cheese-tabs{
+            .what-wedo{
+                .right-cards{
+                    .card{
+                        &:first-child{
+                            .card-body{
+                                img{
+                                    width:65px;
+                                }
+                                h4{
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    margin-left: 8px;
+                                }
+                            } 
+                        } 
+                    }
+                } 
+            } 
+        } 
+    }
 }
 
 
@@ -1959,6 +2324,7 @@
         &.NCb-food{
             .banner-content{
                 h1{
+                    font-size:32px;
                     line-height:36px;
                     max-width:280px;
                 }
@@ -1999,9 +2365,12 @@
         }
     }
     .product-item-box{
-        margin:0 0 20px;
+        margin:0 0 40px;
         &.space-top {
             margin-top:0px;
+        }
+        &:last-child{
+            margin:0 0 40px;
         }
     }
     .rnd-section{
@@ -2010,6 +2379,7 @@
                 padding:0 0 50px;
                 .right-content {
                     margin:20px 0 0;
+                    max-width:100%;
                 }
                 &:nth-child(2){
                     flex-direction:column-reverse;
@@ -2154,6 +2524,7 @@
         padding:0 0 50px;
         .left-img {
             margin: 0 0 20px;
+            max-width:100%;
         }
     } 
     .behind-success{
@@ -2223,14 +2594,14 @@
     }
     .food-items-tab {
         margin-bottom:20px;
-        justify-content:center;
+        // justify-content:center;
         .nav-item {
             margin-bottom:15px;
         }
     }
     .all-category-tab{
         .popular-items {
-            justify-content:center;
+            justify-content: flex-start;
         }
     } 
     .familiar-with{
@@ -2385,6 +2756,12 @@
     } 
     .our-mission-section{
         padding:50px 0;
+        .mission-box{
+            max-width:100%;
+            p{
+                max-width:100%;
+            }
+        }
     }
     .roadmape-section{
         margin-bottom:50px;
@@ -2393,9 +2770,14 @@
         padding:0 0 50px;
         .left-img {
             margin-bottom:30px;
+            max-width:100%;
         }
         .right-content{
+            max-width:100%;
             h3{
+                max-width:100%;
+            }
+            p{
                 max-width:100%;
             }
         }
@@ -2407,6 +2789,7 @@
                 flex-direction: column-reverse;
                 .right-content{
                     padding:30px 25px 50px;
+                    max-width:100%;
                     .btn{
                         padding:15px 45px;
                     }
@@ -2775,6 +3158,58 @@
             }
         } 
     } 
+    .natural-booster{
+        .offer-box{
+            min-height:210px;
+        }
+    } 
+    .product-item-box{
+        .card-header{
+            max-width:100%;
+            min-width:100%;
+        }
+    } 
+    .rnd-section{
+        &.bg-black{
+            .row{
+                .left-img{
+                    max-width:100%;
+                    margin:0 0 20px 0;
+                }
+            } 
+        } 
+    }
+    .cleanlabel-section{
+        p{
+            max-width:100%;
+        }
+        .card{
+            max-width:100%;
+        }
+    } 
+    .secret-ingred-sec{
+        .card {
+            max-width:100%;
+        }
+    } 
+    .why-cheese-powder{
+        .why-left{
+            margin:0 0 40px 0;
+            p{
+                max-width:100%;
+            }
+        } 
+    } 
+    .behind-success{
+        .right-img {
+            max-width: 100%;
+        }
+    } 
+    .latest-news{
+        .news-form{
+            max-width:100%;
+        }
+    } 
 }
 @media only screen and (max-width:600px){
     .section{
@@ -2923,6 +3358,17 @@
                 } 
             } 
         } 
+    } 
+    .home-banner{
+        &.service-banner{
+            .banner-content{
+                h1{
+                    font-size:32px;
+                    line-height:36px;
+                    max-width: 300px;
+                }
+            }
+        }
     } 
 }
 @media only screen and (max-width:575px){
@@ -3257,6 +3703,25 @@
                         transform: translate3d(-182px, 15px, 0px) !important;
                         margin-left:0px !important;
                     }
+                }
+            } 
+        } 
+    } 
+    .home-banner{
+        &.service-banner{
+            .banner-content{
+                h1{
+                    max-width:200px;
+                }
+            }
+        }
+    } 
+    .single-news-banner{
+        .img-banner{
+            .overlay-content{
+                h1{
+                    font-size:32px;
+                    line-height:36px;
                 }
             } 
         } 

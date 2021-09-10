@@ -65,7 +65,7 @@ $(document).ready(function(){
 
     // Validate js start=====================================
 
-    $('#newsForm').validate({
+      $('#newsForm').validate({
         errorPlacement: function(error,element) {
           return true;
         },
@@ -138,7 +138,7 @@ $(document).ready(function(){
    }); 
    $(".joinNow-t").mouseleave(function(){
     $(this).text("Join now");
-  }); 
+   }); 
 
 
   

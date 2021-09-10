@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $('.yearly-slider').slick({
       dots:false,
+      // appendDots: $('.btm-year-tag'),
       infinite:true,
       speed: 500,
       slidesToShow:1,
