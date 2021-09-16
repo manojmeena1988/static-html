@@ -11195,6 +11195,7 @@ input[type=email]:focus::placeholder {
   top: 21px;
   right: 30px;
   color: #2CA3DB;
+  pointer-events: none;
 }
 
 .filter-tab {
@@ -11352,6 +11353,8 @@ input[type=email]:focus::placeholder {
   position: relative;
   overflow: hidden;
   max-height: 578px;
+  max-width: 1028px;
+  margin: 0 auto;
 }
 .video-block .play-box {
   display: flex;
@@ -13611,6 +13614,7 @@ html {
   background-color: #afdcf1;
   color: #2CA3DB;
   padding: 15px 60px 15px 45px;
+  text-align: left;
 }
 .location-tabs .find-distributor .single-country-list {
   margin: 50px 0 70px;
@@ -14021,11 +14025,12 @@ html {
   left: -465px;
   top: 0;
   min-height: 100%;
-  height: -webkit-fill-available;
+  height: 100%;
   width: 100%;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.21);
   padding: 75px;
   z-index: 100;
+  overflow-x: auto;
   transition: 0.3s;
 }
 .filter-box .close-filter {
@@ -14652,7 +14657,7 @@ html {
   padding: 0 0 185px;
 }
 .join-us-section .right-content {
-  max-width: 520px;
+  max-width: 419px;
   margin: auto;
 }
 .join-us-section .right-content h3, .join-us-section .right-content .h3 {
@@ -15024,6 +15029,9 @@ html {
 }
 .rnd-section .right-content {
   color: #333333;
+}
+.rnd-section .right-content.RND-right {
+  margin-left: 20px;
 }
 .rnd-section .right-content h3, .rnd-section .right-content .h3 {
   font-weight: 700;
@@ -15579,6 +15587,9 @@ html {
   max-width: 508px;
   background-color: transparent;
   margin: auto;
+}
+.rnd-section.bg-black .row .left-img.flavour-left {
+  margin: 0 0 0 auto;
 }
 .rnd-section.bg-black .row .right-content {
   color: #fff;
@@ -16337,6 +16348,10 @@ html {
   display: none;
 }
 
+.companyinnvation-vdo .video-block {
+  max-width: 1097px;
+}
+
 @media only screen and (min-width: 1441px) and (max-width: 1650px) {
   .section.application-slider .slick-arrow.slick-next {
     right: 76%;
@@ -16348,7 +16363,11 @@ html {
     padding: 25px 38px 24px;
   }
 
-  .natural-booster .container, .rnd-section .container, .abount-section .container {
+  .natural-booster .container, .rnd-section .container, .abount-section .container, .join-us-section .container {
+    max-width: 1254px;
+  }
+
+  .get-intuch.bg-black .container {
     max-width: 1254px;
   }
 }

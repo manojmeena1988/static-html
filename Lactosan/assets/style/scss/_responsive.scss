@@ -22,11 +22,21 @@
             } 
         } 
     }
-    .natural-booster , .rnd-section , .abount-section{
+    .natural-booster , .rnd-section , .abount-section , .join-us-section{
         .container{
             max-width:1254px;
         }
     }
+    .get-intuch{
+        &.bg-black{
+            .container{
+                max-width:1254px;
+            }
+        }
+    } 
+    // .container{
+    //     max-width:1254px;
+    // }
 }
 @media only screen and (max-width:1440px){
     .section{

@@ -484,6 +484,7 @@ body {
     top:21px;
     right:30px;
     color:$blue;
+    pointer-events:none;
   }
 }
 
@@ -649,6 +650,8 @@ body {
   position: relative;
   overflow: hidden;
   max-height:578px;
+  max-width:1028px;
+  margin:0 auto;
   .play-box{
           display:flex;
           align-items:center;

@@ -2341,6 +2341,7 @@
                 background-color:lighten($blue , 30%);
                 color:$blue;
                 padding:15px 60px 15px 45px;
+                text-align: left;
             }
         }
         .single-country-list{
@@ -2785,11 +2786,13 @@
     left:-465px;
     top:0;
     min-height:100%;
-    height: -webkit-fill-available;
+    // height: -webkit-fill-available;
+    height:100%;
     width:100%;
     box-shadow:0 5px 20px rgba(0,0,0,0.21);
     padding:75px;
     z-index:100;
+    overflow-x: auto;
     // display:none;
     transition:0.3s;
     .close-filter{
@@ -3461,7 +3464,7 @@
 .join-us-section{
     padding:0 0 185px;
     .right-content{
-        max-width: 520px;
+        max-width: 419px;
         margin: auto;
         h3{
             font-weight:$fw-700;
@@ -3910,6 +3913,9 @@
     }
     .right-content{
         color:$dark;
+        &.RND-right{
+            margin-left:20px;
+        }
         h3{
             font-weight:$fw-700;
         }
@@ -4552,6 +4558,9 @@
                 max-width:508px;
                 background-color: transparent;
                 margin:auto;
+                &.flavour-left{
+                    margin:0 0 0 auto;
+                }
             }
             .right-content{
                 color:$white;
@@ -5395,6 +5404,11 @@
                 display:none;
             }
         }
+    }
+} 
+.companyinnvation-vdo{
+    .video-block{
+        max-width:1097px;
     }
 } 
 @import "responsive";
