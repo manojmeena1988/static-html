@@ -1879,7 +1879,7 @@
     }
     .card{
         max-width:570px;
-        margin-left: auto;
+        // margin-left: auto;
         .left-img{
             img{
                 border-radius:10px;
@@ -1903,6 +1903,10 @@
         line-height:64px;
         max-width:504px;
         font-family: 'centrale_sans';
+    }
+    .right-ingd{
+        max-width:570px;
+        margin-left:auto;
     }
 }
 .application-section{
@@ -2783,7 +2787,7 @@
     background-color:$white;
     max-width:452px;
     position:fixed;
-    left:-465px;
+    left:-465px !important;
     top:0;
     min-height:100%;
     // height: -webkit-fill-available;
@@ -2795,6 +2799,7 @@
     overflow-x: auto;
     // display:none;
     transition:0.3s;
+    cursor:inherit !important;
     .close-filter{
         cursor: pointer;
         font-size:15px;
@@ -2866,6 +2871,7 @@
     &.application-fliter-box{
         margin-left:auto;
         right:-465px;
+        left: inherit !important;
         .save-button{
             right:-452px;
             margin-left:auto;
@@ -2892,14 +2898,15 @@
         z-index:8;
     }
     .filter-box{
-        left:0;
+        left:0 !important;
         .save-button{
-            left:0;
+            left:0 !important;
         }
         &.application-fliter-box{
-            right:0;
+            right:0 !important;
+            left: inherit !important;
             .save-button{
-                right:0;
+                right:0 !important;
             }
         }
     }
@@ -3160,67 +3167,67 @@
             }
         }
     }
-    .newslatter-signup{
-        padding:160px 0;
-        .card{
-            .left-img{
-                background-color:$Beige;
-                border-radius:20px 0 0 20px;
-                min-height:100%;
-                padding:110px 98px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                img{
-                    border-radius:10px;
-                    // max-width:508px;
-                }
+}
+.newslatter-signup{
+    padding:0 0 160px;
+    .card{
+        .left-img{
+            background-color:$Beige;
+            border-radius:10px 0 0 10px;
+            min-height:100%;
+            padding:110px 98px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            img{
+                border-radius:10px;
+                // max-width:508px;
             }
-            .newslatter-box{
-                padding:0 74px 0 66px;
-                h3{
-                    font-weight:$fw-700;
-                    margin:0 0 19px 0;
-                    color:$black;
-                }
-                p{
-                    color:$black;
-                    max-width:330px;
-                }
-                .newslatter-form{
-                    .form-row{
-                        margin-bottom:20px;
-                        .form-group{
-                            input{
+        }
+        .newslatter-box{
+            padding:0 74px 0 66px;
+            h3{
+                font-weight:$fw-700;
+                margin:0 0 19px 0;
+                color:$black;
+            }
+            p{
+                color:$black;
+                max-width:330px;
+            }
+            .newslatter-form{
+                .form-row{
+                    margin-bottom:20px;
+                    .form-group{
+                        input{
+                            &::-webkit-input-placeholder { /* Edge */
+                                color:transparent;
+                              }
+                              &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                                color:transparent;
+                                }
+                              &::placeholder {
+                                color:transparent;
+                                }
+                            &:focus{
                                 &::-webkit-input-placeholder { /* Edge */
                                     color:transparent;
+                                    font-weight:$fw-400;
                                   }
                                   &:-ms-input-placeholder { /* Internet Explorer 10-11 */
                                     color:transparent;
+                                    font-weight:$fw-400;
                                     }
                                   &::placeholder {
-                                    color:transparent;
-                                    }
-                                &:focus{
-                                    &::-webkit-input-placeholder { /* Edge */
-                                        color:transparent;
-                                        font-weight:$fw-400;
-                                      }
-                                      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-                                        color:transparent;
-                                        font-weight:$fw-400;
-                                        }
-                                      &::placeholder {
-                                          color:transparent;
-                                          font-weight:$fw-400;
-                                      }
-                                }
+                                      color:transparent;
+                                      font-weight:$fw-400;
+                                  }
                             }
                         }
                     }
-                    .btn-primary{
-                        margin:30px 0 0;
-                    }
+                }
+                .btn-primary{
+                    margin:30px 0 0;
                 }
             }
         }
@@ -3312,13 +3319,15 @@
     }
 }
 .related-news-section{
-    padding:0 0 180px;
+    padding:0 0 150px;
+    overflow:hidden;
     h2{
         font-weight:$fw-700;
         max-width:507px;
         margin:0 0 65px;
     }
     .related-news-box{
+        margin:0 0 30px;
         .card-header{
             max-height:171px;
             overflow: hidden;

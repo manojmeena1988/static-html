@@ -32,7 +32,7 @@ $(document).ready(function() {
 
   $(".lastNew-d").hide();
   $(".seeMore-news").click(function(){
-      $(".lastNew-d").show("slow");
+      $(".lastNew-d").fadeIn("slow");
       $(this).hide();
   });
 });

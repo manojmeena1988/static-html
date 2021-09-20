@@ -125,7 +125,7 @@ $(document).ready(function(){
 
 
     //filter box nice scroll js start =====================================
-    $(".filter-box").niceScroll({cursorcolor:"#ddd",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true ,cursoropacitymin:0.5,});
+    $(".filter-box").niceScroll({cursorcolor:"transarent",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true ,cursoropacitymin:0.5,cursorborder:'none',});
 
 
 // language text change js =====================================
