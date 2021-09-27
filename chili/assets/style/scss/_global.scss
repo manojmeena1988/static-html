@@ -1,0 +1,335 @@
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url('../../fonts/Geogrotesque/Geogrotesque-SemiBold.woff2') format('woff2'),
+      url('../../fonts/Geogrotesque/Geogrotesque-SemiBold.woff') format('woff'),
+      url('../../fonts/Geogrotesque/Geogrotesque-SemiBold.ttf') format('truetype'),
+      url('../../fonts/Geogrotesque/Geogrotesque-SemiBold.svg#Geogrotesque-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url('../../fonts/Geogrotesque/Geogrotesque-Bold.woff2') format('woff2'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Bold.woff') format('woff'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Bold.ttf') format('truetype'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Bold.svg#Geogrotesque-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url('../../fonts/Geogrotesque/Geogrotesque-Medium.woff2') format('woff2'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Medium.woff') format('woff'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Medium.ttf') format('truetype'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Medium.svg#Geogrotesque-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Geogrotesque';
+  src: url('../../fonts/Geogrotesque/Geogrotesque-Regular.woff2') format('woff2'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Regular.woff') format('woff'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Regular.ttf') format('truetype'),
+      url('../../fonts/Geogrotesque/Geogrotesque-Regular.svg#Geogrotesque-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html{
+  scroll-behavior:smooth;
+  transition:all 0.3s ease-in-out;
+}
+body {
+    font-size: 16px;
+    line-height:20px;
+    color: $gray-light;
+    font-weight:$fw-500;   
+    font-family: 'Geogrotesque';
+    position: relative;
+  }
+  a{
+    text-decoration:none;
+  }
+.btn{
+    padding:16px 24px;
+    border-radius:66px;
+    border:none;
+    font-size:18px;
+    line-height:24px;
+    &.btn-sml{
+      padding:8px 24px;
+      font-size:15px;
+    }
+    &:focus{
+      box-shadow:none;
+    }
+    &.btn-chili{
+      background-color:$chili;
+      color:$white;
+      &:hover{
+        background-color:$chili-light;
+        box-shadow: 0px 20px 24px rgba(163, 27, 58, 0.18), 0px 0px 0px 1px rgba(34, 34, 34, 0.04);
+      }
+      &.active{
+        background-color:$chili-light;
+      }
+    }
+    &.btn-outline-black{
+       border: 2px solid $border-light;
+       color:$black;
+       font-weight:$fw-500;
+       &:hover{
+        background-color:$black;
+        border:2px solid $black;
+        color:$white;
+      }
+      &.active{
+        background-color:$black;
+        border:2px solid $black;
+        color:$white;
+      }
+    }
+    &.btn-black{
+      background-color:$black;
+      color:$white;
+      &:hover{
+        background-color:$gray-light;
+      }
+      &.active{
+        background-color:$gray-light;
+      } 
+    }
+    &.btn-white{
+      background-color:$white;
+      color:$chili;
+      &:hover{
+        background-color:$white;
+      }
+      &.active{
+        background-color:$white;
+      } 
+    }
+  }
+  p{
+    margin-bottom:0;
+    &.large-pera{
+      font-size:18px;
+      line-height:28px;
+      color:$black;
+    }
+    &.small-pera{
+      font-size:14px;
+      line-height:20px;
+      color:$black;
+      font-weight:$fw-500;
+    }
+  }
+h1 , .h1{
+  font-size:64px;
+  line-height:72px;
+  font-weight:$fw-600;
+}
+h2 , .h2{
+  font-size:48px;
+  line-height:56px;  
+  font-weight:$fw-600;
+}
+h3 , .h3{
+  font-size:36px;
+  line-height:56px;
+  font-weight:$fw-600;
+}
+ul{
+  padding:0;
+  margin:0;
+}
+.card{
+    border:none;
+    border-radius:10px;
+    overflow: hidden;
+    .card-header{
+      border:none;
+      padding:0;
+    }
+    .card-body{
+      padding:32px;
+    }
+    &.card-light-green{
+        background-color:$light-green;
+    }
+    &.card-light-blue{
+      background-color:$light-blue;
+    }
+    &.card-light-meganta{
+      background-color:$light-meganta;
+    }
+}
+input{
+  &:focus{
+    outline:none;
+    box-shadow:none;
+  }
+  &.white-input{
+    background-color:$white;
+  }
+}
+.form-control{
+  background-color:$light-blue;
+  border:none;
+  font-size:18px;
+  line-height:24px;
+  border-radius:5px;
+  padding:16px 24px;
+  font-weight:$fw-500;
+  box-sizing:border-box;
+  color:rgba(0, 0, 0, 0.32);
+  // &:focus{
+  //   border:2px solid $chili;
+  //   background-color:$light-blue;
+  // }
+  &::-webkit-input-placeholder { /* Edge */
+    color:rgba(0, 0, 0, 0.5);
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:rgba(0, 0, 0, 0.5);
+  }
+  &::placeholder {
+    color:rgba(0, 0, 0, 0.5);
+  }
+}
+.custom-select{
+  position: relative;
+  i{
+    position: absolute;
+    top: 14px;
+    right: 8px;
+    font-weight:$fw-600;
+    font-size: 12px;
+    pointer-events:none;
+  }
+}
+.custom-radio{
+  display:flex;
+  min-height:21px;
+  align-items:center;
+  .form-check-input{
+    width:18px;
+    min-width:18px;
+    height:18px;
+    border-color:$gray-light;
+    cursor:pointer;
+    margin-right:8px;
+    margin-top:0px;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+        appearance: none;
+    &:checked{
+      background-color:$white;
+      box-shadow:none;
+      background-image:url(../../images/circle-black.svg);
+    }
+  }
+  input[type=checkbox]{
+    border-radius:50%;
+  }
+  label{
+    font-size:13px;
+    line-height:21px;
+  }
+}
+.custom-checkbox{
+  .form-check-input{
+    width:18px;
+    height:18px;
+    border-color:$gray-light;
+    cursor:pointer;
+    margin-right:8px;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+        appearance: none;
+    &:checked{
+      background-color:$white;
+      box-shadow:none;
+      background-image:url(../../images/circle-black.svg);
+    }
+  }
+  label{
+    font-size:13px;
+    line-height:21px;
+  }
+}
+.row-y{
+  align-items:center;
+}
+.section{
+  &.bg-gray{
+    background-color:$light-blue;
+  }
+  &.bg-black{
+    background-color:$black;
+  }
+  &.bg-black-deep{
+    background-color:$deep-gray;
+  }
+  &.bg-chili-dark{
+    background-color:$chili-dark;
+  }
+  &.py-120{
+    padding:120px 0;
+  }
+}
+.row-y{
+  align-items:center;
+}    
+.mid-content{
+  text-align:center;
+  max-width:664px;
+  margin:0 auto;
+  h2{
+    color:$chili-dark;
+    margin:0 0 24px 0;
+  }
+  p{
+    font-weight:$fw-500;
+  }
+}
+.py-80{
+  padding:80px 0;
+}
+
+.heroForm{
+  margin:48px 0;
+  .form-row{
+      .form-group{
+          display:flex;
+          align-items:center;
+          input{
+              box-shadow: 0px 12px 20px rgba(34, 34, 34, 0.04), 0px 0px 0px 1px rgba(34, 34, 34, 0.04);
+              max-width:336px;
+              border-radius:66px;
+              margin:0 24px 0 0;
+              font-weight:$fw-500;
+          }
+      }
+  }
+}
+.play-Btn{
+  width:55px;
+  height:55px;
+  background-color:$white;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  i{
+    color:$chili;
+    font-size:16px;
+  }
+}
+
