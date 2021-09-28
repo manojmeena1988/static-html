@@ -43,7 +43,6 @@
 }
 html{
   scroll-behavior:smooth;
-  transition:all 0.3s ease-in-out;
 }
 body {
     font-size: 16px;
@@ -109,10 +108,10 @@ body {
       background-color:$white;
       color:$chili;
       &:hover{
-        background-color:$white;
+        background-color: rgba(255, 255, 255, 0.8);
       }
       &.active{
-        background-color:$white;
+        background-color: rgba(255, 255, 255, 0.8);
       } 
     }
   }
@@ -185,7 +184,7 @@ input{
   font-size:18px;
   line-height:24px;
   border-radius:5px;
-  padding:16px 24px;
+  padding:16px 15px;
   font-weight:$fw-500;
   box-sizing:border-box;
   color:rgba(0, 0, 0, 0.32);

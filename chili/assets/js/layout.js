@@ -20,11 +20,18 @@ $(document).ready(function(){
             console.log('Submitted')
           }
       });
-      // mobile menu toggle js start =================================
+// mobile menu toggle js start =================================
    $(".mobile-menu").on("click", function() {
+     $("body").toggleClass("mobile-box-active");
+  });
+  
+// mobile menu box close when menu scroll click js =================================  
+  $(".mobile-panel .mobile-menuList li a ").on("click", function() {
     $("body").toggleClass("mobile-box-active");
-  }); 
+ });
 
+ 
+// tooltip box js start===============================================
 
   $(document).click(function(event) { 
     var $target = $(event.target);
@@ -44,3 +51,13 @@ $(document).ready(function(){
   }); 
 });
 
+
+//same page menu scroll js ====================================== 
+$(document).on('click', 'a[href^="#"][class="scrollbtm"]', function (event) {
+  event.preventDefault();
+  window.location.hash = $(this).attr("href");
+  var headHeight = $(".main-header").outerHeight();
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - headHeight
+  },400);
+});

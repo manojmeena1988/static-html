@@ -10753,7 +10753,6 @@ textarea.form-control-lg {
 }
 html {
   scroll-behavior: smooth;
-  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -10824,10 +10823,10 @@ a {
   color: #A31B3A;
 }
 .btn.btn-white:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .btn.btn-white.active {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 p {
@@ -10904,7 +10903,7 @@ input.white-input {
   font-size: 18px;
   line-height: 24px;
   border-radius: 5px;
-  padding: 16px 24px;
+  padding: 16px 15px;
   font-weight: 500;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.32);
@@ -11053,6 +11052,12 @@ input.white-input {
   font-size: 16px;
 }
 
+.main-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
 .main-header .topBar-detail {
   background-color: #f5f5f7;
   padding: 10px 0;
@@ -11067,6 +11072,9 @@ input.white-input {
   color: #404141;
   font-size: 14px;
   line-height: 20px;
+}
+.main-header .topBar-detail .top-menu li a:hover {
+  color: #cc2245;
 }
 .main-header .topBar-detail .top-menu li.active a {
   color: #A31B3A;
@@ -11085,6 +11093,9 @@ input.white-input {
 }
 .main-header .topBar-detail .top-menu.top-menu-right li a:hover span {
   color: #cc2245;
+}
+.main-header .topBar-detail .top-menu.top-menu-right li a:hover span.qus-r {
+  color: #404141;
 }
 .main-header .topBar-detail .top-menu.top-menu-right li:last-child {
   margin: 0;
@@ -11196,7 +11207,7 @@ input.white-input {
   border-radius: 20px;
   min-height: 564px;
   object-fit: cover;
-  filter: drop-shadow(0px 24px 100px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 24px 40px rgba(0, 0, 0, 0.3));
 }
 .top-hero-banner .rightArea .overlay-content {
   position: absolute;
@@ -11442,9 +11453,6 @@ input.white-input {
 .bestPrice-section .card.premium-price {
   margin-top: 36px;
 }
-.bestPrice-section .card.premium-price .internalPrice {
-  display: block;
-}
 .bestPrice-section .card.standard-price {
   border: 3px solid #A31B3A;
   box-shadow: 0px 20px 24px rgba(163, 27, 58, 0.18), 0px 0px 0px 1px rgba(34, 34, 34, 0.04);
@@ -11611,6 +11619,9 @@ input.white-input {
   color: #A31B3A;
   font-weight: 500;
 }
+.business-solutions .heroForm .form-group .btn-chili:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 .FAQ-section {
   padding-bottom: 348px !important;
@@ -11701,6 +11712,9 @@ input.white-input {
   color: #7B132C;
   font-weight: 500;
 }
+.specialist-section .call-area .heroForm .form-group .btn-chili:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 .out-footer .top-footer {
   padding: 80px 0;
@@ -11729,6 +11743,9 @@ input.white-input {
   line-height: 28px;
   color: #404141;
   word-break: break-all;
+}
+.out-footer .top-footer .footerLink.contactInfo {
+  margin-left: 30px;
 }
 .out-footer .bottom-footer {
   padding: 32px 0;
@@ -11816,7 +11833,7 @@ input.white-input {
   color: #cc2245;
   font-size: 14px;
   line-height: 20px;
-  margin: 4px 0 0;
+  margin: 4px 0 12px 0;
   position: absolute;
 }
 .signup-hero .rightArea .signUp-form .card-body .row .custom-select .select option {
@@ -11846,6 +11863,9 @@ input.white-input {
   box-sizing: border-box;
   border-radius: 6px;
   margin-top: 0;
+}
+.signup-hero .rightArea .signUp-form .card-body .row.checkboxRow .form-check input:focus {
+  box-shadow: none;
 }
 .signup-hero .rightArea .signUp-form .card-body .row.checkboxRow .form-check input:checked {
   background-color: #7B132C;
@@ -11924,7 +11944,6 @@ input.white-input {
   font-size: 24px;
 }
 .signu-modalBox .modal-content .modal-body h3, .signu-modalBox .modal-content .modal-body .h3 {
-  line-height: 52px;
   color: #7B132C;
 }
 .signu-modalBox .modal-content .modal-body p {
@@ -11952,8 +11971,8 @@ input.white-input {
   overflow: hidden;
 }
 .mobile-box-active .mobile-panel {
-  top: 42px;
-  padding: 70px 0 76px;
+  top: 122px;
+  padding: 0px 0 140px;
 }
 .mobile-box-active .mobile-panel .container {
   display: flex;
@@ -12002,6 +12021,11 @@ input.white-input {
   top: 4px;
 }
 
+.popupModal-box .modal-content {
+  border-radius: 0px;
+  background-color: #404141;
+}
+
 @media only screen and (max-width: 1399px) {
   .bestPrice-section .card .internalPrice .p-detail-list li .info-i .tooltip-box {
     min-width: 315px;
@@ -12016,6 +12040,16 @@ input.white-input {
     min-width: 255px;
     top: -148px;
     padding: 18px 12px;
+  }
+
+  .out-footer .top-footer .footerLink.contactInfo {
+    margin-left: 52px;
+  }
+  .out-footer .bottom-footer .footer-menu .menu-list li {
+    margin: 0 0 6px 0;
+  }
+  .out-footer .bottom-footer .footer-menu.right-menu-f .menu-list li {
+    margin: 0 0 6px 24px;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -12048,13 +12082,6 @@ input.white-input {
 
   .py-80 {
     padding: 50px 0;
-  }
-
-  .out-footer .bottom-footer .footer-menu .menu-list li {
-    margin: 0 0 6px 0;
-  }
-  .out-footer .bottom-footer .footer-menu.right-menu-f .menu-list li {
-    margin: 0 0 6px 24px;
   }
 
   .bestPrice-section .card .extraData {
@@ -12186,10 +12213,14 @@ input.white-input {
     padding: 40px 0 60px;
   }
   .signup-hero .leftArea h2, .signup-hero .leftArea .h2 {
-    margin: 24px 0 36px;
+    margin: 24px 0 40px;
+    font-size: 30px;
   }
   .signup-hero .leftArea .help-support li {
     margin: 0 0 24px 0;
+  }
+  .signup-hero .leftArea .help-support li img {
+    margin: 0 12px 0 0;
   }
   .signup-hero .rightArea .signUp-form .card-body {
     padding: 32px 8px;
@@ -12198,6 +12229,28 @@ input.white-input {
   .bestPrice-section .card .internalPrice .p-detail-list li .info-i .tooltip-box {
     min-width: 320px;
     top: -135px;
+  }
+
+  .out-footer .top-footer .footerLink p.large-pera {
+    font-size: 16px;
+  }
+  .out-footer .top-footer .footerLink .info-list li a {
+    font-size: 16px;
+  }
+  .out-footer .top-footer .footerLink.contactInfo {
+    margin-left: 0px;
+  }
+  .out-footer .bottom-footer {
+    padding: 20px 0;
+  }
+  .out-footer .bottom-footer .footer-menu {
+    text-align: center;
+  }
+  .out-footer .bottom-footer .footer-menu.right-menu-f {
+    text-align: center;
+  }
+  .out-footer .bottom-footer .footer-menu.right-menu-f .menu-list li:first-child {
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -12214,7 +12267,7 @@ input.white-input {
   }
 
   .top-hero-banner {
-    padding: 40px 0;
+    padding: 32px 0;
   }
   .top-hero-banner .leftArea h1, .top-hero-banner .leftArea .h1 {
     margin: 24px 0;
@@ -12231,10 +12284,13 @@ input.white-input {
   }
   .top-hero-banner .rightArea img {
     border-radius: 0px;
+    min-height: 382px;
+    filter: none;
   }
   .top-hero-banner .rightArea .overlay-content {
     width: 100%;
     height: 100%;
+    bottom: 18px;
   }
   .top-hero-banner .rightArea .overlay-content a {
     position: absolute;
@@ -12245,6 +12301,9 @@ input.white-input {
     padding: 0;
   }
 
+  .logobar p {
+    max-width: 300px;
+  }
   .logobar .logo-list {
     padding: 48px 0 0;
   }
@@ -12254,11 +12313,12 @@ input.white-input {
   }
 
   .section.py-120 {
-    padding: 50px 0;
+    padding: 48px 0;
   }
 
   .suportArea .contactBox {
     margin: 0 0 12px 0;
+    height: calc(100% - 12px);
   }
 
   .py-80 {
@@ -12269,7 +12329,7 @@ input.white-input {
     margin: 0 0 32px;
   }
   .bestPrice-section .card {
-    margin: 0 0 20px 0;
+    margin: 0 0 24px 0;
   }
   .bestPrice-section .card.basic-price {
     margin-top: 0px;
@@ -12297,7 +12357,7 @@ input.white-input {
     text-align: center;
     padding: 70px 15px 56px;
     position: relative;
-    min-height: 500px;
+    min-height: 610px;
   }
   .user-comments .right-content .viewComment {
     justify-content: center;
@@ -12306,7 +12366,7 @@ input.white-input {
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     position: absolute;
     left: 0;
     top: 0;
@@ -12395,7 +12455,7 @@ input.white-input {
     border-radius: 0;
   }
   .specialist-section .microsoft-card .card-body {
-    padding: 60px 12px;
+    padding: 48px 12px;
   }
   .specialist-section .call-area {
     padding: 50px 12px 0;
@@ -12433,6 +12493,7 @@ input.white-input {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    text-align: left;
   }
   .out-footer .bottom-footer .footer-menu.left-social-list .social-list {
     display: inline-block;
@@ -12484,16 +12545,46 @@ input.white-input {
     border: none;
     background-color: transparent;
   }
+
+  .business-solutions [class*=col-] {
+    margin-bottom: 12px;
+  }
+
+  .signup-hero .rightArea .signUp-form .card-body .row {
+    margin: 0;
+  }
+  .signup-hero .rightArea .signUp-form .card-body .row [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 0 24px 0;
+  }
+  .signup-hero .rightArea .signUp-form .card-body .row [class*=col-] .form-control {
+    background-color: #fff;
+    padding: 15px;
+  }
+  .signup-hero .rightArea .signUp-form .card-body .row.checkboxRow {
+    margin: 28px 0 32px 0;
+    padding: 0;
+  }
+  .signup-hero .rightArea .signUp-form .card-body .row.checkboxRow .sn-up {
+    margin: 0 0 24px 0;
+  }
+  .signup-hero .rightArea .signUp-form .card-body .row.checkboxRow .form-check input {
+    background-color: #fff;
+  }
+  .signup-hero .rightArea .signUp-form .card-body .btn-chili {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 480px) {
   h1, .h1 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 46px;
+    line-height: 52px;
   }
 
   h2, .h2 {
     font-size: 30px;
-    line-height: 36px;
+    line-height: 40px;
   }
 
   h3, .h3 {
@@ -12509,24 +12600,6 @@ input.white-input {
   }
   .signup-hero .rightArea .signUp-form .card-body {
     padding: 12px 0 48px;
-  }
-  .signup-hero .rightArea .signUp-form .card-body .row {
-    margin: 0;
-  }
-  .signup-hero .rightArea .signUp-form .card-body .row [class*=col-] {
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 0 24px 0;
-  }
-  .signup-hero .rightArea .signUp-form .card-body .row [class*=col-] .form-control {
-    background-color: #fff;
-  }
-  .signup-hero .rightArea .signUp-form .card-body .row.checkboxRow {
-    margin: 0 0 32px 0;
-    padding: 0;
-  }
-  .signup-hero .rightArea .signUp-form .card-body .row.checkboxRow .sn-up {
-    margin: 0 0 24px 0;
   }
 
   .logobar .help-support {
@@ -12561,6 +12634,17 @@ input.white-input {
   .logobar .titleP {
     max-width: 300px;
     margin: auto;
+  }
+
+  .specialist-section .call-area h1, .specialist-section .call-area .h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  h1, .h1 {
+    font-size: 40px;
+    line-height: 44px;
   }
 }
 @media only screen and (max-width: 320px) {

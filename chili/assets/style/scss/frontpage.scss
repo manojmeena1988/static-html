@@ -4,6 +4,10 @@
 // Home page css start================================
 
 .main-header{
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:9;
     .topBar-detail{
         background-color:$light-blue;
         padding:10px 0;
@@ -17,6 +21,9 @@
                     color:$gray-light;
                     font-size:14px;
                     line-height:20px;
+                    &:hover{
+                        color:$chili-light;
+                    }
                 }
                 &.active{
                     a{
@@ -40,6 +47,9 @@
                         &:hover{
                             span{
                                 color:$chili-light;
+                                &.qus-r{
+                                    color:$gray-light;
+                                }
                             }
                         }
                     }
@@ -164,7 +174,7 @@
             border-radius:20px;
             min-height: 564px;
             object-fit: cover;
-            filter: drop-shadow(0px 24px 100px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(0px 24px 40px rgba(0, 0, 0, 0.3));
         }
         .overlay-content{
             position:absolute;
@@ -420,7 +430,7 @@
         &.premium-price{
             margin-top:36px;
             .internalPrice{
-                display:block;
+                // display:block;
             }
         }
         &.standard-price{
@@ -592,6 +602,9 @@
                 background-color:$white;
                 color:$chili;
                 font-weight:$fw-500;
+                &:hover{
+                    background-color: rgba(255, 255, 255, 0.8);
+                }
             }
         }
     } 
@@ -693,6 +706,9 @@
                     background-color:$white;
                     color:$chili-dark;
                     font-weight:$fw-500;
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.8);
+                    }
                 }
             }
         }
@@ -729,6 +745,9 @@
                         word-break: break-all;
                     }
                 }
+            }
+            &.contactInfo{
+                margin-left:30px;
             }
         }
     }
@@ -826,7 +845,7 @@
                                 color:$chili-light;
                                 font-size:14px;
                                 line-height:20px;
-                                margin:4px 0 0;
+                                margin:4px 0 12px 0;
                                 position: absolute;
                             }
                         }
@@ -863,6 +882,9 @@
                                 box-sizing: border-box;
                                 border-radius: 6px;
                                 margin-top:0;
+                                &:focus{
+                                    box-shadow:none;
+                                }
                                 &:checked{
                                     background-color:$chili-dark;
                                     border-color:$chili-dark;
@@ -947,7 +969,6 @@
                 }
             }
             h3{
-                line-height:52px;
                 color:$chili-dark;
             }
             p{
@@ -976,8 +997,8 @@
 .mobile-box-active{
     overflow: hidden;
     .mobile-panel{
-        top:42px; 
-        padding:70px 0 76px;
+        top:122px; 
+        padding:0px 0 140px;
         // margin:30px 0 0;
         .container{
             display: flex;
@@ -1009,6 +1030,8 @@
         }
     }
     .main-header{
+        // position:inherit;
+        // z-index: inherit;
         .menubar{
             background-color:$light-blue;
             .left-menus{
@@ -1036,5 +1059,12 @@
             } 
         } 
     }  
+}
+
+.popupModal-box{
+    .modal-content{
+        border-radius:0px;
+    background-color:$gray-light;
+    }
 }
 @import "responsive";
