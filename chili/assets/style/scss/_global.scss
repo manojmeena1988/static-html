@@ -170,6 +170,9 @@ ul{
     }
 }
 input{
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  appearance: none;
   &:focus{
     outline:none;
     box-shadow:none;
@@ -187,6 +190,9 @@ input{
   padding:16px 15px;
   font-weight:$fw-500;
   box-sizing:border-box;
+  -webkit-appearance: none;
+   -moz-appearance:none;
+   appearance:none;
   color:rgba(0, 0, 0, 0.32);
   // &:focus{
   //   border:2px solid $chili;

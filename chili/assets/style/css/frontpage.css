@@ -10889,6 +10889,11 @@ ul {
   background-color: #f2e7ea;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 input:focus {
   outline: none;
   box-shadow: none;
@@ -10906,6 +10911,9 @@ input.white-input {
   padding: 16px 15px;
   font-weight: 500;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: rgba(0, 0, 0, 0.32);
 }
 .form-control::-webkit-input-placeholder {
@@ -11132,11 +11140,11 @@ input.white-input {
 .main-header .menubar .right-btns .mobile-menu {
   position: relative;
   display: none;
-  width: 21px;
+  width: 24px;
   height: 15px;
 }
 .main-header .menubar .right-btns .mobile-menu .hamburg {
-  width: 21px;
+  width: 24px;
   height: 3px;
   background-color: #404141;
   position: absolute;
@@ -11207,7 +11215,7 @@ input.white-input {
   border-radius: 20px;
   min-height: 564px;
   object-fit: cover;
-  filter: drop-shadow(0px 24px 40px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 24px 30px rgba(0, 0, 0, 0.3));
 }
 .top-hero-banner .rightArea .overlay-content {
   position: absolute;
@@ -11863,6 +11871,9 @@ input.white-input {
   box-sizing: border-box;
   border-radius: 6px;
   margin-top: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .signup-hero .rightArea .signUp-form .card-body .row.checkboxRow .form-check input:focus {
   box-shadow: none;
@@ -11971,7 +11982,7 @@ input.white-input {
   overflow: hidden;
 }
 .mobile-box-active .mobile-panel {
-  top: 122px;
+  top: 120px;
   padding: 0px 0 140px;
 }
 .mobile-box-active .mobile-panel .container {
@@ -12098,6 +12109,17 @@ input.white-input {
     min-width: 285px;
     top: -132px;
   }
+
+  .specialist-section .microsoft-card .card-body {
+    padding: 48px 24px;
+  }
+
+  .user-comments .right-content {
+    padding: 56px 30px 56px;
+  }
+  .user-comments .right-content .topArea h3, .user-comments .right-content .topArea .h3 {
+    margin: 50px 0 24px;
+  }
 }
 @media only screen and (max-width: 991px) {
   h1, .h1 {
@@ -12223,7 +12245,7 @@ input.white-input {
     margin: 0 12px 0 0;
   }
   .signup-hero .rightArea .signUp-form .card-body {
-    padding: 32px 8px;
+    padding: 12px 8px 32px;
   }
 
   .bestPrice-section .card .internalPrice .p-detail-list li .info-i .tooltip-box {
@@ -12303,6 +12325,9 @@ input.white-input {
 
   .logobar p {
     max-width: 300px;
+  }
+  .logobar p.titleP {
+    margin: auto;
   }
   .logobar .logo-list {
     padding: 48px 0 0;
@@ -12550,6 +12575,9 @@ input.white-input {
     margin-bottom: 12px;
   }
 
+  .signup-hero .leftArea .help-support {
+    display: none;
+  }
   .signup-hero .rightArea .signUp-form .card-body .row {
     margin: 0;
   }
@@ -12575,32 +12603,6 @@ input.white-input {
   .signup-hero .rightArea .signUp-form .card-body .btn-chili {
     width: 100%;
   }
-}
-@media only screen and (max-width: 480px) {
-  h1, .h1 {
-    font-size: 46px;
-    line-height: 52px;
-  }
-
-  h2, .h2 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  h3, .h3 {
-    font-size: 20px;
-    line-height: 26px;
-  }
-
-  .signup-hero {
-    padding: 40px 0 0px;
-  }
-  .signup-hero .leftArea .help-support {
-    display: none;
-  }
-  .signup-hero .rightArea .signUp-form .card-body {
-    padding: 12px 0 48px;
-  }
 
   .logobar .help-support {
     display: flex;
@@ -12608,7 +12610,8 @@ input.white-input {
     padding: 48px 12px;
     border-top: 1px solid rgba(191, 195, 195, 0.4);
     border-bottom: 1px solid rgba(191, 195, 195, 0.4);
-    margin: 0 0 36px 0;
+    margin: 0 auto 36px;
+    max-width: 540px;
   }
   .logobar .help-support li {
     margin: 0 67px 0 0;
@@ -12634,6 +12637,29 @@ input.white-input {
   .logobar .titleP {
     max-width: 300px;
     margin: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1, .h1 {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  h2, .h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  h3, .h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .signup-hero {
+    padding: 40px 0 0px;
+  }
+  .signup-hero .rightArea .signUp-form .card-body {
+    padding: 12px 0 48px;
   }
 
   .specialist-section .call-area h1, .specialist-section .call-area .h1 {
